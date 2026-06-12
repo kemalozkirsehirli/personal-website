@@ -2,33 +2,172 @@
   "url": "https://your-domain.com",
   "basePath": "",
   "title": "Your Name",
-  "description": "Essays, research, projects, CV, and photography.",
+  "description": "Essays, research notes, projects, CV, and photography in AI for science.",
   "language": "en",
   "resumePdf": "",
   "author": {
     "name": "Your Name",
-    "role": "MIT rising senior · CADD-AI for Science researcher",
+    "role": "MIT rising senior \u00b7 CADD-AI for Science researcher",
     "location": "Cambridge, MA",
     "email": "you@example.com",
     "avatar": "/photos/profile.svg",
-    "bio": "I work on AI for science, computational drug discovery, and questions at the edge of reasoning, biology, and systems.",
+    "bio": "I work on AI for science, computational drug discovery, and the engineering habits that make research sharper. This site collects my essays, public notes, projects, CV, and a small visual archive.",
     "links": [
-      { "label": "Email", "url": "mailto:you@example.com" },
-      { "label": "GitHub", "url": "https://github.com/username" },
-      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/username" },
-      { "label": "Google Scholar", "url": "https://scholar.google.com/" }
+      {
+        "label": "Email",
+        "url": "mailto:you@example.com"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/username"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/username"
+      },
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/"
+      }
+    ],
+    "highlights": [
+      "MIT rising senior focused on AI for science and computational drug discovery.",
+      "CADD-AI for Science researcher: models, benchmarks, scientific reasoning, and reproducible workflows.",
+      "Writing publicly about papers, projects, taste, research process, and systems for getting better."
     ]
   },
   "nav": [
-    { "label": "Essays", "url": "/essays/" },
-    { "label": "Projects", "url": "/projects/" },
-    { "label": "CV", "url": "/cv/" },
-    { "label": "Photos", "url": "/photos/" }
+    {
+      "label": "Essays",
+      "url": "/essays/"
+    },
+    {
+      "label": "Projects",
+      "url": "/projects/"
+    },
+    {
+      "label": "CV",
+      "url": "/cv/"
+    },
+    {
+      "label": "Photos",
+      "url": "/photos/"
+    }
   ],
   "home": {
-    "eyebrow": "Personal website",
-    "intro": "I publish essays, research notes, project writeups, and field photos here.",
-    "primaryCta": { "label": "Read essays", "url": "/essays/" },
-    "secondaryCta": { "label": "View CV", "url": "/cv/" }
+    "eyebrow": "MIT \u00b7 AI for Science \u00b7 Public Notes",
+    "intro": "Essays, research notes, project writeups, CV, and field photos.",
+    "primaryCta": {
+      "label": "Read essays",
+      "url": "/essays/"
+    },
+    "secondaryCta": {
+      "label": "View CV",
+      "url": "/cv/"
+    },
+    "spotlight": [
+      {
+        "label": "CADD-AI Research Notes",
+        "url": "/essays/ai-for-science-notes/",
+        "description": "living notes on models, benchmarks, and scientific reasoning"
+      },
+      {
+        "label": "How I Read Papers",
+        "url": "/essays/how-i-read-papers/",
+        "description": "a durable workflow for literature review"
+      },
+      {
+        "label": "Selected Projects",
+        "url": "/projects/",
+        "description": "research, engineering, writing, and experiments"
+      },
+      {
+        "label": "Curriculum Vitae",
+        "url": "/cv/",
+        "description": "education, research, projects, and skills"
+      }
+    ],
+    "directory": [
+      {
+        "label": "About",
+        "links": [
+          {
+            "label": "Professional",
+            "url": "/cv/"
+          },
+          {
+            "label": "Personal notes",
+            "url": "/essays/"
+          },
+          {
+            "label": "Contact",
+            "url": "mailto:you@example.com"
+          },
+          {
+            "label": "CV",
+            "url": "/cv/"
+          }
+        ]
+      },
+      {
+        "label": "Writing",
+        "links": [
+          {
+            "label": "Latest",
+            "url": "/essays/"
+          },
+          {
+            "label": "AI for Science",
+            "url": "/essays/ai-for-science-notes/"
+          },
+          {
+            "label": "Paper reading",
+            "url": "/essays/how-i-read-papers/"
+          },
+          {
+            "label": "RSS",
+            "url": "/feed.xml"
+          }
+        ]
+      },
+      {
+        "label": "Work",
+        "links": [
+          {
+            "label": "Projects",
+            "url": "/projects/"
+          },
+          {
+            "label": "CADD-AI",
+            "url": "/projects/"
+          },
+          {
+            "label": "GitHub",
+            "url": "https://github.com/username"
+          },
+          {
+            "label": "Scholar",
+            "url": "https://scholar.google.com/"
+          }
+        ]
+      },
+      {
+        "label": "Archive",
+        "links": [
+          {
+            "label": "Photos",
+            "url": "/photos/"
+          },
+          {
+            "label": "Essay archive",
+            "url": "/essays/"
+          },
+          {
+            "label": "Sitemap",
+            "url": "/sitemap.xml"
+          }
+        ]
+      }
+    ]
   }
 }

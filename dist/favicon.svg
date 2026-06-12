@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Site mark">
-  <rect width="128" height="128" rx="32" fill="#17120f"/>
-  <path d="M34 88 64 24l30 64h-14l-6-14H54l-6 14H34Zm25-27h10l-5-13-5 13Z" fill="#f6f0e8"/>
+  <rect width="128" height="128" rx="28" fill="#f5f2ea"/>
+  <circle cx="64" cy="64" r="47" fill="#fffdf8" stroke="#b7ad99" stroke-width="4"/>
+  <path d="M31 92H97" stroke="#8a1f1f" stroke-width="5" stroke-linecap="round"/>
+  <text x="64" y="77" text-anchor="middle" fill="#171717" font-size="52" font-family="Georgia, serif" font-weight="700">Y</text>
 </svg>

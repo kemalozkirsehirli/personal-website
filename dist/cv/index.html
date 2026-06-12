@@ -27,7 +27,7 @@
     <div class="site-shell navbar">
       <a class="brand" href="/" aria-label="Your Name home">
         <span class="brand-mark" aria-hidden="true">Y</span>
-        <span>Your Name</span>
+        <span class="brand-copy"><strong>Your Name</strong><small>MIT rising senior · CADD-AI for Science researcher</small></span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="/essays/">Essays</a>
@@ -39,13 +39,26 @@
     </div>
   </header>
   <main id="main" class="site-shell">
-    <section class="page-head">
+    <section class="page-head cv-head">
     <p class="eyebrow">Curriculum vitae</p>
     <h1>CV</h1>
     <p>Curriculum vitae: education, research, projects, publications, and skills.</p>
-    <div class="inline-actions"><button class="button" type="button" onclick="window.print()">Print / Save PDF</button></div>
   </section>
-  <section class="prose-card"><div class="prose"><h1 id="your-name">Your Name</h1>
+  <section class="cv-layout">
+    <aside class="cv-sidebar" aria-label="CV contact information">
+      <h2>Your Name</h2>
+      <p>MIT rising senior · CADD-AI for Science researcher</p>
+      <dl>
+        <div><dt>Location</dt><dd>Cambridge, MA</dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:you@example.com">you@example.com</a></dd></div>
+      </dl>
+      <div class="sidebar-links"><a class="text-link" href="mailto:you@example.com">Email</a>
+<a class="text-link" href="https://github.com/username" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a class="text-link" href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a class="text-link" href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar</a></div>
+      <div class="inline-actions cv-actions"><button class="button" type="button" onclick="window.print()">Print / Save PDF</button></div>
+    </aside>
+    <section class="prose-card"><div class="prose cv-prose"><h1 id="your-name">Your Name</h1>
 <p><strong>MIT rising senior · CADD-AI for Science researcher</strong> Cambridge, MA · <a href="mailto:you@example.com">you@example.com</a> · <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
 <h2 id="education">Education</h2>
 <p><strong>Massachusetts Institute of Technology</strong> — B.S. Candidate Expected 2027</p>
@@ -67,6 +80,7 @@
 <ul><li><strong>Programming:</strong> Python, JavaScript/TypeScript, SQL, Bash</li><li><strong>ML/AI:</strong> PyTorch, scikit-learn, model evaluation, experiment tracking</li><li><strong>Scientific computing:</strong> RDKit, NumPy, pandas, visualization</li><li><strong>Communication:</strong> technical writing, research presentations, literature review</li></ul>
 <h2 id="awards">Awards</h2>
 <ul><li>Add award, fellowship, grant, or recognition here.</li></ul></div></section>
+  </section>
   </main>
   <footer class="site-footer">
     <div class="site-shell footer-inner">

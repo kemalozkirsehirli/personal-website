@@ -2,14 +2,17 @@
 
 Bu repo; essaylerini, CV’ni, projelerini ve fotoğraflarını yayınlamak için sıfır bağımlılıklı, hızlı, mobil uyumlu, statik bir kişisel web sitesi üretir.
 
+Bu versiyon daha **klasik akademik personal site** estetiğine çekildi: üstte sade masthead, profil/spotlight/intro üçlüsü, Kellis tarzı kompakt link dizini, liste ağırlıklı essay-proje arşivi, ciddi CV düzeni ve daha az “startup portfolio” hissi.
+
 Özellikler:
 
 - Essay sistemi: `src/content/essays/*.md` dosyalarından otomatik sayfa üretir.
 - CV sayfası: `src/content/cv.md` dosyasından HTML CV üretir.
-- Proje kartları: `src/data/projects.json` üzerinden yönetilir.
+- Proje listesi: `src/data/projects.json` üzerinden yönetilir.
 - Fotoğraf galerisi: `src/data/photos.json` ve `public/photos/` üzerinden yönetilir.
+- Ana sayfa spotlight/directory alanları: `src/data/site.json` içinden yönetilir.
 - SEO: canonical URL, Open Graph, JSON-LD, sitemap ve RSS üretir.
-- Dark/light tema, responsive tasarım, essay filtreleme.
+- Dark/light tema, responsive tasarım, essay/proje filtreleme.
 - GitHub Pages, Netlify ve Vercel deploy ayarları hazır.
 - Dış paket yok. `npm install` neredeyse sadece lockfile doğrular.
 
@@ -46,7 +49,7 @@ src/data/site.json
   "url": "https://your-domain.com",
   "basePath": "",
   "title": "Your Name",
-  "description": "Essays, research, projects, CV, and photography.",
+  "description": "Essays, research notes, projects, CV, and photography in AI for science.",
   "author": {
     "name": "Your Name",
     "role": "MIT rising senior · CADD-AI for Science researcher",
@@ -54,6 +57,21 @@ src/data/site.json
   }
 }
 ```
+
+Ayrıca aynı dosyada şu alanlar ana sayfanın akademik havasını kontrol eder:
+
+```json
+"home": {
+  "spotlight": [
+    { "label": "CADD-AI Research Notes", "url": "/essays/ai-for-science-notes/", "description": "living notes" }
+  ],
+  "directory": [
+    { "label": "Writing", "links": [{ "label": "Latest", "url": "/essays/" }] }
+  ]
+}
+```
+
+`spotlight` kısmına en güçlü 4 bağlantını koy. `directory` kısmı Kellis tarzı kompakt link koridoru gibi çalışır: About, Writing, Work, Archive.
 
 ### GitHub Pages project sitesi kullanacaksan
 
@@ -239,44 +257,4 @@ Output Directory: dist
 npm run check
 ```
 
-Kontrol şunları yapar:
-
-- Build alır.
-- Ana sayfa, essay, proje, CV ve fotoğraf sayfalarının üretildiğini doğrular.
-- Üretilen HTML içindeki local linkleri tarar.
-- Kırık internal link varsa hata verir.
-
-## Dosya haritası
-
-```txt
-.
-├── .github/workflows/deploy.yml
-├── public/
-│   ├── favicon.svg
-│   ├── og-image.svg
-│   ├── files/
-│   └── photos/
-├── scripts/
-│   ├── build.mjs
-│   ├── check.mjs
-│   ├── dev.mjs
-│   └── serve.mjs
-├── src/
-│   ├── content/
-│   │   ├── cv.md
-│   │   └── essays/
-│   ├── data/
-│   │   ├── photos.json
-│   │   ├── projects.json
-│   │   └── site.json
-│   ├── scripts/main.js
-│   └── styles/main.css
-├── LICENSE
-├── netlify.toml
-├── package.json
-└── vercel.json
-```
-
-## Net kural
-
-Gizli bilgi koyma. GitHub Pages siteleri public erişilebilir olur; private repo kullansan bile yayınlanan site internete açıktır. CV’de telefon, ev adresi, kişisel ID gibi bilgileri gereksizse koyma.
+Bu komut build alır, zorunlu HTML dosyalarının üretildiğini ve local linklerin kırık olmadığını kontrol eder.

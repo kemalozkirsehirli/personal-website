@@ -1,10 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Personal website preview">
-  <rect width="1200" height="630" fill="#f6f0e8"/>
-  <circle cx="130" cy="120" r="220" fill="#ead2bd"/>
-  <circle cx="1020" cy="90" r="260" fill="#cfe4dc"/>
-  <rect x="86" y="82" width="1028" height="466" rx="44" fill="#fffaf2" stroke="#17120f" stroke-opacity="0.14"/>
-  <text x="140" y="238" fill="#17120f" font-size="66" font-family="Georgia, serif" font-weight="700">Essays · CV · Projects</text>
-  <text x="140" y="326" fill="#6d6259" font-size="35" font-family="Arial, sans-serif">Research notes, public work, and photography.</text>
-  <rect x="140" y="390" width="250" height="58" rx="29" fill="#17120f"/>
-  <text x="178" y="429" fill="#fffaf2" font-size="24" font-family="Arial, sans-serif" font-weight="700">Personal site</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Personal academic website preview">
+  <rect width="1200" height="630" fill="#f5f2ea"/>
+  <rect x="72" y="62" width="1056" height="506" rx="20" fill="#fffdf8" stroke="#d8d1c2"/>
+  <path d="M108 144H1092" stroke="#8a1f1f" stroke-width="5"/>
+  <path d="M108 153H1092" stroke="#d8d1c2" stroke-width="2"/>
+  <circle cx="166" cy="106" r="28" fill="#fffdf8" stroke="#b7ad99"/>
+  <text x="166" y="116" text-anchor="middle" fill="#8a1f1f" font-size="30" font-family="Georgia, serif" font-weight="700">Y</text>
+  <text x="216" y="114" fill="#171717" font-size="34" font-family="Georgia, serif" font-weight="700">Your Name</text>
+  <text x="108" y="244" fill="#8a1f1f" font-size="22" font-family="Menlo, Monaco, monospace" font-weight="700" letter-spacing="3">MIT · AI FOR SCIENCE · PUBLIC NOTES</text>
+  <text x="108" y="333" fill="#171717" font-size="64" font-family="Georgia, serif" font-weight="700">Essays, CV, Projects</text>
+  <text x="108" y="391" fill="#5f5b52" font-size="30" font-family="Arial, sans-serif">Research notes, public work, and photography.</text>
+  <g fill="none" stroke="#d8d1c2" stroke-width="2">
+    <path d="M108 454H1092"/>
+    <path d="M108 500H1092"/>
+  </g>
+  <text x="108" y="484" fill="#1d5276" font-size="24" font-family="Georgia, serif">About / Writing / Work / Archive</text>
+  <text x="108" y="530" fill="#1d5276" font-size="24" font-family="Georgia, serif">Spotlight / Research notes / Curriculum vitae</text>
 </svg>
