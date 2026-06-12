@@ -1,24 +1,19 @@
-# Personal Essay + CV Website
+# Kemal Özkırşehirli — Personal Academic Website
 
-Bu repo; essaylerini, CV’ni, projelerini ve fotoğraflarını yayınlamak için sıfır bağımlılıklı, hızlı, mobil uyumlu, statik bir kişisel web sitesi üretir.
+Manolis Kellis / old MIT academic homepage hissine yakın, statik, hızlı, dependency-free kişisel akademik site.
 
-Bu versiyon **Kellis / eski MIT akademik personal site** estetiğine daha sadık çekildi: solda portre + Spotlight, sağda word-cloud + akademik bio, Times New Roman, beyaz arka plan, mavi linkler, gri bölüm başlıkları, yoğun iki kolonlu link arşivi ve altta küçük fotoğraf şeridi. Modern portfolio havası özellikle azaltıldı.
+Bu final versiyonda:
 
-Özellikler:
+- Ana domain `https://kemal-ozkirsehirli.com` olarak ayarlandı.
+- `basePath` boş bırakıldı; custom domain için doğru ayar bu.
+- `public/CNAME` ve root `CNAME` dosyaları `kemal-ozkirsehirli.com` içeriyor.
+- Essays ve AI for Science notes şu an publish edilmiyor.
+- `src/content/essays/` içinde sadece `.gitkeep` var.
+- Ana sayfadan Essays / AI notes tıklanabilir linkleri kaldırıldı; yalnızca “held back” notu olarak görünüyor.
+- RSS linki footer’dan kaldırıldı; `feed.xml` boş/uyumlu şekilde üretilmeye devam ediyor.
+- CV’den daha fazla içerik homepage ve projects sayfasına dağıtıldı.
 
-- Essay sistemi: `src/content/essays/*.md` dosyalarından otomatik sayfa üretir.
-- CV sayfası: `src/content/cv.md` dosyasından HTML CV üretir.
-- Proje listesi: `src/data/projects.json` üzerinden yönetilir.
-- Fotoğraf galerisi: `src/data/photos.json` ve `public/photos/` üzerinden yönetilir.
-- Ana sayfa spotlight/directory alanları: `src/data/site.json` içinden yönetilir.
-- SEO: canonical URL, Open Graph, JSON-LD, sitemap ve RSS üretir.
-- Responsive tasarım, old-school akademik UI ve essay/proje filtreleme.
-- GitHub Pages, Netlify ve Vercel deploy ayarları hazır.
-- Dış paket yok. `npm install` neredeyse sadece lockfile doğrular.
-
-## 1) Lokal çalıştırma
-
-Node.js 18.18+ kurulu olsun.
+## Lokal çalıştırma
 
 ```bash
 npm install
@@ -26,95 +21,163 @@ npm run check
 npm run dev
 ```
 
-Tarayıcıda aç:
+Tarayıcıda:
 
 ```txt
 http://localhost:4173
 ```
 
-`npm run dev` dosyaları izler, değişiklikte tekrar build alır. Tarayıcıyı yenilemen yeterli.
+## Desktop’taki GitHub bağlı klasöre kopyalama
 
-## 2) Kişiselleştirme
+Mevcut GitHub repo klasörün:
 
-Ana ayar dosyası:
+```txt
+~/Desktop/Red/personal-website
+```
+
+Zip’i `Downloads` içine indir, sonra:
+
+```bash
+TARGET="$HOME/Desktop/Red/personal-website"
+ZIP="$HOME/Downloads/askim-personal-site-final-kemal-domain.zip"
+TMP="$HOME/Downloads/askim-site-final-update"
+
+test -d "$TARGET" || { echo "Bulamadım: $TARGET"; exit 1; }
+test -f "$ZIP" || { echo "Zip yok: $ZIP"; exit 1; }
+
+cd "$HOME/Desktop/Red"
+cp -R personal-website "personal-website-backup-$(date +%Y%m%d-%H%M%S)"
+
+rm -rf "$TMP"
+mkdir -p "$TMP"
+unzip -o "$ZIP" -d "$TMP"
+
+rsync -av --delete \
+  --exclude='.git/' \
+  --exclude='node_modules/' \
+  "$TMP/askim-personal-site/" \
+  "$TARGET/"
+
+cd "$TARGET"
+npm install
+npm run check
+npm run dev
+```
+
+Site local’da düzgünse:
+
+```bash
+Control + C
+cd "$HOME/Desktop/Red/personal-website"
+git status
+git add -A
+git commit -m "Finalize personal website for kemal-ozkirsehirli.com"
+git push origin main
+```
+
+Branch adın `master` ise:
+
+```bash
+git push origin master
+```
+
+## GitHub Pages deploy
+
+1. Repo → Settings → Pages.
+2. Build and deployment → Source: GitHub Actions.
+3. Custom domain: `kemal-ozkirsehirli.com`.
+4. Save.
+5. Actions tab’ında deploy yeşile dönsün.
+6. DNS kayıtlarını domain registrar’da ayarla.
+7. DNS oturduktan sonra Pages’te Enforce HTTPS seç.
+
+## DNS kayıtları
+
+Apex domain için:
+
+```txt
+Type: A
+Host: @
+Value: 185.199.108.153
+
+Type: A
+Host: @
+Value: 185.199.109.153
+
+Type: A
+Host: @
+Value: 185.199.110.153
+
+Type: A
+Host: @
+Value: 185.199.111.153
+```
+
+`www` yönlendirmesi için:
+
+```txt
+Type: CNAME
+Host: www
+Value: YOUR-GITHUB-USERNAME.github.io
+```
+
+`YOUR-GITHUB-USERNAME` kısmını GitHub kullanıcı adınla değiştir.
+
+## İçerik düzenleme
+
+Ana kimlik / homepage / spotlight:
 
 ```txt
 src/data/site.json
 ```
 
-Önce şunları değiştir:
-
-```json
-{
-  "url": "https://your-domain.com",
-  "basePath": "",
-  "title": "Kemal Özkırşehirli",
-  "description": "Essays, research notes, projects, CV, and photography in AI for science.",
-  "author": {
-    "name": "Kemal Özkırşehirli",
-    "role": "MIT B.Sc. Candidate · Computer Science & Engineering · Chemical Physics · Mathematics",
-    "email": "kemalozk@mit.edu"
-  }
-}
-```
-
-Ayrıca aynı dosyada şu alanlar ana sayfanın Kellis tarzı sol Spotlight ve kompakt link dizinini kontrol eder:
-
-```json
-"home": {
-  "spotlight": [
-    { "label": "CADD-AI Research Notes", "url": "/essays/ai-for-science-notes/", "description": "living notes" }
-  ],
-  "directory": [
-    { "label": "Writing", "links": [{ "label": "Latest", "url": "/essays/" }] }
-  ]
-}
-```
-
-`spotlight` kısmına en güçlü 4-10 bağlantını koy. `directory` kısmı Kellis tarzı kompakt link koridoru gibi çalışır: About, Writing, Work, Archive.
-
-### GitHub Pages project sitesi kullanacaksan
-
-Repo URL’in şu tipteyse:
+Projeler:
 
 ```txt
-https://USERNAME.github.io/REPO_NAME/
+src/data/projects.json
 ```
 
-`src/data/site.json` içinde:
-
-```json
-{
-  "url": "https://USERNAME.github.io/REPO_NAME",
-  "basePath": "/REPO_NAME"
-}
-```
-
-Kendi domain’in varsa veya repo `USERNAME.github.io` ise:
-
-```json
-{
-  "url": "https://senindomainin.com",
-  "basePath": ""
-}
-```
-
-## 3) Essay eklemek
-
-Yeni dosya oluştur:
+CV:
 
 ```txt
-src/content/essays/yeni-essay.md
+src/content/cv.md
 ```
 
-Şablon:
+Fotoğraflar:
+
+```txt
+public/photos/
+src/data/photos.json
+```
+
+PDF CV:
+
+```txt
+public/files/kemal-ozkirsehirli-cv-2026.pdf
+```
+
+## Sonra essay eklemek
+
+Essayler şu an bilerek kapalı. Açmak istediğinde:
+
+1. `src/content/essays/yeni-essay.md` ekle.
+2. `src/data/site.json` içinde `enableFeed` değerini `true` yap.
+3. Nav içine Essays linkini geri koy:
+
+```json
+{ "label": "Essays", "url": "/essays/" }
+```
+
+4. Writing directory’deki disabled notları gerçek linklerle değiştir.
+
+Essay şablonu:
 
 ```md
 ---
 title: "Essay Başlığı"
 description: "Tek cümlelik özet."
 date: "2026-06-12"
-tags: ["Research", "Life"]
+tags: ["AI for Science"]
 draft: false
 cover: "/photos/notebook.svg"
 ---
@@ -122,139 +185,12 @@ cover: "/photos/notebook.svg"
 Buraya yaz.
 ```
 
-Notlar:
+## Kontrol
 
-- `draft: true` yaparsan essay build’e girmez.
-- Dosya adı URL olur: `yeni-essay.md` → `/essays/yeni-essay/`.
-- Görsel yolu `/photos/...` şeklinde olmalı ve dosya `public/photos/` altında bulunmalı.
-
-## 4) CV düzenlemek
-
-CV içeriği:
-
-```txt
-src/content/cv.md
-```
-
-PDF CV de koymak istersen:
-
-1. PDF dosyanı `public/files/cv.pdf` olarak ekle.
-2. `src/data/site.json` içinde şu alanı doldur:
-
-```json
-"resumePdf": "/files/cv.pdf"
-```
-
-Sonra:
+Her deploy’dan önce:
 
 ```bash
 npm run check
 ```
 
-## 5) Proje eklemek
-
-`src/data/projects.json` dosyasına yeni kart ekle:
-
-```json
-{
-  "title": "Project title",
-  "status": "Active",
-  "description": "What the project does and why it matters.",
-  "tags": ["AI", "Science"],
-  "links": [
-    { "label": "GitHub", "url": "https://github.com/username/repo" }
-  ]
-}
-```
-
-## 6) Fotoğraf eklemek
-
-1. Fotoğrafını `public/photos/` içine koy: örnek `public/photos/lab.jpg`.
-2. `src/data/photos.json` içine ekle:
-
-```json
-{
-  "src": "/photos/lab.jpg",
-  "alt": "Short accessible description",
-  "caption": "Caption shown under the photo",
-  "year": "2026"
-}
-```
-
-## 7) Production build
-
-```bash
-npm run build
-```
-
-Çıktı klasörü:
-
-```txt
-dist/
-```
-
-## 8) GitHub’a gönderme
-
-GitHub’da boş bir repo oluştur. Sonra lokal klasörde:
-
-```bash
-git init
-git add .
-git commit -m "Initial personal site"
-git branch -M main
-git remote add origin git@github.com:USERNAME/REPO_NAME.git
-git push -u origin main
-```
-
-HTTPS kullanıyorsan remote şu formda olur:
-
-```bash
-git remote add origin https://github.com/USERNAME/REPO_NAME.git
-```
-
-## 9) Deploy seçenekleri
-
-### Seçenek A — GitHub Pages, önerilen basit akış
-
-Bu repo `.github/workflows/deploy.yml` içerir. Push sonrası `npm run build` çalışır ve `dist/` GitHub Pages’e deploy edilir.
-
-GitHub’da:
-
-1. Repo → **Settings** → **Pages**.
-2. **Build and deployment** → **Source**: **GitHub Actions** seç.
-3. `main` branch’e push yap.
-4. Repo → **Actions** kısmından deploy’un yeşile dönmesini bekle.
-
-### Seçenek B — Netlify
-
-Netlify’da “Add new project” → GitHub repo’nu seç.
-
-Ayarlar:
-
-```txt
-Build command: npm run build
-Publish directory: dist
-```
-
-`netlify.toml` bu ayarları zaten içeriyor.
-
-### Seçenek C — Vercel
-
-Vercel’da “New Project” → GitHub repo’nu seç.
-
-Ayarlar:
-
-```txt
-Build Command: npm run build
-Output Directory: dist
-```
-
-`vercel.json` bu ayarları zaten içeriyor.
-
-## 10) Yayına almadan önce son kontrol
-
-```bash
-npm run check
-```
-
-Bu komut build alır, zorunlu HTML dosyalarının üretildiğini ve local linklerin kırık olmadığını kontrol eder.
+Bu komut build alır, zorunlu HTML dosyalarını ve kırık local linkleri kontrol eder.

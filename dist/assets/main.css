@@ -566,3 +566,16 @@ button, input { font: inherit; }
   .classic-shell, .classic-page { width: 100%; max-width: none; padding: 0; }
   a { color: #000; text-decoration: none; }
 }
+
+.disabled-link,
+.nav-disabled {
+  color: #777;
+  text-decoration: none;
+  cursor: default;
+}
+
+.classic-item b .disabled-link,
+.classic-row .disabled-link,
+.spotlight-links .disabled-link {
+  font-weight: 700;
+}
