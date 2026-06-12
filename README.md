@@ -2,7 +2,7 @@
 
 Bu repo; essaylerini, CV’ni, projelerini ve fotoğraflarını yayınlamak için sıfır bağımlılıklı, hızlı, mobil uyumlu, statik bir kişisel web sitesi üretir.
 
-Bu versiyon daha **klasik akademik personal site** estetiğine çekildi: üstte sade masthead, profil/spotlight/intro üçlüsü, Kellis tarzı kompakt link dizini, liste ağırlıklı essay-proje arşivi, ciddi CV düzeni ve daha az “startup portfolio” hissi.
+Bu versiyon **Kellis / eski MIT akademik personal site** estetiğine daha sadık çekildi: solda portre + Spotlight, sağda word-cloud + akademik bio, Times New Roman, beyaz arka plan, mavi linkler, gri bölüm başlıkları, yoğun iki kolonlu link arşivi ve altta küçük fotoğraf şeridi. Modern portfolio havası özellikle azaltıldı.
 
 Özellikler:
 
@@ -12,7 +12,7 @@ Bu versiyon daha **klasik akademik personal site** estetiğine çekildi: üstte 
 - Fotoğraf galerisi: `src/data/photos.json` ve `public/photos/` üzerinden yönetilir.
 - Ana sayfa spotlight/directory alanları: `src/data/site.json` içinden yönetilir.
 - SEO: canonical URL, Open Graph, JSON-LD, sitemap ve RSS üretir.
-- Dark/light tema, responsive tasarım, essay/proje filtreleme.
+- Responsive tasarım, old-school akademik UI ve essay/proje filtreleme.
 - GitHub Pages, Netlify ve Vercel deploy ayarları hazır.
 - Dış paket yok. `npm install` neredeyse sadece lockfile doğrular.
 
@@ -48,17 +48,17 @@ src/data/site.json
 {
   "url": "https://your-domain.com",
   "basePath": "",
-  "title": "Your Name",
+  "title": "Kemal Özkırşehirli",
   "description": "Essays, research notes, projects, CV, and photography in AI for science.",
   "author": {
-    "name": "Your Name",
-    "role": "MIT rising senior · CADD-AI for Science researcher",
-    "email": "you@example.com"
+    "name": "Kemal Özkırşehirli",
+    "role": "MIT B.Sc. Candidate · Computer Science & Engineering · Chemical Physics · Mathematics",
+    "email": "kemalozk@mit.edu"
   }
 }
 ```
 
-Ayrıca aynı dosyada şu alanlar ana sayfanın akademik havasını kontrol eder:
+Ayrıca aynı dosyada şu alanlar ana sayfanın Kellis tarzı sol Spotlight ve kompakt link dizinini kontrol eder:
 
 ```json
 "home": {
@@ -71,7 +71,7 @@ Ayrıca aynı dosyada şu alanlar ana sayfanın akademik havasını kontrol eder
 }
 ```
 
-`spotlight` kısmına en güçlü 4 bağlantını koy. `directory` kısmı Kellis tarzı kompakt link koridoru gibi çalışır: About, Writing, Work, Archive.
+`spotlight` kısmına en güçlü 4-10 bağlantını koy. `directory` kısmı Kellis tarzı kompakt link koridoru gibi çalışır: About, Writing, Work, Archive.
 
 ### GitHub Pages project sitesi kullanacaksan
 

@@ -1,26 +1,31 @@
 ---
 title: "AI for Science Notes"
-description: "A first public note on how I think about models, molecules, and scientific judgment."
+description: "A working note on models, molecules, benchmarks, and scientific judgment."
 date: "2026-06-12"
-tags: ["AI for Science", "Research", "CADD"]
+tags: ["AI for Science", "CADD", "Research"]
 draft: false
-cover: "/photos/lab.svg"
+cover: "/photos/wordcloud.svg"
 ---
 
-The central promise of AI for science is not that models replace judgment. It is that good models can make judgment cheaper, faster, and more testable.
+The part of AI for science I care about most is not model worship. It is the conversion of scientific complexity into representations that can be inspected, tested, compiled into workflows, and ultimately used for better decisions.
 
-In computational drug discovery, this matters because the search space is large, the measurements are noisy, and the cost of being confidently wrong is high. A useful model should therefore be treated less like an oracle and more like a disciplined instrument.
+Across protein design, chromatin modeling, free-energy methods, statistical mechanics, and computational drug discovery, the recurring question is the same: what does the model know, what does it merely imitate, and where does it fail?
 
-## What I want from a model
+## Current themes
 
-A model should help answer three questions:
+- Protein foundation-model red-teaming and reliability checks.
+- Conditional diffusion models for 3D chromatin ensembles.
+- Genetics-to-mechanism target discovery for autoimmune disease.
+- CADD pipelines that combine docking, QSAR, Boltz-style co-folding, MMGBSA/FEP, novelty filters, and supplier-aware chemistry.
+- LLM-guided quantum chemistry and statistical-mechanics workflows.
+
+## Standard I want from models
+
+A scientific model should help answer four questions:
 
 - What should we try next?
-- How uncertain are we?
+- What is the uncertainty?
 - What would change our mind?
+- Which failure mode would matter in a real workflow?
 
-The third question is the most important. If a model cannot be surprised, audited, or contradicted by new evidence, it is not yet part of a scientific workflow. It is only a ranking machine.
-
-## Notes to expand
-
-This placeholder essay is intentionally short. Replace it with your own writing, or keep the structure and add evidence, examples, and figures.
+That last question is the difference between a leaderboard artifact and a tool that can survive contact with chemistry, biology, and experimental reality.

@@ -349,7 +349,36 @@ function renderLinkRows(rows = [], ctx) {
 
 function renderSpotlight(items = [], ctx) {
   if (!items.length) return '';
-  return `<ol class="spotlight-list">${items.map((item) => `<li><a ${linkAttributes(item.url, ctx)}>${escapeHtml(item.label)}</a>${item.description ? `<small>${escapeHtml(item.description)}</small>` : ''}</li>`).join('')}</ol>`;
+  return `<div class="spotlight-links">${items.map((item) => `<p><a ${linkAttributes(item.url, ctx)}>${escapeHtml(item.label)}</a>${item.description ? `<span class="visually-hidden"> — ${escapeHtml(item.description)}</span>` : ''}</p>`).join('')}</div>`;
+}
+
+function classicLink(label, url, ctx, className = '') {
+  return `<a${className ? ` class="${escapeAttr(className)}"` : ''} ${linkAttributes(url, ctx)}>${escapeHtml(label)}</a>`;
+}
+
+function renderClassicDirectory(rows = [], ctx) {
+  if (!rows.length) return '';
+  return rows.map((row) => {
+    const links = row.links || [];
+    return `<p class="classic-row"><b>${escapeHtml(row.label || '')}</b> - ${links.map((link) => classicLink(link.label, link.url, ctx)).join(' - ')}</p>`;
+  }).join('\n');
+}
+
+function renderClassicItem(item, ctx) {
+  const title = item.title || item.label || 'Untitled';
+  const url = item.url || (item.links?.[0]?.url) || '/projects/';
+  const description = item.description || item.status || '';
+  const suffix = description ? ` - ${escapeHtml(description)}` : '';
+  return `<p class="classic-item"><b>${classicLink(title, url, ctx)}</b>${suffix}</p>`;
+}
+
+function renderClassicSections(sections = [], ctx) {
+  return sections.map((section) => `<section class="classic-topic"><h3>${escapeHtml(section.title)}</h3>${(section.items || []).map((item) => renderClassicItem(item, ctx)).join('\n')}</section>`).join('\n');
+}
+
+function renderClassicPhotoStrip(photos = [], ctx) {
+  if (!photos.length) return '';
+  return `<section class="thumbnail-archive" aria-label="Photo archive">${photos.map((photo) => `<a class="thumb-link" href="${escapeAttr(ctx.withBase('/photos/'))}"><img src="${escapeAttr(ctx.withBase(photo.src))}" alt="${escapeAttr(photo.alt || photo.caption || '')}" loading="lazy" decoding="async"><span>${escapeHtml(photo.caption || '')}</span></a>`).join('')}</section>`;
 }
 
 function renderLayout({ site, ctx, title, description, activePath = '/', path: pagePath = '/', content, image = '/og-image.svg', type = 'website', extraHead = '' }) {
@@ -358,7 +387,6 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
   const canonical = ctx.absoluteUrl(pagePath);
   const ogImage = /^(https?:)?\/\//.test(image) ? image : ctx.absoluteUrl(image.replace(/^\//, ''));
   const authorName = site.author?.name || site.title;
-  const brandInitial = authorName.trim().slice(0, 1).toUpperCase() || 'Y';
 
   const schema = {
     '@context': 'https://schema.org',
@@ -376,7 +404,7 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
   };
 
   return `<!doctype html>
-<html lang="${escapeAttr(site.language || 'en')}" data-theme="light">
+<html lang="${escapeAttr(site.language || 'en')}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -389,69 +417,46 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
   <meta property="og:image" content="${escapeAttr(ogImage)}">
   <meta property="og:url" content="${escapeAttr(canonical)}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#17120f">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="${escapeAttr(ctx.withBase('/favicon.svg'))}" type="image/svg+xml">
   <link rel="manifest" href="${escapeAttr(ctx.withBase('/site.webmanifest'))}">
   <link rel="alternate" type="application/rss+xml" title="${escapeAttr(site.title)} essays" href="${escapeAttr(ctx.withBase('/feed.xml'))}">
   <link rel="stylesheet" href="${escapeAttr(ctx.withBase('/assets/main.css'))}">
   <script defer src="${escapeAttr(ctx.withBase('/assets/main.js'))}"></script>
-  <script type="application/ld+json">${JSON.stringify(schema).replace(/</g, '\\u003c')}</script>
+  <script type="application/ld+json">${JSON.stringify(schema).replace(/</g, '\u003c')}</script>
   ${extraHead}
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="site-shell navbar">
-      <a class="brand" href="${escapeAttr(ctx.withBase('/'))}" aria-label="${escapeAttr(site.title)} home">
-        <span class="brand-mark" aria-hidden="true">${escapeHtml(brandInitial)}</span>
-        <span class="brand-copy"><strong>${escapeHtml(site.title)}</strong><small>${escapeHtml(site.author?.role || site.description || '')}</small></span>
-      </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        ${renderNav(site, ctx, activePath)}
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
-      </nav>
-    </div>
-  </header>
-  <main id="main" class="site-shell">
+  <main id="main" class="classic-shell">
     ${content}
   </main>
-  <footer class="site-footer">
-    <div class="site-shell footer-inner">
-      <span>© ${new Date().getFullYear()} ${escapeHtml(authorName)}.</span>
-      <span>Built as a static site. No tracking by default.</span>
-    </div>
+  <footer class="classic-footer">
+    <p>Quick links: ${renderNav(site, ctx, activePath).replaceAll('\n', ' - ')} - ${classicLink('RSS', '/feed.xml', ctx)} - ${classicLink('Sitemap', '/sitemap.xml', ctx)}</p>
+    <p>© ${new Date().getFullYear()} ${escapeHtml(authorName)}.</p>
   </footer>
 </body>
 </html>`;
 }
 
 function essayCard(essay, ctx) {
-  return `<article class="card list-card" data-filter-card data-tags="${escapeAttr((essay.tags || []).join('|'))}" data-search="${escapeAttr([essay.title, essay.description, ...(essay.tags || [])].join(' '))}">
-    ${essay.cover ? `<a class="card-cover" href="${escapeAttr(ctx.withBase(essay.url))}" aria-label="Read ${escapeAttr(essay.title)}"><img src="${escapeAttr(ctx.withBase(essay.cover))}" alt="" loading="lazy" decoding="async"></a>` : ''}
-    <div class="card-body">
-      <div class="card-meta"><time datetime="${escapeAttr(essay.date)}">${escapeHtml(formatDate(essay.date))}</time><span>·</span><span>${essay.readingTime} min read</span></div>
-      <h2><a href="${escapeAttr(ctx.withBase(essay.url))}">${escapeHtml(essay.title)}</a></h2>
-      <p>${escapeHtml(essay.description || '')}</p>
-      ${renderTags(essay.tags)}
-    </div>
+  return `<article class="archive-entry" data-filter-card data-tags="${escapeAttr((essay.tags || []).join('|'))}" data-search="${escapeAttr([essay.title, essay.description, ...(essay.tags || [])].join(' '))}">
+    <p><b><a href="${escapeAttr(ctx.withBase(essay.url))}">${escapeHtml(essay.title)}</a></b> - ${escapeHtml(essay.description || '')}</p>
+    <p class="archive-meta"><time datetime="${escapeAttr(essay.date)}">${escapeHtml(formatDate(essay.date))}</time> - ${essay.readingTime} min read${essay.tags?.length ? ` - ${essay.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join(', ')}` : ''}</p>
   </article>`;
 }
 
 function projectCard(project, ctx) {
-  const links = (project.links || []).map((link) => `<a class="button small-button" ${linkAttributes(link.url, ctx)}>${escapeHtml(link.label)}</a>`).join('\n');
-  return `<article class="card list-card" data-filter-card data-tags="${escapeAttr((project.tags || []).join('|'))}" data-search="${escapeAttr([project.title, project.status, project.description, ...(project.tags || [])].join(' '))}">
-    <div class="card-body">
-      ${project.status ? `<span class="project-status">${escapeHtml(project.status)}</span>` : ''}
-      <h2>${escapeHtml(project.title)}</h2>
-      <p>${escapeHtml(project.description || '')}</p>
-      ${renderTags(project.tags)}
-      ${links ? `<div class="card-footer inline-actions">${links}</div>` : ''}
-    </div>
+  const links = (project.links || []).map((link) => classicLink(link.label, link.url, ctx)).join(' - ');
+  return `<article id="${escapeAttr(slugify(project.slug || project.title))}" class="archive-entry" data-filter-card data-tags="${escapeAttr((project.tags || []).join('|'))}" data-search="${escapeAttr([project.title, project.status, project.description, ...(project.tags || [])].join(' '))}">
+    <p><b>${escapeHtml(project.title)}</b>${project.status ? ` - <i>${escapeHtml(project.status)}</i>` : ''} - ${escapeHtml(project.description || '')}</p>
+    ${project.tags?.length ? `<p class="archive-meta">${project.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join(' - ')}</p>` : ''}
+    ${links ? `<p class="archive-links">${links}</p>` : ''}
   </article>`;
 }
 
 function tagFilters(tags) {
-  return `<div class="tags" aria-label="Filter by tag">${tags.map((tag) => `<button class="filter-chip" type="button" data-tag-filter="${escapeAttr(tag)}" aria-pressed="false">${escapeHtml(tag)}</button>`).join('')}</div>`;
+  return `<p class="tag-filters" aria-label="Filter by tag">${tags.map((tag) => `<button class="filter-chip" type="button" data-tag-filter="${escapeAttr(tag)}" aria-pressed="false">${escapeHtml(tag)}</button>`).join(' ')}</p>`;
 }
 
 async function loadEssays(ctx) {
@@ -486,98 +491,102 @@ async function loadEssays(ctx) {
 async function renderHome(site, ctx, essays, projects) {
   const author = site.author || {};
   const spotlight = site.home?.spotlight || [
-    { label: 'AI for Science notes', url: '/essays/ai-for-science-notes/', description: 'research notebook' },
-    { label: 'Molecular property modeling', url: '/projects/', description: 'selected project' },
-    { label: 'Curriculum vitae', url: '/cv/', description: 'education and work' },
-    { label: 'Essay archive', url: '/essays/', description: 'public writing' }
+    { label: 'AI for Science notes', url: '/essays/ai-for-science-notes/' },
+    { label: 'Molecular property modeling', url: '/projects/' },
+    { label: 'Curriculum vitae', url: '/cv/' },
+    { label: 'Essay archive', url: '/essays/' }
   ];
   const directory = site.home?.directory || [
-    { label: 'About', links: [site.home?.primaryCta || { label: 'Essays', url: '/essays/' }, site.home?.secondaryCta || { label: 'CV', url: '/cv/' }, { label: 'Projects', url: '/projects/' }, { label: 'Photos', url: '/photos/' }] },
-    { label: 'Writing', links: essays.slice(0, 3).map((essay) => ({ label: essay.title, url: essay.url })) },
-    { label: 'Work', links: projects.slice(0, 3).map((project) => ({ label: project.title, url: '/projects/' })) }
+    { label: 'About me', links: [site.home?.primaryCta || { label: 'Essays', url: '/essays/' }, site.home?.secondaryCta || { label: 'CV', url: '/cv/' }, { label: 'Projects', url: '/projects/' }, { label: 'Photos', url: '/photos/' }] },
+    { label: 'Writing', links: essays.slice(0, 4).map((essay) => ({ label: essay.title, url: essay.url })) },
+    { label: 'Work', links: projects.slice(0, 4).map((project) => ({ label: project.title, url: '/projects/' })) }
   ];
   const highlights = author.highlights || [
     author.role || 'Researcher and writer',
     'AI for science, computational drug discovery, and scientific computing',
     'Essays, notes, projects, and selected public work'
   ];
-  const latest = essays.slice(0, 5).map((essay) => essayCard(essay, ctx)).join('\n');
-  const featuredProjects = projects.slice(0, 4).map((project) => projectCard(project, ctx)).join('\n');
-  const emailLine = author.email ? `<a href="mailto:${escapeAttr(author.email)}">${escapeHtml(author.email)}</a>` : '';
-  const content = `<section class="academic-hero">
-    <aside class="portrait-panel" aria-label="Profile summary">
-      <div class="profile-art"><img src="${escapeAttr(ctx.withBase(author.avatar || '/photos/profile.svg'))}" alt="${escapeAttr(author.name || site.title)} profile image" loading="eager" decoding="async"></div>
-      <div class="profile-meta">
-        <h2>${escapeHtml(author.name || site.title)}</h2>
-        <p>${escapeHtml(author.location || '')}</p>
-        ${emailLine ? `<p>${emailLine}</p>` : ''}
-        <div class="social-row">${renderSocialLinks(site, ctx, 'text-link')}</div>
-      </div>
-    </aside>
 
-    <section class="intro-panel">
-      <p class="eyebrow">${escapeHtml(site.home?.eyebrow || 'Personal website')}</p>
+  const sections = Array.isArray(site.home?.selectedSections) && site.home.selectedSections.length ? site.home.selectedSections : [
+    {
+      title: 'Research and Projects',
+      items: projects.map((project) => ({ title: project.title, url: project.links?.[0]?.url || '/projects/', description: project.description }))
+    },
+    {
+      title: 'Essays and Notes',
+      items: essays.map((essay) => ({ title: essay.title, url: essay.url, description: essay.description }))
+    },
+    {
+      title: 'Professional',
+      items: [
+        { title: 'Curriculum Vitae', url: '/cv/', description: 'education, research, skills, and selected work' },
+        { title: 'Projects', url: '/projects/', description: 'research and engineering archive' },
+        { title: 'Photos', url: '/photos/', description: 'small visual archive' },
+        { title: 'RSS', url: '/feed.xml', description: 'subscribe to essays' }
+      ]
+    },
+    {
+      title: 'Selected Links',
+      items: (author.links || []).map((link) => ({ title: link.label, url: link.url, description: '' }))
+    }
+  ];
+
+  const emailLine = author.email ? `<p><a href="mailto:${escapeAttr(author.email)}">${escapeHtml(author.email)}</a></p>` : '';
+  const content = `<div class="kellis-home">
+    <aside class="classic-sidebar" aria-label="Profile and spotlight links">
+      <img class="classic-portrait" src="${escapeAttr(ctx.withBase(author.avatar || '/photos/profile.svg'))}" alt="${escapeAttr(author.name || site.title)} profile image" loading="eager" decoding="async">
       <h1>${escapeHtml(author.name || site.title)}</h1>
-      <p class="role-line">${escapeHtml(author.role || '')}</p>
-      <p class="lede">${escapeHtml(author.bio || site.home?.intro || site.description || '')}</p>
-      <div class="hero-actions">
-        ${site.home?.primaryCta ? `<a class="button primary" href="${escapeAttr(ctx.withBase(site.home.primaryCta.url))}">${escapeHtml(site.home.primaryCta.label)}</a>` : ''}
-        ${site.home?.secondaryCta ? `<a class="button" href="${escapeAttr(ctx.withBase(site.home.secondaryCta.url))}">${escapeHtml(site.home.secondaryCta.label)}</a>` : ''}
-      </div>
-      <div class="academic-note">
-        <h2>Highlights</h2>
-        ${renderTextList(highlights)}
-      </div>
-    </section>
-
-    <aside class="spotlight-panel" aria-label="Spotlight links">
-      <h2>Spotlight</h2>
+      <p><i>${escapeHtml(author.location || '')}</i></p>
+      ${emailLine}
+      <h2>Spotlight:</h2>
       ${renderSpotlight(spotlight, ctx)}
     </aside>
-  </section>
 
-  <section class="directory-panel" aria-label="Site directory">
-    ${renderLinkRows(directory, ctx)}
-  </section>
+    <section class="classic-main-column">
+      <section class="classic-top">
+        <div class="classic-bio">
+          <img class="classic-cloud" src="${escapeAttr(ctx.withBase(site.home?.cloudImage || '/word-cloud.svg'))}" alt="Research word cloud" loading="eager" decoding="async">
+          <p><b>${escapeHtml(author.name || site.title)}</b></p>
+          <p>${escapeHtml(author.role || '')}</p>
+          <p>${escapeHtml(author.location || '')}${author.email ? ` - <a href="mailto:${escapeAttr(author.email)}">${escapeHtml(author.email)}</a>` : ''}</p>
 
-  <section class="section split-section">
-    <div class="section-head compact-head">
-      <div>
-        <p class="eyebrow">Writing</p>
-        <h2>Latest essays and notes</h2>
-      </div>
-      <a class="button" href="${escapeAttr(ctx.withBase('/essays/'))}">All essays</a>
-    </div>
-    <div class="stack">${latest}</div>
-  </section>
+          <p class="section-label">Highlights:</p>
+          <ul class="classic-awards">${highlights.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>
 
-  <section class="section split-section">
-    <div class="section-head compact-head">
-      <div>
-        <p class="eyebrow">Selected work</p>
-        <h2>Projects</h2>
-      </div>
-      <a class="button" href="${escapeAttr(ctx.withBase('/projects/'))}">All projects</a>
-    </div>
-    <div class="stack">${featuredProjects}</div>
-  </section>`;
+          <p>${escapeHtml(author.bio || site.home?.intro || site.description || '')}</p>
+
+          <div class="classic-directory">
+            <h2>Professional</h2>
+            ${renderClassicDirectory(directory, ctx)}
+          </div>
+        </div>
+
+        <section class="classic-selected" aria-label="Selected publications and links">
+          <h2>${escapeHtml(site.home?.selectedTitle || 'AI for Science - Selected Work')}</h2>
+          <div class="topic-grid">${renderClassicSections(sections, ctx)}</div>
+        </section>
+      </section>
+
+    </section>
+  </div>
+  ${renderClassicPhotoStrip((await readJson(path.join(SRC, 'data', 'photos.json'))), ctx)}`;
 
   await writeFile('index.html', renderLayout({ site, ctx, title: site.title, description: site.description, activePath: '/', path: '/', content }));
 }
 
 async function renderEssaysIndex(site, ctx, essays) {
   const tags = [...new Set(essays.flatMap((essay) => essay.tags || []))].sort((a, b) => a.localeCompare(b));
-  const content = `<section class="page-head">
-    <p class="eyebrow">Writing archive</p>
+  const content = `<section class="classic-page">
+    <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / Essays</p>
     <h1>Essays</h1>
-    <p>Research notes, project writeups, and essays. Filter by keyword or tag.</p>
-  </section>
-  <section class="filters" aria-label="Essay filters">
-    <input class="search-input" type="search" placeholder="Search essays..." data-filter-input aria-label="Search essays">
-    ${tagFilters(tags)}
-  </section>
-  <p class="no-results" data-no-results>No essays match that filter.</p>
-  <section class="stack">${essays.map((essay) => essayCard(essay, ctx)).join('\n')}</section>`;
+    <p>Research notes, project writeups, and public essays. Search or filter below.</p>
+    <section class="filters" aria-label="Essay filters">
+      <input class="search-input" type="search" placeholder="Search essays..." data-filter-input aria-label="Search essays">
+      ${tagFilters(tags)}
+    </section>
+    <p class="no-results" data-no-results>No essays match that filter.</p>
+    <section class="classic-archive">${essays.map((essay) => essayCard(essay, ctx)).join('\n')}</section>
+  </section>`;
   await writeFile('essays/index.html', renderLayout({ site, ctx, title: 'Essays', description: 'Essays and research notes.', activePath: '/essays/', path: '/essays/', content }));
 }
 
@@ -586,22 +595,16 @@ async function renderEssayPages(site, ctx, essays) {
     const essay = essays[index];
     const previous = essays[index + 1];
     const next = essays[index - 1];
-    const nav = `<div class="section grid two">
-      ${previous ? `<a class="callout" href="${escapeAttr(ctx.withBase(previous.url))}"><p>← Older</p><strong>${escapeHtml(previous.title)}</strong></a>` : '<div></div>'}
-      ${next ? `<a class="callout" href="${escapeAttr(ctx.withBase(next.url))}"><p>Newer →</p><strong>${escapeHtml(next.title)}</strong></a>` : '<div></div>'}
-    </div>`;
-    const content = `<article>
-      <div class="article-hero">
-        <header class="page-head">
-          <p class="eyebrow">Essay</p>
-          <h1>${escapeHtml(essay.title)}</h1>
-          <p>${escapeHtml(essay.description || '')}</p>
-          <div class="card-meta"><time datetime="${escapeAttr(essay.date)}">${escapeHtml(formatDate(essay.date))}</time><span>·</span><span>${essay.readingTime} min read</span></div>
-          ${renderTags(essay.tags)}
-        </header>
-        ${essay.cover ? `<div class="article-cover"><img src="${escapeAttr(ctx.withBase(essay.cover))}" alt="" loading="eager" decoding="async"></div>` : ''}
-      </div>
-      <div class="prose-card"><div class="prose">${essay.html}</div></div>
+    const nav = `<p class="article-nav">${previous ? `← ${classicLink(previous.title, previous.url, ctx)}` : ''}${previous && next ? ' | ' : ''}${next ? `${classicLink(next.title, next.url, ctx)} →` : ''}</p>`;
+    const content = `<article class="classic-page article-page">
+      <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / <a href="${escapeAttr(ctx.withBase('/essays/'))}">Essays</a> / ${escapeHtml(essay.title)}</p>
+      <header class="article-head">
+        <h1>${escapeHtml(essay.title)}</h1>
+        <p>${escapeHtml(essay.description || '')}</p>
+        <p class="archive-meta"><time datetime="${escapeAttr(essay.date)}">${escapeHtml(formatDate(essay.date))}</time> - ${essay.readingTime} min read${essay.tags?.length ? ` - ${essay.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join(', ')}` : ''}</p>
+      </header>
+      ${essay.cover ? `<p><img class="article-cover" src="${escapeAttr(ctx.withBase(essay.cover))}" alt="" loading="eager" decoding="async"></p>` : ''}
+      <div class="prose">${essay.html}</div>
       ${nav}
     </article>`;
     await writeFile(`essays/${essay.slug}/index.html`, renderLayout({ site, ctx, title: essay.title, description: essay.description, activePath: '/essays/', path: essay.url, content, image: essay.cover || '/og-image.svg', type: 'article' }));
@@ -610,17 +613,17 @@ async function renderEssayPages(site, ctx, essays) {
 
 async function renderProjects(site, ctx, projects) {
   const tags = [...new Set(projects.flatMap((project) => project.tags || []))].sort((a, b) => a.localeCompare(b));
-  const content = `<section class="page-head">
-    <p class="eyebrow">Selected work</p>
+  const content = `<section class="classic-page">
+    <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / Projects</p>
     <h1>Projects</h1>
     <p>Research, engineering, writing, and experiments worth making public.</p>
-  </section>
-  <section class="filters" aria-label="Project filters">
-    <input class="search-input" type="search" placeholder="Search projects..." data-filter-input aria-label="Search projects">
-    ${tagFilters(tags)}
-  </section>
-  <p class="no-results" data-no-results>No projects match that filter.</p>
-  <section class="stack">${projects.map((project) => projectCard(project, ctx)).join('\n')}</section>`;
+    <section class="filters" aria-label="Project filters">
+      <input class="search-input" type="search" placeholder="Search projects..." data-filter-input aria-label="Search projects">
+      ${tagFilters(tags)}
+    </section>
+    <p class="no-results" data-no-results>No projects match that filter.</p>
+    <section class="classic-archive">${projects.map((project) => projectCard(project, ctx)).join('\n')}</section>
+  </section>`;
   await writeFile('projects/index.html', renderLayout({ site, ctx, title: 'Projects', description: 'Selected projects and research work.', activePath: '/projects/', path: '/projects/', content }));
 }
 
@@ -628,24 +631,24 @@ async function renderCv(site, ctx) {
   const markdown = await fs.readFile(path.join(SRC, 'content', 'cv.md'), 'utf8');
   const { data, body } = parseFrontMatter(markdown);
   const author = site.author || {};
-  const pdf = site.resumePdf ? `<a class="button primary" href="${escapeAttr(ctx.withBase(site.resumePdf))}">Download PDF</a>` : '';
-  const content = `<section class="page-head cv-head">
-    <p class="eyebrow">Curriculum vitae</p>
-    <h1>${escapeHtml(data.title || 'CV')}</h1>
-    <p>${escapeHtml(data.description || 'Education, research, projects, publications, and skills.')}</p>
-  </section>
-  <section class="cv-layout">
-    <aside class="cv-sidebar" aria-label="CV contact information">
-      <h2>${escapeHtml(author.name || site.title)}</h2>
-      <p>${escapeHtml(author.role || '')}</p>
-      <dl>
-        ${author.location ? `<div><dt>Location</dt><dd>${escapeHtml(author.location)}</dd></div>` : ''}
-        ${author.email ? `<div><dt>Email</dt><dd><a href="mailto:${escapeAttr(author.email)}">${escapeHtml(author.email)}</a></dd></div>` : ''}
-      </dl>
-      <div class="sidebar-links">${renderSocialLinks(site, ctx, 'text-link')}</div>
-      <div class="inline-actions cv-actions">${pdf}<button class="button" type="button" onclick="window.print()">Print / Save PDF</button></div>
-    </aside>
-    <section class="prose-card"><div class="prose cv-prose">${markdownToHtml(body, ctx)}</div></section>
+  const pdf = site.resumePdf ? `<p>${classicLink('CV (pdf)', site.resumePdf, ctx)}</p>` : '';
+  const content = `<section class="classic-page cv-page">
+    <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / CV</p>
+    <div class="cv-title-row">
+      <div>
+        <h1>${escapeHtml(data.title || 'CV')}</h1>
+        <p>${escapeHtml(data.description || 'Education, research, projects, publications, and skills.')}</p>
+      </div>
+      <aside class="cv-contact">
+        <p><b>${escapeHtml(author.name || site.title)}</b></p>
+        ${author.role ? `<p>${escapeHtml(author.role)}</p>` : ''}
+        ${author.location ? `<p>${escapeHtml(author.location)}</p>` : ''}
+        ${author.email ? `<p><a href="mailto:${escapeAttr(author.email)}">${escapeHtml(author.email)}</a></p>` : ''}
+        ${pdf}
+        <p><button class="print-button" type="button" onclick="window.print()">Print / Save PDF</button></p>
+      </aside>
+    </div>
+    <div class="prose cv-prose">${markdownToHtml(body, ctx)}</div>
   </section>`;
   await writeFile('cv/index.html', renderLayout({ site, ctx, title: data.title || 'CV', description: data.description || 'Curriculum vitae.', activePath: '/cv/', path: '/cv/', content }));
 }
@@ -653,23 +656,23 @@ async function renderCv(site, ctx) {
 async function renderPhotos(site, ctx, photos) {
   const cards = photos.map((photo) => `<figure class="photo-card">
     <img src="${escapeAttr(ctx.withBase(photo.src))}" alt="${escapeAttr(photo.alt || photo.caption || '')}" loading="lazy" decoding="async">
-    <figcaption>${escapeHtml(photo.caption || '')}${photo.year ? ` · ${escapeHtml(photo.year)}` : ''}</figcaption>
+    <figcaption>${escapeHtml(photo.caption || '')}${photo.year ? ` - ${escapeHtml(photo.year)}` : ''}</figcaption>
   </figure>`).join('\n');
-  const content = `<section class="page-head">
-    <p class="eyebrow">Gallery</p>
+  const content = `<section class="classic-page">
+    <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / Photos</p>
     <h1>Photos</h1>
-    <p>A small visual archive. Replace the starter SVGs with your own photos in <code>public/photos/</code>.</p>
-  </section>
-  <section class="gallery-grid">${cards}</section>`;
+    <p>A small visual archive. Replace starter SVGs with your own images in <code>public/photos/</code>.</p>
+    <section class="gallery-grid">${cards}</section>
+  </section>`;
   await writeFile('photos/index.html', renderLayout({ site, ctx, title: 'Photos', description: 'Photo gallery.', activePath: '/photos/', path: '/photos/', content }));
 }
 
 async function renderNotFound(site, ctx) {
-  const content = `<section class="page-head">
-    <p class="eyebrow">404</p>
+  const content = `<section class="classic-page">
+    <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / 404</p>
     <h1>Page not found</h1>
     <p>This page does not exist, or it moved.</p>
-    <div class="inline-actions"><a class="button primary" href="${escapeAttr(ctx.withBase('/'))}">Go home</a><a class="button" href="${escapeAttr(ctx.withBase('/essays/'))}">Read essays</a></div>
+    <p>${classicLink('Home', '/', ctx)} - ${classicLink('Essays', '/essays/', ctx)} - ${classicLink('Projects', '/projects/', ctx)} - ${classicLink('CV', '/cv/', ctx)}</p>
   </section>`;
   await writeFile('404.html', renderLayout({ site, ctx, title: 'Page not found', description: '404 page.', activePath: '', path: '/404.html', content }));
 }

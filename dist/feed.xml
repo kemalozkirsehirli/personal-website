@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Your Name Essays</title>
+    <title>Kemal Özkırşehirli Essays</title>
     <link>https://your-domain.com/essays/</link>
-    <description>Essays, research notes, projects, CV, and photography in AI for science.</description>
+    <description>AI/ML for science, computational chemistry, protein design, biomolecular simulation, CADD, and essays.</description>
     <item>
       <title>AI for Science Notes</title>
       <link>https://your-domain.com/essays/ai-for-science-notes/</link>
       <guid>https://your-domain.com/essays/ai-for-science-notes/</guid>
-      <pubDate>Fri, 12 Jun 2026 04:00:00 GMT</pubDate>
-      <description>A first public note on how I think about models, molecules, and scientific judgment.</description>
-    </item>
-    <item>
-      <title>How I Read Papers</title>
-      <link>https://your-domain.com/essays/how-i-read-papers/</link>
-      <guid>https://your-domain.com/essays/how-i-read-papers/</guid>
-      <pubDate>Thu, 28 May 2026 04:00:00 GMT</pubDate>
-      <description>A practical reading workflow for technical papers and research taste-building.</description>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
+      <description>A working note on models, molecules, benchmarks, and scientific judgment.</description>
     </item>
     <item>
       <title>A Personal Website as a Lab Notebook</title>
       <link>https://your-domain.com/essays/personal-website-as-lab-notebook/</link>
       <guid>https://your-domain.com/essays/personal-website-as-lab-notebook/</guid>
-      <pubDate>Thu, 16 Apr 2026 04:00:00 GMT</pubDate>
-      <description>Why a public website is a forcing function for clearer thinking.</description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Why a public academic website is a forcing function for sharper research taste.</description>
+    </item>
+    <item>
+      <title>How I Read Papers</title>
+      <link>https://your-domain.com/essays/how-i-read-papers/</link>
+      <guid>https://your-domain.com/essays/how-i-read-papers/</guid>
+      <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
+      <description>A research workflow for turning papers into mechanisms, baselines, and experiments.</description>
     </item>
   </channel>
 </rss>

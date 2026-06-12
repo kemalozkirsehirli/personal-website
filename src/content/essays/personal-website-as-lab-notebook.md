@@ -1,21 +1,22 @@
 ---
 title: "A Personal Website as a Lab Notebook"
-description: "Why a public website is a forcing function for clearer thinking."
-date: "2026-04-16"
-tags: ["Writing", "Personal Systems"]
+description: "Why a public academic website is a forcing function for sharper research taste."
+date: "2026-06-10"
+tags: ["Writing", "Research", "Personal Systems"]
 draft: false
-cover: "/photos/cambridge.svg"
+cover: "/photos/notebook.svg"
 ---
 
-A personal website is not just a portfolio. Used well, it is a public lab notebook: part archive, part proof-of-work, part memory system.
+A public research website is a pressure chamber for clarity. It makes the work more legible, and it forces the owner to decide what deserves to be remembered.
 
-The value comes from the constraint. Publishing forces vague ideas to become sentences. Sentences expose gaps. Gaps become next actions.
+The format I like is deliberately old-school: dense links, compact summaries, fewer animations, and more surface area for actual work. It treats the site less like a portfolio and more like an index of an intellectual life.
 
 ## What belongs here
 
-- Research notes that are too early for a paper.
-- Project writeups that explain tradeoffs and failures.
-- Essays that show how taste is changing.
-- A CV that is easy to share and easy to update.
+- Research notes that are too raw for a paper but too useful to disappear.
+- Project summaries with enough technical detail to be credible.
+- CV entries distributed by theme instead of buried in a PDF.
+- Essays that show how the person thinks.
+- Photographs and artifacts that make the archive human.
 
-The point is not to look finished. The point is to make serious work easier to find.
+A good academic homepage should be searchable, linkable, and honest about what the person is actually building.

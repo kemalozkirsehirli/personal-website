@@ -1,34 +1,35 @@
 [
   {
     "title": "AI for Science Notes",
-    "description": "A first public note on how I think about models, molecules, and scientific judgment.",
+    "description": "A working note on models, molecules, benchmarks, and scientific judgment.",
     "tags": [
       "AI for Science",
-      "Research",
-      "CADD"
+      "CADD",
+      "Research"
     ],
     "date": "2026-06-12",
     "url": "/essays/ai-for-science-notes/"
   },
   {
+    "title": "A Personal Website as a Lab Notebook",
+    "description": "Why a public academic website is a forcing function for sharper research taste.",
+    "tags": [
+      "Writing",
+      "Research",
+      "Personal Systems"
+    ],
+    "date": "2026-06-10",
+    "url": "/essays/personal-website-as-lab-notebook/"
+  },
+  {
     "title": "How I Read Papers",
-    "description": "A practical reading workflow for technical papers and research taste-building.",
+    "description": "A research workflow for turning papers into mechanisms, baselines, and experiments.",
     "tags": [
       "Research",
-      "Systems",
-      "Writing"
+      "Papers",
+      "Systems"
     ],
     "date": "2026-05-28",
     "url": "/essays/how-i-read-papers/"
-  },
-  {
-    "title": "A Personal Website as a Lab Notebook",
-    "description": "Why a public website is a forcing function for clearer thinking.",
-    "tags": [
-      "Writing",
-      "Personal Systems"
-    ],
-    "date": "2026-04-16",
-    "url": "/essays/personal-website-as-lab-notebook/"
   }
 ]
