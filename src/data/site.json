@@ -14,6 +14,10 @@
     "bio": "I build AI/ML, generative/diffusion-model, molecular simulation, free-energy, and inference systems that turn scientific complexity into computable representations for decision-making in drug discovery, protein design, chromatin biology, theoretical chemistry, and statistical mechanics.",
     "links": [
       {
+        "label": "GitHub",
+        "url": "https://github.com/kemalozkirsehirli"
+      },
+      {
         "label": "Email",
         "url": "mailto:kemalozk@mit.edu"
       },
@@ -54,38 +58,38 @@
     "spotlight": [
       {
         "label": "Protein foundation model safety",
-        "url": "/projects/#prism-protein-foundation-model-safety",
-        "description": "PRISM red-teaming and evaluation"
+        "url": null,
+        "description": "PRISM red-teaming and evaluation · code pending release"
       },
       {
         "label": "ChromoGen-Engine V2",
-        "url": "/projects/#chromogen-engine-v2",
-        "description": "conditional diffusion for 3D chromatin"
+        "url": null,
+        "description": "conditional diffusion for 3D chromatin · code pending release"
       },
       {
         "label": "Autoimmune V2M-Engine",
-        "url": "/projects/#v2m-engine-for-autoimmune-target-discovery",
-        "description": "genetics-to-mechanism target discovery"
+        "url": null,
+        "description": "genetics-to-mechanism target discovery · code pending release"
       },
       {
         "label": "TBXT small-molecule hackathon",
-        "url": "/projects/#tbxt-small-molecule-hackathon",
+        "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced",
         "description": "CADD for chordoma/TBXT"
       },
       {
         "label": "ChemAgent-QSM",
-        "url": "/projects/#chemagent-qsm",
+        "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli",
         "description": "LLM-guided quantum/stat-mech workflows"
       },
       {
         "label": "EVEdesign protein design",
-        "url": "/projects/#evedesign-protein-design",
-        "description": "uncertainty-aware sequence design"
+        "url": null,
+        "description": "uncertainty-aware sequence design · code pending release"
       },
       {
         "label": "ML-augmented renormalization group",
-        "url": "/projects/#ml-augmented-renormalization-group",
-        "description": "stat-mech simulation and teaching"
+        "url": null,
+        "description": "stat-mech simulation and teaching · code pending release"
       },
       {
         "label": "CV PDF",
@@ -208,17 +212,17 @@
         "items": [
           {
             "title": "PRISM",
-            "url": "/projects/#prism-protein-foundation-model-safety",
-            "description": "adversarial evaluation, reliability checks, uncertainty calibration, and failure taxonomies for protein foundation models"
+            "url": null,
+            "description": "adversarial evaluation, reliability checks, uncertainty calibration, and failure taxonomies for protein foundation models [code pending release]"
           },
           {
             "title": "EVEdesign",
-            "url": "/projects/#evedesign-protein-design",
-            "description": "21-person, 18-institution, 8-country open protein-design collaboration; uncertainty-aware multi-objective candidate selection"
+            "url": null,
+            "description": "21-person, 18-institution, 8-country open protein-design collaboration; uncertainty-aware multi-objective candidate selection [code pending release]"
           },
           {
             "title": "Antibody RL",
-            "url": "/projects/#deep-rl-for-antibody-antigen-interactions",
+            "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning",
             "description": "structure-informed cross-attention transformer and PPO pipeline using OAS, SAbDab, IEDB, AF-Multimer/IGFold metrics"
           }
         ]
@@ -228,18 +232,18 @@
         "items": [
           {
             "title": "TBXT",
-            "url": "/projects/#tbxt-small-molecule-hackathon",
+            "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced",
             "description": "11-person chordoma/TBXT sprint; 2,274 compounds + 737 analogs + 30,000 BRICS recombinations to a 570-compound novelty-filtered pool"
           },
           {
             "title": "V2M",
-            "url": "/projects/#v2m-engine-for-autoimmune-target-discovery",
-            "description": "autoimmune genetics-to-mechanism target-discovery engine with single-cell foundation models, QTL/colocalization, and targetability checks"
+            "url": null,
+            "description": "autoimmune genetics-to-mechanism target-discovery engine with single-cell foundation models, QTL/colocalization, and targetability checks [code pending release]"
           },
           {
             "title": "Pedal AI",
-            "url": "/projects/#pedal-ai-agentic-chemistry-platform",
-            "description": "LangGraph/FastAPI chemistry agents, retrosynthesis route trees, <50ms latency, 15,000+ daily API requests, 100,000+ predictions"
+            "url": null,
+            "description": "LangGraph/FastAPI chemistry agents, retrosynthesis route trees, <50ms latency, 15,000+ daily API requests, 100,000+ predictions [code pending release]"
           }
         ]
       },
@@ -248,18 +252,18 @@
         "items": [
           {
             "title": "ChromoGen V2",
-            "url": "/projects/#chromogen-engine-v2",
-            "description": "conditional diffusion for small-molecule-perturbed single-cell 3D chromatin ensembles with Plate-C/Easy Dip-C/CHARM-style data"
+            "url": null,
+            "description": "conditional diffusion for small-molecule-perturbed single-cell 3D chromatin ensembles with Plate-C/Easy Dip-C/CHARM-style data [code pending release]"
           },
           {
             "title": "Biochemical Diffusion",
-            "url": "/projects/#computational-biochemical-diffusion",
-            "description": "PINN/neural-ODE stochastic simulation of nonequilibrium reaction-diffusion networks; Euler-Maruyama, Runge-Kutta, Gillespie SSA"
+            "url": null,
+            "description": "PINN/neural-ODE stochastic simulation of nonequilibrium reaction-diffusion networks; Euler-Maruyama, Runge-Kutta, Gillespie SSA [code pending release]"
           },
           {
             "title": "Sequence-to-State",
-            "url": "/projects/#v2m-engine-for-autoimmune-target-discovery",
-            "description": "variant-effect scoring, Perturb-seq validation, counterfactual immune-state transport, and structure-aware target prioritization"
+            "url": null,
+            "description": "variant-effect scoring, Perturb-seq validation, counterfactual immune-state transport, and structure-aware target prioritization [code pending release]"
           }
         ]
       },
@@ -268,18 +272,18 @@
         "items": [
           {
             "title": "ChemAgent-QSM",
-            "url": "/projects/#chemagent-qsm",
+            "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli",
             "description": "LLM-guided quantum/statistical-mechanics pipelines using PySCF; TCFs, local order, relaxation, mobility, spectra"
           },
           {
             "title": "Renormalization Group",
-            "url": "/projects/#ml-augmented-renormalization-group",
-            "description": "GNN/PyTorch Kadanoff RG framework for spin systems, fixed points, and phase boundaries"
+            "url": null,
+            "description": "GNN/PyTorch Kadanoff RG framework for spin systems, fixed points, and phase boundaries [code pending release]"
           },
           {
             "title": "DFT → kMC",
-            "url": "/projects/#computational-organic-chemistry-pipeline",
-            "description": "multi-scale computational organic chemistry pipeline; 20+ transition states, 500+ trajectories, 22% predicted yield optimization"
+            "url": null,
+            "description": "multi-scale computational organic chemistry pipeline; 20+ transition states, 500+ trajectories, 22% predicted yield optimization [code pending release]"
           }
         ]
       },
@@ -328,13 +332,13 @@
         "items": [
           {
             "title": "6.1200[J]",
-            "url": "/projects/#mit-6-1200-j-teaching-fellow",
-            "description": "proof-intensive discrete math teaching fellow/grader for 250+ student MIT EECS cohort"
+            "url": null,
+            "description": "proof-intensive discrete math teaching fellow/grader for 250+ student MIT EECS cohort [code pending release]"
           },
           {
             "title": "Berker Teaching",
-            "url": "/projects/#ml-augmented-renormalization-group",
-            "description": "mentored 200+ students while teaching condensed augmented chemistry and classical/quantum mechanics courses"
+            "url": null,
+            "description": "mentored 200+ students while teaching condensed augmented chemistry and classical/quantum mechanics courses [code pending release]"
           },
           {
             "title": "Humanitas Core",
@@ -355,6 +359,11 @@
             "title": "CV PDF",
             "url": "/files/kemal-ozkirsehirli-cv-2026.pdf",
             "description": "downloadable source CV"
+          },
+          {
+            "title": "GitHub",
+            "url": "https://github.com/kemalozkirsehirli",
+            "description": "public code profile and released repositories"
           },
           {
             "title": "LinkedIn",

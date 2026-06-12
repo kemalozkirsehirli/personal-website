@@ -459,10 +459,18 @@ function essayCard(essay, ctx) {
   </article>`;
 }
 
+function projectPrimaryUrl(project) {
+  if (!isDisabledUrl(project.url)) return project.url;
+  const repoLink = (project.links || []).find((link) => !isDisabledUrl(link.url) && /github\.com/i.test(link.url));
+  return repoLink?.url || null;
+}
+
 function projectCard(project, ctx) {
+  const primaryUrl = projectPrimaryUrl(project);
+  const title = primaryUrl ? classicLink(project.title, primaryUrl, ctx) : escapeHtml(project.title);
   const links = (project.links || []).map((link) => classicLink(link.label, link.url, ctx)).join(' - ');
   return `<article id="${escapeAttr(slugify(project.slug || project.title))}" class="archive-entry" data-filter-card data-tags="${escapeAttr((project.tags || []).join('|'))}" data-search="${escapeAttr([project.title, project.status, project.description, ...(project.tags || [])].join(' '))}">
-    <p><b>${escapeHtml(project.title)}</b>${project.status ? ` - <i>${escapeHtml(project.status)}</i>` : ''} - ${escapeHtml(project.description || '')}</p>
+    <p><b>${title}</b>${project.status ? ` - <i>${escapeHtml(project.status)}</i>` : ''} - ${escapeHtml(project.description || '')}</p>
     ${project.tags?.length ? `<p class="archive-meta">${project.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join(' - ')}</p>` : ''}
     ${links ? `<p class="archive-links">${links}</p>` : ''}
   </article>`;

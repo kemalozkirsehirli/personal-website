@@ -123,29 +123,6 @@ Value: YOUR-GITHUB-USERNAME.github.io
 
 `YOUR-GITHUB-USERNAME` kısmını GitHub kullanıcı adınla değiştir.
 
-
-## Project links
-
-Public GitHub repositories are linked directly from the homepage selected-work columns and the projects archive. Projects whose code is not public yet use the disabled placeholder `Code pending release`.
-
-Current public links:
-
-- TBXT Small-Molecule Hackathon → `kemalozkirsehirli/ozkirsehirli-group`, folder `Hackathon-TBXT-reproduced`
-- ChemAgent-QSM → `kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli`
-- Deep RL Antibody-Antigen Interactions → `kemalozkirsehirli/ai-mit-antibody-deep-rl-learning`
-
-To release another project later, edit `src/data/projects.json` and set its `url` plus a `GitHub` entry in `links`. Also update `src/data/site.json` if the project appears in the homepage Spotlight or Selected Work columns.
-
-## First-time GitHub Pages setup
-
-If Actions fails with `Get Pages site failed`, open the GitHub repository and set:
-
-```txt
-Settings → Pages → Build and deployment → Source → GitHub Actions
-```
-
-Do this once, then rerun the failed workflow or push a new commit.
-
 ## İçerik düzenleme
 
 Ana kimlik / homepage / spotlight:

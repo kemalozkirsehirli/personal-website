@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 110" role="img" aria-label="Molecules">
-  <rect width="220" height="110" fill="#f4f5ff"/>
-  <rect x="4" y="4" width="212" height="102" fill="none" stroke="#d8d8d8"/>
-  <g fill="none" stroke="#333399" stroke-width="3" opacity="0.9">
-    <path d="M28 75 C55 24, 82 92, 110 42 S165 20, 194 73"/>
-    <circle cx="47" cy="39" r="10"/><circle cx="92" cy="70" r="8"/><circle cx="146" cy="36" r="9"/><circle cx="178" cy="67" r="7"/>
-  </g>
-  <text x="110" y="99" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#000000">Molecules</text>
-</svg>

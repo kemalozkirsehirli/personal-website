@@ -11,11 +11,16 @@
     ],
     "links": [
       {
+        "label": "Code pending release",
+        "url": null
+      },
+      {
         "label": "CV",
         "url": "/cv/"
       }
     ],
-    "slug": "prism-protein-foundation-model-safety"
+    "slug": "prism-protein-foundation-model-safety",
+    "url": null
   },
   {
     "title": "ChromoGen-Engine V2 — Conditional Diffusion for 3D Chromatin",
@@ -29,11 +34,16 @@
     ],
     "links": [
       {
+        "label": "Code pending release",
+        "url": null
+      },
+      {
         "label": "CV",
         "url": "/cv/"
       }
     ],
-    "slug": "chromogen-engine-v2"
+    "slug": "chromogen-engine-v2",
+    "url": null
   },
   {
     "title": "A*STAR V2M-Engine — Autoimmune Target Discovery",
@@ -47,11 +57,16 @@
     ],
     "links": [
       {
+        "label": "Code pending release",
+        "url": null
+      },
+      {
         "label": "CV",
         "url": "/cv/"
       }
     ],
-    "slug": "v2m-engine-for-autoimmune-target-discovery"
+    "slug": "v2m-engine-for-autoimmune-target-discovery",
+    "url": null
   },
   {
     "title": "TBXT Small-Molecule Hackathon — Student Principal Investigator",
@@ -66,11 +81,20 @@
     ],
     "links": [
       {
+        "label": "GitHub",
+        "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced"
+      },
+      {
+        "label": "Group repo",
+        "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group"
+      },
+      {
         "label": "CV",
         "url": "/cv/"
       }
     ],
-    "slug": "tbxt-small-molecule-hackathon"
+    "slug": "tbxt-small-molecule-hackathon",
+    "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced"
   },
   {
     "title": "ChemAgent-QSM — LLM and Statistical Mechanics/Theoretical Chemistry",
@@ -84,11 +108,16 @@
     ],
     "links": [
       {
+        "label": "GitHub",
+        "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli"
+      },
+      {
         "label": "CV",
         "url": "/cv/"
       }
     ],
-    "slug": "chemagent-qsm"
+    "slug": "chemagent-qsm",
+    "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli"
   },
   {
     "title": "EVEdesign — Protein Design Algorithm Engineering",
@@ -102,11 +131,16 @@
     ],
     "links": [
       {
+        "label": "Code pending release",
+        "url": null
+      },
+      {
         "label": "CV",
         "url": "/cv/"
       }
     ],
-    "slug": "evedesign-protein-design"
+    "slug": "evedesign-protein-design",
+    "url": null
   },
   {
     "title": "Pedal AI — LangGraph Agentic Chemistry Platform",
@@ -121,11 +155,16 @@
     ],
     "links": [
       {
+        "label": "Code pending release",
+        "url": null
+      },
+      {
         "label": "CV",
         "url": "/cv/"
       }
     ],
-    "slug": "pedal-ai-agentic-chemistry-platform"
+    "slug": "pedal-ai-agentic-chemistry-platform",
+    "url": null
   },
   {
     "title": "Deep Reinforcement Learning for Antibody-Antigen Interactions",
@@ -139,11 +178,16 @@
     ],
     "links": [
       {
+        "label": "GitHub",
+        "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning"
+      },
+      {
         "label": "CV",
         "url": "/cv/"
       }
     ],
-    "slug": "deep-rl-for-antibody-antigen-interactions"
+    "slug": "deep-rl-for-antibody-antigen-interactions",
+    "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning"
   },
   {
     "title": "ML for Statistical Mechanics Simulations — Prof. A. Nihat Berker",
@@ -157,11 +201,16 @@
     ],
     "links": [
       {
+        "label": "Code pending release",
+        "url": null
+      },
+      {
         "label": "CV",
         "url": "/cv/"
       }
     ],
-    "slug": "ml-augmented-renormalization-group"
+    "slug": "ml-augmented-renormalization-group",
+    "url": null
   },
   {
     "title": "Kupcinet-Getz Scholar — Computational Biochemical Diffusion",
@@ -175,11 +224,16 @@
     ],
     "links": [
       {
+        "label": "Code pending release",
+        "url": null
+      },
+      {
         "label": "CV",
         "url": "/cv/"
       }
     ],
-    "slug": "computational-biochemical-diffusion"
+    "slug": "computational-biochemical-diffusion",
+    "url": null
   },
   {
     "title": "Advanced Organic Synthesis — Buchwald Lab",
@@ -193,11 +247,16 @@
     ],
     "links": [
       {
+        "label": "Code pending release",
+        "url": null
+      },
+      {
         "label": "CV",
         "url": "/cv/"
       }
     ],
-    "slug": "advanced-organic-synthesis-buchwald-lab"
+    "slug": "advanced-organic-synthesis-buchwald-lab",
+    "url": null
   },
   {
     "title": "Sepal AI / Mercor — Chemistry LLM Evaluation and Scientific Data",
@@ -212,10 +271,15 @@
     ],
     "links": [
       {
+        "label": "Code pending release",
+        "url": null
+      },
+      {
         "label": "CV",
         "url": "/cv/#chemistry-and-ai-consultant-scientific-data-and-evaluation-specialist"
       }
-    ]
+    ],
+    "url": null
   },
   {
     "title": "Computational Organic Chemistry Pipeline — DFT to kMC",
@@ -230,10 +294,15 @@
     ],
     "links": [
       {
+        "label": "Code pending release",
+        "url": null
+      },
+      {
         "label": "CV",
         "url": "/cv/#foundation-research-scholar-computational-organic-chemistry"
       }
-    ]
+    ],
+    "url": null
   },
   {
     "title": "MIT 6.1200[J] Teaching Fellow and Grader",
@@ -247,10 +316,15 @@
     ],
     "links": [
       {
+        "label": "Code pending release",
+        "url": null
+      },
+      {
         "label": "CV",
         "url": "/cv/"
       }
     ],
-    "slug": "mit-6-1200-j-teaching-fellow"
+    "slug": "mit-6-1200-j-teaching-fellow",
+    "url": null
   }
 ]

@@ -125,6 +125,10 @@ function readingTime(markdown) {
   return Math.max(1, Math.ceil(words / 225));
 }
 
+function isDisabledUrl(url) {
+  return url === undefined || url === null || url === '' || url === '#';
+}
+
 function linkAttributes(url, ctx) {
   const href = ctx.withBase(url);
   const external = /^(https?:)?\/\//.test(url);
@@ -324,6 +328,7 @@ function renderTags(tags = []) {
 function renderNav(site, ctx, activePath) {
   const items = site.nav || [];
   return items.map((item) => {
+    if (isDisabledUrl(item.url)) return `<span class="nav-disabled">${escapeHtml(item.label)}</span>`;
     const isActive = activePath === item.url || (item.url !== '/' && activePath.startsWith(item.url));
     return `<a href="${escapeAttr(ctx.withBase(item.url))}"${isActive ? ' aria-current="page"' : ''}>${escapeHtml(item.label)}</a>`;
   }).join('\n');
@@ -343,16 +348,20 @@ function renderLinkRows(rows = [], ctx) {
   if (!rows.length) return '';
   return rows.map((row) => {
     const links = row.links || [];
-    return `<div class="link-row"><strong>${escapeHtml(row.label || '')}</strong><span>${links.map((link) => `<a ${linkAttributes(link.url, ctx)}>${escapeHtml(link.label)}</a>`).join(' <em>/</em> ')}</span></div>`;
+    return `<div class="link-row"><strong>${escapeHtml(row.label || '')}</strong><span>${links.map((link) => isDisabledUrl(link.url) ? `<span class="disabled-link">${escapeHtml(link.label)}</span>` : `<a ${linkAttributes(link.url, ctx)}>${escapeHtml(link.label)}</a>`).join(' <em>/</em> ')}</span></div>`;
   }).join('\n');
 }
 
 function renderSpotlight(items = [], ctx) {
   if (!items.length) return '';
-  return `<div class="spotlight-links">${items.map((item) => `<p><a ${linkAttributes(item.url, ctx)}>${escapeHtml(item.label)}</a>${item.description ? `<span class="visually-hidden"> — ${escapeHtml(item.description)}</span>` : ''}</p>`).join('')}</div>`;
+  return `<div class="spotlight-links">${items.map((item) => {
+    const label = isDisabledUrl(item.url) ? `<span class="disabled-link">${escapeHtml(item.label)}</span>` : `<a ${linkAttributes(item.url, ctx)}>${escapeHtml(item.label)}</a>`;
+    return `<p>${label}${item.description ? `<span class="visually-hidden"> — ${escapeHtml(item.description)}</span>` : ''}</p>`;
+  }).join('')}</div>`;
 }
 
 function classicLink(label, url, ctx, className = '') {
+  if (isDisabledUrl(url)) return `<span${className ? ` class="${escapeAttr(className)} disabled-link"` : ' class="disabled-link"'}>${escapeHtml(label)}</span>`;
   return `<a${className ? ` class="${escapeAttr(className)}"` : ''} ${linkAttributes(url, ctx)}>${escapeHtml(label)}</a>`;
 }
 
@@ -366,7 +375,8 @@ function renderClassicDirectory(rows = [], ctx) {
 
 function renderClassicItem(item, ctx) {
   const title = item.title || item.label || 'Untitled';
-  const url = item.url || (item.links?.[0]?.url) || '/projects/';
+  const hasExplicitUrl = Object.prototype.hasOwnProperty.call(item, 'url');
+  const url = hasExplicitUrl ? item.url : ((item.links?.[0]?.url) || '/projects/');
   const description = item.description || item.status || '';
   const suffix = description ? ` - ${escapeHtml(description)}` : '';
   return `<p class="classic-item"><b>${classicLink(title, url, ctx)}</b>${suffix}</p>`;
@@ -387,6 +397,9 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
   const canonical = ctx.absoluteUrl(pagePath);
   const ogImage = /^(https?:)?\/\//.test(image) ? image : ctx.absoluteUrl(image.replace(/^\//, ''));
   const authorName = site.author?.name || site.title;
+  const showFeed = site.enableFeed !== false;
+  const rssHead = showFeed ? `<link rel="alternate" type="application/rss+xml" title="${escapeAttr(site.title)} essays" href="${escapeAttr(ctx.withBase('/feed.xml'))}">` : '';
+  const rssFooter = showFeed ? ` - ${classicLink('RSS', '/feed.xml', ctx)}` : '';
 
   const schema = {
     '@context': 'https://schema.org',
@@ -420,7 +433,7 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="${escapeAttr(ctx.withBase('/favicon.svg'))}" type="image/svg+xml">
   <link rel="manifest" href="${escapeAttr(ctx.withBase('/site.webmanifest'))}">
-  <link rel="alternate" type="application/rss+xml" title="${escapeAttr(site.title)} essays" href="${escapeAttr(ctx.withBase('/feed.xml'))}">
+  ${rssHead}
   <link rel="stylesheet" href="${escapeAttr(ctx.withBase('/assets/main.css'))}">
   <script defer src="${escapeAttr(ctx.withBase('/assets/main.js'))}"></script>
   <script type="application/ld+json">${JSON.stringify(schema).replace(/</g, '\u003c')}</script>
@@ -432,7 +445,7 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
     ${content}
   </main>
   <footer class="classic-footer">
-    <p>Quick links: ${renderNav(site, ctx, activePath).replaceAll('\n', ' - ')} - ${classicLink('RSS', '/feed.xml', ctx)} - ${classicLink('Sitemap', '/sitemap.xml', ctx)}</p>
+    <p>Quick links: ${renderNav(site, ctx, activePath).replaceAll('\n', ' - ')}${rssFooter} - ${classicLink('Sitemap', '/sitemap.xml', ctx)}</p>
     <p>© ${new Date().getFullYear()} ${escapeHtml(authorName)}.</p>
   </footer>
 </body>
@@ -491,14 +504,14 @@ async function loadEssays(ctx) {
 async function renderHome(site, ctx, essays, projects) {
   const author = site.author || {};
   const spotlight = site.home?.spotlight || [
-    { label: 'AI for Science notes', url: '/essays/ai-for-science-notes/' },
-    { label: 'Molecular property modeling', url: '/projects/' },
+    { label: 'Selected projects', url: '/projects/' },
     { label: 'Curriculum vitae', url: '/cv/' },
-    { label: 'Essay archive', url: '/essays/' }
+    { label: 'Photo archive', url: '/photos/' },
+    { label: 'Essays held back for launch', url: null }
   ];
   const directory = site.home?.directory || [
-    { label: 'About me', links: [site.home?.primaryCta || { label: 'Essays', url: '/essays/' }, site.home?.secondaryCta || { label: 'CV', url: '/cv/' }, { label: 'Projects', url: '/projects/' }, { label: 'Photos', url: '/photos/' }] },
-    { label: 'Writing', links: essays.slice(0, 4).map((essay) => ({ label: essay.title, url: essay.url })) },
+    { label: 'About me', links: [site.home?.secondaryCta || { label: 'CV', url: '/cv/' }, { label: 'Projects', url: '/projects/' }, { label: 'Photos', url: '/photos/' }] },
+    { label: 'Writing', links: [{ label: 'Essays held back for launch', url: null }] },
     { label: 'Work', links: projects.slice(0, 4).map((project) => ({ label: project.title, url: '/projects/' })) }
   ];
   const highlights = author.highlights || [
@@ -513,16 +526,12 @@ async function renderHome(site, ctx, essays, projects) {
       items: projects.map((project) => ({ title: project.title, url: project.links?.[0]?.url || '/projects/', description: project.description }))
     },
     {
-      title: 'Essays and Notes',
-      items: essays.map((essay) => ({ title: essay.title, url: essay.url, description: essay.description }))
-    },
-    {
       title: 'Professional',
       items: [
         { title: 'Curriculum Vitae', url: '/cv/', description: 'education, research, skills, and selected work' },
         { title: 'Projects', url: '/projects/', description: 'research and engineering archive' },
         { title: 'Photos', url: '/photos/', description: 'small visual archive' },
-        { title: 'RSS', url: '/feed.xml', description: 'subscribe to essays' }
+        { title: 'Essays', url: null, description: 'held back for launch' }
       ]
     },
     {
@@ -576,7 +585,12 @@ async function renderHome(site, ctx, essays, projects) {
 
 async function renderEssaysIndex(site, ctx, essays) {
   const tags = [...new Set(essays.flatMap((essay) => essay.tags || []))].sort((a, b) => a.localeCompare(b));
-  const content = `<section class="classic-page">
+  const empty = essays.length === 0;
+  const content = empty ? `<section class="classic-page">
+    <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / Essays</p>
+    <h1>Essays</h1>
+    <p>The essay archive and AI for Science notes are intentionally empty for now. They will be opened after the notes and essays are ready for publication.</p>
+  </section>` : `<section class="classic-page">
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / Essays</p>
     <h1>Essays</h1>
     <p>Research notes, project writeups, and public essays. Search or filter below.</p>
@@ -672,7 +686,7 @@ async function renderNotFound(site, ctx) {
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / 404</p>
     <h1>Page not found</h1>
     <p>This page does not exist, or it moved.</p>
-    <p>${classicLink('Home', '/', ctx)} - ${classicLink('Essays', '/essays/', ctx)} - ${classicLink('Projects', '/projects/', ctx)} - ${classicLink('CV', '/cv/', ctx)}</p>
+    <p>${classicLink('Home', '/', ctx)} - ${classicLink('Projects', '/projects/', ctx)} - ${classicLink('CV', '/cv/', ctx)} - ${classicLink('Photos', '/photos/', ctx)}</p>
   </section>`;
   await writeFile('404.html', renderLayout({ site, ctx, title: 'Page not found', description: '404 page.', activePath: '', path: '/404.html', content }));
 }
@@ -682,7 +696,8 @@ function xmlEscape(value = '') {
 }
 
 async function renderFeeds(site, ctx, essays) {
-  const staticPages = ['/', '/essays/', '/projects/', '/cv/', '/photos/'];
+  const staticPages = ['/', '/projects/', '/cv/', '/photos/'];
+  if (essays.length > 0 || site.publishEmptyEssays === true) staticPages.splice(1, 0, '/essays/');
   const urls = [...staticPages, ...essays.map((essay) => essay.url)];
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((url) => `  <url><loc>${xmlEscape(ctx.absoluteUrl(url))}</loc></url>`).join('\n')}\n</urlset>\n`;
   await writeFile('sitemap.xml', sitemap);
