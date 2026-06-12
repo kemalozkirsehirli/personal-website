@@ -1,0 +1,34 @@
+{
+  "url": "https://your-domain.com",
+  "basePath": "",
+  "title": "Your Name",
+  "description": "Essays, research, projects, CV, and photography.",
+  "language": "en",
+  "resumePdf": "",
+  "author": {
+    "name": "Your Name",
+    "role": "MIT rising senior · CADD-AI for Science researcher",
+    "location": "Cambridge, MA",
+    "email": "you@example.com",
+    "avatar": "/photos/profile.svg",
+    "bio": "I work on AI for science, computational drug discovery, and questions at the edge of reasoning, biology, and systems.",
+    "links": [
+      { "label": "Email", "url": "mailto:you@example.com" },
+      { "label": "GitHub", "url": "https://github.com/username" },
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/username" },
+      { "label": "Google Scholar", "url": "https://scholar.google.com/" }
+    ]
+  },
+  "nav": [
+    { "label": "Essays", "url": "/essays/" },
+    { "label": "Projects", "url": "/projects/" },
+    { "label": "CV", "url": "/cv/" },
+    { "label": "Photos", "url": "/photos/" }
+  ],
+  "home": {
+    "eyebrow": "Personal website",
+    "intro": "I publish essays, research notes, project writeups, and field photos here.",
+    "primaryCta": { "label": "Read essays", "url": "/essays/" },
+    "secondaryCta": { "label": "View CV", "url": "/cv/" }
+  }
+}

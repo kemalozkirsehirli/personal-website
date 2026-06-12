@@ -1,0 +1,29 @@
+[
+  {
+    "title": "CADD-AI Research Notes",
+    "status": "Active",
+    "description": "A living set of experiments and essays on AI-assisted molecular design, model evaluation, and scientific reasoning.",
+    "tags": ["AI for Science", "CADD", "Research"],
+    "links": [
+      { "label": "Writeup", "url": "/essays/ai-for-science-notes/" }
+    ]
+  },
+  {
+    "title": "Molecular Property Modeling",
+    "status": "Prototype",
+    "description": "A project template for describing datasets, model choices, baselines, validation strategy, and lessons learned.",
+    "tags": ["Machine Learning", "Chemistry", "Evaluation"],
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/username/project" }
+    ]
+  },
+  {
+    "title": "Essay Archive",
+    "status": "Published",
+    "description": "A searchable public archive for essays across research, literature, personal systems, and intellectual taste.",
+    "tags": ["Writing", "Personal Systems"],
+    "links": [
+      { "label": "Essays", "url": "/essays/" }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Personal website preview">
+  <rect width="1200" height="630" fill="#f6f0e8"/>
+  <circle cx="130" cy="120" r="220" fill="#ead2bd"/>
+  <circle cx="1020" cy="90" r="260" fill="#cfe4dc"/>
+  <rect x="86" y="82" width="1028" height="466" rx="44" fill="#fffaf2" stroke="#17120f" stroke-opacity="0.14"/>
+  <text x="140" y="238" fill="#17120f" font-size="66" font-family="Georgia, serif" font-weight="700">Essays · CV · Projects</text>
+  <text x="140" y="326" fill="#6d6259" font-size="35" font-family="Arial, sans-serif">Research notes, public work, and photography.</text>
+  <rect x="140" y="390" width="250" height="58" rx="29" fill="#17120f"/>
+  <text x="178" y="429" fill="#fffaf2" font-size="24" font-family="Arial, sans-serif" font-weight="700">Personal site</text>
+</svg>
