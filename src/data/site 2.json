@@ -1,0 +1,310 @@
+{
+  "url": "https://your-domain.com",
+  "basePath": "",
+  "title": "Kemal Özkırşehirli",
+  "description": "AI/ML for science, computational chemistry, protein design, biomolecular simulation, CADD, and essays.",
+  "language": "en",
+  "resumePdf": "/files/kemal-ozkirsehirli-cv-2026.pdf",
+  "author": {
+    "name": "Kemal Özkırşehirli",
+    "role": "MIT B.Sc. candidate · Computer Science and Engineering · Chemical Physics · Mathematics",
+    "location": "Cambridge, MA, USA",
+    "email": "kemalozk@mit.edu",
+    "avatar": "/photos/kemal-profile.jpg",
+    "bio": "I work across AI/ML for science, computational chemistry, biomolecular simulation, protein design, CADD, free-energy methods, statistical mechanics, generative models, and scientific workflow engineering. My current work turns complex molecular, genomic, and physical systems into computable representations, then extracts the rules that make them useful for scientific decision-making.",
+    "links": [
+      {
+        "label": "Email",
+        "url": "mailto:kemalozk@mit.edu"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com/in/kozkirsehirli"
+      },
+      {
+        "label": "CV PDF",
+        "url": "/files/kemal-ozkirsehirli-cv-2026.pdf"
+      }
+    ],
+    "highlights": [
+      "MIT B.Sc. candidate, expected May 2027; GPA 5.0/5.0; majors in Computer Science and Engineering, Chemical Physics, and Mathematics; minors in Philosophy and Writing.",
+      "Current work spans protein foundation model safety, ChromoGen-style 3D chromatin diffusion, autoimmune target discovery, TBXT CADD, ChemAgent-QSM, and EVEdesign protein design.",
+      "Medalist in the International Chemistry Olympiad and International Mendeleev Chemistry Olympiad; TÜBİTAK National Chemistry Olympiad silver medalist."
+    ]
+  },
+  "nav": [
+    {
+      "label": "Essays",
+      "url": "/essays/"
+    },
+    {
+      "label": "Projects",
+      "url": "/projects/"
+    },
+    {
+      "label": "CV",
+      "url": "/cv/"
+    },
+    {
+      "label": "Photos",
+      "url": "/photos/"
+    }
+  ],
+  "home": {
+    "eyebrow": "MIT · AI/ML for Science · CADD · Statistical Mechanics",
+    "degree": "B.Sc. candidate",
+    "selectedTitle": "AI/ML for Science - Selected Work",
+    "spotlight": [
+      {
+        "label": "Protein foundation model safety",
+        "url": "/projects/#prism-protein-foundation-model-safety",
+        "description": "PRISM red-teaming and evaluation"
+      },
+      {
+        "label": "ChromoGen-Engine V2",
+        "url": "/projects/#chromogen-engine-v2",
+        "description": "conditional diffusion for 3D chromatin"
+      },
+      {
+        "label": "Autoimmune V2M-Engine",
+        "url": "/projects/#v2m-engine-for-autoimmune-target-discovery",
+        "description": "genetics-to-mechanism target discovery"
+      },
+      {
+        "label": "TBXT small-molecule hackathon",
+        "url": "/projects/#tbxt-small-molecule-hackathon",
+        "description": "CADD for chordoma/TBXT"
+      },
+      {
+        "label": "ChemAgent-QSM",
+        "url": "/projects/#chemagent-qsm",
+        "description": "LLM-guided quantum/stat-mech workflows"
+      },
+      {
+        "label": "EVEdesign protein design",
+        "url": "/projects/#evedesign-protein-design",
+        "description": "uncertainty-aware sequence design"
+      },
+      {
+        "label": "ML-augmented renormalization group",
+        "url": "/projects/#ml-augmented-renormalization-group",
+        "description": "stat-mech simulation and teaching"
+      },
+      {
+        "label": "CV PDF",
+        "url": "/files/kemal-ozkirsehirli-cv-2026.pdf",
+        "description": "downloadable curriculum vitae"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com/in/kozkirsehirli",
+        "description": "external profile"
+      },
+      {
+        "label": "Photo archive",
+        "url": "/photos/",
+        "description": "portrait and visual archive"
+      }
+    ],
+    "directory": [
+      {
+        "label": "About me",
+        "links": [
+          {
+            "label": "Professional",
+            "url": "/cv/#research-industrial-and-professional-experiences"
+          },
+          {
+            "label": "Education",
+            "url": "/cv/#education"
+          },
+          {
+            "label": "Contact",
+            "url": "mailto:kemalozk@mit.edu"
+          },
+          {
+            "label": "CV (pdf)",
+            "url": "/files/kemal-ozkirsehirli-cv-2026.pdf"
+          }
+        ]
+      },
+      {
+        "label": "Research",
+        "links": [
+          {
+            "label": "Protein Safety",
+            "url": "/projects/#prism-protein-foundation-model-safety"
+          },
+          {
+            "label": "CADD",
+            "url": "/projects/#tbxt-small-molecule-hackathon"
+          },
+          {
+            "label": "Chromatin",
+            "url": "/projects/#chromogen-engine-v2"
+          },
+          {
+            "label": "Quantum/Stat Mech",
+            "url": "/projects/#chemagent-qsm"
+          }
+        ]
+      },
+      {
+        "label": "Teaching",
+        "links": [
+          {
+            "label": "6.1200[J]",
+            "url": "/projects/#mit-6-1200-j-teaching-fellow"
+          },
+          {
+            "label": "Berker Group",
+            "url": "/projects/#ml-augmented-renormalization-group"
+          },
+          {
+            "label": "Mentoring",
+            "url": "/cv/#ai-ml-for-statistical-mechanics-simulations-researcher-and-teaching-fellow-mit-physics"
+          }
+        ]
+      },
+      {
+        "label": "Writing",
+        "links": [
+          {
+            "label": "Essays",
+            "url": "/essays/"
+          },
+          {
+            "label": "AI for Science notes",
+            "url": "/essays/ai-for-science-notes/"
+          },
+          {
+            "label": "RSS",
+            "url": "/feed.xml"
+          }
+        ]
+      }
+    ],
+    "selectedSections": [
+      {
+        "title": "Protein Models and Safety",
+        "items": [
+          {
+            "title": "PRISM",
+            "url": "/projects/#prism-protein-foundation-model-safety",
+            "description": "red-teaming protein foundation models for biological plausibility, structure/function constraints, uncertainty, and developability"
+          },
+          {
+            "title": "EVEdesign",
+            "url": "/projects/#evedesign-protein-design",
+            "description": "uncertainty-aware multi-objective protein and antibody design workflows"
+          },
+          {
+            "title": "Antibody RL",
+            "url": "/projects/#deep-rl-for-antibody-antigen-interactions",
+            "description": "structure-informed cross-attention transformer and PPO pipeline for antibody-antigen interactions"
+          }
+        ]
+      },
+      {
+        "title": "CADD and Drug Discovery",
+        "items": [
+          {
+            "title": "TBXT",
+            "url": "/projects/#tbxt-small-molecule-hackathon",
+            "description": "570-compound novelty-filtered CADD funnel for chordoma/TBXT site-F candidates"
+          },
+          {
+            "title": "V2M",
+            "url": "/projects/#v2m-engine-for-autoimmune-target-discovery",
+            "description": "autoimmune genetics-to-mechanism target-discovery engine"
+          },
+          {
+            "title": "Pedal AI",
+            "url": "/projects/#pedal-ai-agentic-chemistry-platform",
+            "description": "LangGraph/FastAPI chemistry agent backend and retrosynthesis workflow platform"
+          }
+        ]
+      },
+      {
+        "title": "Genome, Chromatin, Diffusion",
+        "items": [
+          {
+            "title": "ChromoGen V2",
+            "url": "/projects/#chromogen-engine-v2",
+            "description": "conditional diffusion for small-molecule-perturbed single-cell 3D chromatin ensembles"
+          },
+          {
+            "title": "Biochemical Diffusion",
+            "url": "/projects/#computational-biochemical-diffusion",
+            "description": "PINN/neural-ODE stochastic simulation of nonequilibrium reaction-diffusion networks"
+          }
+        ]
+      },
+      {
+        "title": "Theory, Simulation, Agents",
+        "items": [
+          {
+            "title": "ChemAgent-QSM",
+            "url": "/projects/#chemagent-qsm",
+            "description": "LLM-guided quantum/statistical-mechanics pipelines using PySCF and auditable Python workflows"
+          },
+          {
+            "title": "Renormalization Group",
+            "url": "/projects/#ml-augmented-renormalization-group",
+            "description": "GNN/PyTorch framework for spin systems, fixed points, and phase boundaries"
+          },
+          {
+            "title": "DFT → kMC",
+            "url": "/projects/#computational-organic-chemistry-pipeline",
+            "description": "multi-scale computational organic chemistry pipeline linking DFT to kinetic Monte Carlo"
+          }
+        ]
+      },
+      {
+        "title": "Education and Awards",
+        "items": [
+          {
+            "title": "MIT",
+            "url": "/cv/#education",
+            "description": "CS&E, Chemical Physics, Mathematics; Philosophy and Writing; expected May 2027"
+          },
+          {
+            "title": "Olympiads",
+            "url": "/cv/#honors-awards-and-recognition",
+            "description": "IChO, Mendeleev, TÜBİTAK, Istanbul Science Olympiads, Waterloo distinctions"
+          },
+          {
+            "title": "Teaching",
+            "url": "/projects/#mit-6-1200-j-teaching-fellow",
+            "description": "6.1200[J] Discrete Math teaching fellow and grader"
+          }
+        ]
+      },
+      {
+        "title": "My Pages",
+        "items": [
+          {
+            "title": "CV",
+            "url": "/cv/",
+            "description": "full web CV with PDF download"
+          },
+          {
+            "title": "CV PDF",
+            "url": "/files/kemal-ozkirsehirli-cv-2026.pdf",
+            "description": "downloadable source CV"
+          },
+          {
+            "title": "LinkedIn",
+            "url": "https://linkedin.com/in/kozkirsehirli",
+            "description": "external profile"
+          },
+          {
+            "title": "Email",
+            "url": "mailto:kemalozk@mit.edu",
+            "description": "contact"
+          }
+        ]
+      }
+    ]
+  }
+}
