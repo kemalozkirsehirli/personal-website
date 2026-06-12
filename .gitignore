@@ -6,3 +6,9 @@ dist/
 .env
 .env.*
 npm-debug.log*
+
+# macOS / iCloud temporary and duplicate artifacts
+*.icloud
+*.tmp
+* 2.*
+.* 2.*
