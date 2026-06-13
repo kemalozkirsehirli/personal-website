@@ -1,22 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Kemal Özkırşehirli research word cloud</title>
-  <desc id="desc">Old-school academic word cloud with Kemal Özkırşehirli's research areas.</desc>
+  <desc id="desc">A dense old-school academic keyword cloud for AI/ML for science, physics, CADD, molecular docking, protein design, chromatin, free energy, and statistical mechanics.</desc>
   <rect width="1200" height="630" fill="#ffffff"/>
   <g font-family="Georgia, 'Times New Roman', Times, serif" text-anchor="middle">
-    <text x="600" y="270" font-size="86" font-weight="700" fill="#8b2f1f">AI for Science</text>
-    <text x="352" y="178" font-size="65" font-weight="700" fill="#a65420">protein design</text>
-    <text x="820" y="178" font-size="59" font-weight="700" fill="#7a3a27">CADD</text>
-    <text x="608" y="365" font-size="66" font-weight="700" fill="#5d5d5d">free-energy</text>
-    <text x="270" y="326" font-size="44" fill="#6b6b6b">chromatin</text>
-    <text x="930" y="322" font-size="42" fill="#6b6b6b">diffusion models</text>
-    <text x="282" y="430" font-size="39" fill="#8d6b2a">statistical mechanics</text>
-    <text x="890" y="430" font-size="39" fill="#8d6b2a">quantum chemistry</text>
-    <text x="165" y="238" font-size="31" fill="#555555">inference</text>
-    <text x="1018" y="235" font-size="31" fill="#555555">benchmarks</text>
-    <text x="500" y="110" font-size="34" fill="#888888">MIT</text>
-    <text x="710" y="112" font-size="34" fill="#888888">molecular simulation</text>
-    <text x="450" y="500" font-size="30" fill="#777777">protein safety</text>
-    <text x="760" y="500" font-size="30" fill="#777777">agentic chemistry</text>
-    <text x="600" y="552" font-size="25" fill="#a0a0a0">algorithms · molecules · models · writing · philosophy</text>
+    <text x="600" y="265" font-size="88" font-weight="700" fill="#7d2b19">AI/ML for Science</text>
+    <text x="336" y="165" font-size="62" font-weight="700" fill="#a14722">CADD</text>
+    <text x="842" y="166" font-size="56" font-weight="700" fill="#8e3d28">protein design</text>
+    <text x="602" y="357" font-size="60" font-weight="700" fill="#5b5b5b">free energy</text>
+    <text x="315" y="418" font-size="43" font-weight="700" fill="#8b2f1f">molecular docking</text>
+    <text x="902" y="418" font-size="40" font-weight="700" fill="#a14722">virtual screening</text>
+
+    <text x="265" y="325" font-size="39" fill="#666666">chromatin diffusion</text>
+    <text x="933" y="324" font-size="39" fill="#666666">statistical mechanics</text>
+    <text x="250" y="510" font-size="32" fill="#8d6b2a">molecular dynamics</text>
+    <text x="585" y="485" font-size="32" fill="#8d6b2a">quantum chemistry</text>
+    <text x="900" y="505" font-size="32" fill="#8d6b2a">physics</text>
+
+    <text x="145" y="234" font-size="31" fill="#555555">inference</text>
+    <text x="1040" y="236" font-size="31" fill="#555555">HPC</text>
+    <text x="500" y="111" font-size="32" fill="#888888">MIT</text>
+    <text x="720" y="110" font-size="32" fill="#888888">generative models</text>
+    <text x="438" y="548" font-size="27" fill="#777777">agentic workflows</text>
+    <text x="790" y="548" font-size="27" fill="#777777">scientific decision-making</text>
+
+    <text x="172" y="118" font-size="28" fill="#a14722">GNINA</text>
+    <text x="1010" y="118" font-size="28" fill="#a14722">AutoDock Vina</text>
+    <text x="180" y="185" font-size="26" fill="#7d2b19">RDKit</text>
+    <text x="1048" y="188" font-size="26" fill="#7d2b19">QSAR</text>
+    <text x="160" y="378" font-size="25" fill="#8e3d28">MMGBSA/FEP</text>
+    <text x="1052" y="377" font-size="25" fill="#8e3d28">Boltz-2</text>
+    <text x="104" y="472" font-size="23" fill="#6b6b6b">ADMET</text>
+    <text x="1098" y="470" font-size="23" fill="#6b6b6b">BRICS</text>
+    <text x="112" y="535" font-size="22" fill="#777777">Tanimoto</text>
+    <text x="1094" y="535" font-size="22" fill="#777777">PAINS filters</text>
+
+    <text x="400" y="70" font-size="25" fill="#7d2b19">3D meshes</text>
+    <text x="600" y="74" font-size="25" fill="#7d2b19">point clouds</text>
+    <text x="802" y="72" font-size="25" fill="#7d2b19">geometric deep learning</text>
+    <text x="285" y="92" font-size="21" fill="#888888">GNNs</text>
+    <text x="925" y="92" font-size="21" fill="#888888">Transformers</text>
+    <text x="415" y="212" font-size="25" fill="#555555">protein safety</text>
+    <text x="786" y="212" font-size="25" fill="#555555">uncertainty calibration</text>
+
+    <text x="405" y="304" font-size="22" fill="#7a7a7a">single-cell genomics</text>
+    <text x="795" y="302" font-size="22" fill="#7a7a7a">immune target discovery</text>
+    <text x="350" y="463" font-size="21" fill="#8b2f1f">ligand design</text>
+    <text x="668" y="457" font-size="21" fill="#8b2f1f">retrosynthesis</text>
+    <text x="910" y="462" font-size="21" fill="#8b2f1f">protein-ligand co-folding</text>
+
+    <text x="525" y="392" font-size="21" fill="#555555">OpenMM</text>
+    <text x="682" y="392" font-size="21" fill="#555555">OpenFE</text>
+    <text x="510" y="155" font-size="21" fill="#777777">PyTorch</text>
+    <text x="682" y="155" font-size="21" fill="#777777">CUDA</text>
+    <text x="552" y="525" font-size="20" fill="#777777">LangGraph</text>
+    <text x="666" y="525" font-size="20" fill="#777777">FastAPI</text>
+    <text x="464" y="582" font-size="20" fill="#777777">PySCF</text>
+    <text x="600" y="582" font-size="20" fill="#777777">stochastic processes</text>
+    <text x="770" y="582" font-size="20" fill="#777777">renormalization group</text>
+    <text x="600" y="612" font-size="18" fill="#a0a0a0">molecules · proteins · genomes · ligands · surfaces · algorithms · essays</text>
   </g>
 </svg>

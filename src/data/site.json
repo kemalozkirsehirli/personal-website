@@ -2,16 +2,16 @@
   "url": "https://kemal-ozkirsehirli.com",
   "basePath": "",
   "title": "Kemal Özkırşehirli",
-  "description": "Academic homepage for Kemal Özkırşehirli: AI/ML for science, computational chemistry, protein design, biomolecular simulation, CADD, statistical mechanics, and scientific workflow engineering.",
+  "description": "Academic homepage for Kemal Özkırşehirli: AI/ML for science, physics, computational chemistry, geometric deep learning, CADD, protein design, chromatin biology, statistical mechanics, and scientific workflow engineering.",
   "language": "en",
   "resumePdf": "/files/kemal-ozkirsehirli-cv-2026.pdf",
   "author": {
     "name": "Kemal Özkırşehirli",
-    "role": "MIT B.Sc. candidate · Computer Science and Engineering · Chemical Physics · Mathematics",
+    "role": "MIT B.Sc. candidate · Computer Science and Engineering · Physics · Applied Mathematics",
     "location": "Cambridge, MA, USA",
     "email": "kemalozk@mit.edu",
     "avatar": "/photos/kemal-profile.jpg",
-    "bio": "I build AI/ML, generative/diffusion-model, molecular simulation, free-energy, and inference systems that turn scientific complexity into computable representations for decision-making in drug discovery, protein design, chromatin biology, theoretical chemistry, and statistical mechanics.",
+    "bio": "I work at the intersection of AI/ML, physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. My goal is to turn difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.",
     "links": [
       {
         "label": "GitHub",
@@ -31,10 +31,10 @@
       }
     ],
     "highlights": [
-      "MIT B.Sc. candidate, expected May 2027; GPA 5.0/5.0; majors in Computer Science and Engineering, Chemical Physics, and Mathematics; minors in Philosophy and Writing.",
-      "Current work spans protein foundation model red-teaming, ChromoGen-style 3D chromatin diffusion, autoimmune target discovery, TBXT CADD, ChemAgent-QSM, EVEdesign protein design, antibody RL, and ML-augmented renormalization group theory.",
-      "Selected from 800+ applicants for PRISM 2026; selected as one of 22 worldwide Kupcinet-Getz Scholars; current and recent work across MIT, A*STAR, Columbia, Harvard Medical School, Weizmann, and Pedal AI.",
-      "Medalist in the International Chemistry Olympiad and International Mendeleev Chemistry Olympiad; TÜBİTAK National Chemistry Olympiad silver medalist; World Science Scholar; Waterloo distinction recipient."
+      "MIT B.Sc. candidate, expected May 2027; GPA 5.0/5.0; Computer Science and Engineering, Physics, and Applied Mathematics; minors in Philosophy and Writing; transferred from Columbia University.",
+      "Current work spans 3D mesh learning for life sciences, ChromoGen-V2, autoimmune V2M-Engine, PRISM protein-model red-teaming, EVEdesign, TBXT CADD, ChemAgent-QSM, antibody RL, and ML-augmented renormalization group theory.",
+      "Research and engineering across MIT CSAIL, MIT Chemistry, A*STAR EDDC, W2D2/PRISM, Harvard Medical School, Columbia, AI@MIT, Pedal AI, Weizmann Institute, and MIT Physics.",
+      "Bronze medalist at IChO and IMChO; Columbia Science Research Fellow and Likely Letter recipient; TÜBİTAK National Chemistry Olympiad silver medalist; Waterloo distinction and AIME recognition recipient; YC Startup School 2026 accepted."
     ]
   },
   "nav": [
@@ -52,10 +52,15 @@
     }
   ],
   "home": {
-    "eyebrow": "MIT · AI/ML for Science · CADD · Statistical Mechanics",
+    "eyebrow": "MIT · AI/ML for Science · Physics · CADD",
     "degree": "B.Sc. candidate",
     "selectedTitle": "AI/ML for Science - Selected Work",
     "spotlight": [
+      {
+        "label": "3D Mesh Learning for Life Sciences",
+        "url": null,
+        "description": "geometric deep learning collaboration · code pending release"
+      },
       {
         "label": "Protein foundation model safety",
         "url": null,
@@ -74,22 +79,22 @@
       {
         "label": "TBXT small-molecule hackathon",
         "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced",
-        "description": "CADD for chordoma/TBXT"
+        "description": "public CADD release for chordoma/TBXT"
       },
       {
         "label": "ChemAgent-QSM",
         "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli",
-        "description": "LLM-guided quantum/stat-mech workflows"
+        "description": "public LLM-guided quantum/stat-mech workflows"
+      },
+      {
+        "label": "Antibody RL",
+        "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning",
+        "description": "public protein/antibody RL scaffold"
       },
       {
         "label": "EVEdesign protein design",
         "url": null,
         "description": "uncertainty-aware sequence design · code pending release"
-      },
-      {
-        "label": "ML-augmented renormalization group",
-        "url": null,
-        "description": "stat-mech simulation and teaching · code pending release"
       },
       {
         "label": "CV PDF",
@@ -124,6 +129,10 @@
             "url": "/cv/#honors-awards-and-recognition"
           },
           {
+            "label": "Leadership",
+            "url": "/cv/#leadership-and-community-involvement"
+          },
+          {
             "label": "Contact",
             "url": "mailto:kemalozk@mit.edu"
           },
@@ -136,6 +145,10 @@
       {
         "label": "Research",
         "links": [
+          {
+            "label": "3D Meshes",
+            "url": "/projects/#independent-geometric-deep-learning-3d-meshes-for-life-sciences"
+          },
           {
             "label": "Protein Safety",
             "url": "/projects/#prism-protein-foundation-model-safety"
@@ -170,8 +183,8 @@
             "url": "/projects/#ml-augmented-renormalization-group"
           },
           {
-            "label": "Mentoring",
-            "url": "/cv/#ai-ml-for-statistical-mechanics-simulations-researcher-and-teaching-fellow-mit-physics"
+            "label": "Olympiad Mentoring",
+            "url": "/projects/#chemistry-olympiad-team-captain-and-club-president"
           }
         ]
       },
@@ -185,6 +198,10 @@
           {
             "label": "AI for Science notes held back",
             "url": null
+          },
+          {
+            "label": "Columbia Math Journal",
+            "url": "/projects/#columbia-undergraduate-mathematics-journal"
           }
         ]
       },
@@ -193,7 +210,11 @@
         "links": [
           {
             "label": "Computational Stack",
-            "url": "/cv/#computational-skillset"
+            "url": "/cv/#computational-and-technical-skillset"
+          },
+          {
+            "label": "Coursework",
+            "url": "/cv/#education"
           },
           {
             "label": "Languages",
@@ -208,8 +229,13 @@
     ],
     "selectedSections": [
       {
-        "title": "Protein Models and Safety",
+        "title": "Geometric ML and Protein Models",
         "items": [
+          {
+            "title": "3D Meshes",
+            "url": null,
+            "description": "leading a 7-member collaboration on geometric deep learning for 3D biological and molecular surface representations [code pending release]"
+          },
           {
             "title": "PRISM",
             "url": null,
@@ -218,12 +244,12 @@
           {
             "title": "EVEdesign",
             "url": null,
-            "description": "21-person, 18-institution, 8-country open protein-design collaboration; uncertainty-aware multi-objective candidate selection [code pending release]"
+            "description": "21-person, 18-institution, 8-country protein-design collaboration; uncertainty-aware multi-objective candidate selection [code pending release]"
           },
           {
             "title": "Antibody RL",
             "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning",
-            "description": "structure-informed cross-attention transformer and PPO pipeline using OAS, SAbDab, IEDB, AF-Multimer/IGFold metrics"
+            "description": "structure-informed cross-attention transformer and PPO pipeline with OAS/SAbDab/IEDB data and AF-Multimer/IGFold-style metrics"
           }
         ]
       },
@@ -233,7 +259,7 @@
           {
             "title": "TBXT",
             "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced",
-            "description": "11-person chordoma/TBXT sprint; 2,274 compounds + 737 analogs + 30,000 BRICS recombinations to a 570-compound novelty-filtered pool"
+            "description": "11-person chordoma/TBXT sprint; docking, QSAR, CNN rescoring, BRICS generation, filtering, and public research release"
           },
           {
             "title": "V2M",
@@ -243,7 +269,7 @@
           {
             "title": "Pedal AI",
             "url": null,
-            "description": "LangGraph/FastAPI chemistry agents, retrosynthesis route trees, <50ms latency, 15,000+ daily API requests, 100,000+ predictions [code pending release]"
+            "description": "LangGraph/FastAPI chemistry agents, retrosynthesis route trees, <50ms latency, 15,000+ daily API requests, 100,000+ molecular predictions [code pending release]"
           }
         ]
       },
@@ -293,17 +319,47 @@
           {
             "title": "MIT",
             "url": "/cv/#education",
-            "description": "CS&E, Chemical Physics, Mathematics; Philosophy and Writing; GPA 5.0/5.0; expected May 2027"
+            "description": "CS&E, Physics, Applied Mathematics; Philosophy and Writing; GPA 5.0/5.0; expected May 2027"
+          },
+          {
+            "title": "Columbia",
+            "url": "/cv/#education",
+            "description": "Science Research Fellow and Likely Letter recipient; BA study in Chemistry and CS-Mathematics before transferring to MIT"
           },
           {
             "title": "Olympiads",
             "url": "/cv/#honors-awards-and-recognition",
-            "description": "IChO, Mendeleev, TÜBİTAK, Istanbul Science Olympiads, CHEM13, Galois, Sir Isaac Newton distinctions"
+            "description": "IChO bronze, Mendeleev bronze, TÜBİTAK silver, Istanbul chemistry gold, Lavoisier gold, Waterloo distinctions"
           },
           {
-            "title": "World Science Scholar",
+            "title": "YC / WSS / AIME",
             "url": "/cv/#honors-awards-and-recognition",
-            "description": "selected among 52 scholars from 22 countries for exceptional mathematical talent"
+            "description": "YC Startup School 2026; World Science Scholar; AIME qualification and AMC Hall of Fame recognition"
+          }
+        ]
+      },
+      {
+        "title": "Leadership and Community",
+        "items": [
+          {
+            "title": "Formula SAE",
+            "url": "/projects/#formula-sae-low-voltage-software-team",
+            "description": "PCB systems, embedded software, sensor integration, and low-voltage microelectronics for electric racing"
+          },
+          {
+            "title": "Math Journal",
+            "url": "/projects/#columbia-undergraduate-mathematics-journal",
+            "description": "content editor and referee producing LaTeX reports on undergraduate mathematics theses and papers"
+          },
+          {
+            "title": "Olympiad Captain",
+            "url": "/projects/#chemistry-olympiad-team-captain-and-club-president",
+            "description": "mentored 50-member chemistry olympiad team; 35 members placed in top rankings; organized practical training"
+          },
+          {
+            "title": "Volleyball",
+            "url": "/projects/#varsity-volleyball-team-captain",
+            "description": "team captain and primary setter; coordinated training, team culture, and service activities"
           }
         ]
       },
@@ -311,39 +367,24 @@
         "title": "Coursework and Toolchain",
         "items": [
           {
-            "title": "CS/AI",
+            "title": "Graduate-level",
             "url": "/cv/#education",
-            "description": "deep learning, NLP, algorithm engineering/design, sublinear algorithms, theory of computation, stochastic processes, computer systems"
+            "description": "deep learning, platforms for drug discovery, atomistic modeling/simulation, statistical physics in biology, stochastic processes"
           },
           {
-            "title": "Chem/Physics/Math",
+            "title": "CS/AI/Systems",
             "url": "/cv/#education",
-            "description": "advanced organic chemistry, probability, linear algebra, chemical physics, statistical mechanics, free-energy methods"
+            "description": "algorithms, theory of computation, NLP, sublinear algorithms, computer structures, Python/C/C++/assembly labs"
+          },
+          {
+            "title": "Chem/Physics/Simulation",
+            "url": "/cv/#education",
+            "description": "quantum chemistry, biochemistry, advanced organic chemistry, statistical mechanics, molecular modeling, molecular docking, and physics"
           },
           {
             "title": "Stack",
-            "url": "/cv/#computational-skillset",
-            "description": "Python, C/C++, CUDA, HPC, SLURM, PyTorch, RDKit, OpenMM/OpenFE, GNINA/Vina, Boltz-2, PySCF, GNNs, transformers"
-          }
-        ]
-      },
-      {
-        "title": "Teaching, Writing, Humanities",
-        "items": [
-          {
-            "title": "6.1200[J]",
-            "url": null,
-            "description": "proof-intensive discrete math teaching fellow/grader for 250+ student MIT EECS cohort [code pending release]"
-          },
-          {
-            "title": "Berker Teaching",
-            "url": null,
-            "description": "mentored 200+ students while teaching condensed augmented chemistry and classical/quantum mechanics courses [code pending release]"
-          },
-          {
-            "title": "Humanitas Core",
-            "url": "/cv/#education",
-            "description": "theory of models, rhetoric, advanced essay/poetry, philosophy of language/religion/politics, metaphysics, memoir"
+            "url": "/cv/#computational-and-technical-skillset",
+            "description": "Python, C/C++, CUDA, HPC, PyTorch, RDKit, OpenMM/OpenFE, GNINA/Vina, Boltz-2, PySCF, LangGraph, FastAPI, LaTeX"
           }
         ]
       },
@@ -353,7 +394,7 @@
           {
             "title": "CV",
             "url": "/cv/",
-            "description": "full web CV with education, research, teaching, honors, skills, languages, interests, and hobbies"
+            "description": "full web CV with education, research, teaching, honors, leadership, skills, languages, interests, and hobbies"
           },
           {
             "title": "CV PDF",
