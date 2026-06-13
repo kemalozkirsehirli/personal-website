@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Abstract laboratory scene">
+  <rect width="1200" height="750" fill="#fffaf2"/>
+  <circle cx="220" cy="160" r="170" fill="#ead2bd"/>
+  <circle cx="970" cy="180" r="220" fill="#cfe4dc"/>
+  <rect x="150" y="460" width="900" height="72" rx="36" fill="#17120f" opacity="0.86"/>
+  <path d="M365 180v190c0 70 56 126 126 126h0c70 0 126-56 126-126V180" fill="none" stroke="#7c3f24" stroke-width="26" stroke-linecap="round"/>
+  <path d="M705 250h120l-62 190c-18 55-96 55-114 0l-62-190h118Z" fill="none" stroke="#1d5b53" stroke-width="26" stroke-linejoin="round"/>
+  <circle cx="400" cy="400" r="24" fill="#1d5b53"/>
+  <circle cx="492" cy="430" r="18" fill="#7c3f24"/>
+  <circle cx="740" cy="365" r="22" fill="#7c3f24"/>
+  <path d="M318 188h346M665 250h200" stroke="#17120f" stroke-width="12" opacity="0.16" stroke-linecap="round"/>
+</svg>
