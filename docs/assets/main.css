@@ -579,3 +579,7 @@ button, input { font: inherit; }
 .spotlight-links .disabled-link {
   font-weight: 700;
 }
+
+/* Requested prose spacing for the Highlights block; layout otherwise unchanged. */
+.classic-awards li { margin-bottom: 0.58rem; }
+.classic-awards li:last-child { margin-bottom: 0; }

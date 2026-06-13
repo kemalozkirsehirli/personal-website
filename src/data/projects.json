@@ -1,17 +1,18 @@
 [
   {
-    "title": "Independent Geometric Deep Learning — 3D Meshes for Life Sciences",
+    "title": "Independent Geometric Deep Learning — Methodology-First 3D Mesh Learning",
     "status": "Jun 2026 – Present",
-    "description": "Leading a 7-member research collaboration investigating geometric deep learning methods for 3D mesh and point-cloud representations in life-science applications; defining a technical roadmap connecting biological and molecular surface representations with kNN-based geometric learning pipelines and Point Transformer-style architectures; coordinating literature synthesis, experimental milestones, reproducible infrastructure, and preprint-oriented manuscript preparation.",
+    "description": "Leading a 7-member international research collaboration developing a new methodology for 3D mesh and point-cloud learning. The project is methodology-first: literature synthesis, kNN graph pipelines, Point Transformer v3-style architectures, reproducible experiments, and manuscript planning come first; life-science applications are pursued if and only if they provide a principled fit for the method rather than a forced benchmark.",
     "tags": [
       "Geometric Deep Learning",
       "3D Meshes",
       "Point Clouds",
+      "Methodology",
       "Life Sciences"
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -34,7 +35,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -57,7 +58,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -80,7 +81,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -154,7 +155,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -178,7 +179,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -207,6 +208,10 @@
       {
         "label": "CV",
         "url": "/cv/"
+      },
+      {
+        "label": "AI@MIT",
+        "url": "https://aiatmit.com/"
       }
     ],
     "slug": "deep-rl-for-antibody-antigen-interactions",
@@ -224,7 +229,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -247,7 +252,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -270,7 +275,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -293,7 +298,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -316,7 +321,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -339,7 +344,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -362,8 +367,8 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
-        "url": null
+        "label": "Columbia Formula Racing",
+        "url": "https://www.cc-seas.columbia.edu/student-group/columbia-university-formula-racing"
       },
       {
         "label": "CV",
@@ -371,7 +376,7 @@
       }
     ],
     "slug": "formula-sae-low-voltage-software-team",
-    "url": null
+    "url": "https://www.cc-seas.columbia.edu/student-group/columbia-university-formula-racing"
   },
   {
     "title": "Columbia Undergraduate Mathematics Journal — Content Editor and Referee",
@@ -385,8 +390,8 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
-        "url": null
+        "label": "Journal",
+        "url": "https://journals.library.columbia.edu/index.php/cjum"
       },
       {
         "label": "CV",
@@ -394,7 +399,7 @@
       }
     ],
     "slug": "columbia-undergraduate-mathematics-journal",
-    "url": null
+    "url": "https://journals.library.columbia.edu/index.php/cjum"
   },
   {
     "title": "Chemistry Olympiad Team Captain and Club President",
@@ -408,7 +413,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -431,7 +436,7 @@
     ],
     "links": [
       {
-        "label": "Code pending release",
+        "label": "Code soon-to-be released",
         "url": null
       },
       {
@@ -441,5 +446,75 @@
     ],
     "slug": "varsity-volleyball-team-captain",
     "url": null
+  },
+  {
+    "title": "MIT BioMakers Lab Initiative — Dry-Lab Member",
+    "status": "2026 – Present",
+    "description": "Dry-lab member in the MIT BioMakers community, contributing computational, modeling, and project-infrastructure support for biology-facing student projects and interdisciplinary biomaking work.",
+    "tags": [
+      "BioMakers",
+      "Dry Lab",
+      "MIT",
+      "Community",
+      "Biology"
+    ],
+    "links": [
+      {
+        "label": "MIT BioMakers",
+        "url": "https://biomakers.mit.edu/"
+      },
+      {
+        "label": "CV",
+        "url": "/cv/#leadership-and-community-involvement"
+      }
+    ],
+    "slug": "mit-biomakers-lab-initiative-dry-lab",
+    "url": "https://biomakers.mit.edu/"
+  },
+  {
+    "title": "MIT Schwarzman College of Computing — Undergraduate Advisory Group",
+    "status": "2026 – Present",
+    "description": "Student-advisory involvement around computing education, undergraduate experience, AI, and cross-disciplinary computing at MIT.",
+    "tags": [
+      "MIT",
+      "Advisory",
+      "Computing",
+      "Leadership"
+    ],
+    "links": [
+      {
+        "label": "Schwarzman UAG",
+        "url": "https://computing.mit.edu/about/people/undergraduate-advisory-group/"
+      },
+      {
+        "label": "CV",
+        "url": "/cv/#leadership-and-community-involvement"
+      }
+    ],
+    "slug": "mit-schwarzman-undergraduate-advisory-group",
+    "url": "https://computing.mit.edu/about/people/undergraduate-advisory-group/"
+  },
+  {
+    "title": "MIT Undergraduate Association — Student Representation",
+    "status": "2026 – Present",
+    "description": "Student-government and Institute-committee representation context through the MIT Undergraduate Association, with focus on student experience, academic policy, and undergraduate community representation.",
+    "tags": [
+      "MIT",
+      "Undergraduate Association",
+      "Leadership",
+      "Student Government"
+    ],
+    "links": [
+      {
+        "label": "MIT Undergraduate Association",
+        "url": "https://ua.mit.edu/"
+      },
+      {
+        "label": "CV",
+        "url": "/cv/#leadership-and-community-involvement"
+      }
+    ],
+    "slug": "mit-undergraduate-association-student-representation",
+    "url": "https://ua.mit.edu/"
   }
 ]

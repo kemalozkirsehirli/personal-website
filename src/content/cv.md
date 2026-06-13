@@ -6,7 +6,7 @@ description: "Education, research, engineering, teaching, leadership, honors, sk
 # Kemal Özkırşehirli
 
 **MIT B.Sc. Candidate** — Computer Science and Engineering, Physics, Applied Mathematics. Minors in Philosophy and Writing.  
-Cambridge, MA · [kemalozk@mit.edu](mailto:kemalozk@mit.edu) · [LinkedIn](https://linkedin.com/in/kozkirsehirli) · [GitHub](https://github.com/kemalozkirsehirli)
+Cambridge, MA · [kemalozk@mit.edu](mailto:kemalozk@mit.edu) · [LinkedIn](https://linkedin.com/in/kozkirsehirli) · [GitHub](https://github.com/kemalozkirsehirli) · [Google Scholar](https://scholar.google.com/citations?user=SKE-LC8AAAAJ)
 
 I work at the intersection of AI/ML, physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. My work turns difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.
 
@@ -49,13 +49,14 @@ Score: 44/45.
 
 ## Research, Industrial, and Professional Experiences
 
-### Founder and Research Lead — 3D Mesh Learning for Life Sciences
+### Founder and Research Lead — Methodology-First 3D Mesh Learning
 
 **Independent research collaboration** — Jun 2026–Present
 
-- Leading a 7-member research collaboration investigating geometric deep learning methods for 3D mesh and point-cloud representations in life-science applications.
-- Defining the technical roadmap connecting biological and molecular surface representations with kNN-based geometric learning pipelines and Point Transformer-style architectures.
-- Coordinating weekly technical meetings, literature reviews, experimental milestones, contributor responsibilities, reproducible infrastructure, and manuscript preparation for a preprint-oriented research effort.
+- Leading a 7-member international research collaboration developing a new methodology for 3D mesh and point-cloud learning rather than forcing a premature domain application.
+- Building the technical roadmap around kNN graph pipelines, Point Transformer v3-style architectures, geometric representation learning, reproducible experiments, literature synthesis, and preprint-oriented manuscript planning.
+- Applying the method to molecular, biological, or life-science settings if and only if the application provides a principled scientific fit for the methodology and an informative benchmark.
+- Coordinating weekly technical meetings, literature presentations, experimental milestones, contributor responsibilities, documentation, and manuscript preparation.
 
 ### Machine Learning Engineer — Chromosomal Protein Folding / ChromoGen-V2
 
@@ -107,7 +108,7 @@ Score: 44/45.
 
 ### Project Co-Lead — Deep Reinforcement Learning for Antibody-Antigen Interactions
 
-**AI@MIT / AIM Labs** — Jan 2026–May 2026
+**[AI@MIT / AIM Labs](https://aiatmit.com/)** — Jan 2026–May 2026
 
 - Co-led a six-person team developing a structure-informed cross-attention transformer and ESM-2 pipeline mapping protein/pathogen sequences to candidate antibodies.
 - Curated datasets from OAS, SAbDab, IEDB, and CoV-AbDab-style sources.
@@ -174,17 +175,30 @@ Score: 44/45.
 
 ### Low Voltage and Software Team Member — Formula SAE Racing Initiative
 
-**Columbia University** — Jan 2025–May 2025
+**[Columbia University Formula Racing](https://www.cc-seas.columbia.edu/student-group/columbia-university-formula-racing)** — Jan 2025–May 2025
 
 - Designed PCB systems and embedded software for a Formula SAE electric racing vehicle, focusing on low-voltage microelectronics.
 - Collaborated on sensor-network integration and firmware development using Altium Designer and C/C++.
 
 ### Content Editor and Referee — Columbia Undergraduate Mathematics Journal
 
-**Columbia University** — Sept 2024–May 2025
+**[Columbia Undergraduate Mathematics Journal](https://journals.library.columbia.edu/index.php/cjum)** — Sept 2024–May 2025
 
 - Critically reviewed senior theses and research papers in mathematics and adjacent fields under graduate mentorship.
 - Produced detailed LaTeX referee reports to improve clarity, correctness, structure, and academic rigor.
+
+### Dry-Lab Member — MIT BioMakers Lab Initiative
+
+**[MIT BioMakers](https://biomakers.mit.edu/)** — 2026–Present
+
+- Contributing computational and dry-lab support for biology-facing student projects, modeling work, and project infrastructure in MIT's biomaking community.
+- Participating in an interdisciplinary ecosystem for student-led biology, engineering, workshops, and community projects.
+
+### Undergraduate Advisory / Student Representation
+
+**[MIT Schwarzman College of Computing Undergraduate Advisory Group](https://computing.mit.edu/about/people/undergraduate-advisory-group/) · [MIT Undergraduate Association](https://ua.mit.edu/)** — 2026–Present
+
+- Engaging with student-advisory and undergraduate-representation contexts around computing, AI, education, and student experience at MIT.
 
 ### Olympiad Team Captain and Club President — ACS Chemistry Club and Chemistry Olympiad Team
 
@@ -210,7 +224,7 @@ Score: 44/45.
 - Gold Medal, Lavoisier International Chemistry Olympiad; ranked within the top 5% globally among 500+ participants.
 - Certificate of Distinction, University of Waterloo CHEM13 International Chemistry Contest; ranked 2nd among 1,551 participants.
 - Certificate of Distinction, Thompson Rivers University Chem12 International Chemistry Contest; ranked 2nd globally.
-- AIME Qualification and AMC Hall of Fame acknowledgement; 7th place in Turkey's country ranking and top 5% AMC 12 score among 150,000+ participants worldwide.
+- AIME Qualification and AMC Hall of Fame acknowledgement; 7th place in Türkiye's country ranking and top 5% AMC 12 score among 150,000+ participants worldwide.
 - Certificate of Distinction, Galois International Mathematics Contest; ranked 7th among 3,071 international students and 20th globally among 6,595; medal awarded as top scorer at Üsküdar American Academy.
 - Book Prize, Sir Isaac Newton International Physics Contest, University of Waterloo; top 50 globally among 2,000+.
 

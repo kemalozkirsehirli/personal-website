@@ -7,9 +7,9 @@ Bu final versiyonda:
 - Ana domain `https://kemal-ozkirsehirli.com` olarak ayarlandı.
 - `basePath` boş bırakıldı; custom domain için doğru ayar bu.
 - `public/CNAME` ve root `CNAME` dosyaları `kemal-ozkirsehirli.com` içeriyor.
-- Essays ve AI for Science notes şu an publish edilmiyor.
+- Essays / prose / poems şu an publish edilmiyor.
 - `src/content/essays/` içinde sadece `.gitkeep` var.
-- Ana sayfadan Essays / AI notes tıklanabilir linkleri kaldırıldı; yalnızca “held back” notu olarak görünüyor.
+- Ana sayfadan essay/prose/poem arşivi tıklanabilir link olarak açılmadı; yalnızca “Collection of Prose and Poems” placeholder olarak duruyor.
 - RSS linki footer’dan kaldırıldı; `feed.xml` boş/uyumlu şekilde üretilmeye devam ediyor.
 - CV’den daha fazla içerik homepage ve projects sayfasına dağıtıldı.
 
@@ -126,7 +126,7 @@ Value: YOUR-GITHUB-USERNAME.github.io
 
 ## Project links
 
-Public GitHub repositories are linked directly from the homepage selected-work columns and the projects archive. Projects whose code is not public yet use the disabled placeholder `Code pending release`.
+Public GitHub repositories are linked directly from the homepage selected-work columns and the projects archive. Projects whose code is not public yet use the disabled placeholder `Code soon-to-be released`.
 
 Current public links:
 

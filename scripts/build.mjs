@@ -596,8 +596,8 @@ async function renderEssaysIndex(site, ctx, essays) {
   const empty = essays.length === 0;
   const content = empty ? `<section class="classic-page">
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / Essays</p>
-    <h1>Essays</h1>
-    <p>The essay archive and AI for Science notes are intentionally empty for now. They will be opened after the notes and essays are ready for publication.</p>
+    <h1>Collection of Prose and Poems</h1>
+    <p>This archive is intentionally empty for now. It will be opened after the prose, poems, and essays are ready for publication.</p>
   </section>` : `<section class="classic-page">
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / Essays</p>
     <h1>Essays</h1>
@@ -609,7 +609,7 @@ async function renderEssaysIndex(site, ctx, essays) {
     <p class="no-results" data-no-results>No essays match that filter.</p>
     <section class="classic-archive">${essays.map((essay) => essayCard(essay, ctx)).join('\n')}</section>
   </section>`;
-  await writeFile('essays/index.html', renderLayout({ site, ctx, title: 'Essays', description: 'Essays and research notes.', activePath: '/essays/', path: '/essays/', content }));
+  await writeFile('essays/index.html', renderLayout({ site, ctx, title: 'Collection of Prose and Poems', description: 'Prose, poems, and essays held back for publication.', activePath: '/essays/', path: '/essays/', content }));
 }
 
 async function renderEssayPages(site, ctx, essays) {
