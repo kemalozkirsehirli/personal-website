@@ -19,16 +19,16 @@ B.Sc. expected May 2027. GPA: 5.0/5.0.
 - Minors: Philosophy, Writing.
 - On track to graduate a year early, completing a triple major and two minors in three total years of undergraduate education.
 - Transferred to MIT from Columbia University.
-- Graduate-level coursework: Deep Learning; Platforms for Drug Discovery; Atomistic Modeling and Simulation; Statistical Physics in Biology; Stochastic Processes.
-- Undergraduate-level coursework: Design and Analysis of Algorithms; Theory of Computation; Natural Language Processing; Sublinear Time Algorithms; Computer Structures and Architectures; Intensive Python and C/C++/Assembly Programming Labs; Probability Theory and Random Variables; Linear Algebra; Quantum Chemistry; Biochemistry; Advanced Organic Chemistry; Discrete Mathematics; Genetics.
-- Humanitas core: Theory of Models; Rhetoric; Language and Power; Advanced Essay; Poetry; Critical Social Theory; Political Philosophy; Memoir.
+- Completed MIT coursework: 5.351 Fundamentals of Spectroscopy (completed this term); 6.1220[J] Advanced Algorithm Design-Analysis; 5.43 Advanced Organic Chemistry; 6.1200[J] Discrete Mathematics; 18.600 Probability Theory and Random Variables; 18.06 Linear Algebra.
+- Planned Fall coursework, hardest-first: 6.7960 Deep Learning; 18.404[J] Theory of Computation; 8.592[J] Statistical Physics in Biology; 8.05 Quantum Physics II; 2.094[J] Atomistic Modeling and Simulation of Materials and Structures; 6.5240 Sublinear Time Algorithms; 6.4610 Natural Language Processing; 6.3930 AI and Decision Making in Medicine: From Disease to Therapy; 6.1910 Computer Structures and Architectures; 5.601 Thermodynamics I; 18.615 Stochastic Processes; 6.1903 Introduction to Low-level Programming in C and Assembly; 6.100B Introduction to Computational Thinking and Data Science; 21W.745 Advanced Essay Workshop; 21W.762 Poetry Workshop; 21W.738[J] Intersectional Feminist Memoir.
+- Humanitas Core: 24.245 Theory of Models; 21W.747 Rhetoric; 21W.745 Advanced Essay Workshop; 21W.762 Poetry Workshop; 24.251 Introduction to Philosophy of Language; 24.05 Philosophy of Religion; 17.01[J]/24.04[J] Justice; 24.121 Metaphysics; 21W.738[J] Intersectional Feminist Memoir.
 
 **Columbia University** — New York, NY  
 B.A. study in Chemistry and Computer Science-Mathematics, Sept 2024–May 2025. GPA: 4.07/4.00.
 
 - Received a Likely Letter from Columbia University and was named a Science Research Fellow.
-- Coursework: Intensive Organic Chemistry I; Data Structures and Algorithms; Accelerated Multivariable Calculus; Mechanics and Thermodynamics; Electricity and Magnetism; Introductory Electrical Engineering and Lab.
-- Core Curriculum: University Writing: Gender and Sexuality / 21W.011 Writing and Rhetoric; Literature Humanities I & II; Frontiers of Science.
+- Coursework: CHEM UN2045 Intensive Organic Chemistry I; COMS W3137 Data Structures and Algorithms; MATH UN1205 Accelerated Multivariable Calculus; PHYS UN1401 Introduction to Mechanics and Thermodynamics; PHYS UN1402 Introduction to Electricity, Magnetism, and Optics; ELEN E1201 Introduction to Electrical Engineering and Lab.
+- Core Curriculum: CC/GS1010.2xx University Writing: Readings in Gender and Sexuality; HUMA CC1001–CC1002 Literature Humanities I & II; SCNC CC1000/CC1100 Frontiers of Science.
 
 **Üsküdar American Academy** — Istanbul, Türkiye  
 2019–2024. Grade: 97/100.
@@ -56,7 +56,7 @@ Score: 44/45.
 
 - Leading a 7-member international research collaboration developing a new methodology for 3D mesh and point-cloud learning rather than forcing a premature domain application.
 - Building the technical roadmap around kNN graph pipelines, Point Transformer v3-style architectures, geometric representation learning, reproducible experiments, literature synthesis, and preprint-oriented manuscript planning.
-- Applying the method to molecular, biological, or life-science settings if and only if the application provides a principled scientific fit for the methodology and an informative benchmark.
+- Applying the method to appropriate life-science applications such as topology of enzymes, antibodies, and other biomolecular complexes when they provide a principled benchmark for the methodology.
 - Coordinating weekly technical meetings, literature presentations, experimental milestones, contributor responsibilities, documentation, and manuscript preparation.
 
 ### Machine Learning Engineer — Chromosomal Protein Folding / ChromoGen-V2

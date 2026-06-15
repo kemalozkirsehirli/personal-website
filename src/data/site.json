@@ -31,7 +31,7 @@
       }
     ],
     "highlights": [
-      "Current work spans TBXT CADD, V2M autoimmune target discovery, PRISM protein-model red-teaming, ChromoGen-V2, 3D mesh methodology for life-science fit, ChemAgent-QSM, EVEdesign, antibody RL, Pedal AI chemistry-agent infrastructure, and ML-augmented renormalization group theory.",
+      "Current work spans TBXT CADD, V2M autoimmune target discovery, PRISM protein-model red-teaming, ChromoGen-V2, 3D mesh methodology for appropriate life-science applications, ChemAgent-QSM, EVEdesign, antibody RL, Pedal AI chemistry-agent infrastructure, and ML-augmented renormalization group theory.",
       "Research and engineering across MIT Chemistry, MIT CSAIL, MIT Physics, A*STAR EDDC, W2D2/PRISM, Harvard Medical School, Columbia, AI@MIT, Weizmann Institute, MIT BioMakers, Pedal AI, Sepal AI/Mercor, and Buchwald Lab contexts.",
       "Bronze medalist at IChO and IMChO; Columbia Science Research Fellow and Likely Letter recipient; TÜBİTAK National Chemistry Olympiad silver medalist; Waterloo distinction recipient; AIME qualifier with AMC 12 Hall of Fame recognition; YC Startup School 2026 accepted."
     ]
@@ -328,7 +328,7 @@
           {
             "title": "3D Meshes",
             "url": "/cv/#founder-and-research-lead-methodology-first-3d-mesh-learning",
-            "description": "Jun 2026–present methodology-first geometric deep learning collaboration for 3D meshes and point clouds; life-science applications are pursued if and only if the new method creates a principled scientific fit [code soon-to-be released]"
+            "description": "Jun 2026–present methodology-first geometric deep learning collaboration for 3D meshes and point clouds; appropriate life-science applications such as topology of enzymes, antibodies, and other biomolecular complexes [code soon-to-be released]"
           },
           {
             "title": "ChromoGen V2",
@@ -368,17 +368,22 @@
           {
             "title": "Chem/Chemical Physics/Simulation",
             "url": "/cv/#education",
-            "description": "quantum chemistry, biochemistry, advanced organic chemistry, statistical mechanics, molecular modeling, molecular docking, free-energy methods, and chemical physics"
+            "description": "5.601 Thermodynamics I; 5.351 Fundamentals of Spectroscopy; 5.43 Advanced Organic Chemistry; 8.05 Quantum Physics II; 8.592[J] Statistical Physics in Biology; 2.094[J] Atomistic Modeling and Simulation of Materials and Structures"
           },
           {
-            "title": "Graduate-level",
+            "title": "Next Fall Coursework",
             "url": "/cv/#education",
-            "description": "deep learning, platforms for drug discovery, atomistic modeling/simulation, statistical physics in biology, stochastic processes"
+            "description": "6.7960 Deep Learning; 18.404[J] Theory of Computation; 8.592[J] Statistical Physics in Biology; 8.05 Quantum Physics II; 2.094[J] Atomistic Modeling and Simulation of Materials and Structures; 6.5240 Sublinear Time Algorithms; 6.4610 Natural Language Processing; 6.3930 AI and Decision Making in Medicine: From Disease to Therapy"
           },
           {
             "title": "CS/AI/Systems",
             "url": "/cv/#education",
-            "description": "algorithms, theory of computation, NLP, sublinear algorithms, computer structures, Python/C/C++/assembly labs"
+            "description": "6.1220[J] Advanced Algorithm Design-Analysis; 6.1910 Computer Structures and Architectures; 6.1903 Introduction to Low-level Programming in C and Assembly; 6.100B Introduction to Computational Thinking and Data Science; 18.615 Stochastic Processes; 6.1200[J] Discrete Mathematics; 18.600 Probability Theory and Random Variables; 18.06 Linear Algebra"
+          },
+          {
+            "title": "Humanitas Core",
+            "url": "/cv/#education",
+            "description": "24.245 Theory of Models; 21W.747 Rhetoric; 21W.745 Advanced Essay Workshop; 21W.762 Poetry Workshop; 24.251 Introduction to Philosophy of Language; 24.05 Philosophy of Religion; 17.01[J]/24.04[J] Justice; 24.121 Metaphysics; 21W.738[J] Intersectional Feminist Memoir"
           }
         ],
         "column": "left"
