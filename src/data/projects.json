@@ -167,30 +167,6 @@
     "url": null
   },
   {
-    "title": "Pedal AI — LangGraph Agentic Chemistry Platform",
-    "status": "Jul 2025 – Dec 2025",
-    "description": "Head of Chemistry Research-Implementation and backend software engineer: designed a LangGraph/FastAPI backend connecting chemistry agents to molecular prediction engines across 3 backend layers and 4,000+ lines of code; reduced prediction latency to <50ms, supported 15,000+ daily API requests, processed 50+ GB of chemical datasets, and built retrosynthesis UX with inspectable route trees, reaction provenance, and decision-ready synthesis workflows.",
-    "tags": [
-      "AI Agents",
-      "Backend",
-      "FastAPI",
-      "Retrosynthesis",
-      "Chemistry"
-    ],
-    "links": [
-      {
-        "label": "Code soon-to-be released",
-        "url": null
-      },
-      {
-        "label": "CV",
-        "url": "/cv/"
-      }
-    ],
-    "slug": "pedal-ai-agentic-chemistry-platform",
-    "url": null
-  },
-  {
     "title": "Deep Reinforcement Learning for Antibody-Antigen Interactions",
     "status": "Jan 2026 – May 2026",
     "description": "Co-led a six-person AI@MIT/AIM Labs project building a structure-informed cross-attention transformer and ESM-2 pipeline mapping pathogen/protein sequences to candidate antibodies; curated OAS, SAbDab, IEDB, and CoV-AbDab-style datasets and reduced training time by ~40% with PPO against AF-Multimer/IGFold structural metrics on MIT SuperCloud/PyTorch DDP infrastructure.",
@@ -312,7 +288,7 @@
   {
     "title": "Computational Organic Chemistry Pipeline — DFT to kMC",
     "status": "Aug 2023 – Feb 2024 · Lumiere Research Inclusion Foundation",
-    "description": "Engineered an automated multi-scale simulation pipeline linking DFT calculations to stochastic kinetic Monte Carlo models; screened 20+ transition states and 500+ reaction trajectories across 5 solvent pathways, reaching a 22% predicted yield optimization for a cytotoxic target while working 1:1 with a Brown University PhD mentor.",
+    "description": "Engineered an automated multi-scale simulation pipeline linking DFT calculations to stochastic kinetic Monte Carlo models; screened 20+ transition states and 500+ reaction trajectories across 5 solvent pathways, reaching a 22% predicted yield optimization for a cytotoxic target while mentored under a PhD student.",
     "tags": [
       "DFT",
       "kMC",

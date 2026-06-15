@@ -173,10 +173,10 @@ public/photos/
 src/data/photos.json
 ```
 
-PDF CV:
+CV page:
 
 ```txt
-public/files/kemal-ozkirsehirli-cv-2026.pdf
+CV is shown at /cv/; downloadable PDF is intentionally not published
 ```
 
 ## Sonra essay eklemek

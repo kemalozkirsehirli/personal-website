@@ -4,7 +4,7 @@
   "title": "Kemal Özkırşehirli",
   "description": "Academic homepage for Kemal Özkırşehirli: AI/ML for science, physics, computational chemistry, geometric deep learning, CADD, protein design, chromatin biology, statistical mechanics, and scientific workflow engineering.",
   "language": "en",
-  "resumePdf": "/files/kemal-ozkirsehirli-cv-2026.pdf",
+  "resumePdf": null,
   "author": {
     "name": "Kemal Özkırşehirli",
     "role": "MIT B.Sc. candidate · Computer Science and Engineering · Physics · Applied Mathematics",
@@ -28,16 +28,12 @@
       {
         "label": "Google Scholar",
         "url": "https://scholar.google.com/citations?user=SKE-LC8AAAAJ&hl=tr&oi=ao"
-      },
-      {
-        "label": "CV PDF",
-        "url": "/files/kemal-ozkirsehirli-cv-2026.pdf"
       }
     ],
     "highlights": [
       "MIT B.Sc. candidate, expected May 2027; GPA 5.0/5.0; Computer Science and Engineering, Physics, and Applied Mathematics; minors in Philosophy and Writing; transferred from Columbia University.",
-      "Current work spans 3D mesh learning for life sciences, ChromoGen-V2, autoimmune V2M-Engine, PRISM protein-model red-teaming, EVEdesign, TBXT CADD, ChemAgent-QSM, antibody RL, and ML-augmented renormalization group theory.",
-      "Research and engineering across MIT CSAIL, MIT Chemistry, A*STAR EDDC, W2D2/PRISM, Harvard Medical School, Columbia, AI@MIT, Pedal AI, Weizmann Institute, and MIT Physics.",
+      "Current work spans TBXT CADD, ChemAgent-QSM, antibody RL, EVEdesign, PRISM protein-model red-teaming, autoimmune V2M-Engine, ChromoGen-V2, 3D mesh learning for life sciences, and ML-augmented renormalization group theory.",
+      "Research and engineering across MIT Chemistry, MIT Physics, MIT CSAIL, A*STAR EDDC, Harvard Medical School, AI@MIT, Columbia, Weizmann Institute, and W2D2/PRISM.",
       "Bronze medalist at IChO and IMChO; Columbia Science Research Fellow and Likely Letter recipient; TÜBİTAK National Chemistry Olympiad silver medalist; Waterloo distinction recipient; AIME qualifier with AMC 12 Hall of Fame recognition; YC Startup School 2026 accepted."
     ]
   },
@@ -111,9 +107,9 @@
         "description": "uncertainty-aware sequence design · code soon-to-be released"
       },
       {
-        "label": "CV PDF",
-        "url": "/files/kemal-ozkirsehirli-cv-2026.pdf",
-        "description": "downloadable curriculum vitae"
+        "label": "CV",
+        "url": "/cv/",
+        "description": "web curriculum vitae"
       },
       {
         "label": "LinkedIn",
@@ -151,8 +147,8 @@
             "url": "mailto:kemalozk@mit.edu"
           },
           {
-            "label": "CV (pdf)",
-            "url": "/files/kemal-ozkirsehirli-cv-2026.pdf"
+            "label": "CV",
+            "url": "/cv/"
           }
         ]
       },
@@ -281,12 +277,62 @@
     ],
     "selectedSections": [
       {
-        "title": "Geometric ML and Protein Models",
+        "title": "CADD and Drug Discovery",
         "items": [
           {
-            "title": "3D Meshes",
+            "title": "TBXT",
+            "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced",
+            "description": "11-person chordoma/TBXT sprint; docking, GNINA CNN rescoring, QSAR, BRICS generation, Boltz-2 co-folding, MMGBSA/FEP scaffolding, paralog selectivity, and public research release"
+          },
+          {
+            "title": "ChemAgent-QSM",
+            "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli",
+            "description": "LLM-guided quantum/statistical-mechanics pipelines using PySCF; TCFs, local order, relaxation, mobility, optimized geometries, and spectra"
+          },
+          {
+            "title": "DFT → kMC",
             "url": null,
-            "description": "methodology-first geometric deep learning collaboration for 3D meshes and point clouds; life-science applications are used if and only if the new method creates a principled scientific fit [code soon-to-be released]"
+            "description": "multi-scale computational organic chemistry pipeline; 20+ transition states, 500+ trajectories, solvent-pathway screening, and 22% predicted yield optimization [code soon-to-be released]"
+          },
+          {
+            "title": "V2M",
+            "url": null,
+            "description": "autoimmune genetics-to-mechanism target-discovery engine with single-cell foundation models, QTL/colocalization, targetability checks, and therapeutic-control validation [code soon-to-be released]"
+          }
+        ]
+      },
+      {
+        "title": "Molecular Simulation and Physics",
+        "items": [
+          {
+            "title": "Biochemical Diffusion",
+            "url": null,
+            "description": "PINN/neural-ODE stochastic simulation of nonequilibrium reaction-diffusion networks; Euler-Maruyama, Runge-Kutta, Gillespie SSA, and nonlinear biochemical oscillations [code soon-to-be released]"
+          },
+          {
+            "title": "Renormalization Group",
+            "url": null,
+            "description": "GNN/PyTorch Kadanoff RG framework for spin systems, fixed points, phase boundaries, and statistical-mechanics simulation [code soon-to-be released]"
+          },
+          {
+            "title": "ChromoGen V2",
+            "url": null,
+            "description": "conditional diffusion for small-molecule-perturbed single-cell 3D chromatin ensembles with Plate-C/Easy Dip-C/CHARM-style data [code soon-to-be released]"
+          }
+        ]
+      },
+      {
+        "title": "Protein Models and Biomolecular Design",
+        "items": [
+          {
+            "title": "Antibody RL",
+            "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning",
+            "description": "structure-informed cross-attention transformer and PPO pipeline with OAS/SAbDab/IEDB data and AF-Multimer/IGFold-style metrics"
+          },
+          {
+            "title": "EVEdesign",
+            "url": null,
+            "description": "21-person, 18-institution, 8-country protein-design collaboration; uncertainty-aware multi-objective candidate selection and sequence-structure-function objectives [code soon-to-be released]"
           },
           {
             "title": "PRISM",
@@ -294,74 +340,49 @@
             "description": "adversarial evaluation, reliability checks, uncertainty calibration, and failure taxonomies for protein foundation models [code soon-to-be released]"
           },
           {
-            "title": "EVEdesign",
+            "title": "3D Meshes",
             "url": null,
-            "description": "21-person, 18-institution, 8-country protein-design collaboration; uncertainty-aware multi-objective candidate selection [code soon-to-be released]"
-          },
-          {
-            "title": "Antibody RL",
-            "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning",
-            "description": "structure-informed cross-attention transformer and PPO pipeline with OAS/SAbDab/IEDB data and AF-Multimer/IGFold-style metrics"
+            "description": "methodology-first geometric deep learning collaboration for 3D meshes and point clouds; life-science applications are used if and only if the new method creates a principled scientific fit [code soon-to-be released]"
           }
         ]
       },
       {
-        "title": "CADD and Drug Discovery",
+        "title": "Genome, Immune Mechanism, Targetability",
         "items": [
-          {
-            "title": "TBXT",
-            "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced",
-            "description": "11-person chordoma/TBXT sprint; docking, QSAR, CNN rescoring, BRICS generation, filtering, and public research release"
-          },
-          {
-            "title": "V2M",
-            "url": null,
-            "description": "autoimmune genetics-to-mechanism target-discovery engine with single-cell foundation models, QTL/colocalization, and targetability checks [code soon-to-be released]"
-          },
-          {
-            "title": "Pedal AI",
-            "url": null,
-            "description": "LangGraph/FastAPI chemistry agents, retrosynthesis route trees, <50ms latency, 15,000+ daily API requests, 100,000+ molecular predictions [code soon-to-be released]"
-          }
-        ]
-      },
-      {
-        "title": "Genome, Chromatin, Diffusion",
-        "items": [
-          {
-            "title": "ChromoGen V2",
-            "url": null,
-            "description": "conditional diffusion for small-molecule-perturbed single-cell 3D chromatin ensembles with Plate-C/Easy Dip-C/CHARM-style data [code soon-to-be released]"
-          },
-          {
-            "title": "Biochemical Diffusion",
-            "url": null,
-            "description": "PINN/neural-ODE stochastic simulation of nonequilibrium reaction-diffusion networks; Euler-Maruyama, Runge-Kutta, Gillespie SSA [code soon-to-be released]"
-          },
           {
             "title": "Sequence-to-State",
             "url": null,
             "description": "variant-effect scoring, Perturb-seq validation, counterfactual immune-state transport, and structure-aware target prioritization [code soon-to-be released]"
+          },
+          {
+            "title": "ChromoGen Target Readouts",
+            "url": null,
+            "description": "small-molecule perturbation, regulatory-state conditioning, distributional calibration, and interpretable attribution for 3D genome shifts [code soon-to-be released]"
           }
         ]
       },
       {
-        "title": "Theory, Simulation, Agents",
+        "title": "Coursework and Toolchain",
         "items": [
           {
-            "title": "ChemAgent-QSM",
-            "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli",
-            "description": "LLM-guided quantum/statistical-mechanics pipelines using PySCF; TCFs, local order, relaxation, mobility, spectra"
+            "title": "Stack",
+            "url": "/cv/#computational-and-technical-skillset",
+            "description": "Python, C/C++, CUDA, HPC, PyTorch, RDKit, OpenMM/OpenFE, GNINA/Vina, Boltz-2, PySCF, LangGraph, FastAPI, LaTeX"
           },
           {
-            "title": "Renormalization Group",
-            "url": null,
-            "description": "GNN/PyTorch Kadanoff RG framework for spin systems, fixed points, and phase boundaries [code soon-to-be released]"
+            "title": "Chem/Physics/Simulation",
+            "url": "/cv/#education",
+            "description": "quantum chemistry, biochemistry, advanced organic chemistry, statistical mechanics, molecular modeling, molecular docking, free-energy methods, and physics"
           },
           {
-            "title": "DFT → kMC",
-            "url": null,
-            "description": "multi-scale computational organic chemistry pipeline; 20+ transition states, 500+ trajectories, 22% predicted yield optimization [code soon-to-be released]"
+            "title": "Graduate-level",
+            "url": "/cv/#education",
+            "description": "deep learning, platforms for drug discovery, atomistic modeling/simulation, statistical physics in biology, stochastic processes"
+          },
+          {
+            "title": "CS/AI/Systems",
+            "url": "/cv/#education",
+            "description": "algorithms, theory of computation, NLP, sublinear algorithms, computer structures, Python/C/C++/assembly labs"
           }
         ]
       },
@@ -384,20 +405,30 @@
             "description": "IChO bronze, Mendeleev bronze, TÜBİTAK silver, Istanbul chemistry gold, Lavoisier gold, Waterloo distinctions"
           },
           {
-            "title": "YC / WSS / AIME",
-            "url": "/cv/#honors-awards-and-recognition",
-            "description": "YC Startup School 2026; World Science Scholar; AIME qualification and AMC Hall of Fame recognition"
-          },
-          {
             "title": "AMC/AIME",
             "url": "/cv/#honors-awards-and-recognition",
             "description": "AIME qualifier and AMC Hall of Fame acknowledgement; 7th place in Türkiye and top 5% AMC 12 score"
+          },
+          {
+            "title": "YC / WSS",
+            "url": "/cv/#honors-awards-and-recognition",
+            "description": "YC Startup School 2026 and World Science Scholar recognition"
           }
         ]
       },
       {
         "title": "Leadership and Community",
         "items": [
+          {
+            "title": "MIT BioMakers",
+            "url": "https://biomakers.mit.edu/",
+            "description": "dry-lab member in a biomaking community for interdisciplinary projects, workshops, and student-led research infrastructure"
+          },
+          {
+            "title": "AI@MIT",
+            "url": "https://aiatmit.com/",
+            "description": "AI and machine-learning undergraduate community; protein/antibody discovery collaboration context"
+          },
           {
             "title": "Formula SAE",
             "url": "https://www.cc-seas.columbia.edu/student-group/columbia-university-formula-racing",
@@ -409,21 +440,6 @@
             "description": "content editor and referee producing LaTeX reports on undergraduate mathematics theses and papers"
           },
           {
-            "title": "Olympiad Captain",
-            "url": "/projects/#chemistry-olympiad-team-captain-and-club-president",
-            "description": "mentored 50-member chemistry olympiad team; 35 members placed in top rankings; organized practical training"
-          },
-          {
-            "title": "Volleyball",
-            "url": "/projects/#varsity-volleyball-team-captain",
-            "description": "team captain and primary setter; coordinated training, team culture, and service activities"
-          },
-          {
-            "title": "MIT BioMakers",
-            "url": "https://biomakers.mit.edu/",
-            "description": "dry-lab member in a biomaking community for interdisciplinary projects, workshops, and student-led research infrastructure"
-          },
-          {
             "title": "Schwarzman UAG",
             "url": "https://computing.mit.edu/about/people/undergraduate-advisory-group/",
             "description": "undergraduate advisory group context for student input into computing education and research at MIT"
@@ -432,31 +448,16 @@
             "title": "Undergraduate Association",
             "url": "https://ua.mit.edu/",
             "description": "MIT undergraduate student-government and Institute-committee representation context"
-          }
-        ]
-      },
-      {
-        "title": "Coursework and Toolchain",
-        "items": [
-          {
-            "title": "Graduate-level",
-            "url": "/cv/#education",
-            "description": "deep learning, platforms for drug discovery, atomistic modeling/simulation, statistical physics in biology, stochastic processes"
           },
           {
-            "title": "CS/AI/Systems",
-            "url": "/cv/#education",
-            "description": "algorithms, theory of computation, NLP, sublinear algorithms, computer structures, Python/C/C++/assembly labs"
+            "title": "Olympiad Captain",
+            "url": "/projects/#chemistry-olympiad-team-captain-and-club-president",
+            "description": "mentored 50-member chemistry olympiad team; 35 members placed in top rankings; organized practical training"
           },
           {
-            "title": "Chem/Physics/Simulation",
-            "url": "/cv/#education",
-            "description": "quantum chemistry, biochemistry, advanced organic chemistry, statistical mechanics, molecular modeling, molecular docking, and physics"
-          },
-          {
-            "title": "Stack",
-            "url": "/cv/#computational-and-technical-skillset",
-            "description": "Python, C/C++, CUDA, HPC, PyTorch, RDKit, OpenMM/OpenFE, GNINA/Vina, Boltz-2, PySCF, LangGraph, FastAPI, LaTeX"
+            "title": "Volleyball",
+            "url": "/projects/#varsity-volleyball-team-captain",
+            "description": "team captain and primary setter; coordinated training, team culture, and service activities"
           }
         ]
       },
@@ -464,19 +465,19 @@
         "title": "My Pages",
         "items": [
           {
-            "title": "CV",
-            "url": "/cv/",
-            "description": "full web CV with education, research, teaching, honors, leadership, skills, languages, interests, and hobbies"
-          },
-          {
-            "title": "CV PDF",
-            "url": "/files/kemal-ozkirsehirli-cv-2026.pdf",
-            "description": "downloadable source CV"
+            "title": "Google Scholar",
+            "url": "https://scholar.google.com/citations?user=SKE-LC8AAAAJ&hl=tr&oi=ao",
+            "description": "public scholar profile"
           },
           {
             "title": "GitHub Profile",
             "url": "https://github.com/kemalozkirsehirli",
             "description": "public repositories and code profile"
+          },
+          {
+            "title": "CV",
+            "url": "/cv/",
+            "description": "full web CV with education, research, teaching, honors, leadership, skills, languages, interests, and hobbies"
           },
           {
             "title": "LinkedIn",
@@ -487,11 +488,6 @@
             "title": "Email",
             "url": "mailto:kemalozk@mit.edu",
             "description": "contact"
-          },
-          {
-            "title": "Google Scholar",
-            "url": "https://scholar.google.com/citations?user=SKE-LC8AAAAJ&hl=tr&oi=ao",
-            "description": "public scholar profile"
           },
           {
             "title": "Group Application",

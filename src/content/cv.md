@@ -129,15 +129,6 @@ Score: 44/45.
 - Building a machine-learning-augmented Kadanoff renormalization-group framework using PyTorch and a graph neural network spin classifier to identify fixed points and phase boundaries in spin-1/2 antiferromagnetic systems.
 - Mentored 200+ students on college applications, decisions, and career paths while teaching augmented chemistry and classical/quantum mechanics condensed courses.
 
-### Head of Chemistry Research-Implementation / Backend Software Engineer
-
-**Pedal AI** — Jul 2025–Dec 2025
-
-- Developed a Python-based backend system for LangGraph AI agents supporting complex, stateful workflows and custom tool integration in chemical applications.
-- Built flexible agent nodes and control flows for chemical data pipelines with persistent memory and coordination throughout multi-step processes.
-- Worked with backend and product teams to integrate AI agents with molecular prediction engines, providing a consistent API interface and preserved internal state across each run.
-- Designed FastAPI connectors across 3 backend layers and 4,000+ lines of code, reducing average prediction latency to under 50 ms while supporting 15,000+ daily API requests and processing 50+ GB of chemical datasets.
-- Improved the UI/UX of cheminformatics tools by synchronizing front-end behavior with agent-workflow logic and retrosynthesis route trees; helped evaluate over 100,000 complex molecular predictions with 99.9% system uptime.
 
 ### Kupcinet-Getz Research Scholar — Computational Biochemical Diffusion
 
@@ -162,7 +153,7 @@ Score: 44/45.
 
 - Engineered an automated multi-scale simulation pipeline linking DFT calculations to stochastic kinetic Monte Carlo models.
 - Screened 20+ transition states and 500+ reaction trajectories across 5 solvent pathways, reaching a 22% predicted yield optimization for a cytotoxic target.
-- Secured a selective full research scholarship and produced a mechanistic manuscript with a Brown University PhD mentor.
+- Secured a selective full research scholarship and produced a mechanistic manuscript while mentored under a PhD student.
 
 ### Advanced Organic Synthesis Researcher
 
