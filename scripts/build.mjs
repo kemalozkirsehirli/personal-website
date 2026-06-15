@@ -382,8 +382,18 @@ function renderClassicItem(item, ctx) {
   return `<p class="classic-item"><b>${classicLink(title, url, ctx)}</b>${suffix}</p>`;
 }
 
+function renderClassicTopic(section, ctx) {
+  return `<section class="classic-topic"><h3>${escapeHtml(section.title)}</h3>${(section.items || []).map((item) => renderClassicItem(item, ctx)).join('\n')}</section>`;
+}
+
 function renderClassicSections(sections = [], ctx) {
-  return sections.map((section) => `<section class="classic-topic"><h3>${escapeHtml(section.title)}</h3>${(section.items || []).map((item) => renderClassicItem(item, ctx)).join('\n')}</section>`).join('\n');
+  const hasColumns = sections.some((section) => section.column === 'left' || section.column === 'right');
+  if (!hasColumns) return sections.map((section) => renderClassicTopic(section, ctx)).join('\n');
+
+  const left = sections.filter((section) => section.column === 'left');
+  const right = sections.filter((section) => section.column !== 'left');
+
+  return `<div class="topic-column">${left.map((section) => renderClassicTopic(section, ctx)).join('\n')}</div><div class="topic-column">${right.map((section) => renderClassicTopic(section, ctx)).join('\n')}</div>`;
 }
 
 function renderClassicPhotoStrip(photos = [], ctx) {
@@ -567,10 +577,10 @@ async function renderHome(site, ctx, essays, projects) {
           <p>${escapeHtml(author.role || '')}</p>
           <p>${escapeHtml(author.location || '')}${author.email ? ` - <a href="mailto:${escapeAttr(author.email)}">${escapeHtml(author.email)}</a>` : ''}</p>
 
+          <p class="classic-statement">${escapeHtml(author.bio || site.home?.intro || site.description || '')}</p>
+
           <p class="section-label">Highlights:</p>
           <ul class="classic-awards">${highlights.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>
-
-          <p>${escapeHtml(author.bio || site.home?.intro || site.description || '')}</p>
 
           <div class="classic-directory">
             <h2>Professional</h2>
