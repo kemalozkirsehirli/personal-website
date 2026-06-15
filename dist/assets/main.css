@@ -598,3 +598,7 @@ button, input { font: inherit; }
 /* Requested prose spacing for the Highlights block; layout otherwise unchanged. */
 .classic-awards li { margin-bottom: 0.9rem; }
 .classic-awards li:last-child { margin-bottom: 0; }
+
+/* Keep all selected-work item titles visibly blue, including internal CV anchor links. */
+.classic-selected .classic-item b a,
+.classic-selected .classic-item b a:visited { color: #333399; }
