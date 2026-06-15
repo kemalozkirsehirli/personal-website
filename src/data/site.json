@@ -102,7 +102,7 @@
       },
       {
         "label": "EVEdesign protein design",
-        "url": null,
+        "url": "https://evedesign.bio/",
         "description": "uncertainty-aware sequence design · code soon-to-be released"
       },
       {
@@ -347,7 +347,7 @@
           },
           {
             "title": "EVEdesign",
-            "url": "/cv/#algorithm-design-engineering-and-optimization-functional-protein-discovery",
+            "url": "https://evedesign.bio/",
             "description": "Apr 2026–present 21-person, 18-institution, 8-country protein-design collaboration; uncertainty-aware multi-objective candidate selection and sequence-structure-function objectives [code soon-to-be released]"
           },
           {

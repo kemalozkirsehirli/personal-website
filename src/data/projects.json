@@ -132,8 +132,8 @@
     ],
     "links": [
       {
-        "label": "Code soon-to-be released",
-        "url": null
+        "label": "EVEdesign website",
+        "url": "https://evedesign.bio/"
       },
       {
         "label": "CV",
@@ -141,7 +141,7 @@
       }
     ],
     "slug": "evedesign-protein-design",
-    "url": null
+    "url": "https://evedesign.bio/"
   },
   {
     "title": "ML for Statistical Mechanics Simulations — Prof. A. Nihat Berker",
