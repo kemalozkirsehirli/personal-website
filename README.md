@@ -176,7 +176,7 @@ src/data/photos.json
 CV page:
 
 ```txt
-CV is shown at /cv/; downloadable PDF is intentionally not published
+CV is shown at /cv/ as a web page.
 ```
 
 ## Sonra essay eklemek

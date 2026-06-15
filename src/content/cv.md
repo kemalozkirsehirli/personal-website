@@ -5,17 +5,17 @@ description: "Education, research, engineering, teaching, leadership, honors, sk
 
 # Kemal Özkırşehirli
 
-**MIT B.Sc. Candidate** — Computer Science and Engineering, Physics, Applied Mathematics. Minors in Philosophy and Writing.  
+**MIT B.Sc. Candidate** — Computer Science and Engineering, Chemical Physics, Mathematical Biology. Minors in Philosophy and Writing.  
 Cambridge, MA · [kemalozk@mit.edu](mailto:kemalozk@mit.edu) · [LinkedIn](https://linkedin.com/in/kozkirsehirli) · [GitHub](https://github.com/kemalozkirsehirli) · [Google Scholar](https://scholar.google.com/citations?user=SKE-LC8AAAAJ)
 
-I work at the intersection of AI/ML, physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. My work turns difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.
+I am an international student at MIT, and I hail from İstanbul, Türkiye. I work at the intersection of AI/ML, chemical physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. My work turns difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.
 
 ## Education
 
 **Massachusetts Institute of Technology** — Cambridge, MA  
 B.Sc. expected May 2027. GPA: 5.0/5.0.
 
-- Majors: Computer Science and Engineering, Physics, Applied Mathematics.
+- Majors: Computer Science and Engineering, Chemical Physics, Mathematical Biology.
 - Minors: Philosophy, Writing.
 - Transferred to MIT from Columbia University.
 - Graduate-level coursework: Deep Learning; Platforms for Drug Discovery; Atomistic Modeling and Simulation; Statistical Physics in Biology; Stochastic Processes.

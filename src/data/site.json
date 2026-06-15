@@ -2,16 +2,16 @@
   "url": "https://kemal-ozkirsehirli.com",
   "basePath": "",
   "title": "Kemal Özkırşehirli",
-  "description": "Academic homepage for Kemal Özkırşehirli: AI/ML for science, physics, computational chemistry, geometric deep learning, CADD, protein design, chromatin biology, statistical mechanics, and scientific workflow engineering.",
+  "description": "Academic homepage for Kemal Özkırşehirli: AI/ML for science, chemical physics, computational chemistry, geometric deep learning, CADD, protein design, chromatin biology, statistical mechanics, and scientific workflow engineering.",
   "language": "en",
   "resumePdf": null,
   "author": {
     "name": "Kemal Özkırşehirli",
-    "role": "MIT B.Sc. candidate · Computer Science and Engineering · Physics · Applied Mathematics",
+    "role": "MIT B.Sc. candidate · Computer Science and Engineering · Chemical Physics · Mathematical Biology",
     "location": "Cambridge, MA, USA",
     "email": "kemalozk@mit.edu",
     "avatar": "/photos/kemal-profile.jpg",
-    "bio": "I work at the intersection of AI/ML, physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. My goal is to turn difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.",
+    "bio": "I am an international student at MIT, and I hail from İstanbul, Türkiye. I work at the intersection of AI/ML, chemical physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. My goal is to turn difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.",
     "links": [
       {
         "label": "GitHub",
@@ -31,9 +31,9 @@
       }
     ],
     "highlights": [
-      "MIT B.Sc. candidate, expected May 2027; GPA 5.0/5.0; Computer Science and Engineering, Physics, and Applied Mathematics; minors in Philosophy and Writing; transferred from Columbia University.",
-      "Current work spans TBXT CADD, ChemAgent-QSM, antibody RL, EVEdesign, PRISM protein-model red-teaming, autoimmune V2M-Engine, ChromoGen-V2, 3D mesh learning for life sciences, and ML-augmented renormalization group theory.",
-      "Research and engineering across MIT Chemistry, MIT Physics, MIT CSAIL, A*STAR EDDC, Harvard Medical School, AI@MIT, Columbia, Weizmann Institute, and W2D2/PRISM.",
+      "International student from İstanbul, Türkiye; MIT B.Sc. candidate, expected May 2027; GPA 5.0/5.0; Computer Science and Engineering, Chemical Physics, and Mathematical Biology; minors in Philosophy and Writing; transferred from Columbia University.",
+      "Current work spans 3D mesh methodology for life-science fit, PRISM protein-model red-teaming, ChromoGen-V2, autoimmune V2M-Engine, TBXT CADD, ChemAgent-QSM, antibody RL, EVEdesign, and ML-augmented renormalization group theory.",
+      "Research and engineering across MIT Chemistry, MIT CSAIL, MIT Physics, A*STAR EDDC, W2D2/PRISM, Harvard Medical School, Columbia, AI@MIT, Weizmann Institute, and MIT BioMakers.",
       "Bronze medalist at IChO and IMChO; Columbia Science Research Fellow and Likely Letter recipient; TÜBİTAK National Chemistry Olympiad silver medalist; Waterloo distinction recipient; AIME qualifier with AMC 12 Hall of Fame recognition; YC Startup School 2026 accepted."
     ]
   },
@@ -52,7 +52,7 @@
     }
   ],
   "home": {
-    "eyebrow": "MIT · AI/ML for Science · Physics · CADD",
+    "eyebrow": "MIT · AI/ML for Science · Chemical Physics · CADD",
     "degree": "B.Sc. candidate",
     "selectedTitle": "AI/ML for Science - Selected Work",
     "spotlight": [
@@ -282,42 +282,42 @@
           {
             "title": "TBXT",
             "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced",
-            "description": "11-person chordoma/TBXT sprint; docking, GNINA CNN rescoring, QSAR, BRICS generation, Boltz-2 co-folding, MMGBSA/FEP scaffolding, paralog selectivity, and public research release"
-          },
-          {
-            "title": "ChemAgent-QSM",
-            "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli",
-            "description": "LLM-guided quantum/statistical-mechanics pipelines using PySCF; TCFs, local order, relaxation, mobility, optimized geometries, and spectra"
-          },
-          {
-            "title": "DFT → kMC",
-            "url": null,
-            "description": "multi-scale computational organic chemistry pipeline; 20+ transition states, 500+ trajectories, solvent-pathway screening, and 22% predicted yield optimization [code soon-to-be released]"
+            "description": "Apr 2026–present chordoma/TBXT CADD sprint; docking, GNINA CNN rescoring, QSAR, BRICS generation, Boltz-2 co-folding, MMGBSA/FEP scaffolding, paralog selectivity, and public research release"
           },
           {
             "title": "V2M",
             "url": null,
-            "description": "autoimmune genetics-to-mechanism target-discovery engine with single-cell foundation models, QTL/colocalization, targetability checks, and therapeutic-control validation [code soon-to-be released]"
+            "description": "Apr 2026–present autoimmune genetics-to-mechanism target-discovery engine with single-cell foundation models, QTL/colocalization, targetability checks, and therapeutic-control validation [code soon-to-be released]"
+          },
+          {
+            "title": "ChemAgent-QSM",
+            "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli",
+            "description": "Jan–May 2026 LLM-guided quantum/statistical-mechanics pipelines using PySCF; TCFs, local order, relaxation, mobility, optimized geometries, and spectra"
+          },
+          {
+            "title": "DFT → kMC",
+            "url": null,
+            "description": "Aug 2023–Feb 2024 multi-scale computational organic chemistry pipeline; 20+ transition states, 500+ trajectories, solvent-pathway screening, and 22% predicted yield optimization [code soon-to-be released]"
           }
         ]
       },
       {
-        "title": "Molecular Simulation and Physics",
+        "title": "Molecular Simulation and Chemical Physics",
         "items": [
           {
-            "title": "Biochemical Diffusion",
+            "title": "ChromoGen V2",
             "url": null,
-            "description": "PINN/neural-ODE stochastic simulation of nonequilibrium reaction-diffusion networks; Euler-Maruyama, Runge-Kutta, Gillespie SSA, and nonlinear biochemical oscillations [code soon-to-be released]"
+            "description": "May 2026–present conditional diffusion for small-molecule-perturbed single-cell 3D chromatin ensembles with Plate-C/Easy Dip-C/CHARM-style data [code soon-to-be released]"
           },
           {
             "title": "Renormalization Group",
             "url": null,
-            "description": "GNN/PyTorch Kadanoff RG framework for spin systems, fixed points, phase boundaries, and statistical-mechanics simulation [code soon-to-be released]"
+            "description": "Jan 2022–present GNN/PyTorch Kadanoff RG framework for spin systems, fixed points, phase boundaries, and statistical-mechanics simulation [code soon-to-be released]"
           },
           {
-            "title": "ChromoGen V2",
+            "title": "Biochemical Diffusion",
             "url": null,
-            "description": "conditional diffusion for small-molecule-perturbed single-cell 3D chromatin ensembles with Plate-C/Easy Dip-C/CHARM-style data [code soon-to-be released]"
+            "description": "Jun–Aug 2025 PINN/neural-ODE stochastic simulation of nonequilibrium reaction-diffusion networks; Euler-Maruyama, Runge-Kutta, Gillespie SSA, and nonlinear biochemical oscillations [code soon-to-be released]"
           }
         ]
       },
@@ -325,24 +325,24 @@
         "title": "Protein Models and Biomolecular Design",
         "items": [
           {
-            "title": "Antibody RL",
-            "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning",
-            "description": "structure-informed cross-attention transformer and PPO pipeline with OAS/SAbDab/IEDB data and AF-Multimer/IGFold-style metrics"
-          },
-          {
-            "title": "EVEdesign",
+            "title": "3D Meshes",
             "url": null,
-            "description": "21-person, 18-institution, 8-country protein-design collaboration; uncertainty-aware multi-objective candidate selection and sequence-structure-function objectives [code soon-to-be released]"
+            "description": "Jun 2026–present methodology-first geometric deep learning collaboration for 3D meshes and point clouds; life-science applications are pursued if and only if the new method creates a principled scientific fit [code soon-to-be released]"
           },
           {
             "title": "PRISM",
             "url": null,
-            "description": "adversarial evaluation, reliability checks, uncertainty calibration, and failure taxonomies for protein foundation models [code soon-to-be released]"
+            "description": "May 2026–present adversarial evaluation, reliability checks, uncertainty calibration, and failure taxonomies for protein foundation models [code soon-to-be released]"
           },
           {
-            "title": "3D Meshes",
+            "title": "EVEdesign",
             "url": null,
-            "description": "methodology-first geometric deep learning collaboration for 3D meshes and point clouds; life-science applications are used if and only if the new method creates a principled scientific fit [code soon-to-be released]"
+            "description": "Apr 2026–present 21-person, 18-institution, 8-country protein-design collaboration; uncertainty-aware multi-objective candidate selection and sequence-structure-function objectives [code soon-to-be released]"
+          },
+          {
+            "title": "Antibody RL",
+            "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning",
+            "description": "Jan–May 2026 structure-informed cross-attention transformer and PPO pipeline with OAS/SAbDab/IEDB data and AF-Multimer/IGFold-style metrics"
           }
         ]
       },
@@ -350,14 +350,14 @@
         "title": "Genome, Immune Mechanism, Targetability",
         "items": [
           {
-            "title": "Sequence-to-State",
-            "url": null,
-            "description": "variant-effect scoring, Perturb-seq validation, counterfactual immune-state transport, and structure-aware target prioritization [code soon-to-be released]"
-          },
-          {
             "title": "ChromoGen Target Readouts",
             "url": null,
-            "description": "small-molecule perturbation, regulatory-state conditioning, distributional calibration, and interpretable attribution for 3D genome shifts [code soon-to-be released]"
+            "description": "May 2026–present small-molecule perturbation, regulatory-state conditioning, distributional calibration, and interpretable attribution for 3D genome shifts [code soon-to-be released]"
+          },
+          {
+            "title": "Sequence-to-State",
+            "url": null,
+            "description": "Apr 2026–present variant-effect scoring, Perturb-seq validation, counterfactual immune-state transport, and structure-aware target prioritization [code soon-to-be released]"
           }
         ]
       },
@@ -370,9 +370,9 @@
             "description": "Python, C/C++, CUDA, HPC, PyTorch, RDKit, OpenMM/OpenFE, GNINA/Vina, Boltz-2, PySCF, LangGraph, FastAPI, LaTeX"
           },
           {
-            "title": "Chem/Physics/Simulation",
+            "title": "Chem/Chemical Physics/Simulation",
             "url": "/cv/#education",
-            "description": "quantum chemistry, biochemistry, advanced organic chemistry, statistical mechanics, molecular modeling, molecular docking, free-energy methods, and physics"
+            "description": "quantum chemistry, biochemistry, advanced organic chemistry, statistical mechanics, molecular modeling, molecular docking, free-energy methods, and chemical physics"
           },
           {
             "title": "Graduate-level",
@@ -392,7 +392,7 @@
           {
             "title": "MIT",
             "url": "/cv/#education",
-            "description": "CS&E, Physics, Applied Mathematics; Philosophy and Writing; GPA 5.0/5.0; expected May 2027"
+            "description": "CS&E, Chemical Physics, Mathematical Biology; Philosophy and Writing; GPA 5.0/5.0; expected May 2027"
           },
           {
             "title": "Columbia",
@@ -425,6 +425,16 @@
             "description": "dry-lab member in a biomaking community for interdisciplinary projects, workshops, and student-led research infrastructure"
           },
           {
+            "title": "Schwarzman UAG",
+            "url": "https://computing.mit.edu/about/people/undergraduate-advisory-group/",
+            "description": "undergraduate advisory group context for student input into computing education and research at MIT"
+          },
+          {
+            "title": "Undergraduate Association",
+            "url": "https://ua.mit.edu/",
+            "description": "MIT undergraduate student-government and Institute-committee representation context"
+          },
+          {
             "title": "AI@MIT",
             "url": "https://aiatmit.com/",
             "description": "AI and machine-learning undergraduate community; protein/antibody discovery collaboration context"
@@ -438,16 +448,6 @@
             "title": "Math Journal",
             "url": "https://journals.library.columbia.edu/index.php/cjum",
             "description": "content editor and referee producing LaTeX reports on undergraduate mathematics theses and papers"
-          },
-          {
-            "title": "Schwarzman UAG",
-            "url": "https://computing.mit.edu/about/people/undergraduate-advisory-group/",
-            "description": "undergraduate advisory group context for student input into computing education and research at MIT"
-          },
-          {
-            "title": "Undergraduate Association",
-            "url": "https://ua.mit.edu/",
-            "description": "MIT undergraduate student-government and Institute-committee representation context"
           },
           {
             "title": "Olympiad Captain",

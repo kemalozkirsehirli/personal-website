@@ -667,7 +667,6 @@ async function renderCv(site, ctx) {
         ${author.location ? `<p>${escapeHtml(author.location)}</p>` : ''}
         ${author.email ? `<p><a href="mailto:${escapeAttr(author.email)}">${escapeHtml(author.email)}</a></p>` : ''}
         ${pdf}
-        <p><button class="print-button" type="button" onclick="window.print()">Print / Save PDF</button></p>
       </aside>
     </div>
     <div class="prose cv-prose">${markdownToHtml(body, ctx)}</div>
