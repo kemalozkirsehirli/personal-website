@@ -8,7 +8,7 @@ description: "Education, research, engineering, teaching, leadership, honors, sk
 **MIT B.Sc. Candidate** — Computer Science and Engineering, Chemical Physics, Mathematical Biology. Minors in Philosophy and Writing.  
 Cambridge, MA · [kemalozk@mit.edu](mailto:kemalozk@mit.edu) · [LinkedIn](https://linkedin.com/in/kozkirsehirli) · [GitHub](https://github.com/kemalozkirsehirli) · [Google Scholar](https://scholar.google.com/citations?user=SKE-LC8AAAAJ)
 
-I am an international student at MIT, and I hail from İstanbul, Türkiye. I work at the intersection of AI/ML, chemical physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. My work turns difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.
+I am an international student at MIT, and I hail from İstanbul, Türkiye. I work at the intersection of AI/ML, chemical physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. I am on track to graduate a year early, completing a triple major and two minors in three total years of undergraduate education. My work turns difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.
 
 ## Education
 
@@ -17,6 +17,7 @@ B.Sc. expected May 2027. GPA: 5.0/5.0.
 
 - Majors: Computer Science and Engineering, Chemical Physics, Mathematical Biology.
 - Minors: Philosophy, Writing.
+- On track to graduate a year early, completing a triple major and two minors in three total years of undergraduate education.
 - Transferred to MIT from Columbia University.
 - Graduate-level coursework: Deep Learning; Platforms for Drug Discovery; Atomistic Modeling and Simulation; Statistical Physics in Biology; Stochastic Processes.
 - Undergraduate-level coursework: Design and Analysis of Algorithms; Theory of Computation; Natural Language Processing; Sublinear Time Algorithms; Computer Structures and Architectures; Intensive Python and C/C++/Assembly Programming Labs; Probability Theory and Random Variables; Linear Algebra; Quantum Chemistry; Biochemistry; Advanced Organic Chemistry; Discrete Mathematics; Genetics.
@@ -138,6 +139,15 @@ Score: 44/45.
 - Investigated stochastic differential equations for enzymatic reaction-diffusion systems with Brownian motion, chemical kinetics, spatial heterogeneity, nonlinear biochemical feedback oscillations, molecular self-organization, and chaotic oscillation.
 - Developed PINN- and neural-ODE-enhanced stochastic simulation algorithms; implemented custom Euler-Maruyama, Runge-Kutta, and Gillespie SSA solvers.
 - Constructed GNN encoders and transformer sequence models with UMAP-driven clustering to extract latent thermal structure from high-dimensional trajectory datasets.
+
+### Backend Software Engineer and Head of Chemistry — Agentic Chemistry Workflows
+
+**Pedal AI** — Jul 2025–Dec 2025
+
+- Built Python/LangGraph backend infrastructure for chemistry AI agents, including stateful workflow orchestration and custom tool integration.
+- Integrated agent logic with molecular-prediction engines through consistent API interfaces and persistent internal state across workflow runs.
+- Helped align cheminformatics UI/UX behavior with backend agent logic for more inspectable retrosynthesis-route and molecular-workflow tools.
+- Code is not public.
 
 ### Chemistry and AI Consultant / Scientific Data and Evaluation Specialist
 

@@ -333,6 +333,30 @@
     "url": null
   },
   {
+    "title": "Pedal AI — Backend Software Engineer and Head of Chemistry",
+    "status": "Jul 2025 – Dec 2025",
+    "description": "Built Python/LangGraph backend infrastructure for chemistry AI agents, including stateful workflow orchestration, custom tool integration, API interfaces between molecular-prediction engines and agent logic, and UI/UX synchronization for cheminformatics and retrosynthesis-route workflows. Code is not public.",
+    "tags": [
+      "LangGraph",
+      "Backend Engineering",
+      "Cheminformatics",
+      "Agentic AI",
+      "UI/UX"
+    ],
+    "links": [
+      {
+        "label": "Code not public",
+        "url": null
+      },
+      {
+        "label": "CV",
+        "url": "/cv/"
+      }
+    ],
+    "slug": "pedal-ai-backend-chemistry-agent-workflows",
+    "url": null
+  },
+  {
     "title": "Kupcinet-Getz Scholar — Computational Biochemical Diffusion",
     "status": "Jun 2025 – Aug 2025",
     "description": "Selected as one of 22 worldwide Kupcinet-Getz International School scholars; investigated stochastic differential equations for enzyme reaction-diffusion systems with Brownian motion, chemical kinetics, spatial heterogeneity, nonlinear biochemical feedback oscillations, molecular self-organization, and chaotic dynamics; developed PINN/neural-ODE methods, custom Euler-Maruyama, Runge-Kutta, and Gillespie SSA solvers, plus GNN/transformer/UMAP analysis of trajectories.",

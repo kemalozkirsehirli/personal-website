@@ -7,11 +7,11 @@
   "resumePdf": null,
   "author": {
     "name": "Kemal Özkırşehirli",
-    "role": "MIT B.Sc. candidate · Computer Science and Engineering · Chemical Physics · Mathematical Biology",
+    "role": "MIT B.Sc. candidate · triple major in Computer Science and Engineering, Chemical Physics, and Mathematical Biology",
     "location": "Cambridge, MA, USA",
     "email": "kemalozk@mit.edu",
     "avatar": "/photos/kemal-profile.jpg",
-    "bio": "I am an international student at MIT, and I hail from İstanbul, Türkiye. I work at the intersection of AI/ML, chemical physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. My goal is to turn difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.",
+    "bio": "I am an international student at MIT, and I hail from İstanbul, Türkiye. I work at the intersection of AI/ML, chemical physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. I am on track to graduate a year early, completing a triple major and two minors in three total years of undergraduate education. My goal is to turn difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.",
     "links": [
       {
         "label": "GitHub",
@@ -31,9 +31,9 @@
       }
     ],
     "highlights": [
-      "International student from İstanbul, Türkiye; MIT B.Sc. candidate, expected May 2027; GPA 5.0/5.0; Computer Science and Engineering, Chemical Physics, and Mathematical Biology; minors in Philosophy and Writing; transferred from Columbia University.",
-      "Current work spans 3D mesh methodology for life-science fit, PRISM protein-model red-teaming, ChromoGen-V2, autoimmune V2M-Engine, TBXT CADD, ChemAgent-QSM, antibody RL, EVEdesign, and ML-augmented renormalization group theory.",
-      "Research and engineering across MIT Chemistry, MIT CSAIL, MIT Physics, A*STAR EDDC, W2D2/PRISM, Harvard Medical School, Columbia, AI@MIT, Weizmann Institute, and MIT BioMakers.",
+      "International student from İstanbul, Türkiye; MIT B.Sc. candidate, expected May 2027; GPA 5.0/5.0; triple major in Computer Science and Engineering, Chemical Physics, and Mathematical Biology; minors in Philosophy and Writing; on track to graduate a year early, completing three majors and two minors in three total years of undergraduate education; transferred from Columbia University.",
+      "Current work spans TBXT CADD, V2M autoimmune target discovery, PRISM protein-model red-teaming, ChromoGen-V2, 3D mesh methodology for life-science fit, ChemAgent-QSM, EVEdesign, antibody RL, and ML-augmented renormalization group theory.",
+      "Research and engineering across MIT Chemistry, MIT CSAIL, MIT Physics, A*STAR EDDC, W2D2/PRISM, Harvard Medical School, Columbia, AI@MIT, Weizmann Institute, MIT BioMakers, Pedal AI, Sepal AI/Mercor, and Buchwald Lab contexts.",
       "Bronze medalist at IChO and IMChO; Columbia Science Research Fellow and Likely Letter recipient; TÜBİTAK National Chemistry Olympiad silver medalist; Waterloo distinction recipient; AIME qualifier with AMC 12 Hall of Fame recognition; YC Startup School 2026 accepted."
     ]
   },
@@ -295,9 +295,24 @@
             "description": "Jan–May 2026 LLM-guided quantum/statistical-mechanics pipelines using PySCF; TCFs, local order, relaxation, mobility, optimized geometries, and spectra"
           },
           {
+            "title": "Buchwald Lab",
+            "url": "/projects/#advanced-organic-synthesis-buchwald-lab",
+            "description": "Dec 2025–May 2026 advanced organic synthesis in MIT Chemistry; CuH-catalyst development, asymmetric methylation/alkylation, NMR/HPLC analysis, and substrate-scope expansion"
+          },
+          {
+            "title": "Pedal AI",
+            "url": null,
+            "description": "Jul–Dec 2025 Python/LangGraph backend and chemistry-agent workflow engineering; stateful tool orchestration, molecular-prediction API integration, retrosynthesis-route UX, and cheminformatics workflow design [code not public]"
+          },
+          {
+            "title": "Sepal AI / Mercor",
+            "url": "/projects/#sepal-ai-mercor-chemistry-llm-evaluation-and-scientific-data",
+            "description": "Sept 2024–Feb 2025 chemistry LLM evaluation, rubric design, retrosynthesis/reaction-mechanism task construction, prompt analysis, and failure-mode annotation"
+          },
+          {
             "title": "DFT → kMC",
             "url": null,
-            "description": "Aug 2023–Feb 2024 multi-scale computational organic chemistry pipeline; 20+ transition states, 500+ trajectories, solvent-pathway screening, and 22% predicted yield optimization [code soon-to-be released]"
+            "description": "Aug 2023–Feb 2024 multi-scale computational organic chemistry pipeline; transition-state screening, reaction-trajectory analysis, solvent-pathway modeling, and predicted yield optimization [code soon-to-be released]"
           }
         ]
       },
@@ -315,9 +330,9 @@
             "description": "Jan 2022–present GNN/PyTorch Kadanoff RG framework for spin systems, fixed points, phase boundaries, and statistical-mechanics simulation [code soon-to-be released]"
           },
           {
-            "title": "Biochemical Diffusion",
-            "url": null,
-            "description": "Jun–Aug 2025 PINN/neural-ODE stochastic simulation of nonequilibrium reaction-diffusion networks; Euler-Maruyama, Runge-Kutta, Gillespie SSA, and nonlinear biochemical oscillations [code soon-to-be released]"
+            "title": "Kupcinet-Getz",
+            "url": "/projects/#computational-biochemical-diffusion",
+            "description": "Jun–Aug 2025 computational biochemical diffusion at Weizmann; stochastic reaction-diffusion modeling, PINN/neural-ODE solvers, Gillespie SSA, nonlinear oscillations, and trajectory analysis [code soon-to-be released]"
           }
         ]
       },
@@ -343,21 +358,6 @@
             "title": "Antibody RL",
             "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning",
             "description": "Jan–May 2026 structure-informed cross-attention transformer and PPO pipeline with OAS/SAbDab/IEDB data and AF-Multimer/IGFold-style metrics"
-          }
-        ]
-      },
-      {
-        "title": "Genome, Immune Mechanism, Targetability",
-        "items": [
-          {
-            "title": "ChromoGen Target Readouts",
-            "url": null,
-            "description": "May 2026–present small-molecule perturbation, regulatory-state conditioning, distributional calibration, and interpretable attribution for 3D genome shifts [code soon-to-be released]"
-          },
-          {
-            "title": "Sequence-to-State",
-            "url": null,
-            "description": "Apr 2026–present variant-effect scoring, Perturb-seq validation, counterfactual immune-state transport, and structure-aware target prioritization [code soon-to-be released]"
           }
         ]
       },
@@ -392,7 +392,7 @@
           {
             "title": "MIT",
             "url": "/cv/#education",
-            "description": "CS&E, Chemical Physics, Mathematical Biology; Philosophy and Writing; GPA 5.0/5.0; expected May 2027"
+            "description": "triple major in CS&E, Chemical Physics, Mathematical Biology; minors in Philosophy and Writing; GPA 5.0/5.0; expected May 2027, on track to graduate a year early"
           },
           {
             "title": "Columbia",

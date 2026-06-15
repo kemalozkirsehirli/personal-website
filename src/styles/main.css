@@ -55,15 +55,15 @@ button, input { font: inherit; }
 }
 
 .classic-shell {
-  width: min(100%, 1240px);
+  width: min(100%, 1480px);
   margin: 0 auto;
-  padding: 12px 8px 0;
+  padding: 12px 10px 0;
 }
 
 .kellis-home {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
-  gap: 24px;
+  gap: 30px;
   align-items: start;
 }
 
@@ -107,8 +107,8 @@ button, input { font: inherit; }
 
 .classic-top {
   display: grid;
-  grid-template-columns: minmax(340px, 0.92fr) minmax(560px, 1.35fr);
-  gap: 28px;
+  grid-template-columns: minmax(360px, 0.72fr) minmax(720px, 1.58fr);
+  gap: 34px;
   align-items: start;
 }
 
@@ -174,16 +174,16 @@ button, input { font: inherit; }
 }
 
 .topic-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 24px;
-  row-gap: 0;
-  align-items: start;
+  column-count: 2;
+  column-gap: 30px;
 }
 
 .classic-topic {
-  margin: 0 0 16px;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 14px;
   break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .classic-topic h3 {
@@ -239,9 +239,9 @@ button, input { font: inherit; }
 }
 
 .classic-footer {
-  width: min(100%, 1240px);
+  width: min(100%, 1480px);
   margin: 8px auto 20px;
-  padding: 0 8px;
+  padding: 0 10px;
   color: #333;
   font-size: 12px;
   line-height: 1.12;
@@ -250,9 +250,9 @@ button, input { font: inherit; }
 .classic-footer p { margin: 0 0 3px; }
 
 .classic-page {
-  max-width: 980px;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 18px 8px 28px;
+  padding: 18px 10px 28px;
 }
 
 .classic-page h1 {
@@ -373,7 +373,7 @@ button, input { font: inherit; }
 }
 
 .prose {
-  max-width: 780px;
+  max-width: 920px;
   font-size: 17px;
   line-height: 1.35;
 }
@@ -519,7 +519,7 @@ button, input { font: inherit; }
   }
 
   .topic-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-count: 2;
   }
 }
 
@@ -547,7 +547,10 @@ button, input { font: inherit; }
     text-align: left;
   }
 
-  .topic-grid,
+  .topic-grid {
+    column-count: 1;
+  }
+
   .cv-title-row {
     grid-template-columns: 1fr;
   }
