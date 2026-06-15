@@ -8,7 +8,7 @@ description: "Education, research, engineering, teaching, leadership, honors, sk
 **MIT B.Sc. Candidate** — Computer Science and Engineering, Chemical Physics, Mathematical Biology. Minors in Philosophy and Writing.  
 Cambridge, MA · [kemalozk@mit.edu](mailto:kemalozk@mit.edu) · [LinkedIn](https://linkedin.com/in/kozkirsehirli) · [GitHub](https://github.com/kemalozkirsehirli) · [Google Scholar](https://scholar.google.com/citations?user=SKE-LC8AAAAJ)
 
-I am an international student at MIT, and I hail from İstanbul, Türkiye. I work at the intersection of AI/ML, chemical physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. I am building a rare interdisciplinary undergraduate profile: I am on track to graduate a year early, completing a triple major and two minors in three total years of undergraduate education. My work turns difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.
+I am an international student at MIT, and I hail from İstanbul, Türkiye. I work at the intersection of AI/ML, chemical physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. I am on track to graduate a year early, completing a triple major and two minors in three total years of undergraduate education. My work turns difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.
 
 ## Education
 

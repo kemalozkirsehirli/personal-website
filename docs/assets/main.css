@@ -126,11 +126,6 @@ button, input { font: inherit; }
 
 .classic-bio p { margin-bottom: 8px; }
 
-.classic-statement {
-  margin: 10px 0 15px;
-  line-height: 1.18;
-}
-
 .section-label,
 .classic-directory h2,
 .classic-selected h2,
@@ -179,21 +174,14 @@ button, input { font: inherit; }
 }
 
 .topic-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 32px;
-  row-gap: 0;
-  align-items: start;
-}
-
-.topic-column {
-  min-width: 0;
+  column-count: 2;
+  column-gap: 30px;
 }
 
 .classic-topic {
-  display: block;
+  display: inline-block;
   width: 100%;
-  margin: 0 0 18px;
+  margin: 0 0 14px;
   break-inside: avoid;
   page-break-inside: avoid;
 }
@@ -531,7 +519,7 @@ button, input { font: inherit; }
   }
 
   .topic-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-count: 2;
   }
 }
 
@@ -560,7 +548,7 @@ button, input { font: inherit; }
   }
 
   .topic-grid {
-    grid-template-columns: 1fr;
+    column-count: 1;
   }
 
   .cv-title-row {

@@ -1,8 +1,14 @@
 [
   {
     "src": "/photos/profile.jpg",
-    "alt": "Kemal Özkırşehirli",
+    "alt": "Kemal Özkırşehirli portrait",
     "caption": "Kemal",
+    "year": "2026"
+  },
+  {
+    "src": "/photos/kemal-profile-thumb.jpg",
+    "alt": "Profile thumbnail",
+    "caption": "Portrait",
     "year": "2026"
   },
   {
