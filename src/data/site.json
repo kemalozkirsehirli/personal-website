@@ -368,22 +368,22 @@
           {
             "title": "Chem/Chemical Physics/Simulation",
             "url": "/cv/#education",
-            "description": "5.601 Thermodynamics I; 5.351 Fundamentals of Spectroscopy; 5.43 Advanced Organic Chemistry; 8.05 Quantum Physics II; 8.592[J] Statistical Physics in Biology; 2.094[J] Atomistic Modeling and Simulation of Materials and Structures"
-          },
-          {
-            "title": "Next Fall Coursework",
-            "url": "/cv/#education",
-            "description": "6.7960 Deep Learning; 18.404[J] Theory of Computation; 8.592[J] Statistical Physics in Biology; 8.05 Quantum Physics II; 2.094[J] Atomistic Modeling and Simulation of Materials and Structures; 6.5240 Sublinear Time Algorithms; 6.4610 Natural Language Processing; 6.3930 AI and Decision Making in Medicine: From Disease to Therapy"
+            "description": "8.592[J] Statistical Physics in Biology; 2.094[J] Atomistic Modeling and Simulation of Materials and Structures; 8.05 Quantum Physics II; 5.601 Thermodynamics I; 5.351 Fundamentals of Spectroscopy; 5.43 Advanced Organic Chemistry"
           },
           {
             "title": "CS/AI/Systems",
             "url": "/cv/#education",
-            "description": "6.1220[J] Advanced Algorithm Design-Analysis; 6.1910 Computer Structures and Architectures; 6.1903 Introduction to Low-level Programming in C and Assembly; 6.100B Introduction to Computational Thinking and Data Science; 18.615 Stochastic Processes; 6.1200[J] Discrete Mathematics; 18.600 Probability Theory and Random Variables; 18.06 Linear Algebra"
+            "description": "6.7960 Deep Learning; 18.404[J] Theory of Computation; 6.5240 Sublinear Time Algorithms; 6.4610 Natural Language Processing; 6.3930 AI and Decision Making in Medicine: From Disease to Therapy; 6.1220[J] Advanced Algorithm Design-Analysis; 6.1910 Computer Structures and Architectures; 6.1903 Introduction to Low-level Programming in C and Assembly; 6.100B Introduction to Computational Thinking and Data Science; 18.615 Stochastic Processes; 6.1200[J] Discrete Mathematics; 18.600 Probability Theory and Random Variables; 18.06 Linear Algebra"
           },
           {
             "title": "Humanitas Core",
             "url": "/cv/#education",
-            "description": "24.245 Theory of Models; 21W.747 Rhetoric; 21W.745 Advanced Essay Workshop; 21W.762 Poetry Workshop; 24.251 Introduction to Philosophy of Language; 24.05 Philosophy of Religion; 17.01[J]/24.04[J] Justice; 24.121 Metaphysics; 21W.738[J] Intersectional Feminist Memoir"
+            "description": "24.245 Theory of Models; 24.121 Metaphysics; 24.251 Introduction to Philosophy of Language; 17.01[J]/24.04[J] Justice; 24.05 Philosophy of Religion; 21W.747 Rhetoric; 21W.745 Advanced Essay Workshop; 21W.762 Poetry Workshop; 21W.738[J] Memoir"
+          },
+          {
+            "title": "Columbia Coursework",
+            "url": "/cv/#education",
+            "description": "CHEM UN2045 Intensive Organic Chemistry I; COMS W3137 Data Structures and Algorithms; MATH UN1205 Accelerated Multivariable Calculus; PHYS UN1401 Introduction to Mechanics and Thermodynamics; PHYS UN1402 Introduction to Electricity, Magnetism, and Optics; ELEN E1201 Introduction to Electrical Engineering and Lab; ENGL CC1010.2xx University Writing: Readings in Gender and Sexuality; HUMA CC1001–CC1002 Literature Humanities I & II; SCNC CC1000/CC1100 Frontiers of Science"
           }
         ],
         "column": "left"

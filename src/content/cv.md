@@ -19,16 +19,16 @@ B.Sc. expected May 2027. GPA: 5.0/5.0.
 - Minors: Philosophy, Writing.
 - On track to graduate a year early, completing a triple major and two minors in three total years of undergraduate education.
 - Transferred to MIT from Columbia University.
-- Completed MIT coursework: 5.351 Fundamentals of Spectroscopy (completed this term); 6.1220[J] Advanced Algorithm Design-Analysis; 5.43 Advanced Organic Chemistry; 6.1200[J] Discrete Mathematics; 18.600 Probability Theory and Random Variables; 18.06 Linear Algebra.
-- Planned Fall coursework, hardest-first: 6.7960 Deep Learning; 18.404[J] Theory of Computation; 8.592[J] Statistical Physics in Biology; 8.05 Quantum Physics II; 2.094[J] Atomistic Modeling and Simulation of Materials and Structures; 6.5240 Sublinear Time Algorithms; 6.4610 Natural Language Processing; 6.3930 AI and Decision Making in Medicine: From Disease to Therapy; 6.1910 Computer Structures and Architectures; 5.601 Thermodynamics I; 18.615 Stochastic Processes; 6.1903 Introduction to Low-level Programming in C and Assembly; 6.100B Introduction to Computational Thinking and Data Science; 21W.745 Advanced Essay Workshop; 21W.762 Poetry Workshop; 21W.738[J] Intersectional Feminist Memoir.
-- Humanitas Core: 24.245 Theory of Models; 21W.747 Rhetoric; 21W.745 Advanced Essay Workshop; 21W.762 Poetry Workshop; 24.251 Introduction to Philosophy of Language; 24.05 Philosophy of Religion; 17.01[J]/24.04[J] Justice; 24.121 Metaphysics; 21W.738[J] Intersectional Feminist Memoir.
+- MIT coursework in chemistry, chemical physics, and simulation: 8.592[J] Statistical Physics in Biology; 2.094[J] Atomistic Modeling and Simulation of Materials and Structures; 8.05 Quantum Physics II; 5.601 Thermodynamics I; 5.351 Fundamentals of Spectroscopy; 5.43 Advanced Organic Chemistry.
+- MIT coursework in CS, AI, systems, and mathematics: 6.7960 Deep Learning; 18.404[J] Theory of Computation; 6.5240 Sublinear Time Algorithms; 6.4610 Natural Language Processing; 6.3930 AI and Decision Making in Medicine: From Disease to Therapy; 6.1220[J] Advanced Algorithm Design-Analysis; 6.1910 Computer Structures and Architectures; 6.1903 Introduction to Low-level Programming in C and Assembly; 6.100B Introduction to Computational Thinking and Data Science; 18.615 Stochastic Processes; 6.1200[J] Discrete Mathematics; 18.600 Probability Theory and Random Variables; 18.06 Linear Algebra.
+- Humanitas Core: 24.245 Theory of Models; 24.121 Metaphysics; 24.251 Introduction to Philosophy of Language; 17.01[J]/24.04[J] Justice; 24.05 Philosophy of Religion; 21W.747 Rhetoric; 21W.745 Advanced Essay Workshop; 21W.762 Poetry Workshop; 21W.738[J] Memoir.
 
 **Columbia University** — New York, NY  
 B.A. study in Chemistry and Computer Science-Mathematics, Sept 2024–May 2025. GPA: 4.07/4.00.
 
 - Received a Likely Letter from Columbia University and was named a Science Research Fellow.
 - Coursework: CHEM UN2045 Intensive Organic Chemistry I; COMS W3137 Data Structures and Algorithms; MATH UN1205 Accelerated Multivariable Calculus; PHYS UN1401 Introduction to Mechanics and Thermodynamics; PHYS UN1402 Introduction to Electricity, Magnetism, and Optics; ELEN E1201 Introduction to Electrical Engineering and Lab.
-- Core Curriculum: CC/GS1010.2xx University Writing: Readings in Gender and Sexuality; HUMA CC1001–CC1002 Literature Humanities I & II; SCNC CC1000/CC1100 Frontiers of Science.
+- Core Curriculum: ENGL CC1010.2xx University Writing: Readings in Gender and Sexuality; HUMA CC1001–CC1002 Literature Humanities I & II; SCNC CC1000/CC1100 Frontiers of Science.
 
 **Üsküdar American Academy** — Istanbul, Türkiye  
 2019–2024. Grade: 97/100.
@@ -101,7 +101,7 @@ Score: 44/45.
 
 ### LLM/NLP, Statistical Mechanics, and Theoretical Chemistry Researcher
 
-**Columbia University, Prof. David Reichman** — Jan 2026–May 2026
+**Columbia University** — Jan 2026–May 2026
 
 - Developed ChemAgent-QSM, an LLM-guided agentic framework converting natural-language chemistry prompts into validated PySCF quantum-chemical workflows.
 - Generated auditable Python workflows for time-correlation functions, local-order metrics, relaxation timescales, mobility fields, structure/dynamics coupling, optimized geometries, electronic-structure descriptors, and vibrational spectra.
