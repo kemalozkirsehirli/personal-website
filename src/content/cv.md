@@ -5,17 +5,17 @@ description: "Education, research, engineering, teaching, leadership, honors, sk
 
 # Kemal Özkırşehirli
 
-**MIT B.Sc. Candidate** — Computer Science and Engineering, Chemical Physics, Mathematical Biology. Minors in Philosophy and Writing.  
+**MIT B.Sc. Candidate** — Computer Science and Engineering; Physics: Chemical Physics; Mathematics: Mathematical Biology. Minors in Philosophy and Writing.  
 Cambridge, MA · [kemalozk@mit.edu](mailto:kemalozk@mit.edu) · [LinkedIn](https://linkedin.com/in/kozkirsehirli) · [GitHub](https://github.com/kemalozkirsehirli) · [Google Scholar](https://scholar.google.com/citations?user=SKE-LC8AAAAJ)
 
-I am an international student at MIT, and I hail from İstanbul, Türkiye. At MIT, I am a B.Sc. candidate expected May 2027 with a 5.0/5.0 GPA, pursuing a rare triple major in Computer Science and Engineering, Chemical Physics, and Mathematical Biology with minors in Philosophy and Writing. I am on track to graduate a year early, completing three majors and two minors in three total years of undergraduate education after transferring from Columbia University. I work at the intersection of AI/ML, chemical physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. My work turns difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.
+I am an international student at MIT, and I hail from İstanbul, Türkiye. At MIT, I am a B.Sc. candidate expected May 2027 with a 5.0/5.0 GPA, pursuing a rare triple major in Computer Science and Engineering, Physics: Chemical Physics, and Mathematics: Mathematical Biology with minors in Philosophy and Writing. I am on track to graduate a year early, completing three majors and two minors in three total years of undergraduate education after transferring from Columbia University. I work at the intersection of AI/ML, chemical physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. My work turns difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.
 
 ## Education
 
 **Massachusetts Institute of Technology** — Cambridge, MA  
 B.Sc. expected May 2027. GPA: 5.0/5.0.
 
-- Majors: Computer Science and Engineering, Chemical Physics, Mathematical Biology.
+- Majors: Computer Science and Engineering; Physics: Chemical Physics; Mathematics: Mathematical Biology.
 - Minors: Philosophy, Writing.
 - On track to graduate a year early, completing a triple major and two minors in three total years of undergraduate education.
 - Transferred to MIT from Columbia University.
