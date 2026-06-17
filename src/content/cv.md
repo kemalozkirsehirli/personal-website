@@ -50,9 +50,9 @@ Score: 44/45.
 
 ## Research, Industrial, and Professional Experiences
 
-### Founder and Research Lead — Methodology-First 3D Mesh Learning
+### Principal Investigator — Methodology-First 3D Mesh Learning
 
-**Independent research collaboration** — Jun 2026–Present
+**Independent research collaboration with Google-based research leadership** — Jun 2026–Present
 
 - Leading a 7-member international research collaboration developing a new methodology for 3D mesh and point-cloud learning rather than forcing a premature domain application.
 - Building the technical roadmap around kNN graph pipelines, Point Transformer v3-style architectures, geometric representation learning, reproducible experiments, literature synthesis, and preprint-oriented manuscript planning.

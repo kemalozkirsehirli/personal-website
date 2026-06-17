@@ -1,8 +1,8 @@
 [
   {
-    "title": "Independent Geometric Deep Learning — Methodology-First 3D Mesh Learning",
+    "title": "Principal Investigator — Methodology-First 3D Mesh Learning",
     "status": "Jun 2026 – Present",
-    "description": "Leading a 7-member international research collaboration developing a new methodology for 3D mesh and point-cloud learning. The project is methodology-first: literature synthesis, kNN graph pipelines, Point Transformer v3-style architectures, reproducible experiments, and manuscript planning come first; appropriate life-science applications include topology of enzymes, antibodies, and other biomolecular complexes when they provide a principled benchmark for the method.",
+    "description": "Serving as principal investigator for a 7-member international research collaboration developing a new methodology for 3D mesh and point-cloud learning with Google-based research leadership. The project is methodology-first: literature synthesis, kNN graph pipelines, Point Transformer v3-style architectures, reproducible experiments, and manuscript planning come first; appropriate life-science applications include topology of enzymes, antibodies, and other biomolecular complexes when they provide a principled benchmark for the method.",
     "tags": [
       "Geometric Deep Learning",
       "3D Meshes",
