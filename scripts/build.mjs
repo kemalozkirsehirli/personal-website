@@ -646,8 +646,8 @@ async function renderHome(site, ctx, essays, projects) {
         <div class="classic-bio">
           <img class="classic-cloud" src="${escapeAttr(ctx.withBase(site.home?.cloudImage || '/word-cloud.png'))}" alt="Research word cloud" loading="eager" decoding="async">
           <p class="classic-name"><b>${escapeHtml(author.name || site.title)}</b></p>
-          <div class="classic-profile-lines">${profileLines.map((item) => `<p>${escapeHtml(item)}</p>`).join('')}</div>
-          <p>${escapeHtml(author.location || '')}${author.email ? ` - <a href="mailto:${escapeAttr(author.email)}">${escapeHtml(author.email)}</a> <span class="contact-note">(contact)</span>` : ''}</p>
+          <div class="classic-profile-lines">${profileLines.map((item) => `<p>- ${escapeHtml(item)}</p>`).join('')}</div>
+          <p>- ${escapeHtml(author.location || '')}${author.email ? ` - <a href="mailto:${escapeAttr(author.email)}">${escapeHtml(author.email)}</a>` : ''}</p>
 
           <p class="classic-awards-label">Awards:</p>
           <ul class="classic-awards classic-home-awards">${homeAwards.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>

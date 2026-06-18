@@ -660,7 +660,7 @@ button, input { font: inherit; }
 }
 
 .about-poem-opening {
-  width: 7.4em;
+  width: 100%;
 }
 
 .about-poem-title {
@@ -671,7 +671,7 @@ button, input { font: inherit; }
   font-size: 31px;
   font-weight: 700;
   line-height: 1.05;
-  text-align: center;
+  text-align: left;
 }
 
 .about-poem {
