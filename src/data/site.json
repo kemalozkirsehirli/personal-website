@@ -56,6 +56,11 @@
     "selectedTitle": "AI/ML for Science - Selected Work",
     "spotlight": [
       {
+        "label": "About",
+        "url": "/about/",
+        "description": "a poem"
+      },
+      {
         "label": "Özkırşehirli Group Application Form",
         "url": "https://forms.gle/BZFfBCPRFipNeaBr5",
         "description": "apply to join the research group / TBXT-CADD continuation"

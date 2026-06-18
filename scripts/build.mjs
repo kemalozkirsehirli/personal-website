@@ -462,6 +462,46 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
 </html>`;
 }
 
+
+async function renderAbout(site, ctx) {
+  const wisdomUrl = 'https://www.wisdomlib.org/names/kemal';
+  const content = `<section class="classic-page about-classic-page">
+    <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / About</p>
+    <h1>About</h1>
+    <div class="prose about-poem" aria-label="About poem">
+      <div class="poem-line">With fortitude,</div>
+
+      <div class="poem-line poem-indent-1 poem-stanza-gap">I transition phases,</div>
+      <div class="poem-line poem-indent-2">I metamorphose</div>
+      <div class="poem-line poem-indent-2">complexities and abstractions</div>
+      <div class="poem-line poem-indent-2">into</div>
+      <div class="poem-line poem-indent-2">parsable, representable, computable</div>
+      <div class="poem-line poem-indent-2">structures,</div>
+
+      <div class="poem-line poem-indent-3 poem-stanza-gap">I force these</div>
+      <div class="poem-line poem-indent-3">compiled, disentangled, transmuted</div>
+      <div class="poem-line poem-indent-3">systems</div>
+      <div class="poem-line poem-indent-3">to</div>
+      <div class="poem-line poem-indent-3">surrender, confess, elucidate</div>
+      <div class="poem-line poem-indent-3">their governing rules,</div>
+
+      <div class="poem-line poem-indent-4 poem-stanza-gap">I, only then, execute:</div>
+
+      <div class="poem-line poem-signature poem-stanza-gap"><a href="${escapeAttr(wisdomUrl)}" target="_blank" rel="noopener noreferrer">Kemal.</a></div>
+    </div>
+  </section>`;
+  await writeFile('about/index.html', renderLayout({
+    site,
+    ctx,
+    title: 'About',
+    description: 'A poem by Kemal Özkırşehirli.',
+    activePath: '/about/',
+    path: '/about/',
+    content,
+    type: 'article'
+  }));
+}
+
 function essayCard(essay, ctx) {
   return `<article class="archive-entry" data-filter-card data-tags="${escapeAttr((essay.tags || []).join('|'))}" data-search="${escapeAttr([essay.title, essay.description, ...(essay.tags || [])].join(' '))}">
     <p><b><a href="${escapeAttr(ctx.withBase(essay.url))}">${escapeHtml(essay.title)}</a></b> - ${escapeHtml(essay.description || '')}</p>
@@ -713,7 +753,7 @@ function xmlEscape(value = '') {
 }
 
 async function renderFeeds(site, ctx, essays) {
-  const staticPages = ['/', '/projects/', '/cv/', '/photos/'];
+  const staticPages = ['/', '/about/', '/projects/', '/cv/', '/photos/'];
   if (essays.length > 0 || site.publishEmptyEssays === true) staticPages.splice(1, 0, '/essays/');
   const urls = [...staticPages, ...essays.map((essay) => essay.url)];
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((url) => `  <url><loc>${xmlEscape(ctx.absoluteUrl(url))}</loc></url>`).join('\n')}\n</urlset>\n`;
@@ -789,6 +829,7 @@ export async function build() {
 
   const essays = await loadEssays(ctx);
   await renderHome(site, ctx, essays, projects);
+  await renderAbout(site, ctx);
   await renderEssaysIndex(site, ctx, essays);
   await renderEssayPages(site, ctx, essays);
   await renderProjects(site, ctx, projects);

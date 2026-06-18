@@ -602,3 +602,47 @@ button, input { font: inherit; }
 /* Keep all selected-work item titles visibly blue, including internal CV anchor links. */
 .classic-selected .classic-item b a,
 .classic-selected .classic-item b a:visited { color: #333399; }
+
+/* About page uses the same page shell, typography, and scale as the rest of the website. */
+.about-classic-page {
+  max-width: 1120px;
+}
+
+.about-poem {
+  width: fit-content;
+  max-width: 100%;
+  margin: 1.15rem auto 0;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.poem-line {
+  min-height: 1.35em;
+  margin: 0;
+}
+
+.poem-stanza-gap {
+  margin-top: 1.35rem;
+}
+
+.poem-indent-1 { margin-left: 1.35rem; }
+.poem-indent-2 { margin-left: 2.7rem; }
+.poem-indent-3 { margin-left: 4.05rem; }
+.poem-indent-4 { margin-left: 9rem; }
+
+.poem-signature {
+  margin-left: 0;
+}
+
+.poem-signature a,
+.poem-signature a:visited {
+  color: #333399;
+}
+
+@media (max-width: 720px) {
+  .about-poem { font-size: 17px; }
+  .poem-indent-1 { margin-left: 0.8rem; }
+  .poem-indent-2 { margin-left: 1.6rem; }
+  .poem-indent-3 { margin-left: 2.4rem; }
+  .poem-indent-4 { margin-left: 4.2rem; }
+}
