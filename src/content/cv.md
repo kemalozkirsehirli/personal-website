@@ -52,10 +52,10 @@ Score: 44/45.
 
 ### Principal Investigator — Methodology-First 3D Mesh Learning
 
-**Independent research collaboration with Google-based research leadership** — Jun 2026–Present
+**Independent research collaboration with a Google-affiliated research lead** — Jun 2026–Present
 
-- Leading a 7-member international research collaboration developing a new methodology for 3D mesh and point-cloud learning rather than forcing a premature domain application.
-- Building the technical roadmap around kNN graph pipelines, Point Transformer v3-style architectures, geometric representation learning, reproducible experiments, literature synthesis, and preprint-oriented manuscript planning.
+- Serving as principal investigator for a 7-member international research collaboration developing a new methodology for 3D mesh and point-cloud learning rather than forcing a premature domain application.
+- Working with a Google-affiliated research lead to build the technical roadmap around kNN graph pipelines, Point Transformer v3-style architectures, geometric representation learning, reproducible experiments, literature synthesis, and preprint-oriented manuscript planning.
 - Applying the method to appropriate life-science applications such as topology of enzymes, antibodies, and other biomolecular complexes when they provide a principled benchmark for the methodology.
 - Coordinating weekly technical meetings, literature presentations, experimental milestones, contributor responsibilities, documentation, and manuscript preparation.
 
