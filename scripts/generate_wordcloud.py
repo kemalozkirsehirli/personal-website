@@ -139,17 +139,17 @@ def color_func(word, font_size, position, orientation, random_state=None, **kwar
     return PALETTE[seed % len(PALETTE)]
 
 wc = WordCloud(
-    width=2400,
-    height=1260,
+    width=3200,
+    height=1680,
     background_color=PAPER,
     mode='RGB',
     font_path=FONT,
     max_words=130,
-    min_font_size=24,
-    max_font_size=190,
+    min_font_size=22,
+    max_font_size=215,
     prefer_horizontal=1.0,
-    relative_scaling=0.42,
-    margin=14,
+    relative_scaling=0.40,
+    margin=34,
     random_state=26,
     collocations=False,
     color_func=color_func,
