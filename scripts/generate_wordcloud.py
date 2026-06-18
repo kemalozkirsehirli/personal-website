@@ -39,7 +39,7 @@ FEATURE_COLORS = {
 
 # Importance controls scale. The dense tail deliberately fills the interstitial
 # spaces, preserving the lively/chaotic character without collisions or a large
-# empty band through the center.
+# empty band through the center. Every term is rendered horizontally.
 FREQUENCIES = {
     "CADD": 100,
     "molecular simulation": 97,
@@ -183,10 +183,10 @@ def color_func(word, font_size, position, orientation, random_state=None, **kwar
 
 
 # A tight title-shaped exclusion keeps the identifying phrase centered without
-# creating a dead rectangle. All remaining space is available to the packer.
+# creating a dead rectangle. All remaining space is available to the horizontal packer.
 mask_image = Image.new("L", (W, H), 0)
 mask_draw = ImageDraw.Draw(mask_image)
-mask_draw.rounded_rectangle((432, 324, 1168, 430), radius=10, fill=255)
+mask_draw.rounded_rectangle((445, 332, 1155, 424), radius=8, fill=255)
 mask = np.array(mask_image)
 
 cloud = WordCloud(
@@ -197,20 +197,23 @@ cloud = WordCloud(
     mode="RGB",
     font_path=FONT,
     max_words=len(FREQUENCIES),
-    max_font_size=108,
-    min_font_size=15,
-    prefer_horizontal=0.91,
-    relative_scaling=0.38,
+    max_font_size=100,
+    min_font_size=9,
+    prefer_horizontal=1.0,
+    relative_scaling=0.34,
     margin=1,
-    random_state=163,
+    random_state=19,
     collocations=False,
     repeat=False,
     color_func=color_func,
 ).generate_from_frequencies(FREQUENCIES)
 
+assert len(cloud.layout_) == len(FREQUENCIES), "Not every word was placed"
+assert all(item[3] is None for item in cloud.layout_), "A non-horizontal word was placed"
+
 image = cloud.to_image().convert("RGB")
 draw = ImageDraw.Draw(image)
-center_font = ImageFont.truetype(BOLD, 116)
+center_font = ImageFont.truetype(BOLD, 112)
 draw.text(
     (W // 2, H // 2),
     "AI for Science",

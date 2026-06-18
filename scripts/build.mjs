@@ -466,13 +466,13 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
 
 async function renderGroup(site, ctx) {
   const applicationUrl = 'https://forms.gle/BZFfBCPRFipNeaBr5';
-  const announcementUrl = 'https://www.linkedin.com/in/kozkirsehirli/recent-activity/posts/';
+  const announcementUrl = 'https://www.linkedin.com/posts/kozkirsehirli_kemal-%C3%B6zk%C4%B1r%C5%9Fehirli-activity-7473434647910334464-I9E7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC4WWM0Bp3e0E7wr9kwMebbuR65xNvaV8sU';
   const content = `<section class="classic-page group-page">
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">Home</a> / Özkırşehirli Group</p>
     <h1>Özkırşehirli Group</h1>
-    <p>The Özkırşehirli Group is a student-led research group founded and directed by Kemal Özkırşehirli, who serves as principal investigator and defines its scientific direction, methodological standards, and project priorities.</p>
-    <p>Our work develops computational methods and AI/ML systems for scientific discovery, with current directions spanning TBXT-focused CADD and small-molecule discovery, geometric deep learning and 3D mesh methodology, biomolecular modeling, protein design, and scientific workflow engineering.</p>
-    <p>We are selective, but we do not reduce potential to a single conventional background. We value intellectual curiosity, sustained drive, technical honesty, and—most importantly—fortitude. Researchers from adjacent fields are welcome when they are prepared to learn deeply, contribute consistently, and pursue ambitious scientific questions with care.</p>
+    <p>The Özkırşehirli Group is a student-led organization of researchers that was founded and led by Kemal Özkırşehirli. As the Principal Investigator, he determines the scientific focus, the methodologies used in our research, and the priority projects.</p>
+    <p>Currently, the areas of interest that define our research are computational methods and artificial intelligence/machine learning theories and pipelines for making new scientific discoveries. Our interests include computer-aided drug design (CADD) focused on Chordoma and TBXT; discovery of novel small molecules; geometric deep learning and 3-D mesh methodology; modeling of biomolecules; designing proteins; and developing scientific workflows.</p>
+    <p>We have a selection process for membership but do not restrict it based solely on your educational or professional background. We believe that an individual's passion for their work and willingness to be intellectually curious, driven to solve problems, honest about their limitations, and capable of fortitude are essential. These values will determine whether you are a good fit. If you have a strong interest in a field outside those mentioned above, then we encourage you to apply if you are willing to become an expert in the field of study, provide consistent contributions to the research effort, and ask scientifically relevant questions.</p>
     <p><b><a href="${escapeAttr(applicationUrl)}" target="_blank" rel="noopener noreferrer">Application form</a></b> - <a href="${escapeAttr(announcementUrl)}" target="_blank" rel="noopener noreferrer">LinkedIn launch announcement</a></p>
   </section>`;
   await writeFile('group/index.html', renderLayout({
