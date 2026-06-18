@@ -10,10 +10,10 @@ Statik, dependency-light, Manolis Kellis / classic MIT academic-homepage hissine
 - Web CV: `/cv/`
 - İndirilebilir/public CV PDF yok
 - About poem: `/about/`
-- Özkırşehirli Group: `/group/`
+- Özkırşehirli Group: `/group/` (application form ve doğrudan LinkedIn launch-post bağlantısı dahil)
 - Essays ve AI-for-Science notes yayımlanmıyor
 - Spotlight sırası `About → Özkırşehirli Group → Application Form`
-- Word cloud kompakt, renkli, çakışmasız; merkezinde `AI for Science` bulunur ve temel araştırma kavramları önemlerine göre daha büyük gösterilir
+- Word cloud kompakt, renkli ve çakışmasızdır; 129 terimin tamamı yataydır, `AI for Science` merkezde yer alır ve temel araştırma kavramları önemlerine göre daha büyük gösterilir
 
 ## Lokal çalıştırma
 
@@ -79,3 +79,15 @@ CNAME  www    kemalozkirsehirli.github.io
 ```
 
 GitHub verification TXT kaydını DNS'te tut.
+
+## Word cloud yeniden üretme
+
+```bash
+python3 -m pip install -r requirements-wordcloud.txt
+python3 scripts/generate_wordcloud.py
+npm run check
+rm -rf docs
+cp -R dist docs
+printf "kemal-ozkirsehirli.com\n" > docs/CNAME
+touch docs/.nojekyll
+```
