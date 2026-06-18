@@ -7,7 +7,7 @@
   "resumePdf": null,
   "author": {
     "name": "Kemal Özkırşehirli",
-    "role": "MIT B.Sc. candidate · Computer Science and Engineering · Physics: Chemical Physics · Mathematics: Mathematical Biology · minors in Philosophy and Writing",
+    "role": "B.Sc. candidate at MIT · GPA 5.0/5.0 · Computer Science and Engineering: AI/ML · Physics: Chemical Physics · Mathematics: Mathematical Biology · Minors in Philosophy and Writing",
     "location": "Cambridge, MA, USA",
     "email": "kemalozk@mit.edu",
     "avatar": "/photos/kemal-profile.jpg",
@@ -509,8 +509,7 @@
     ],
     "cloudImage": "/word-cloud.png",
     "profileLines": [
-      "B.Sc. candidate, Computer Science and Engineering, MIT · Physics: Chemical Physics · Mathematics: Mathematical Biology",
-      "Minors in Philosophy and Writing · GPA 5.0/5.0",
+      "B.Sc. candidate at MIT · GPA 5.0/5.0 · Computer Science and Engineering: AI/ML · Physics: Chemical Physics · Mathematics: Mathematical Biology · Minors in Philosophy and Writing",
       "Principal Investigator, Özkırşehirli Group",
       "Research across MIT CSAIL, MIT Chemistry, and MIT Physics",
       "Teaching Fellow, MIT EECS",

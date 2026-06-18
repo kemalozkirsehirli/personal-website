@@ -5,7 +5,48 @@ import random
 OUT = Path(__file__).resolve().parents[1] / 'public'
 FONT = '/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf'
 PAPER = '#FFF8E7'
-PALETTE = ['#7D2B19', '#A14722', '#8E3D28', '#5B5148', '#7B6330', '#333399', '#6B5B4C', '#4A4A4A']
+PALETTE = [
+    '#7D2B19',  # deep burgundy
+    '#963824',  # oxblood
+    '#AF4A2E',  # brick
+    '#C36440',  # terracotta
+    '#B55D32',  # burnt orange
+    '#9B6B2F',  # bronze
+    '#B88936',  # ochre
+    '#C5A04E',  # warm gold, derived from #DFC98A
+    '#8A7041',  # antique gold
+    '#6B7047',  # moss
+    '#55715D',  # sage
+    '#3F6E69',  # muted teal
+    '#455D7A',  # slate blue
+    '#333399',  # site indigo
+    '#5653A0',  # periwinkle indigo
+    '#6F527E',  # plum
+    '#8D566A',  # dusty rose
+    '#9D665B',  # muted coral
+    '#6B5B4C',  # warm taupe
+    '#4A4A4A',  # charcoal
+]
+
+FEATURE_COLORS = {
+    'AI/ML for Science': '#7D2B19',
+    'molecular simulation': '#963824',
+    'CADD': '#B88936',
+    'free-energy methods': '#AF4A2E',
+    'protein design': '#6F527E',
+    'chemical physics': '#C36440',
+    'geometric deep learning': '#3F6E69',
+    'statistical mechanics': '#455D7A',
+    'molecular docking': '#B55D32',
+    'biomolecular AI': '#333399',
+    'virtual screening': '#8D566A',
+    'computational chemistry': '#55715D',
+    'protein foundation models': '#5653A0',
+    'chromatin modeling': '#9B6B2F',
+    'drug discovery': '#8D566A',
+    'mathematical biology': '#3F6E69',
+}
+
 
 frequencies = {
     'AI/ML for Science': 110,
@@ -129,13 +170,13 @@ frequencies = {
     'auditable pipelines': 18,
 }
 
-# Deterministic palette based on the word itself, with the largest terms biased toward burgundy.
+# Deterministic, high-variety palette. Major concepts receive distinct anchor colors;
+# every remaining term is assigned a warm/jewel companion shade from the site palette.
 def color_func(word, font_size, position, orientation, random_state=None, **kwargs):
-    if font_size >= 105:
-        return '#7D2B19'
-    if font_size >= 72:
-        return '#A14722'
-    seed = sum(ord(c) for c in word) + font_size
+    if word in FEATURE_COLORS:
+        return FEATURE_COLORS[word]
+    x, y = position
+    seed = sum((i + 1) * ord(c) for i, c in enumerate(word)) + font_size * 7 + x * 3 + y * 5
     return PALETTE[seed % len(PALETTE)]
 
 wc = WordCloud(
