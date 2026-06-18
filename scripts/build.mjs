@@ -465,30 +465,57 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
 
 async function renderAbout(site, ctx) {
   const wisdomUrl = 'https://www.wisdomlib.org/names/kemal';
+  const poem = `With fortitude,
+
+
+
+   I transition phases,
+
+
+      I metamorphose
+
+
+      complexities and abstractions
+
+
+      into
+
+
+      parsable, representable, computable
+
+
+      structures,
+
+
+
+         I force these
+
+
+         compiled, disentangled, transmuted
+
+
+         systems
+
+
+         to
+
+
+         surrender, confess, elucidate
+
+
+         their governing rules,
+
+
+
+                                          I, only then, execute:
+
+
+
+<a href="${escapeAttr(wisdomUrl)}" target="_blank" rel="noopener noreferrer">Kemal.</a>`;
   const content = `<section class="classic-page about-classic-page">
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / About</p>
     <h1>About</h1>
-    <div class="prose about-poem" aria-label="About poem">
-      <div class="poem-line">With fortitude,</div>
-
-      <div class="poem-line poem-indent-1 poem-stanza-gap">I transition phases,</div>
-      <div class="poem-line poem-indent-2">I metamorphose</div>
-      <div class="poem-line poem-indent-2">complexities and abstractions</div>
-      <div class="poem-line poem-indent-2">into</div>
-      <div class="poem-line poem-indent-2">parsable, representable, computable</div>
-      <div class="poem-line poem-indent-2">structures,</div>
-
-      <div class="poem-line poem-indent-3 poem-stanza-gap">I force these</div>
-      <div class="poem-line poem-indent-3">compiled, disentangled, transmuted</div>
-      <div class="poem-line poem-indent-3">systems</div>
-      <div class="poem-line poem-indent-3">to</div>
-      <div class="poem-line poem-indent-3">surrender, confess, elucidate</div>
-      <div class="poem-line poem-indent-3">their governing rules,</div>
-
-      <div class="poem-line poem-indent-4 poem-stanza-gap">I, only then, execute:</div>
-
-      <div class="poem-line poem-signature poem-stanza-gap"><a href="${escapeAttr(wisdomUrl)}" target="_blank" rel="noopener noreferrer">Kemal.</a></div>
-    </div>
+    <pre class="about-poem" aria-label="About poem">${poem}</pre>
   </section>`;
   await writeFile('about/index.html', renderLayout({
     site,

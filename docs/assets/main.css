@@ -603,46 +603,42 @@ button, input { font: inherit; }
 .classic-selected .classic-item b a,
 .classic-selected .classic-item b a:visited { color: #333399; }
 
-/* About page uses the same page shell, typography, and scale as the rest of the website. */
+/* About keeps the site's typography while preserving the PDF's literal spaces and blank lines. */
 .about-classic-page {
   max-width: 1120px;
 }
 
-.about-poem {
-  width: fit-content;
+.about-classic-page > h1 {
+  text-align: center;
+}
+
+pre.about-poem {
+  display: block;
+  width: max-content;
   max-width: 100%;
   margin: 1.15rem auto 0;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  color: #000;
+  font-family: inherit;
   font-size: 17px;
-  line-height: 1.35;
+  font-weight: 400;
+  line-height: 1.06;
+  text-align: left;
+  white-space: pre;
 }
 
-.poem-line {
-  min-height: 1.35em;
-  margin: 0;
-}
-
-.poem-stanza-gap {
-  margin-top: 1.35rem;
-}
-
-.poem-indent-1 { margin-left: 1.35rem; }
-.poem-indent-2 { margin-left: 2.7rem; }
-.poem-indent-3 { margin-left: 4.05rem; }
-.poem-indent-4 { margin-left: 9rem; }
-
-.poem-signature {
-  margin-left: 0;
-}
-
-.poem-signature a,
-.poem-signature a:visited {
+pre.about-poem a,
+pre.about-poem a:visited {
   color: #333399;
 }
 
 @media (max-width: 720px) {
-  .about-poem { font-size: 17px; }
-  .poem-indent-1 { margin-left: 0.8rem; }
-  .poem-indent-2 { margin-left: 1.6rem; }
-  .poem-indent-3 { margin-left: 2.4rem; }
-  .poem-indent-4 { margin-left: 4.2rem; }
+  pre.about-poem {
+    max-width: none;
+    font-size: 16px;
+  }
 }
+
