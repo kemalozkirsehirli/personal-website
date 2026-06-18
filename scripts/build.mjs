@@ -464,6 +464,29 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
 }
 
 
+async function renderGroup(site, ctx) {
+  const applicationUrl = 'https://forms.gle/BZFfBCPRFipNeaBr5';
+  const announcementUrl = 'https://www.linkedin.com/in/kozkirsehirli/recent-activity/posts/';
+  const content = `<section class="classic-page group-page">
+    <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">Home</a> / Özkırşehirli Group</p>
+    <h1>Özkırşehirli Group</h1>
+    <p>The Özkırşehirli Group is a student-led research group founded and directed by Kemal Özkırşehirli, who serves as principal investigator and defines its scientific direction, methodological standards, and project priorities.</p>
+    <p>Our work develops computational methods and AI/ML systems for scientific discovery, with current directions spanning TBXT-focused CADD and small-molecule discovery, geometric deep learning and 3D mesh methodology, biomolecular modeling, protein design, and scientific workflow engineering.</p>
+    <p>We are selective, but we do not reduce potential to a single conventional background. We value intellectual curiosity, sustained drive, technical honesty, and—most importantly—fortitude. Researchers from adjacent fields are welcome when they are prepared to learn deeply, contribute consistently, and pursue ambitious scientific questions with care.</p>
+    <p><b><a href="${escapeAttr(applicationUrl)}" target="_blank" rel="noopener noreferrer">Application form</a></b> - <a href="${escapeAttr(announcementUrl)}" target="_blank" rel="noopener noreferrer">LinkedIn launch announcement</a></p>
+  </section>`;
+  await writeFile('group/index.html', renderLayout({
+    site,
+    ctx,
+    title: 'Özkırşehirli Group',
+    description: 'Research directions, values, and participation in the Özkırşehirli Group.',
+    activePath: '/group/',
+    path: '/group/',
+    content,
+    type: 'article'
+  }));
+}
+
 async function renderAbout(site, ctx) {
   const wisdomUrl = 'https://www.wisdomlib.org/names/kemal';
   const line = (text, indent = 0, extraClass = '') => `<div class="poem-line indent-${indent}${extraClass ? ` ${extraClass}` : ''}">${text}</div>`;
@@ -480,7 +503,8 @@ async function renderAbout(site, ctx) {
     line('systems', 9),
     line('to', 9),
     line('surrender, confess, elucidate', 9),
-    line('their governing rules,', 9),
+    line('their', 9),
+    line('governing rules,', 12),
     line('I, only then, execute:', 42, 'stanza-start'),
     line(`<a href="${escapeAttr(wisdomUrl)}" target="_blank" rel="noopener noreferrer">Kemal.</a>`, 0, 'stanza-start poem-signature')
   ].join('');
@@ -488,7 +512,9 @@ async function renderAbout(site, ctx) {
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">Home</a></p>
     <div class="about-poem-stage">
       <div class="about-poem-card">
-        <h1 class="about-poem-title">About</h1>
+        <div class="about-poem-opening">
+          <h1 class="about-poem-title">About</h1>
+        </div>
         <div class="about-poem" aria-label="About poem">${poem}</div>
       </div>
     </div>
@@ -759,7 +785,7 @@ function xmlEscape(value = '') {
 }
 
 async function renderFeeds(site, ctx, essays) {
-  const staticPages = ['/', '/about/', '/projects/', '/cv/', '/photos/'];
+  const staticPages = ['/', '/about/', '/group/', '/projects/', '/cv/', '/photos/'];
   if (essays.length > 0 || site.publishEmptyEssays === true) staticPages.splice(1, 0, '/essays/');
   const urls = [...staticPages, ...essays.map((essay) => essay.url)];
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((url) => `  <url><loc>${xmlEscape(ctx.absoluteUrl(url))}</loc></url>`).join('\n')}\n</urlset>\n`;
@@ -835,6 +861,7 @@ export async function build() {
 
   const essays = await loadEssays(ctx);
   await renderHome(site, ctx, essays, projects);
+  await renderGroup(site, ctx);
   await renderAbout(site, ctx);
   await renderEssaysIndex(site, ctx, essays);
   await renderEssayPages(site, ctx, essays);

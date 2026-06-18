@@ -618,7 +618,7 @@ button, input { font: inherit; }
 }
 
 @media print {
-  body { background: #fff; color: #000; }
+  body { background: var(--paper); color: #000; }
   .filters, .classic-footer, .skip-link, .print-button { display: none !important; }
   .classic-shell, .classic-page { width: 100%; max-width: none; padding: 0; }
   a { color: #000; text-decoration: none; }
@@ -659,8 +659,12 @@ button, input { font: inherit; }
   max-width: 100%;
 }
 
+.about-poem-opening {
+  width: 7.4em;
+}
+
 .about-poem-title {
-  width: 6.2rem;
+  width: 100%;
   margin: 0 0 0.55rem;
   color: #000;
   font-family: inherit;
@@ -706,3 +710,20 @@ button, input { font: inherit; }
   .about-poem-title { font-size: 29px; }
 }
 
+
+/* Compact cloud: only modestly taller than the earlier version. */
+.classic-cloud {
+  width: 440px;
+  max-width: 100%;
+  margin: 2px auto 18px;
+}
+
+@media (min-width: 1041px) {
+  .classic-top {
+    grid-template-columns: minmax(380px, 0.76fr) minmax(0, 1.4fr);
+  }
+}
+
+.poem-line.indent-12 { padding-left: 3em; }
+.group-page { max-width: 920px; }
+.group-page p { max-width: 78ch; }

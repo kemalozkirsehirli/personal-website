@@ -61,6 +61,11 @@
         "description": "a poem"
       },
       {
+        "label": "Özkırşehirli Group",
+        "url": "/group/",
+        "description": "research directions, values, and participation"
+      },
+      {
         "label": "Özkırşehirli Group Application Form",
         "url": "https://forms.gle/BZFfBCPRFipNeaBr5",
         "description": "apply to join the research group / TBXT-CADD continuation"
@@ -513,7 +518,7 @@
       "Principal Investigator, Özkırşehirli Group",
       "Research across MIT CSAIL, MIT Chemistry, and MIT Physics",
       "Teaching Fellow, MIT EECS",
-      "International student from İstanbul, Türkiye · expected May 2027 · graduating one year early"
+      "International student from İstanbul, Türkiye · expected May 2027 · graduating one year early · completing all requirements for a triple major and two minors"
     ],
     "awards": [
       "Bronze Medal, 56th International Chemistry Olympiad",
@@ -526,5 +531,14 @@
     ],
     "researchStatement": "My work and the Özkırşehirli Group aim to turn difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery. (1) We develop molecular-simulation and CADD workflows that combine docking, free-energy methods, electronic-structure calculations, and uncertainty-aware ranking. (2) We build and evaluate protein, antibody, genome, and immune-state models, including generative and diffusion systems, with emphasis on reliability, calibration, and mechanistic validity. (3) We use geometric deep learning, statistical mechanics, and stochastic simulation to recover structure, dynamics, and governing rules from complex biological and physical systems. (4) We integrate these methods into auditable scientific workflows for drug discovery, protein design, target discovery, and biomolecular modeling."
   },
-  "enableFeed": false
+  "enableFeed": false,
+  "group": {
+    "links": [
+      {
+        "label": "LinkedIn launch announcement",
+        "url": "https://www.linkedin.com/in/kozkirsehirli/recent-activity/all/"
+      }
+    ],
+    "description": "A student-led research group directed by Kemal Özkırşehirli."
+  }
 }

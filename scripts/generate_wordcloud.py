@@ -1,200 +1,224 @@
 from pathlib import Path
-from wordcloud import WordCloud
-import random
 
-OUT = Path(__file__).resolve().parents[1] / 'public'
-FONT = '/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf'
-PAPER = '#FFF8E7'
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+from wordcloud import WordCloud
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "public"
+PAPER = "#FFF8E7"
+FONT = "/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf"
+BOLD = "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf"
+W, H = 1600, 760
+
 PALETTE = [
-    '#7D2B19',  # deep burgundy
-    '#963824',  # oxblood
-    '#AF4A2E',  # brick
-    '#C36440',  # terracotta
-    '#B55D32',  # burnt orange
-    '#9B6B2F',  # bronze
-    '#B88936',  # ochre
-    '#C5A04E',  # warm gold, derived from #DFC98A
-    '#8A7041',  # antique gold
-    '#6B7047',  # moss
-    '#55715D',  # sage
-    '#3F6E69',  # muted teal
-    '#455D7A',  # slate blue
-    '#333399',  # site indigo
-    '#5653A0',  # periwinkle indigo
-    '#6F527E',  # plum
-    '#8D566A',  # dusty rose
-    '#9D665B',  # muted coral
-    '#6B5B4C',  # warm taupe
-    '#4A4A4A',  # charcoal
+    "#7D2B19", "#963824", "#AF4A2E", "#C36440", "#B55D32",
+    "#9B6B2F", "#B88936", "#C5A04E", "#8A7041", "#6B7047",
+    "#55715D", "#3F6E69", "#455D7A", "#333399", "#5653A0",
+    "#6F527E", "#8D566A", "#9D665B", "#6B5B4C", "#4A4A4A",
 ]
 
 FEATURE_COLORS = {
-    'AI/ML for Science': '#7D2B19',
-    'molecular simulation': '#963824',
-    'CADD': '#B88936',
-    'free-energy methods': '#AF4A2E',
-    'protein design': '#6F527E',
-    'chemical physics': '#C36440',
-    'geometric deep learning': '#3F6E69',
-    'statistical mechanics': '#455D7A',
-    'molecular docking': '#B55D32',
-    'biomolecular AI': '#333399',
-    'virtual screening': '#8D566A',
-    'computational chemistry': '#55715D',
-    'protein foundation models': '#5653A0',
-    'chromatin modeling': '#9B6B2F',
-    'drug discovery': '#8D566A',
-    'mathematical biology': '#3F6E69',
+    "CADD": "#B88936",
+    "molecular simulation": "#963824",
+    "protein design": "#6F527E",
+    "chemical physics": "#C36440",
+    "geometric deep learning": "#3F6E69",
+    "free-energy methods": "#AF4A2E",
+    "biomolecular AI": "#333399",
+    "molecular docking": "#B55D32",
+    "statistical mechanics": "#455D7A",
+    "computational chemistry": "#55715D",
+    "drug discovery": "#8D566A",
+    "protein foundation models": "#5653A0",
+    "molecular dynamics": "#455D7A",
+    "virtual screening": "#8D566A",
+    "quantum chemistry": "#B88936",
+    "mathematical biology": "#3F6E69",
+}
+
+# Importance controls scale. The dense tail deliberately fills the interstitial
+# spaces, preserving the lively/chaotic character without collisions or a large
+# empty band through the center.
+FREQUENCIES = {
+    "CADD": 100,
+    "molecular simulation": 97,
+    "protein design": 93,
+    "chemical physics": 91,
+    "geometric deep learning": 88,
+    "free-energy methods": 85,
+    "biomolecular AI": 82,
+    "molecular docking": 80,
+    "statistical mechanics": 77,
+    "computational chemistry": 74,
+    "drug discovery": 72,
+    "protein foundation models": 70,
+    "molecular dynamics": 68,
+    "chromatin modeling": 66,
+    "virtual screening": 64,
+    "quantum chemistry": 62,
+    "antibody design": 60,
+    "target discovery": 58,
+    "3D meshes": 57,
+    "uncertainty calibration": 55,
+    "protein-ligand co-folding": 53,
+    "generative models": 52,
+    "scientific workflows": 51,
+    "renormalization group": 50,
+    "stochastic processes": 49,
+    "reaction-diffusion": 48,
+    "inverse design": 47,
+    "sequence modeling": 46,
+    "single-cell genomics": 45,
+    "structure prediction": 44,
+    "robust optimization": 43,
+    "scientific inference": 42,
+    "AI/ML": 43,
+    "free energy": 41,
+    "atomistic modeling": 40,
+    "systems biology": 39,
+    "GNINA": 39,
+    "TBXT": 39,
+    "AutoDock Vina": 38,
+    "mathematical biology": 38,
+    "RDKit": 37,
+    "diffusion models": 37,
+    "ChromoGen V2": 37,
+    "PySCF": 36,
+    "HPC": 36,
+    "OpenMM": 35,
+    "GNNs": 35,
+    "PRISM": 35,
+    "EVEdesign": 35,
+    "OpenFE": 34,
+    "Transformers": 34,
+    "PyTorch": 34,
+    "V2M-Engine": 34,
+    "Boltz-2": 33,
+    "reinforcement learning": 33,
+    "ChemAgent-QSM": 32,
+    "MMGBSA/FEP": 32,
+    "agentic AI": 32,
+    "Antibody RL": 32,
+    "QSAR": 31,
+    "point clouds": 31,
+    "ADMET": 30,
+    "CUDA": 30,
+    "protein safety": 30,
+    "electronic structure": 30,
+    "BRICS": 29,
+    "density functional theory": 29,
+    "Monte Carlo": 28,
+    "high-performance computing": 28,
+    "Kupcinet-Getz": 28,
+    "molecular topology": 27,
+    "adversarial evaluation": 27,
+    "Özkırşehirli Group": 27,
+    "sequence-structure-function": 26,
+    "retrosynthesis": 26,
+    "single-cell foundation models": 26,
+    "mechanistic validation": 25,
+    "reaction mechanisms": 25,
+    "Python": 25,
+    "biochemical diffusion": 24,
+    "PPO": 24,
+    "neural ODEs": 24,
+    "LangGraph": 24,
+    "MIT CSAIL": 24,
+    "protein engineering": 24,
+    "PINNs": 23,
+    "FastAPI": 23,
+    "MIT Chemistry": 23,
+    "computable representations": 23,
+    "phase transitions": 23,
+    "dynamical systems": 22,
+    "scientific decision-making": 22,
+    "Gillespie SSA": 22,
+    "chromatin diffusion": 22,
+    "MIT Physics": 22,
+    "C/C++": 21,
+    "drug-like molecules": 21,
+    "immune-state modeling": 21,
+    "Euler-Maruyama": 20,
+    "Linux": 20,
+    "SLURM": 20,
+    "Tanimoto": 20,
+    "PAINS filters": 20,
+    "QTL colocalization": 20,
+    "algorithms": 20,
+    "testable models": 20,
+    "auditable pipelines": 20,
+    "molecular surfaces": 20,
+    "ESOL": 19,
+    "Morgan fingerprints": 19,
+    "Perturb-seq": 19,
+    "AlphaFold-Multimer": 19,
+    "Weizmann Institute": 19,
+    "Harvard Medical School": 19,
+    "calibration": 19,
+    "chemical kinetics": 19,
+    "Plate-C": 18,
+    "Easy Dip-C": 18,
+    "CHARM": 18,
+    "A*STAR EDDC": 18,
+    "Columbia University": 18,
+    "philosophy of science": 18,
+    "kinetic Monte Carlo": 18,
+    "OAS": 17,
+    "SAbDab": 17,
+    "IEDB": 17,
+    "MIT BioMakers": 17,
+    "IGFold": 18,
+    "epistemology": 16,
 }
 
 
-frequencies = {
-    'AI/ML for Science': 110,
-    'CADD': 94,
-    'molecular simulation': 90,
-    'chemical physics': 88,
-    'protein design': 84,
-    'free-energy methods': 82,
-    'molecular docking': 80,
-    'statistical mechanics': 77,
-    'biomolecular AI': 74,
-    'geometric deep learning': 71,
-    'virtual screening': 69,
-    'computational chemistry': 67,
-    'mathematical biology': 65,
-    'molecular dynamics': 64,
-    'protein foundation models': 63,
-    'chromatin modeling': 61,
-    'drug discovery': 60,
-    'quantum chemistry': 59,
-    'uncertainty calibration': 58,
-    'scientific workflows': 57,
-    'target discovery': 56,
-    'generative models': 55,
-    'diffusion models': 54,
-    'protein safety': 53,
-    '3D meshes': 52,
-    'point clouds': 51,
-    'antibody design': 50,
-    'genome modeling': 49,
-    'single-cell genomics': 48,
-    'renormalization group': 47,
-    'stochastic processes': 46,
-    'reaction diffusion': 45,
-    'electronic structure': 44,
-    'density functional theory': 43,
-    'Monte Carlo': 42,
-    'molecular topology': 41,
-    'protein-ligand co-folding': 40,
-    'sequence-structure-function': 39,
-    'mechanistic validation': 38,
-    'robust optimization': 37,
-    'scientific inference': 36,
-    'high-performance computing': 35,
-    'adversarial evaluation': 34,
-    'retrosynthesis': 33,
-    'reaction mechanisms': 32,
-    'biochemical diffusion': 31,
-    'phase transitions': 30,
-    'dynamical systems': 29,
-    'agentic chemistry': 28,
-    'scientific decision-making': 27,
-    'TBXT': 31,
-    'ChromoGen V2': 30,
-    'PRISM': 29,
-    'EVEdesign': 28,
-    'V2M-Engine': 27,
-    'ChemAgent-QSM': 27,
-    'Antibody RL': 26,
-    'Kupcinet-Getz': 24,
-    'Özkırşehirli Group': 23,
-    'GNINA': 30,
-    'AutoDock Vina': 29,
-    'RDKit': 29,
-    'QSAR': 28,
-    'BRICS': 26,
-    'Boltz-2': 27,
-    'MMGBSA': 25,
-    'FEP': 25,
-    'OpenMM': 24,
-    'OpenFE': 23,
-    'PySCF': 24,
-    'PyTorch': 25,
-    'CUDA': 23,
-    'GNNs': 24,
-    'Transformers': 24,
-    'PPO': 21,
-    'PINNs': 21,
-    'neural ODEs': 22,
-    'Gillespie SSA': 20,
-    'Euler-Maruyama': 18,
-    'LangGraph': 22,
-    'FastAPI': 21,
-    'Python': 23,
-    'C/C++': 19,
-    'Linux': 18,
-    'SLURM': 18,
-    'HPC': 22,
-    'Tanimoto': 18,
-    'PAINS filters': 18,
-    'ADMET': 20,
-    'ESOL': 17,
-    'Morgan fingerprints': 17,
-    'sequence modeling': 19,
-    'structure prediction': 21,
-    'immune-state modeling': 19,
-    'QTL colocalization': 18,
-    'Perturb-seq': 17,
-    'chromatin diffusion': 20,
-    'Plate-C': 16,
-    'Easy Dip-C': 16,
-    'CHARM': 16,
-    'OAS': 15,
-    'SAbDab': 15,
-    'IEDB': 15,
-    'IGFold': 16,
-    'AlphaFold-Multimer': 17,
-    'MIT CSAIL': 22,
-    'MIT Chemistry': 21,
-    'MIT Physics': 20,
-    'A*STAR EDDC': 18,
-    'Weizmann Institute': 17,
-    'Harvard Medical School': 17,
-    'Columbia University': 16,
-    'MIT BioMakers': 15,
-    'philosophy of science': 16,
-    'epistemology': 14,
-    'algorithms': 18,
-    'computable representations': 21,
-    'testable models': 18,
-    'auditable pipelines': 18,
-}
-
-# Deterministic, high-variety palette. Major concepts receive distinct anchor colors;
-# every remaining term is assigned a warm/jewel companion shade from the site palette.
 def color_func(word, font_size, position, orientation, random_state=None, **kwargs):
     if word in FEATURE_COLORS:
         return FEATURE_COLORS[word]
     x, y = position
-    seed = sum((i + 1) * ord(c) for i, c in enumerate(word)) + font_size * 7 + x * 3 + y * 5
+    seed = sum((i + 1) * ord(char) for i, char in enumerate(word))
+    seed += font_size * 7 + x * 3 + y * 5
     return PALETTE[seed % len(PALETTE)]
 
-wc = WordCloud(
-    width=3200,
-    height=1680,
+
+# A tight title-shaped exclusion keeps the identifying phrase centered without
+# creating a dead rectangle. All remaining space is available to the packer.
+mask_image = Image.new("L", (W, H), 0)
+mask_draw = ImageDraw.Draw(mask_image)
+mask_draw.rounded_rectangle((432, 324, 1168, 430), radius=10, fill=255)
+mask = np.array(mask_image)
+
+cloud = WordCloud(
+    width=W,
+    height=H,
     background_color=PAPER,
-    mode='RGB',
+    mask=mask,
+    mode="RGB",
     font_path=FONT,
-    max_words=130,
-    min_font_size=22,
-    max_font_size=215,
-    prefer_horizontal=1.0,
-    relative_scaling=0.40,
-    margin=34,
-    random_state=26,
+    max_words=len(FREQUENCIES),
+    max_font_size=108,
+    min_font_size=15,
+    prefer_horizontal=0.91,
+    relative_scaling=0.38,
+    margin=1,
+    random_state=163,
     collocations=False,
+    repeat=False,
     color_func=color_func,
+).generate_from_frequencies(FREQUENCIES)
+
+image = cloud.to_image().convert("RGB")
+draw = ImageDraw.Draw(image)
+center_font = ImageFont.truetype(BOLD, 116)
+draw.text(
+    (W // 2, H // 2),
+    "AI for Science",
+    font=center_font,
+    fill="#7D2B19",
+    anchor="mm",
 )
-wc.generate_from_frequencies(frequencies)
-wc.to_file(str(OUT / 'word-cloud.png'))
-(OUT / 'photos' / 'wordcloud.png').write_bytes((OUT / 'word-cloud.png').read_bytes())
+
+for destination in (OUT / "word-cloud.png", OUT / "photos" / "wordcloud.png"):
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    image.save(destination, optimize=True)

@@ -71,6 +71,7 @@ const failures = [];
 const required = [
   'index.html',
   'about/index.html',
+  'group/index.html',
   'essays/index.html',
   'projects/index.html',
   'cv/index.html',
