@@ -440,7 +440,8 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
   <meta property="og:image" content="${escapeAttr(ogImage)}">
   <meta property="og:url" content="${escapeAttr(canonical)}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#FFF8E7">
+  <style>html,body{background:#FFF8E7}</style>
   <link rel="icon" href="${escapeAttr(ctx.withBase('/favicon.svg'))}" type="image/svg+xml">
   <link rel="manifest" href="${escapeAttr(ctx.withBase('/site.webmanifest'))}">
   ${rssHead}
@@ -465,57 +466,32 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
 
 async function renderAbout(site, ctx) {
   const wisdomUrl = 'https://www.wisdomlib.org/names/kemal';
-  const poem = `With fortitude,
-
-
-
-   I transition phases,
-
-
-      I metamorphose
-
-
-      complexities and abstractions
-
-
-      into
-
-
-      parsable, representable, computable
-
-
-      structures,
-
-
-
-         I force these
-
-
-         compiled, disentangled, transmuted
-
-
-         systems
-
-
-         to
-
-
-         surrender, confess, elucidate
-
-
-         their governing rules,
-
-
-
-                                          I, only then, execute:
-
-
-
-<a href="${escapeAttr(wisdomUrl)}" target="_blank" rel="noopener noreferrer">Kemal.</a>`;
+  const line = (text, indent = 0, extraClass = '') => `<div class="poem-line indent-${indent}${extraClass ? ` ${extraClass}` : ''}">${text}</div>`;
+  const poem = [
+    line('With fortitude,'),
+    line('I transition phases,', 3, 'stanza-start'),
+    line('I metamorphose', 6),
+    line('complexities and abstractions', 6),
+    line('into', 6),
+    line('parsable, representable, computable', 6),
+    line('structures,', 6),
+    line('I force these', 9, 'stanza-start'),
+    line('compiled, disentangled, transmuted', 9),
+    line('systems', 9),
+    line('to', 9),
+    line('surrender, confess, elucidate', 9),
+    line('their governing rules,', 9),
+    line('I, only then, execute:', 42, 'stanza-start'),
+    line(`<a href="${escapeAttr(wisdomUrl)}" target="_blank" rel="noopener noreferrer">Kemal.</a>`, 0, 'stanza-start poem-signature')
+  ].join('');
   const content = `<section class="classic-page about-classic-page">
-    <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / About</p>
-    <h1>About</h1>
-    <pre class="about-poem" aria-label="About poem">${poem}</pre>
+    <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">Home</a></p>
+    <div class="about-poem-stage">
+      <div class="about-poem-card">
+        <h1 class="about-poem-title">About</h1>
+        <div class="about-poem" aria-label="About poem">${poem}</div>
+      </div>
+    </div>
   </section>`;
   await writeFile('about/index.html', renderLayout({
     site,
@@ -604,6 +580,9 @@ async function renderHome(site, ctx, essays, projects) {
     'AI for science, computational drug discovery, and scientific computing',
     'Essays, notes, projects, and selected public work'
   ];
+  const profileLines = Array.isArray(site.home?.profileLines) ? site.home.profileLines : [author.role || 'Researcher and writer'];
+  const homeAwards = Array.isArray(site.home?.awards) && site.home.awards.length ? site.home.awards : highlights;
+  const researchStatement = site.home?.researchStatement || author.bio || site.home?.intro || site.description || '';
 
   const sections = Array.isArray(site.home?.selectedSections) && site.home.selectedSections.length ? site.home.selectedSections : [
     {
@@ -639,15 +618,15 @@ async function renderHome(site, ctx, essays, projects) {
     <section class="classic-main-column">
       <section class="classic-top">
         <div class="classic-bio">
-          <img class="classic-cloud" src="${escapeAttr(ctx.withBase(site.home?.cloudImage || '/word-cloud.svg'))}" alt="Research word cloud" loading="eager" decoding="async">
-          <p><b>${escapeHtml(author.name || site.title)}</b></p>
-          <p>${escapeHtml(author.role || '')}</p>
-          <p>${escapeHtml(author.location || '')}${author.email ? ` - <a href="mailto:${escapeAttr(author.email)}">${escapeHtml(author.email)}</a>` : ''}</p>
+          <img class="classic-cloud" src="${escapeAttr(ctx.withBase(site.home?.cloudImage || '/word-cloud.png'))}" alt="Research word cloud" loading="eager" decoding="async">
+          <p class="classic-name"><b>${escapeHtml(author.name || site.title)}</b></p>
+          <div class="classic-profile-lines">${profileLines.map((item) => `<p>${escapeHtml(item)}</p>`).join('')}</div>
+          <p>${escapeHtml(author.location || '')}${author.email ? ` - <a href="mailto:${escapeAttr(author.email)}">${escapeHtml(author.email)}</a> <span class="contact-note">(contact)</span>` : ''}</p>
 
-          <p class="classic-statement">${escapeHtml(author.bio || site.home?.intro || site.description || '')}</p>
+          <p class="classic-awards-label">Awards:</p>
+          <ul class="classic-awards classic-home-awards">${homeAwards.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>
 
-          <p class="section-label">Highlights:</p>
-          <ul class="classic-awards">${highlights.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>
+          <p class="classic-statement">${escapeHtml(researchStatement)}</p>
 
           <div class="classic-directory">
             <h2>Professional</h2>
@@ -814,8 +793,8 @@ async function renderFeeds(site, ctx, essays) {
     short_name: site.title || 'Personal Site',
     start_url: ctx.withBase('/'),
     display: 'standalone',
-    background_color: '#f6f0e8',
-    theme_color: '#17120f',
+    background_color: '#FFF8E7',
+    theme_color: '#FFF8E7',
     icons: [
       {
         src: ctx.withBase('/favicon.svg'),

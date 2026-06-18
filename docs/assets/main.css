@@ -1,19 +1,36 @@
 * { box-sizing: border-box; }
 
+:root {
+  --paper: #FFF8E7;
+  --paper-deep: #F5E9CB;
+  --paper-soft: #FBF1D8;
+  --ink: #000;
+  --rule: #D8C9A9;
+}
+
 html {
-  background: #fff;
-  color: #000;
+  background: var(--paper);
+  color: var(--ink);
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  background: #fff;
-  color: #000;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 1.12;
   text-rendering: optimizeLegibility;
+}
+
+/* Keep the cream paper background continuous across every generated page. */
+main,
+.classic-shell,
+.classic-page,
+.classic-footer {
+  background-color: var(--paper);
 }
 
 img, svg { max-width: 100%; height: auto; }
@@ -39,8 +56,8 @@ button, input { font: inherit; }
   z-index: 20;
   padding: 0.25rem 0.45rem;
   border: 1px solid #000;
-  background: #fff;
-  color: #000;
+  background: var(--paper);
+  color: var(--ink);
 }
 
 .skip-link:focus { top: 0.5rem; }
@@ -126,9 +143,34 @@ button, input { font: inherit; }
 
 .classic-bio p { margin-bottom: 8px; }
 
+.classic-name { margin-bottom: 3px !important; }
+
+.classic-profile-lines p {
+  margin: 0 0 1px;
+  line-height: 1.08;
+}
+
+.contact-note { color: #444; }
+
+.classic-awards-label {
+  margin: 14px 0 2px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.classic-home-awards {
+  margin-bottom: 16px;
+}
+
+.classic-home-awards li {
+  margin-bottom: 1px;
+  line-height: 1.08;
+}
+
 .classic-statement {
-  margin: 10px 0 15px;
-  line-height: 1.18;
+  margin: 12px 0 15px;
+  line-height: 1.16;
 }
 
 .section-label,
@@ -240,7 +282,7 @@ button, input { font: inherit; }
   width: 90px;
   height: 43px;
   object-fit: cover;
-  background: #eee;
+  background: var(--paper-deep);
 }
 
 .thumb-link span {
@@ -300,8 +342,8 @@ button, input { font: inherit; }
 .filters {
   margin: 12px 0 16px;
   padding: 8px 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
 }
 
 .search-input {
@@ -309,8 +351,8 @@ button, input { font: inherit; }
   padding: 2px 4px;
   border: 1px solid #777;
   border-radius: 0;
-  background: #fff;
-  color: #000;
+  background: var(--paper);
+  color: var(--ink);
 }
 
 .tag-filters {
@@ -324,7 +366,7 @@ button, input { font: inherit; }
   padding: 1px 6px;
   border: 1px solid #777;
   border-radius: 0;
-  background: #eee;
+  background: var(--paper-deep);
   color: #000;
   cursor: pointer;
 }
@@ -342,7 +384,7 @@ button, input { font: inherit; }
 .archive-entry {
   margin: 0 0 15px;
   padding: 0 0 9px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--rule);
 }
 
 .archive-entry p {
@@ -366,7 +408,7 @@ button, input { font: inherit; }
 .article-head {
   margin-bottom: 16px;
   padding-bottom: 8px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--rule);
 }
 
 .article-page { max-width: 840px; }
@@ -381,7 +423,7 @@ button, input { font: inherit; }
 .article-nav {
   margin-top: 24px;
   padding-top: 8px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--rule);
 }
 
 .prose {
@@ -405,15 +447,15 @@ button, input { font: inherit; }
 .prose blockquote {
   margin-left: 0;
   padding-left: 1rem;
-  border-left: 4px solid #ccc;
+  border-left: 4px solid var(--rule);
   color: #333;
 }
 
 .prose code,
 .classic-page code {
   padding: 0 0.18rem;
-  border: 1px solid #ddd;
-  background: #f5f5f5;
+  border: 1px solid var(--rule);
+  background: var(--paper-soft);
   font-family: "Courier New", Courier, monospace;
   font-size: 0.9em;
 }
@@ -421,8 +463,8 @@ button, input { font: inherit; }
 .prose pre {
   overflow-x: auto;
   padding: 0.65rem;
-  border: 1px solid #ddd;
-  background: #f8f8f8;
+  border: 1px solid var(--rule);
+  background: var(--paper-soft);
 }
 
 .prose pre code {
@@ -439,7 +481,7 @@ button, input { font: inherit; }
 .prose th,
 .prose td {
   padding: 0.35rem 0.45rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--rule);
   text-align: left;
 }
 
@@ -453,7 +495,7 @@ button, input { font: inherit; }
 
 .cv-contact {
   padding-left: 16px;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid var(--rule);
   font-size: 15px;
 }
 
@@ -481,7 +523,7 @@ button, input { font: inherit; }
   width: 180px;
   height: 120px;
   object-fit: cover;
-  background: #eee;
+  background: var(--paper-deep);
 }
 
 .photo-card figcaption { margin-top: 3px; }
@@ -570,7 +612,7 @@ button, input { font: inherit; }
   .cv-contact {
     padding-left: 0;
     border-left: 0;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--rule);
     padding-top: 8px;
   }
 }
@@ -595,50 +637,72 @@ button, input { font: inherit; }
   font-weight: 700;
 }
 
-/* Requested prose spacing for the Highlights block; layout otherwise unchanged. */
-.classic-awards li { margin-bottom: 0.9rem; }
-.classic-awards li:last-child { margin-bottom: 0; }
-
 /* Keep all selected-work item titles visibly blue, including internal CV anchor links. */
 .classic-selected .classic-item b a,
 .classic-selected .classic-item b a:visited { color: #333399; }
 
-/* About keeps the site's typography while preserving the PDF's literal spaces and blank lines. */
+/* About uses the site's typography, while matching the poem's measured indentation and vertical rhythm. */
 .about-classic-page {
   max-width: 1120px;
+  min-height: calc(100vh - 110px);
 }
 
-.about-classic-page > h1 {
+.about-poem-stage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1.2rem 0 3rem;
+}
+
+.about-poem-card {
+  width: max-content;
+  max-width: 100%;
+}
+
+.about-poem-title {
+  width: 6.2rem;
+  margin: 0 0 0.55rem;
+  color: #000;
+  font-family: inherit;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1.05;
   text-align: center;
 }
 
-pre.about-poem {
-  display: block;
-  width: max-content;
-  max-width: 100%;
-  margin: 1.15rem auto 0;
-  padding: 0;
-  overflow: visible;
-  border: 0;
-  background: transparent;
+.about-poem {
   color: #000;
   font-family: inherit;
   font-size: 17px;
   font-weight: 400;
-  line-height: 1.06;
+  line-height: 1;
   text-align: left;
-  white-space: pre;
+  white-space: nowrap;
 }
 
-pre.about-poem a,
-pre.about-poem a:visited {
+.poem-line {
+  min-height: 2.2em;
+  line-height: 2.2;
+}
+
+.poem-line.stanza-start {
+  margin-top: 0.75em;
+}
+
+.poem-line.indent-0 { padding-left: 0; }
+.poem-line.indent-3 { padding-left: 0.75em; }
+.poem-line.indent-6 { padding-left: 1.5em; }
+.poem-line.indent-9 { padding-left: 2.25em; }
+.poem-line.indent-42 { padding-left: 11.65em; }
+
+.about-poem a,
+.about-poem a:visited {
   color: #333399;
 }
 
 @media (max-width: 720px) {
-  pre.about-poem {
-    max-width: none;
-    font-size: 16px;
-  }
+  .about-poem-stage { justify-content: flex-start; overflow-x: auto; }
+  .about-poem { font-size: 16px; }
+  .about-poem-title { font-size: 29px; }
 }
 

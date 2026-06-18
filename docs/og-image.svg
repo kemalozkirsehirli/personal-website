@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Kemal Özkırşehirli research word cloud</title>
   <desc id="desc">A dense old-school academic keyword cloud for AI/ML for science, physics, CADD, molecular docking, protein design, chromatin, free energy, and statistical mechanics.</desc>
-  <rect width="1200" height="630" fill="#ffffff"/>
+  <rect width="1200" height="630" fill="#FFF8E7"/>
   <g font-family="Georgia, 'Times New Roman', Times, serif" text-anchor="middle">
     <text x="600" y="265" font-size="88" font-weight="700" fill="#7d2b19">AI/ML for Science</text>
     <text x="336" y="165" font-size="62" font-weight="700" fill="#a14722">CADD</text>
