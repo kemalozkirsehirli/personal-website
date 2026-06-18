@@ -467,6 +467,7 @@ function renderLayout({ site, ctx, title, description, activePath = '/', path: p
 async function renderGroup(site, ctx) {
   const applicationUrl = 'https://forms.gle/BZFfBCPRFipNeaBr5';
   const announcementUrl = 'https://www.linkedin.com/posts/kozkirsehirli_kemal-%C3%B6zk%C4%B1r%C5%9Fehirli-activity-7473434647910334464-I9E7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC4WWM0Bp3e0E7wr9kwMebbuR65xNvaV8sU';
+  const tbxtRepoUrl = 'https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced';
   const content = `<section class="classic-page group-page">
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">Home</a> / Özkırşehirli Group</p>
     <h1>Özkırşehirli Group</h1>
@@ -474,12 +475,30 @@ async function renderGroup(site, ctx) {
     <p>Currently, the areas of interest that define our research are computational methods and artificial intelligence/machine learning theories and pipelines for making new scientific discoveries. Our interests include computer-aided drug design (CADD) focused on Chordoma and TBXT; discovery of novel small molecules; geometric deep learning and 3-D mesh methodology; modeling of biomolecules; designing proteins; and developing scientific workflows.</p>
     <p>We have a selection process for membership but do not restrict it based solely on your educational or professional background. We believe that an individual's passion for their work and willingness to be intellectually curious, driven to solve problems, honest about their limitations, and capable of fortitude are essential. These values will determine whether you are a good fit. If you have a strong interest in a field outside those mentioned above, then we encourage you to apply if you are willing to become an expert in the field of study, provide consistent contributions to the research effort, and ask scientifically relevant questions.</p>
     <p><b><a href="${escapeAttr(applicationUrl)}" target="_blank" rel="noopener noreferrer">Application form</a></b> - <a href="${escapeAttr(announcementUrl)}" target="_blank" rel="noopener noreferrer">LinkedIn launch post</a></p>
+
+    <section class="group-research-programs" aria-labelledby="current-research-programs">
+      <h2 id="current-research-programs">Current Research Programs</h2>
+
+      <article id="meshanyorder-for-life-sciences" class="group-project-detail">
+        <h3>MeshAnyOrder — Order-Agnostic 3D Mesh Generation for Life Sciences</h3>
+        <p>Kemal serves as Principal Investigator for a seven-member independent research collaboration that includes a Google-affiliated research lead. MeshAnyOrder is an order-agnostic autoregressive transformer for point-cloud-conditioned 3D mesh generation: it represents mesh faces as quantized tokens and predicts unvisited adjacent faces from arbitrary traversal seeds instead of committing the model to a single canonical face ordering.</p>
+        <p>The core architecture is being extended with 3D rotary positional encoding for translation-invariant attention, heterogeneous triangle/quad tokenization, topology-aware validity constraints, frontier-parallel decoding, and local mesh completion or remeshing. The methodology comes first. Once the core baseline is stable, scientific extensions can test protein and molecular surfaces, enzyme and antibody topology, binding-pocket and interface geometry, and other biomolecular complexes as demanding applications of a general mesh model.</p>
+        <p>The experimental program includes random, axis-based, breadth-first, and depth-first traversal orders; causal, adjacency-aware, and bidirectional attention masks; and publication-grade comparisons against leading autoregressive and diffusion-based mesh generators. Evaluation covers reconstruction quality, manifoldness, watertightness, topology preservation, inference latency, memory consumption, mesh complexity, and high-resolution scaling.</p>
+      </article>
+
+      <article id="tbxt-brachyury-small-molecule-discovery" class="group-project-detail">
+        <h3>TBXT / Brachyury Small-Molecule Discovery for Chordoma</h3>
+        <p>The TBXT program is an eleven-person chordoma-focused computational hit-identification effort led by Kemal, targeting PDB 6F59 chain A and the TBXT G177D site-F region. The team compressed 2,274 prior-art compounds and 737 raw analogs into 503 filtered analogs, generated 30,000 BRICS recombinations, retained 67 novel QSAR-pass proposals, and assembled a 570-compound novelty-filtered pool using site-F/A/G grids, Tanimoto novelty control, and sourceability-aware generation.</p>
+        <p>The pipeline combines Vina ensemble docking, GNINA CNN pose and pKd scoring, Vina-trap detection, RF/XGBoost TBXT QSAR, Boltz-2 co-folding, MMGBSA/FEP scaffolding, T-box paralog selectivity, Rowan IC50/affinity analysis, RDKit descriptors and BRICS, onepot/muni catalog checks, and Bash/HPC automation. A QSAR model trained on 650 RDKit-valid SPR-derived compounds from 14 decrypted XLSX files, 15 campaigns, and 1,620 Kd fits reached Spearman ρ ≈ 0.49 and MAE ≈ 0.5 pKd; GNINA screened 569 of 570 candidates and identified 40 Tier-A, 51 Tier-B, and 73 Vina-trap candidates.</p>
+        <p>The final computational funnel moved from 570 compounds to 137 strict-pass candidates, 24 submission-ready candidates, and four judge-facing site-F selections. Filters included exact catalog matching, non-covalent chemistry, PAINS and forbidden-motif exclusion, lead-likeness, ESOL/logS, Tanimoto novelty, cost, supplier risk, and selectivity across 16 paralogs. The final four produced Boltz Kd estimates of 3.2–8.8 µM, Jack/SCC agreement of 1.01–1.34×, GNINA Vina scores of −5.01 to −6.19, pKd values of 3.94–4.69, and Rowan IC50-style predictions of 1.82–6.11 µM. <a href="${escapeAttr(tbxtRepoUrl)}" target="_blank" rel="noopener noreferrer">The public research release is available on GitHub.</a></p>
+      </article>
+    </section>
   </section>`;
   await writeFile('group/index.html', renderLayout({
     site,
     ctx,
     title: 'Özkırşehirli Group',
-    description: 'Research directions, values, and participation in the Özkırşehirli Group.',
+    description: 'Research directions, values, MeshAnyOrder, and TBXT / brachyury small-molecule discovery in the Özkırşehirli Group.',
     activePath: '/group/',
     path: '/group/',
     content,

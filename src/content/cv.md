@@ -1,280 +1,169 @@
 ---
 title: "CV"
-description: "Education, research, engineering, teaching, leadership, honors, skills, and interests."
+description: "Education, recognition, research, engineering, teaching, computational skills, languages, interests, and hobbies."
 ---
 
 # Kemal Özkırşehirli
 
-**MIT B.Sc. Candidate** — Computer Science and Engineering; Physics: Chemical Physics; Mathematics: Mathematical Biology. Minors in Philosophy and Writing.  
+**MIT B.Sc. Candidate** — Computer Science and Engineering, Physics, and Mathematics. Minors in Philosophy and Writing.  
 Cambridge, MA · [kemalozk@mit.edu](mailto:kemalozk@mit.edu) · [LinkedIn](https://linkedin.com/in/kozkirsehirli) · [GitHub](https://github.com/kemalozkirsehirli) · [Google Scholar](https://scholar.google.com/citations?user=SKE-LC8AAAAJ)
 
-I am an international student at MIT, and I hail from İstanbul, Türkiye. At MIT, I am a B.Sc. candidate expected May 2027 with a 5.0/5.0 GPA, pursuing a rare triple major in Computer Science and Engineering, Physics: Chemical Physics, and Mathematics: Mathematical Biology with minors in Philosophy and Writing. I am on track to graduate a year early, completing three majors and two minors in three total years of undergraduate education after transferring from Columbia University. I work at the intersection of AI/ML, chemical physics, computational chemistry, molecular simulation, CADD, protein and genome modeling, geometric deep learning, statistical mechanics, and scientific workflow engineering. My work turns difficult scientific systems into computable representations, testable algorithms, and decision-making tools for discovery.
+I leverage AI/ML frameworks, generative and diffusion models, free-energy methods, atomistic molecular dynamics, Monte Carlo, density-functional-theory simulations, inference, and robust optimization to turn scientific complexity into parsable, compilable, and computable representations. I then extract the governing rules of these systems to synthesize high-level technical knowledge for critical scientific decision-making.
 
 ## Education
 
 **Massachusetts Institute of Technology** — Cambridge, MA  
 B.Sc. expected May 2027. GPA: 5.0/5.0.
 
-- Majors: Computer Science and Engineering; Physics: Chemical Physics; Mathematics: Mathematical Biology.
+- Majors: Computer Science and Engineering, Physics, Mathematics.
 - Minors: Philosophy, Writing.
-- On track to graduate a year early, completing a triple major and two minors in three total years of undergraduate education.
-- Transferred to MIT from Columbia University.
-- MIT coursework in chemistry, chemical physics, and simulation: 8.592[J] Statistical Physics in Biology; 2.094[J] Atomistic Modeling and Simulation of Materials and Structures; 8.05 Quantum Physics II; 5.601 Thermodynamics I; 5.351 Fundamentals of Spectroscopy; 5.43 Advanced Organic Chemistry.
-- MIT coursework in CS, AI, systems, and mathematics: 6.7960 Deep Learning; 18.404[J] Theory of Computation; 6.5240 Sublinear Time Algorithms; 6.4610 Natural Language Processing; 6.3930 AI and Decision Making in Medicine: From Disease to Therapy; 6.1220[J] Advanced Algorithm Design-Analysis; 6.1910 Computer Structures and Architectures; 6.1903 Introduction to Low-level Programming in C and Assembly; 6.100B Introduction to Computational Thinking and Data Science; 18.615 Stochastic Processes; 6.1200[J] Discrete Mathematics; 18.600 Probability Theory and Random Variables; 18.06 Linear Algebra.
-- Humanitas Core: 24.245 Theory of Models; 24.121 Metaphysics; 24.251 Introduction to Philosophy of Language; 17.01[J]/24.04[J] Justice; 24.05 Philosophy of Religion; 21W.747 Rhetoric; 21W.745 Advanced Essay Workshop; 21W.762 Poetry Workshop; 21W.738[J] Memoir.
+- Research interests: biomolecular simulation; free-energy methods; CADD; statistical mechanics and renormalization-group theory; chemical diffusion; high-performance computing; generative models; scientific workflow and DNA–RNA engineering; agentic AI; inference.
+- Computational skillset: Python, C/C++, CUDA, PyTorch, Transformers, GNNs, HPC/GPU programming, Linux, Bash, Git, SLURM/PBS/qsub.
+- Coursework: 6.7960 Deep Learning; 6.5060 Algorithm Engineering; 6.4610 Natural Language Processing; 6.3930 AI and Decision Making in Medicine: From Disease to Therapy; 6.1220[J] Advanced Algorithm Design-Analysis; 18.404[J] Theory of Computation; 18.615 Stochastic Processes; 6.5240 Sublinear Time Algorithms; 6.1910 Computer Structures and Architectures; 6.100B, 6.1903, and related Python/C/C++/Assembly programming labs; 18.600 Probability Theory and Random Variables; 18.06 Linear Algebra; 5.43 Advanced Organic Chemistry; 6.1200[J] Discrete Mathematics.
+- Humanitas Core: 24.245 Theory of Models; 21W.747 Rhetoric; 21W.745 Advanced Essay Workshop; 21W.762 Poetry Workshop; 24.251 Philosophy of Language; 24.05 Philosophy of Religion; 17.01[J]/24.04[J] Justice; 24.121 Metaphysics; 21W.738[J] Memoir.
 
-**Columbia University** — New York, NY  
-B.A. study in Chemistry and Computer Science-Mathematics, Sept 2024–May 2025. GPA: 4.07/4.00.
+## Activities
 
-- Received a Likely Letter from Columbia University and was named a Science Research Fellow.
-- Coursework: CHEM UN2045 Intensive Organic Chemistry I; COMS W3137 Data Structures and Algorithms; MATH UN1205 Accelerated Multivariable Calculus; PHYS UN1401 Introduction to Mechanics and Thermodynamics; PHYS UN1402 Introduction to Electricity, Magnetism, and Optics; ELEN E1201 Introduction to Electrical Engineering and Lab.
-- Core Curriculum: ENGL CC1010.2xx University Writing: Readings in Gender and Sexuality; HUMA CC1001–CC1002 Literature Humanities I & II; SCNC CC1000/CC1100 Frontiers of Science.
+- AI@MIT.
+- Schwarzman College of Computing Advisor.
+- MIT BioMakers.
+- MIT Student Council Representative.
+- ClubChem.
+- MIT Gala Model/Designer.
 
-**Üsküdar American Academy** — Istanbul, Türkiye  
-2019–2024. Grade: 97/100.
+## Recognition
 
-- Dr. Virginia Canfield Award for Overall Excellence, 2022.
-- George Ripley Tracy Award for Academic Distinction, 2023.
-- Graduating Academic Award in Science, 2024.
+- Medalist in the 56th International Chemistry Olympiad, representing Türkiye; ranked 105th internationally among 327 participants.
+- Medalist in the 58th International Mendeleev Chemistry Olympiad, representing Türkiye; ranked 73rd internationally among 151 participants.
+- Silver Medal in the TÜBİTAK National Chemistry Olympiad; ranked 3rd nationally among 62 finalists and 2,500+ students to represent Türkiye.
+- Gold Medal in the Istanbul Science Olympiads 2022 in Chemistry; ranked first in Istanbul among 50 finalists.
+- Columbia Science Research Fellow Named Scholar; awarded a full-ride early with a Likely Letter in recognition of scientific accomplishment and talent.
+- World Science Scholar, 2023 cohort; selected among 52 scholars from 22 countries for exceptional mathematical talent and as the fourth Turkish scholar in program history.
+- AIME qualification and AMC Hall of Fame acknowledgement; 7th place in Türkiye and a top-5% AMC 12 score among 300,000+ participants.
+- Selected to attend AlgoTrade Hackathon 2026 with free travel and accommodation from 1,000+ applicants across 51 countries and 148 universities.
+- Transferred to MIT from Columbia as one of 22 selected from 764 applicants, a 2.5% acceptance rate.
+- CHEM13 Certificate of Distinction, University of Waterloo International Exam; ranked 2nd among 1,551 participants.
+- Certificate of Distinction, Galois International Mathematics Contest; ranked 7th among 3,071 international students and 20th globally among 6,595.
+- Book Prize, Sir Isaac Newton International Physics Contest, University of Waterloo; ranked in the top 50 globally among 2,000+ participants.
 
-**International Baccalaureate Diploma Programme** — November 2023 cohort  
-Score: 44/45.
+## Experiences
 
-- Higher Level: Mathematics Analysis and Approaches, Physics, Chemistry.
-- Standard Level: English A Language and Literature, Turkish A Literature, Turkey in the 20th Century.
-- Extended Essay in English Literature: A.
+### Principal Investigator — Order-Agnostic MeshAnyOrder for Life Sciences
 
-**Stanford Pre-Collegiate University-Level Math and Physics** — 2022–2023
+**Özkırşehirli Group — independent 7-member research collaboration with a Google-affiliated research lead** — Apr 2026–Present
 
-- Multivariable Differential Calculus, Multivariable Integral Calculus, and Differential Equations.
+- Leading MeshAnyOrder, an order-agnostic autoregressive transformer for point-cloud-conditioned 3D mesh generation that represents faces as quantized tokens and predicts unvisited adjacent faces from arbitrary traversal seeds.
+- Extending the architecture with 3D rotary positional encoding for translation-invariant attention, heterogeneous triangle/quad tokenization, topology-aware validity constraints, frontier-parallel decoding, and local mesh completion/remeshing.
+- Designing publication-grade ablations across random, axis-based, BFS/DFS traversal and causal, adjacency-aware, and bidirectional masking; evaluating reconstruction quality, manifoldness, watertightness, inference latency, memory consumption, and high-resolution scaling against leading autoregressive and diffusion-based mesh generators.
 
-## Research, Industrial, and Professional Experiences
+### Principal Investigator — Özkırşehirli Group; Team Leader, TBXT Small-Molecule Hackathon
 
-### Principal Investigator — Methodology-First 3D Mesh Learning
+**MIT and onepot** — Apr 2026–Present
 
-**Independent research collaboration with a Google-affiliated research lead** — Jun 2026–Present
-
-- Serving as principal investigator for a 7-member international research collaboration developing a new methodology for 3D mesh and point-cloud learning rather than forcing a premature domain application.
-- Working with a Google-affiliated research lead to build the technical roadmap around kNN graph pipelines, Point Transformer v3-style architectures, geometric representation learning, reproducible experiments, literature synthesis, and preprint-oriented manuscript planning.
-- Applying the method to appropriate life-science applications such as topology of enzymes, antibodies, and other biomolecular complexes when they provide a principled benchmark for the methodology.
-- Coordinating weekly technical meetings, literature presentations, experimental milestones, contributor responsibilities, documentation, and manuscript preparation.
-
-### Machine Learning Engineer — Chromosomal Protein Folding / ChromoGen-V2
-
-**MIT CSAIL / MIT Chemistry, Zhang and Kellis Groups** — May 2026–Present
-
-- Developing ChromoGen-Engine V2, a conditional diffusion and evaluation pipeline for small-molecule-perturbed single-cell 3D chromatin generation.
-- Building a data engine integrating Plate-C / Easy Dip-C treatment structure data with CHARM-style same-cell Hi-C, RNA-seq, ATAC-seq, and histone-modification data.
-- Designing structure-grounded benchmarks for generated chromatin ensembles: held-out distance/contact agreement, P(s) decay, condition separation, ensemble coverage, calibration, failure-mode analysis, and sequence/regulatory attribution.
-
-### AI/ML, Inference, and Optimization Engineer — Autoimmune Target Discovery
-
-**Experimental Drug Development Centre, A*STAR; Dr. Sun and Dr. Cai** — Apr 2026–Present
-
-- Architecting V2M-Engine, a calibrated genetics-to-mechanism target-discovery framework for autoimmune disease.
-- Mapping GWAS and fine-mapped risk variants onto regulatory programs, causal immune cell states, and targetable disease mechanisms using single-cell foundation models, QTL/colocalization evidence, and known therapeutic targets as embedded validation controls.
-- Developing a modular sequence-to-cell-state-to-targetability engine coupling variant-effect scoring, Perturb-seq validation, counterfactual immune-state transport, and structure/affinity-aware target prioritization.
+- Leading an 11-person chordoma-focused TBXT/brachyury computational hit-identification program targeting PDB 6F59 chain A / TBXT G177D site F; compressed 2,274 prior-art compounds plus 737 raw analogs into 503 filtered analogs, 30,000 BRICS recombinations, 67 novel QSAR-pass proposals, and a 570-compound novelty-filtered pool using site-F/A/G grids, Tanimoto novelty control, and sourceability-aware generation.
+- Integrated a multi-orthogonal AI/CADD stack: Vina ensemble docking, GNINA CNN pose/pKd scoring, Vina-trap detection, RF/XGBoost TBXT QSAR, Boltz-2 co-folding, MMGBSA/FEP scaffolding, T-box paralog selectivity, Rowan IC50/affinity analysis, RDKit descriptors/BRICS, onepot/muni catalog checks, and Bash/HPC automation. Trained QSAR on 650 RDKit-valid SPR-derived compounds from 14 decrypted XLSX files, 15 campaigns, and 1,620 Kd fits, achieving Spearman ρ ≈ 0.49 and MAE ≈ 0.5 pKd; GNINA screened 569 of 570 candidates and flagged 40 Tier-A, 51 Tier-B, and 73 Vina-trap candidates.
+- Prioritized a final funnel of 570 → 137 strict-pass → 24 submission-ready → 4 judge-facing site-F picks under exact-match, non-covalent chemistry, PAINS/forbidden-motif, lead-likeness, ESOL/logS, Tanimoto, cost, chemistry, supplier-risk, and 16-paralog selectivity gates. The final four showed Boltz Kd values of 3.2–8.8 µM, Jack/SCC agreement of 1.01–1.34×, GNINA Vina scores of −5.01 to −6.19, pKd values of 3.94–4.69, and Rowan IC50-style predictions of 1.82–6.11 µM.
 
 ### PRISM AI Safety Fellow — Protein Foundation Model Red-Teaming and Evaluation
 
 **PRISM, W2D2, Siemens** — May 2026–Present
 
-- Selected from 800+ applicants for PRISM 2026 to develop adversarial evaluation methods for protein foundation models.
-- Testing when biologically plausible outputs fail sequence-structure-function constraints, uncertainty calibration, developability, model-claimed mechanisms, and protein-design reliability checks.
-- Building safety-bounded benchmarks and failure taxonomies using prior work in EVEdesign, A*STAR V2M, antibody/protein models, CADD, and uncertainty-aware candidate ranking.
+- Selected from 800+ applicants for PRISM 2026 to develop adversarial evaluation methods for protein foundation models, testing when biologically plausible outputs fail sequence–structure–function constraints, uncertainty calibration, and protein-design reliability checks.
+- Creating methods to evaluate high-stakes protein-design reliability across biological plausibility, structural consistency, developability, uncertainty calibration, claimed mechanisms, and failure behavior.
+- Building a safety-bounded benchmark and failure taxonomies for next-generation protein models using prior work in EVEdesign, A*STAR V2M, antibody/protein models, CADD, and uncertainty-aware candidate ranking.
 
-### Algorithm Design, Engineering, and Optimization — Functional Protein Discovery
+### Summer UROP Scholar — ChromoGen-Engine V2
 
-**EVEdesign, Harvard Medical School / collaborative project** — Apr 2026–Present
+**MIT Chemistry, Computational Systems Biology; Prof. Zhang** — May 2026–Present
 
-- Contributing to EVEdesign, an open-source, method-independent protein-design platform across a 21-person, 18-institution, 8-country collaboration.
-- Developing uncertainty-aware candidate selection, sequence-structure-function objective integration, protein-language-model/evolutionary-prior scoring, and agent-based tool orchestration for scalable lab-in-the-loop biosequence design.
+- Developing ChromoGen-Engine V2, a conditional diffusion and evaluation pipeline merging ChromoGen-style single-cell 3D chromatin generation with small-molecule perturbation data and same-cell multi-omic regulatory readouts.
+- Building a data engine that integrates Plate-C / Easy Dip-C small-molecule treatment structures with CHARM-style same-cell Hi-C, RNA-seq, ATAC-seq, and histone-modification data under leakage-aware splits across treatment, dose/time, cell state, genomic window, batch, and source.
+- Designing a structure-grounded benchmark comparing perturbation and regulatory-state conditioning with sequence-only, population-ATAC, pseudobulk/metacell, shuffled-label, and ablated baselines using distance/contact agreement, P(s) decay, condition separation, ensemble coverage, calibration, failure-mode analysis, and interpretable attribution.
 
-### Student Principal Investigator — Özkırşehirli Group and TBXT Small-Molecule Hackathon
+### Summer AI/ML Researcher — Autoimmune Target Discovery
 
-**MIT, Pillar VC, onepot** — Apr 2026–Present
+**Experimental Drug Development Centre, A*STAR** — May 2026–Present
 
-- Leading an 11-person chordoma-focused TBXT/brachyury computational hit-identification sprint targeting PDB 6F59 chain A / TBXT G177D site F.
-- Compressed 2,274 prior-art compounds plus 737 raw analogs into 503 filtered analogs plus 30,000 BRICS recombinations, then into a 570-compound novelty-filtered pool.
-- Integrated Vina ensemble docking, GNINA CNN pose/pKd scoring, Vina-trap detection, RF/XGBoost TBXT QSAR, Boltz-2 co-folding, MMGBSA/FEP scaffolding, T-box paralog selectivity, Rowan IC50/affinity analysis, RDKit descriptors/BRICS, onepot/muni catalog checks, and Bash/HPC automation.
-- Prioritized a 570 → 137 strict-pass → 24 submission-ready → 4 judge-facing site-F funnel under sourceability, lead-likeness, PAINS/forbidden-motif, selectivity, cost, chemistry, and supplier-risk gates.
+- Architecting V2M-Engine with Dr. Sun and Dr. Cai, a calibrated genetics-to-mechanism target-discovery framework that maps autoimmune GWAS and fine-mapped variants onto regulatory programs, causal immune cell types/states, and targetable disease mechanisms using single-cell foundation models, QTL/colocalization evidence, and known therapeutic targets as embedded controls.
+- Building a Target-Mechanism Retrodiction Benchmark that tests whether scGPT/Geneformer-derived cell-state embeddings recover known immune-disease mechanisms beyond enrichment, marker-gene, pathway, and eQTL/colocalization baselines, with ablations, uncertainty quantification, calibration-error analysis, and leakage-controlled target-family holdouts.
+- Developing a modular sequence-to-cell-state-to-targetability engine coupling Evo 2/EVEE-style variant-effect scoring, Perturb-seq validation, counterfactual immune-state transport, and structure/affinity-aware target prioritization.
 
-### LLM/NLP, Statistical Mechanics, and Theoretical Chemistry Researcher
+### Head of Chemistry Research-Implementation; Backend Software Engineer for LangGraph AI Agent Pipelines
 
-**Columbia University** — Jan 2026–May 2026
+**Pedal AI** — Jul–Dec 2025
 
-- Developed ChemAgent-QSM, an LLM-guided agentic framework converting natural-language chemistry prompts into validated PySCF quantum-chemical workflows.
-- Generated auditable Python workflows for time-correlation functions, local-order metrics, relaxation timescales, mobility fields, structure/dynamics coupling, optimized geometries, electronic-structure descriptors, and vibrational spectra.
-- Developed LLM-trajectory features and ML analysis workflows for dynamical heterogeneity in glass-forming and other systems, including mean squared displacement, SISFs, and MSCOPE baselines.
+- Designed a high-performance backend architecture for LangGraph AI agents using Python; implemented FastAPIs connecting AI agents and molecular-prediction engines; optimized control flow across three core backend layers and 4,000+ lines of code; reduced average prediction latency to under 50 ms while supporting 15,000+ daily API requests and processing 50+ GB of chemical datasets.
+- Built chemist- and researcher-facing UI/UX for Pedal AI's Agentic Chemistry Platform, incorporating Coley Lab retrosynthesis models with ASKCOS-style route search, inspectable retrosynthesis trees, reaction-level provenance, and decision-ready synthesis workflows; mapped 8+ step pathways and evaluated 100,000+ molecular predictions with 99.9% uptime.
 
-### Project Co-Lead — Deep Reinforcement Learning for Antibody-Antigen Interactions
+### LLM and Statistical Mechanics/Theoretical Chemistry Researcher
 
-**[AI@MIT / AIM Labs](https://aiatmit.com/)** — Jan 2026–May 2026
+**Columbia University; Prof. David Reichman** — Dec 2025–Present
 
-- Co-led a six-person team developing a structure-informed cross-attention transformer and ESM-2 pipeline mapping protein/pathogen sequences to candidate antibodies.
-- Curated datasets from OAS, SAbDab, IEDB, and CoV-AbDab-style sources.
-- Reduced training time by approximately 40% using PPO-based reinforcement learning against AlphaFold-Multimer/IGFold structural metrics and GPU-distributed PyTorch DDP on MIT SuperCloud.
+- Developed ChemAgent-QSM, an LLM-guided agentic framework converting natural-language chemistry prompts into validated PySCF quantum-chemical pipelines for drug-like molecules.
+- Generated auditable Python workflows for time-correlation functions, local-order metrics, relaxation timescales, mobility fields, structure–dynamics coupling, optimized geometries, electronic-structure descriptors, and vibrational spectra via ab initio DFT.
+- Developed LLM-trajectory features and machine-learning workflows for dynamical heterogeneity in glass-forming and related systems using mean-squared displacement, SISFs, and MSCOPE baselines.
 
-### Teaching Fellow and Grader — 6.1200[J] Discrete Mathematics / Mathematics for Computer Science
+### Project Co-Lead — Deep Reinforcement Learning for Antibody–Antigen Interactions
 
-**MIT EECS** — Jan 2026–Present
+**AI@MIT / AIM Labs** — Jan 2026–Present
 
-- Selected after receiving an A+ and ranking in the top 1% of students enrolled in MIT EECS's largest foundational theoretical computer science course.
-- Supporting a 250+ student cohort through recitations, office hours, proof-intensive grading, midterms, and finals in logic, graph theory, recurrence relations, asymptotic analysis, and cryptography.
+- Co-led a six-person team developing a structure-informed cross-attention transformer and ESM-2 pipeline that maps protein/pathogen sequences to candidate antibodies using OAS, SAbDab, and IEDB datasets.
+- Reduced training time by approximately 40% through PPO-based reinforcement learning against AlphaFold-Multimer/IGFold structural metrics using distributed PyTorch DDP on MIT SuperCloud.
+
+### Protein Design Algorithm Engineer — EVEdesign Collaborative Project
+
+**Harvard Medical School; Prof. Marks** — Apr 2026–Present
+
+- Working on EVEdesign's open-source, method-independent protein-design platform as part of a 21-person, 18-institution, 8-country collaboration, supporting composable multi-objective antibody/protein design across evolutionary, structural, developability, and experimental-feedback constraints.
+- Developing uncertainty-aware candidate selection, sequence–structure–function objective integration, protein-language-model/evolutionary-prior scoring, and agent-based tool orchestration for scalable lab-in-the-loop biosequence design.
+
+## Additional Experiences
 
 ### AI/ML for Statistical Mechanics Simulations Researcher and Teaching Fellow
 
-**MIT Physics, Prof. A. Nihat Berker** — Jan 2022–Present
+**MIT Physics; Prof. A. Nihat Berker** — Jan 2022–Present
 
-- Invited to conduct research after ranking within the top 1% in Prof. Berker's graduate-level 8.334 Phase Transitions and Renormalization-Group Theory while in high school.
-- Building a machine-learning-augmented Kadanoff renormalization-group framework using PyTorch and a graph neural network spin classifier to identify fixed points and phase boundaries in spin-1/2 antiferromagnetic systems.
-- Mentored 200+ students on college applications, decisions, and career paths while teaching augmented chemistry and classical/quantum mechanics condensed courses.
+- Invited to conduct research after ranking in the top 1% of Prof. Berker's graduate-level 8.334: Phase Transitions and Renormalization-Group Theory while in high school. Building a PyTorch/GNN-augmented Kadanoff renormalization-group framework to identify fixed points and map thermodynamic phase boundaries in spin-1/2 antiferromagnetic systems.
+- Mentored 200+ students regarding college applications, decisions, and career paths while teaching condensed Augmented Chemistry and Classical/Quantum Mechanics courses and grading daily problem sets and exams.
 
+### Kupcinet-Getz Scholar in Computational Biochemical Diffusion
 
-### Kupcinet-Getz Research Scholar — Computational Biochemical Diffusion
+**Weizmann Institute of Science; Prof. Semenov** — Jun–Aug 2025
 
-**Weizmann Institute of Science, Prof. Semenov** — Jun 2025–Aug 2025
+- Selected as one of 22 scholars worldwide with an acceptance rate below 10%; developed PINN- and neural-ODE-enhanced stochastic simulation of nonequilibrium enzyme reaction-diffusion networks and custom Euler-Maruyama, Runge-Kutta, and Gillespie SSA solvers for biochemical kinetics and spatial heterogeneity.
+- Constructed GNN encoders, transformer sequence models, UMAP-driven clustering, and PyTorch classifiers to extract latent thermal structure, identify bifurcations, and classify nonlinear dynamics from high-dimensional trajectories.
 
-- Selected as one of 22 scholars worldwide for the Kupcinet-Getz International School.
-- Investigated stochastic differential equations for enzymatic reaction-diffusion systems with Brownian motion, chemical kinetics, spatial heterogeneity, nonlinear biochemical feedback oscillations, molecular self-organization, and chaotic oscillation.
-- Developed PINN- and neural-ODE-enhanced stochastic simulation algorithms; implemented custom Euler-Maruyama, Runge-Kutta, and Gillespie SSA solvers.
-- Constructed GNN encoders and transformer sequence models with UMAP-driven clustering to extract latent thermal structure from high-dimensional trajectory datasets.
-
-### Backend Software Engineer and Head of Chemistry — Agentic Chemistry Workflows
-
-**Pedal AI** — Jul 2025–Dec 2025
-
-- Built Python/LangGraph backend infrastructure for chemistry AI agents, including stateful workflow orchestration and custom tool integration.
-- Integrated agent logic with molecular-prediction engines through consistent API interfaces and persistent internal state across workflow runs.
-- Helped align cheminformatics UI/UX behavior with backend agent logic for more inspectable retrosynthesis-route and molecular-workflow tools.
-- Code is not public.
-
-### Chemistry and AI Consultant / Scientific Data and Evaluation Specialist
+### Chemistry and AI Consultant and Scientific Data and Evaluation Specialist
 
 **Sepal AI, Mercor** — Sept 2024–Feb 2025
 
-- Developed model-training, testing, and evaluation data for LLM workflow applications in graduate-level chemistry reasoning.
-- Built grading rubrics and chemical-validity constraints for retrosynthesis, reaction mechanisms, and method-selection tasks.
-- Created prompt-engineering, error-analysis, and failure-mode annotation workflows for advanced chemistry reasoning and structured fine-tuning/evaluation data.
+- Developed model-training, testing, and evaluation data for LLM workflows that convert graduate-level retrosynthesis, reaction-mechanism, and method-selection problems into tasks that can be checked against known solutions; built grading rubrics and chemical-validity constraints.
+- Developed instructional data, prompt-engineering workflows, error analysis, decomposition, and failure-mode annotation for advanced chemistry reasoning, converting the work into instruction/response, evaluation/grading, and feedback formats for training and benchmarking.
 
-### Foundation Research Scholar — Computational Organic Chemistry
+### Foundation Research Scholar in Computational Organic Chemistry
 
 **Lumiere Research Inclusion Foundation** — Aug 2023–Feb 2024
 
-- Engineered an automated multi-scale simulation pipeline linking DFT calculations to stochastic kinetic Monte Carlo models.
-- Screened 20+ transition states and 500+ reaction trajectories across 5 solvent pathways, reaching a 22% predicted yield optimization for a cytotoxic target.
-- Secured a selective full research scholarship and produced a mechanistic manuscript while mentored under a PhD student.
+- Engineered an automated multi-scale simulation pipeline linking DFT calculations to stochastic kinetic Monte Carlo models; screened 20+ transition states and 500+ reaction trajectories across five solvent pathways to achieve a 22% predicted yield optimization for a cytotoxic target.
+- Secured a selective full research scholarship and independently drove the computational project with one-to-one Brown University PhD mentorship, analyzing reaction dynamics and compiling a mechanistic manuscript.
 
 ### Advanced Organic Synthesis Researcher
 
-**MIT Chemistry, Prof. Stephen L. Buchwald** — Dec 2025–May 2026
+**MIT Chemistry; Prof. Stephen L. Buchwald** — Dec 2025–May 2026
 
-- Supported development of CuH-catalyst chemistry for selective asymmetric methylation and alkylation of vinyl boronate esters.
-- Used 1H-NMR and chiral-HPLC to connect catalyst structure and activity, expand usable substrate scope, and scale syntheses from 0.1 mmol to multi-gram quantities.
+- Supported development of a CuH catalyst for selective asymmetric methylation and alkylation of vinyl boronate esters; used 1H-NMR and chiral-HPLC to relate catalyst structure to activity, expanded substrate scope, and scaled synthesis from 0.1 mmol to multi-gram quantities.
 
-## Leadership and Community Involvement
+### Teaching Fellow and Grader for 6.1200[J]
 
-### Low Voltage and Software Team Member — Formula SAE Racing Initiative
+**MIT EECS — Discrete Mathematics / Mathematics for Computer Science** — Jan 2026–Present
 
-**[Columbia University Formula Racing](https://www.cc-seas.columbia.edu/student-group/columbia-university-formula-racing)** — Jan 2025–May 2025
+- Selected after receiving an A+ and ranking in the top 1% of MIT EECS's largest foundational theoretical-computer-science course; grades proof-intensive assignments in logic, graph theory, recurrence relations, asymptotic analysis, and cryptography.
+- Supports a 250+ student cohort through recitations, office hours, midterms, and finals.
 
-- Designed PCB systems and embedded software for a Formula SAE electric racing vehicle, focusing on low-voltage microelectronics.
-- Collaborated on sensor-network integration and firmware development using Altium Designer and C/C++.
+## Personal
 
-### Content Editor and Referee — Columbia Undergraduate Mathematics Journal
-
-**[Columbia Undergraduate Mathematics Journal](https://journals.library.columbia.edu/index.php/cjum)** — Sept 2024–May 2025
-
-- Critically reviewed senior theses and research papers in mathematics and adjacent fields under graduate mentorship.
-- Produced detailed LaTeX referee reports to improve clarity, correctness, structure, and academic rigor.
-
-### Dry-Lab Member — MIT BioMakers Lab Initiative
-
-**[MIT BioMakers](https://biomakers.mit.edu/)** — 2026–Present
-
-- Contributing computational and dry-lab support for biology-facing student projects, modeling work, and project infrastructure in MIT's biomaking community.
-- Participating in an interdisciplinary ecosystem for student-led biology, engineering, workshops, and community projects.
-
-### Undergraduate Advisory / Student Representation
-
-**[MIT Schwarzman College of Computing Undergraduate Advisory Group](https://computing.mit.edu/about/people/undergraduate-advisory-group/) · [MIT Undergraduate Association](https://ua.mit.edu/)** — 2026–Present
-
-- Engaging with student-advisory and undergraduate-representation contexts around computing, AI, education, and student experience at MIT.
-
-### Olympiad Team Captain and Club President — ACS Chemistry Club and Chemistry Olympiad Team
-
-**Üsküdar American Academy** — Sept 2020–Jun 2024
-
-- Mentored team members with advanced Olympiad questions for Istanbul, national, and international chemistry competitions; 35 of 50 members placed in top rankings.
-- Delegated 15 senior members into organic, inorganic, analytical, and physical chemistry specializations and established peer-mentorship traditions.
-- Organized 15 two-hour school-laboratory practical training sessions, including titrations and organic synthesis.
-
-### Team Captain — Varsity Male Volleyball Team
-
-**Üsküdar American Academy** — Sept 2020–Jun 2024
-
-- Conducted the team's offense as primary setter and coordinated weekly training sessions.
-- Initiated team-bonding activities and service activities including beach clean-ups.
-
-## Honors, Awards, and Recognition
-
-### International
-
-- Bronze Medal, 56th International Chemistry Olympiad, Riyadh, Saudi Arabia; ranked 105th among 327 participants, representing Türkiye.
-- Bronze Medal, 58th International Mendeleev Chemistry Olympiad, Shenzhen, China; ranked 73rd among 151 participants, representing Türkiye.
-- Gold Medal, Lavoisier International Chemistry Olympiad; ranked within the top 5% globally among 500+ participants.
-- Certificate of Distinction, University of Waterloo CHEM13 International Chemistry Contest; ranked 2nd among 1,551 participants.
-- Certificate of Distinction, Thompson Rivers University Chem12 International Chemistry Contest; ranked 2nd globally.
-- AIME Qualification and AMC Hall of Fame acknowledgement; 7th place in Türkiye's country ranking and top 5% AMC 12 score among 150,000+ participants worldwide.
-- Certificate of Distinction, Galois International Mathematics Contest; ranked 7th among 3,071 international students and 20th globally among 6,595; medal awarded as top scorer at Üsküdar American Academy.
-- Book Prize, Sir Isaac Newton International Physics Contest, University of Waterloo; top 50 globally among 2,000+.
-
-### National, Regional, and School-Based
-
-- Silver Medal, TÜBİTAK 31st National Chemistry Olympiad; ranked 3rd among 62 national finalists and 2,500+ students.
-- Gold Medal, Istanbul Science Olympiads 2022 in Chemistry; ranked first in Istanbul out of 50 finalists after a 400+ student first stage.
-- Gold Award in Physics, 4th Annual KimFiBi Laboratory Competition; first place among 30 high schools.
-- Dr. Virginia Canfield Award for Overall Excellence, Üsküdar American Academy, 2022.
-- George Ripley Tracy Award for Academic Distinction, Üsküdar American Academy, 2023.
-- Graduating Academic Award in Science, Üsküdar American Academy, 2024.
-
-### University, Research, and Startup Recognition
-
-- Columbia Science Research Fellow Named Scholar and Likely Letter recipient; awarded full scholarship in recognition of extraordinary scientific talent and accomplishment.
-- YC Startup School 2026 Acceptance, associated with Massachusetts Institute of Technology.
-- World Science Scholar 2023 Cohort; selected among 52 scholars from 22 countries for exceptional mathematical talent.
-- Selected to attend AlgoTrade Hackathon 2026 with free travel and accommodation from 1,000+ applicants across 51 countries and 148 universities.
-- Transferred to MIT from Columbia through a 22-from-764, 2.5% acceptance-rate path.
-
-## Licenses and Certifications
-
-- Outstanding Success: Assistantships of Augmented Mechanics, Quantum Mechanics, and Augmented Chemistry — Kadir Has University, Prof. A. Nihat Berker, issued Sept 2023.
-- Outstanding Success: Phase Transitions and Renormalization Group Theory — Kadir Has University, Prof. A. Nihat Berker, issued Aug 2023.
-- Outstanding Success: Quantum Mechanics — Kadir Has University, Prof. A. Nihat Berker, issued Jun 2022.
-- Outstanding Success: Augmented Mechanics — Kadir Has University, Prof. A. Nihat Berker, issued Jan 2022.
-- Outstanding Success: Augmented Electricity and Magnetism — Kadir Has University, Prof. A. Nihat Berker, issued Aug 2022.
-
-## Test Scores
-
-- IBDP: 44/45, November 2023; Higher Level Physics, Chemistry, and Mathematics.
-- SAT: 1560; Evidence-Based Reading and Writing 760, Math 800.
-
-## Computational and Technical Skillset
-
-- AI/ML: deep learning, machine learning, applied machine learning, reinforcement learning, representation learning, transformers, LLMs, NLP, text mining, pattern recognition, computer vision, dimensionality reduction, automated feature engineering, knowledge engineering, robust optimization, sharpness-aware minimization, fine-tuning, neural networks, DNNs, artificial neural networks, agentic AI development.
-- Scientific computing and modeling: Python, C/C++, CUDA, HPC/GPU programming, Linux, Bash, Git, SLURM/PBS/qsub, Conda, distributed training, NumPy, PyTorch, MATLAB, Java, R, LaTeX, parallel computing, system performance, data engineering, data mining, data analytics, predictive modeling, simulation, stochastic differential equations, Monte Carlo simulation.
-- Computational chemistry and biophysics: RDKit, CADD, SMILES/SDF/PDB/PDBQT, molecular docking and virtual screening, AutoDock Vina, GNINA CNN scoring, Boltz-2 protein-ligand co-folding, MMGBSA/FEP/free-energy methods, QSAR, RF/XGBoost, ADMET/Rowan, Morgan fingerprints, Tanimoto/PAINS/ESOL filtering, BRICS/generative chemistry, OpenMM, OpenFF, OpenFE, MDTraj, ParmEd, PDBFixer, PySCF, PyMOL, molecular dynamics, molecular modeling, DFT, ab initio methods, synthetic organic chemistry, organic synthesis, theoretical chemistry, quantum chemistry, statistical mechanics, biochemistry, RNA, AlphaFold/IGFold-style metrics.
-- Software and data systems: LangGraph, FastAPI, backend web development, software architecture, software documentation, software engineering practices, object-oriented programming, object-oriented languages, full-stack development, UI/UX, user interface design, user experience design, SaaS, PaaS, cloud computing, SQL, Hadoop, data warehousing, data storage technologies, data management, platform architecture.
-- Leadership and teaching: assistant teaching, grading, professional mentoring, team leadership, international teams, research skills, scientific writing, academic editing.
-
-## Languages
-
-English native; Turkish native; German professional working proficiency; Spanish beginner; Hebrew beginner.
-
-## Interests
-
-Philosophy of science, epistemology, logic, metaphysics, psychology, language, history, aesthetics, ethics, politics, power, biopolitics, sociocultural anthropology, Foucauldian studies, love, Judaism, Islam, and critical theories including queer, postmodern, psychoanalytic, post-structuralist, race, and feminist traditions.
-
-## Hobbies
-
-Competitive volleyball, chess, poker, personal/political/academic essay editing and writing, figure skating, meditative walking, and labyrinth walking.
+- Computer-Aided Drug Discovery skillset: molecular docking; virtual screening; MMGBSA/FEP/free-energy methods; AutoDock Vina; GNINA CNN scoring; Boltz-2 protein–ligand co-folding; QSAR with RF/XGBoost; ADMET/Rowan; Morgan fingerprints; Tanimoto/PAINS/ESOL filtering; BRICS/generative chemistry; onepot/muni catalog screening; PyMOL.
+- Additional computational skillset: distributed training; Conda; NumPy; molecular dynamics; OpenMM; OpenFF; OpenFE; MDTraj; ParmEd; PDBFixer; RDKit; SMILES/SDF/PDB/PDBQT; PySCF; SciML; LLM embeddings; sequence modeling; PPO; SQL; Java; MATLAB; LaTeX.
+- Languages: English native; Turkish native; German professional; Spanish beginner; Hebrew beginner.
+- Interests: philosophy of science, epistemology, logic, metaphysics, psychology, language, history, aesthetics, ethics, politics, power, biopolitics, sociocultural anthropology, Foucauldian studies, love, Judaism, Islam, and queer, postmodern, psychoanalytic, post-structuralist, race, and feminist critical theories.
+- Hobbies: modelling, fashion, essay writing, volleyball, competitive Pokémon, figure skating, chess, poker, meditative and labyrinth walking, and FNAF.

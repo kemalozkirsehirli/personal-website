@@ -727,3 +727,29 @@ button, input { font: inherit; }
 .poem-line.indent-12 { padding-left: 3em; }
 .group-page { max-width: 920px; }
 .group-page p { max-width: 78ch; }
+
+/* Group project details extend the existing prose without changing the page's core layout. */
+.group-research-programs {
+  margin-top: 2rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--rule);
+}
+
+.group-research-programs > h2 {
+  margin: 0 0 1rem;
+}
+
+.group-project-detail {
+  margin-top: 1.65rem;
+  scroll-margin-top: 24px;
+}
+
+.group-project-detail h3 {
+  margin: 0 0 0.55rem;
+  color: #333399;
+  font-size: 1.16em;
+}
+
+.group-project-detail p {
+  margin: 0.62rem 0;
+}

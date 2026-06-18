@@ -7,10 +7,10 @@ Statik, dependency-light, Manolis Kellis / classic MIT academic-homepage hissine
 - Canlı domain: `https://kemal-ozkirsehirli.com`
 - GitHub Pages kaynağı: `main` branch → `/docs`
 - Tüm sayfalarda arka plan: `#FFF8E7`
-- Web CV: `/cv/`
+- Web CV: `/cv/` (güncel finalized résumé bilgileriyle)
 - İndirilebilir/public CV PDF yok
 - About poem: `/about/`
-- Özkırşehirli Group: `/group/` (application form ve doğrudan LinkedIn launch-post bağlantısı dahil)
+- Özkırşehirli Group: `/group/` (application form, LinkedIn launch post, ayrıntılı MeshAnyOrder ve TBXT programları dahil)
 - Essays ve AI-for-Science notes yayımlanmıyor
 - Spotlight sırası `About → Özkırşehirli Group → Application Form`
 - Word cloud kompakt, renkli ve çakışmasızdır; 129 terimin tamamı yataydır, `AI for Science` merkezde yer alır ve temel araştırma kavramları önemlerine göre daha büyük gösterilir
