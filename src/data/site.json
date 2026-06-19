@@ -2,16 +2,16 @@
   "url": "https://kemal-ozkirsehirli.com",
   "basePath": "",
   "title": "Kemal Özkırşehirli",
-  "description": "Academic homepage for Kemal Özkırşehirli: AI/ML for science, order-agnostic 3D mesh generation, computer-aided drug discovery, protein and genome modeling, molecular simulation, statistical mechanics, and auditable scientific workflow engineering.",
+  "description": "Academic homepage for Kemal Özkırşehirli: AI/ML for science, chemical physics, mathematical biology, order-agnostic 3D mesh generation, computer-aided drug discovery, protein and genome modeling, molecular simulation, statistical mechanics, and auditable scientific workflow engineering.",
   "language": "en",
   "resumePdf": null,
   "author": {
     "name": "Kemal Özkırşehirli",
-    "role": "B.Sc. candidate at MIT · GPA 5.0/5.0 · Majors in Computer Science and Engineering, Physics, and Mathematics · Minors in Philosophy and Writing",
+    "role": "B.Sc. candidate at MIT · GPA 5.0/5.0 · Computer Science and Engineering: AI/ML · Physics: Chemical Physics · Mathematics: Mathematical Biology · Minors in Philosophy and Writing",
     "location": "Cambridge, MA, USA",
     "email": "kemalozk@mit.edu",
     "avatar": "/photos/kemal-profile.jpg",
-    "bio": "I am an international student from İstanbul, Türkiye, and a B.Sc. candidate at MIT with a 5.0/5.0 GPA, majoring in Computer Science and Engineering, Physics, and Mathematics, with minors in Philosophy and Writing. I use AI/ML frameworks, generative and diffusion models, free-energy methods, atomistic molecular dynamics, Monte Carlo, density-functional theory, inference, and robust optimization to convert complex scientific systems into parsable, computable representations and extract governing rules for scientific decision-making.",
+    "bio": "I am an international student from İstanbul, Türkiye, and a B.Sc. candidate at MIT with a 5.0/5.0 GPA, pursuing a rare triple major in Computer Science and Engineering: AI/ML, Physics: Chemical Physics, and Mathematics: Mathematical Biology, with minors in Philosophy and Writing. I am on track to graduate one year early, completing all requirements for three majors and two minors in three total years of undergraduate education. I use AI/ML frameworks, generative and diffusion models, free-energy methods, atomistic molecular dynamics, Monte Carlo, density-functional theory, inference, and robust optimization to convert complex scientific systems into parsable, computable representations and extract governing rules for scientific decision-making.",
     "links": [
       {
         "label": "GitHub",
@@ -63,7 +63,7 @@
       {
         "label": "Özkırşehirli Group",
         "url": "/group/",
-        "description": "research directions, values, and current programs"
+        "description": "research directions, values, and current projects"
       },
       {
         "label": "Özkırşehirli Group Application Form",
@@ -123,6 +123,11 @@
       {
         "label": "LinkedIn",
         "url": "https://linkedin.com/in/kozkirsehirli",
+        "description": "external profile"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/kemalozkirsehirli/",
         "description": "external profile"
       },
       {
@@ -202,7 +207,7 @@
             "url": "/cv/#teaching-fellow-and-grader-for-6-1200j"
           },
           {
-            "label": "Berker Group",
+            "label": "Renormalization Group",
             "url": "/cv/#ai-ml-for-statistical-mechanics-simulations-researcher-and-teaching-fellow"
           }
         ]
@@ -296,7 +301,7 @@
           {
             "title": "TBXT",
             "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced",
-            "description": "11-person chordoma/TBXT hit-identification program targeting PDB 6F59 site F; 2,274 prior-art compounds, 737 analogs, 30,000 BRICS recombinations, a 570-compound novelty-filtered pool, and a docking/QSAR/GNINA/Boltz-2/MMGBSA-FEP/selectivity funnel"
+            "description": "11-person chordoma/TBXT hit-identification project targeting PDB 6F59 site F; 2,274 prior-art compounds, 737 analogs, 30,000 BRICS recombinations, a 570-compound novelty-filtered pool, and a docking/QSAR/GNINA/Boltz-2/MMGBSA-FEP/selectivity funnel"
           },
           {
             "title": "ChemAgent-QSM",
@@ -404,7 +409,7 @@
           {
             "title": "MIT",
             "url": "/cv/#education",
-            "description": "B.Sc. candidate in Computer Science and Engineering, Physics, and Mathematics; minors in Philosophy and Writing; GPA 5.0/5.0; expected May 2027"
+            "description": "GPA 5.0/5.0; rare triple major in Computer Science and Engineering: AI/ML, Physics: Chemical Physics, and Mathematics: Mathematical Biology; minors in Philosophy and Writing; expected May 2027; graduating one year early"
           },
           {
             "title": "Columbia / MIT Transfer",
@@ -503,11 +508,10 @@
     ],
     "cloudImage": "/word-cloud.png",
     "profileLines": [
-      "B.Sc. candidate at MIT · GPA 5.0/5.0 · Majors in Computer Science and Engineering, Physics, and Mathematics · Minors in Philosophy and Writing",
+      "International student from İstanbul, Türkiye · B.Sc. candidate at MIT · GPA 5.0/5.0 · rare triple major in Computer Science and Engineering: AI/ML, Physics: Chemical Physics, and Mathematics: Mathematical Biology · minors in Philosophy and Writing · expected May 2027 · graduating one year early",
       "Principal Investigator, Özkırşehirli Group",
       "Research across MIT Chemistry, MIT CSAIL, MIT Physics, A*STAR EDDC, PRISM/W2D2, and Harvard Medical School",
-      "Teaching Fellow, MIT EECS",
-      "International student from İstanbul, Türkiye · expected May 2027"
+      "Teaching Fellow, MIT EECS"
     ],
     "awards": [
       "Medalist, 56th International Chemistry Olympiad",

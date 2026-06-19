@@ -3,10 +3,22 @@
     "title": "Principal Investigator — MeshAnyOrder for Life Sciences",
     "status": "Apr 2026 – Present",
     "description": "Leading a 7-member independent research collaboration developing MeshAnyOrder, an order-agnostic autoregressive transformer for point-cloud-conditioned 3D mesh generation. The model represents faces as quantized tokens and predicts unvisited adjacent faces from arbitrary traversal seeds; current work extends it with 3D rotary positional encoding, triangle/quad tokenization, topology-aware validity constraints, frontier-parallel decoding, and local completion/remeshing. Publication-grade ablations span random, axis-based, BFS/DFS traversal; causal, adjacency-aware, and bidirectional masking; reconstruction, manifoldness, watertightness, latency, memory, and high-resolution scaling.",
-    "tags": ["Geometric Deep Learning", "3D Meshes", "Autoregressive Models", "Topology", "Life Sciences"],
+    "tags": [
+      "Geometric Deep Learning",
+      "3D Meshes",
+      "Autoregressive Models",
+      "Topology",
+      "Life Sciences"
+    ],
     "links": [
-      {"label": "Group details", "url": "/group/#meshanyorder-for-life-sciences"},
-      {"label": "CV", "url": "/cv/#principal-investigator-order-agnostic-meshanyorder-for-life-sciences"}
+      {
+        "label": "Group details",
+        "url": "/group/#meshanyorder-for-life-sciences"
+      },
+      {
+        "label": "CV",
+        "url": "/cv/#principal-investigator-order-agnostic-meshanyorder-for-life-sciences"
+      }
     ],
     "slug": "meshanyorder-for-life-sciences",
     "url": "/group/#meshanyorder-for-life-sciences"
@@ -14,12 +26,28 @@
   {
     "title": "Principal Investigator — TBXT / Brachyury Small-Molecule Discovery",
     "status": "Apr 2026 – Present",
-    "description": "Leading an 11-person chordoma-focused computational hit-identification program targeting PDB 6F59 chain A / TBXT G177D site F. The workflow compresses 2,274 prior-art compounds, 737 raw analogs, 503 filtered analogs, 30,000 BRICS recombinations, and 67 QSAR-pass proposals into a 570-compound novelty-filtered pool, then applies docking, GNINA CNN rescoring, RF/XGBoost QSAR, Boltz-2 co-folding, MMGBSA/FEP scaffolding, T-box paralog selectivity, Rowan affinity analysis, PAINS/sourceability filters, and Bash/HPC automation.",
-    "tags": ["CADD", "Docking", "QSAR", "TBXT", "Chordoma", "Drug Discovery"],
+    "description": "Leading an 11-person chordoma-focused computational hit-identification project targeting PDB 6F59 chain A / TBXT G177D site F. The workflow compresses 2,274 prior-art compounds, 737 raw analogs, 503 filtered analogs, 30,000 BRICS recombinations, and 67 QSAR-pass proposals into a 570-compound novelty-filtered pool, then applies docking, GNINA CNN rescoring, RF/XGBoost QSAR, Boltz-2 co-folding, MMGBSA/FEP scaffolding, T-box paralog selectivity, Rowan affinity analysis, PAINS/sourceability filters, and Bash/HPC automation.",
+    "tags": [
+      "CADD",
+      "Docking",
+      "QSAR",
+      "TBXT",
+      "Chordoma",
+      "Drug Discovery"
+    ],
     "links": [
-      {"label": "Public GitHub release", "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced"},
-      {"label": "Group details", "url": "/group/#tbxt-brachyury-small-molecule-discovery"},
-      {"label": "CV", "url": "/cv/#principal-investigator-ozk-rsehirli-group-team-leader-tbxt-small-molecule-hackathon"}
+      {
+        "label": "Public GitHub release",
+        "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced"
+      },
+      {
+        "label": "Group details",
+        "url": "/group/#tbxt-brachyury-small-molecule-discovery"
+      },
+      {
+        "label": "CV",
+        "url": "/cv/#principal-investigator-ozk-rsehirli-group-team-leader-tbxt-small-molecule-hackathon"
+      }
     ],
     "slug": "tbxt-small-molecule-discovery",
     "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced"
@@ -28,9 +56,17 @@
     "title": "PRISM AI Safety Fellow — Protein Foundation Model Red-Teaming",
     "status": "May 2026 – Present",
     "description": "Selected from 800+ applicants for PRISM 2026 to develop adversarial evaluation methods for protein foundation models. The work tests biological plausibility, sequence–structure–function consistency, structural validity, developability, uncertainty calibration, claimed mechanisms, and failure behavior, and builds safety-bounded benchmarks and taxonomies for high-stakes protein-design workflows.",
-    "tags": ["AI Safety", "Protein Foundation Models", "Evaluation", "Benchmarking"],
+    "tags": [
+      "AI Safety",
+      "Protein Foundation Models",
+      "Evaluation",
+      "Benchmarking"
+    ],
     "links": [
-      {"label": "CV", "url": "/cv/#prism-ai-safety-fellow-protein-foundation-model-red-teaming-and-evaluation"}
+      {
+        "label": "CV",
+        "url": "/cv/#prism-ai-safety-fellow-protein-foundation-model-red-teaming-and-evaluation"
+      }
     ],
     "slug": "prism-protein-foundation-model-safety",
     "url": "/cv/#prism-ai-safety-fellow-protein-foundation-model-red-teaming-and-evaluation"
@@ -39,9 +75,18 @@
     "title": "ChromoGen-Engine V2 — Conditional Diffusion for 3D Chromatin",
     "status": "May 2026 – Present",
     "description": "Developing a conditional diffusion and evaluation pipeline that merges ChromoGen-style single-cell 3D chromatin generation with small-molecule perturbation data and same-cell multi-omic regulatory readouts. The data engine integrates Plate-C / Easy Dip-C structures with CHARM-style Hi-C, RNA-seq, ATAC-seq, and histone-modification data under leakage-aware splits and structure-grounded benchmarks.",
-    "tags": ["Diffusion Models", "Genomics", "Chromatin", "Single-Cell", "Multi-Omics"],
+    "tags": [
+      "Diffusion Models",
+      "Genomics",
+      "Chromatin",
+      "Single-Cell",
+      "Multi-Omics"
+    ],
     "links": [
-      {"label": "CV", "url": "/cv/#summer-urop-scholar-chromogen-engine-v2"}
+      {
+        "label": "CV",
+        "url": "/cv/#summer-urop-scholar-chromogen-engine-v2"
+      }
     ],
     "slug": "chromogen-engine-v2",
     "url": "/cv/#summer-urop-scholar-chromogen-engine-v2"
@@ -49,10 +94,19 @@
   {
     "title": "A*STAR V2M-Engine — Autoimmune Target Discovery",
     "status": "May 2026 – Present",
-    "description": "Architecting a calibrated genetics-to-mechanism target-discovery engine that maps autoimmune GWAS and fine-mapped variants to regulatory programs, causal immune cell states, and targetable mechanisms. The program combines single-cell foundation models, QTL/colocalization evidence, known therapeutic controls, retrodiction benchmarks, perturbation validation, counterfactual cell-state transport, and structure/affinity-aware prioritization.",
-    "tags": ["Target Discovery", "Single-Cell", "Genetics", "Autoimmune Disease", "Drug Discovery"],
+    "description": "Architecting a calibrated genetics-to-mechanism target-discovery engine that maps autoimmune GWAS and fine-mapped variants to regulatory programs, causal immune cell states, and targetable mechanisms. The project combines single-cell foundation models, QTL/colocalization evidence, known therapeutic controls, retrodiction benchmarks, perturbation validation, counterfactual cell-state transport, and structure/affinity-aware prioritization.",
+    "tags": [
+      "Target Discovery",
+      "Single-Cell",
+      "Genetics",
+      "Autoimmune Disease",
+      "Drug Discovery"
+    ],
     "links": [
-      {"label": "CV", "url": "/cv/#summer-ai-ml-researcher-autoimmune-target-discovery"}
+      {
+        "label": "CV",
+        "url": "/cv/#summer-ai-ml-researcher-autoimmune-target-discovery"
+      }
     ],
     "slug": "v2m-engine-for-autoimmune-target-discovery",
     "url": "/cv/#summer-ai-ml-researcher-autoimmune-target-discovery"
@@ -61,9 +115,18 @@
     "title": "Pedal AI — Chemistry Research-Implementation and Backend Engineering",
     "status": "Jul–Dec 2025",
     "description": "Designed Python/LangGraph and FastAPI infrastructure connecting chemistry agents with molecular-prediction engines, supporting stateful orchestration, model/data evaluation, and inspectable retrosynthesis workflows. Built chemist-facing UI/UX around Coley Lab / ASKCOS-style route search, reaction-level provenance, and decision-ready synthesis planning.",
-    "tags": ["LangGraph", "FastAPI", "Cheminformatics", "Agentic AI", "Backend Engineering"],
+    "tags": [
+      "LangGraph",
+      "FastAPI",
+      "Cheminformatics",
+      "Agentic AI",
+      "Backend Engineering"
+    ],
     "links": [
-      {"label": "CV", "url": "/cv/#head-of-chemistry-research-implementation-backend-software-engineer-for-langgraph-ai-agent-pipelines"}
+      {
+        "label": "CV",
+        "url": "/cv/#head-of-chemistry-research-implementation-backend-software-engineer-for-langgraph-ai-agent-pipelines"
+      }
     ],
     "slug": "pedal-ai-backend-chemistry-agent-workflows",
     "url": "/cv/#head-of-chemistry-research-implementation-backend-software-engineer-for-langgraph-ai-agent-pipelines"
@@ -72,10 +135,21 @@
     "title": "ChemAgent-QSM — LLM and Statistical Mechanics/Theoretical Chemistry",
     "status": "Dec 2025 – Present",
     "description": "Developed an LLM-guided agentic framework that converts natural-language chemistry prompts into auditable PySCF workflows for electronic structure, optimized geometries, descriptors, vibrational spectra, time-correlation functions, local order, relaxation, mobility, and structure–dynamics coupling; also developed trajectory features and ML analysis for dynamical heterogeneity.",
-    "tags": ["LLM Agents", "Quantum Chemistry", "Statistical Mechanics", "PySCF"],
+    "tags": [
+      "LLM Agents",
+      "Quantum Chemistry",
+      "Statistical Mechanics",
+      "PySCF"
+    ],
     "links": [
-      {"label": "GitHub", "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli"},
-      {"label": "CV", "url": "/cv/#llm-and-statistical-mechanics-theoretical-chemistry-researcher"}
+      {
+        "label": "GitHub",
+        "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli"
+      },
+      {
+        "label": "CV",
+        "url": "/cv/#llm-and-statistical-mechanics-theoretical-chemistry-researcher"
+      }
     ],
     "slug": "chemagent-qsm",
     "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli"
@@ -84,11 +158,26 @@
     "title": "Deep Reinforcement Learning for Antibody–Antigen Interactions",
     "status": "Jan 2026 – Present",
     "description": "Co-leading a six-person AI@MIT / AIM Labs project developing a structure-informed cross-attention transformer and ESM-2 pipeline that maps protein/pathogen sequences to candidate antibodies using OAS, SAbDab, and IEDB data. PPO against AlphaFold-Multimer/IGFold metrics and distributed PyTorch DDP on MIT SuperCloud reduced training time by approximately 40%.",
-    "tags": ["Reinforcement Learning", "Antibodies", "Protein Models", "ESM-2", "PyTorch DDP"],
+    "tags": [
+      "Reinforcement Learning",
+      "Antibodies",
+      "Protein Models",
+      "ESM-2",
+      "PyTorch DDP"
+    ],
     "links": [
-      {"label": "GitHub", "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning"},
-      {"label": "AI@MIT", "url": "https://aiatmit.com/"},
-      {"label": "CV", "url": "/cv/#project-co-lead-deep-reinforcement-learning-for-antibody-antigen-interactions"}
+      {
+        "label": "GitHub",
+        "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning"
+      },
+      {
+        "label": "AI@MIT",
+        "url": "https://aiatmit.com/"
+      },
+      {
+        "label": "CV",
+        "url": "/cv/#project-co-lead-deep-reinforcement-learning-for-antibody-antigen-interactions"
+      }
     ],
     "slug": "deep-rl-for-antibody-antigen-interactions",
     "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning"
@@ -97,10 +186,21 @@
     "title": "EVEdesign — Protein Design Algorithm Engineering",
     "status": "Apr 2026 – Present",
     "description": "Contributing to EVEdesign's open-source, method-independent protein-design platform as part of a 21-person, 18-institution, 8-country collaboration. Work includes uncertainty-aware candidate selection, sequence–structure–function objective integration, protein-language-model/evolutionary priors, agent-based tool orchestration, and scalable lab-in-the-loop biosequence design.",
-    "tags": ["Protein Design", "Open Source", "Uncertainty", "Biosequence Design"],
+    "tags": [
+      "Protein Design",
+      "Open Source",
+      "Uncertainty",
+      "Biosequence Design"
+    ],
     "links": [
-      {"label": "EVEdesign website", "url": "https://evedesign.bio/"},
-      {"label": "CV", "url": "/cv/#protein-design-algorithm-engineer-evedesign-collaborative-project"}
+      {
+        "label": "EVEdesign website",
+        "url": "https://evedesign.bio/"
+      },
+      {
+        "label": "CV",
+        "url": "/cv/#protein-design-algorithm-engineer-evedesign-collaborative-project"
+      }
     ],
     "slug": "evedesign-protein-design",
     "url": "https://evedesign.bio/"
@@ -109,9 +209,17 @@
     "title": "AI/ML for Statistical Mechanics Simulations",
     "status": "Jan 2022 – Present",
     "description": "Building a PyTorch/GNN-augmented Kadanoff renormalization-group framework for automatic fixed-point discovery and thermodynamic phase-boundary mapping in spin-1/2 antiferromagnetic systems after ranking in the top 1% of graduate-level 8.334 while in high school; also mentored 200+ students through condensed chemistry, mechanics, and career-path instruction.",
-    "tags": ["Statistical Mechanics", "Renormalization Group", "GNNs", "Teaching"],
+    "tags": [
+      "Statistical Mechanics",
+      "Renormalization Group",
+      "GNNs",
+      "Teaching"
+    ],
     "links": [
-      {"label": "CV", "url": "/cv/#ai-ml-for-statistical-mechanics-simulations-researcher-and-teaching-fellow"}
+      {
+        "label": "CV",
+        "url": "/cv/#ai-ml-for-statistical-mechanics-simulations-researcher-and-teaching-fellow"
+      }
     ],
     "slug": "ml-augmented-renormalization-group",
     "url": "/cv/#ai-ml-for-statistical-mechanics-simulations-researcher-and-teaching-fellow"
@@ -120,9 +228,17 @@
     "title": "Kupcinet-Getz Scholar — Computational Biochemical Diffusion",
     "status": "Jun–Aug 2025",
     "description": "Selected as one of 22 scholars worldwide to develop PINN- and neural-ODE-enhanced stochastic simulation of nonequilibrium enzyme reaction-diffusion networks, including custom Euler-Maruyama, Runge-Kutta, and Gillespie SSA solvers. Built GNN encoders, transformer sequence models, UMAP clustering, and classifiers for bifurcation and nonlinear-dynamics discovery in high-dimensional trajectories.",
-    "tags": ["Biochemical Diffusion", "PINNs", "Neural ODEs", "Stochastic Simulation"],
+    "tags": [
+      "Biochemical Diffusion",
+      "PINNs",
+      "Neural ODEs",
+      "Stochastic Simulation"
+    ],
     "links": [
-      {"label": "CV", "url": "/cv/#kupcinet-getz-scholar-in-computational-biochemical-diffusion"}
+      {
+        "label": "CV",
+        "url": "/cv/#kupcinet-getz-scholar-in-computational-biochemical-diffusion"
+      }
     ],
     "slug": "computational-biochemical-diffusion",
     "url": "/cv/#kupcinet-getz-scholar-in-computational-biochemical-diffusion"
@@ -131,9 +247,17 @@
     "title": "Sepal AI / Mercor — Chemistry LLM Evaluation",
     "status": "Sept 2024 – Feb 2025",
     "description": "Developed model-training, testing, and evaluation data for graduate-level chemistry reasoning, including retrosynthesis, reaction mechanisms, and method selection. Designed grading rubrics, chemical-validity constraints, instructional data, prompt-engineering workflows, error analysis, and structured fine-tuning/evaluation formats.",
-    "tags": ["LLM Evaluation", "Chemistry", "Scientific Data", "Prompt Engineering"],
+    "tags": [
+      "LLM Evaluation",
+      "Chemistry",
+      "Scientific Data",
+      "Prompt Engineering"
+    ],
     "links": [
-      {"label": "CV", "url": "/cv/#chemistry-and-ai-consultant-and-scientific-data-and-evaluation-specialist"}
+      {
+        "label": "CV",
+        "url": "/cv/#chemistry-and-ai-consultant-and-scientific-data-and-evaluation-specialist"
+      }
     ],
     "slug": "sepal-ai-mercor-chemistry-evaluation",
     "url": "/cv/#chemistry-and-ai-consultant-and-scientific-data-and-evaluation-specialist"
@@ -142,9 +266,17 @@
     "title": "Computational Organic Chemistry — DFT to kMC",
     "status": "Aug 2023 – Feb 2024",
     "description": "Engineered an automated multi-scale pipeline linking density-functional-theory calculations to stochastic kinetic Monte Carlo models; screened 20+ transition states and 500+ trajectories across five solvent pathways, producing a 22% predicted yield optimization for a cytotoxic target and a mechanistic manuscript under PhD mentorship.",
-    "tags": ["DFT", "kMC", "Computational Chemistry", "Reaction Dynamics"],
+    "tags": [
+      "DFT",
+      "kMC",
+      "Computational Chemistry",
+      "Reaction Dynamics"
+    ],
     "links": [
-      {"label": "CV", "url": "/cv/#foundation-research-scholar-in-computational-organic-chemistry"}
+      {
+        "label": "CV",
+        "url": "/cv/#foundation-research-scholar-in-computational-organic-chemistry"
+      }
     ],
     "slug": "computational-organic-chemistry-pipeline",
     "url": "/cv/#foundation-research-scholar-in-computational-organic-chemistry"
@@ -153,9 +285,18 @@
     "title": "Advanced Organic Synthesis — Buchwald Lab",
     "status": "Dec 2025 – May 2026",
     "description": "Supported development of CuH-catalyst chemistry for selective asymmetric methylation and alkylation of vinyl boronate esters, used 1H-NMR and chiral-HPLC to relate catalyst structure to activity, expanded substrate scope, and scaled synthesis from 0.1 mmol to multi-gram quantities.",
-    "tags": ["Organic Chemistry", "Synthesis", "Catalysis", "NMR", "HPLC"],
+    "tags": [
+      "Organic Chemistry",
+      "Synthesis",
+      "Catalysis",
+      "NMR",
+      "HPLC"
+    ],
     "links": [
-      {"label": "CV", "url": "/cv/#advanced-organic-synthesis-researcher"}
+      {
+        "label": "CV",
+        "url": "/cv/#advanced-organic-synthesis-researcher"
+      }
     ],
     "slug": "advanced-organic-synthesis-buchwald-lab",
     "url": "/cv/#advanced-organic-synthesis-researcher"
@@ -164,9 +305,17 @@
     "title": "MIT 6.1200[J] Teaching Fellow and Grader",
     "status": "Jan 2026 – Present",
     "description": "Selected after receiving an A+ and ranking in the top 1% of MIT EECS's largest foundational theoretical-computer-science course; supports a 250+ student cohort through recitations, office hours, proof-intensive grading, midterms, and finals in logic, graph theory, recurrences, asymptotics, and cryptography.",
-    "tags": ["Teaching", "Discrete Mathematics", "Proofs", "MIT EECS"],
+    "tags": [
+      "Teaching",
+      "Discrete Mathematics",
+      "Proofs",
+      "MIT EECS"
+    ],
     "links": [
-      {"label": "CV", "url": "/cv/#teaching-fellow-and-grader-for-6-1200j"}
+      {
+        "label": "CV",
+        "url": "/cv/#teaching-fellow-and-grader-for-6-1200j"
+      }
     ],
     "slug": "mit-6-1200-j-teaching-fellow",
     "url": "/cv/#teaching-fellow-and-grader-for-6-1200j"
@@ -175,10 +324,21 @@
     "title": "MIT BioMakers — Computational / Dry-Lab Activity",
     "status": "Present",
     "description": "Computational and dry-lab participation in MIT's student-led biomaking community and interdisciplinary biology project infrastructure.",
-    "tags": ["MIT", "BioMakers", "Dry Lab", "Community"],
+    "tags": [
+      "MIT",
+      "BioMakers",
+      "Dry Lab",
+      "Community"
+    ],
     "links": [
-      {"label": "MIT BioMakers", "url": "https://biomakers.mit.edu/"},
-      {"label": "CV", "url": "/cv/#activities"}
+      {
+        "label": "MIT BioMakers",
+        "url": "https://biomakers.mit.edu/"
+      },
+      {
+        "label": "CV",
+        "url": "/cv/#activities"
+      }
     ],
     "slug": "mit-biomakers",
     "url": "https://biomakers.mit.edu/"
@@ -187,10 +347,21 @@
     "title": "Schwarzman College of Computing Advisor",
     "status": "Present",
     "description": "Student-advisory participation around computing education, AI, and undergraduate experience at MIT.",
-    "tags": ["MIT", "Computing", "Advisory", "Leadership"],
+    "tags": [
+      "MIT",
+      "Computing",
+      "Advisory",
+      "Leadership"
+    ],
     "links": [
-      {"label": "Undergraduate Advisory Group", "url": "https://computing.mit.edu/about/people/undergraduate-advisory-group/"},
-      {"label": "CV", "url": "/cv/#activities"}
+      {
+        "label": "Undergraduate Advisory Group",
+        "url": "https://computing.mit.edu/about/people/undergraduate-advisory-group/"
+      },
+      {
+        "label": "CV",
+        "url": "/cv/#activities"
+      }
     ],
     "slug": "schwarzman-college-advisor",
     "url": "https://computing.mit.edu/about/people/undergraduate-advisory-group/"
@@ -199,10 +370,20 @@
     "title": "MIT Student Council Representative",
     "status": "Present",
     "description": "Undergraduate student representation and campus-governance participation at MIT.",
-    "tags": ["MIT", "Student Representation", "Leadership"],
+    "tags": [
+      "MIT",
+      "Student Representation",
+      "Leadership"
+    ],
     "links": [
-      {"label": "MIT Undergraduate Association", "url": "https://ua.mit.edu/"},
-      {"label": "CV", "url": "/cv/#activities"}
+      {
+        "label": "MIT Undergraduate Association",
+        "url": "https://ua.mit.edu/"
+      },
+      {
+        "label": "CV",
+        "url": "/cv/#activities"
+      }
     ],
     "slug": "mit-student-council-representative",
     "url": "https://ua.mit.edu/"
@@ -211,9 +392,16 @@
     "title": "ClubChem",
     "status": "Present",
     "description": "Participation in MIT's undergraduate chemistry community.",
-    "tags": ["MIT", "Chemistry", "Community"],
+    "tags": [
+      "MIT",
+      "Chemistry",
+      "Community"
+    ],
     "links": [
-      {"label": "CV", "url": "/cv/#activities"}
+      {
+        "label": "CV",
+        "url": "/cv/#activities"
+      }
     ],
     "slug": "clubchem",
     "url": "/cv/#activities"
@@ -222,9 +410,16 @@
     "title": "MIT Gala — Model / Designer",
     "status": "Present",
     "description": "Model and designer participation in MIT Gala.",
-    "tags": ["MIT", "Fashion", "Design"],
+    "tags": [
+      "MIT",
+      "Fashion",
+      "Design"
+    ],
     "links": [
-      {"label": "CV", "url": "/cv/#activities"}
+      {
+        "label": "CV",
+        "url": "/cv/#activities"
+      }
     ],
     "slug": "mit-gala-model-designer",
     "url": "/cv/#activities"

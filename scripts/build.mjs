@@ -476,21 +476,54 @@ async function renderGroup(site, ctx) {
     <p>We have a selection process for membership but do not restrict it based solely on your educational or professional background. We believe that an individual's passion for their work and willingness to be intellectually curious, driven to solve problems, honest about their limitations, and capable of fortitude are essential. These values will determine whether you are a good fit. If you have a strong interest in a field outside those mentioned above, then we encourage you to apply if you are willing to become an expert in the field of study, provide consistent contributions to the research effort, and ask scientifically relevant questions.</p>
     <p><b><a href="${escapeAttr(applicationUrl)}" target="_blank" rel="noopener noreferrer">Application form</a></b> - <a href="${escapeAttr(announcementUrl)}" target="_blank" rel="noopener noreferrer">LinkedIn launch post</a></p>
 
-    <section class="group-research-programs" aria-labelledby="current-research-programs">
-      <h2 id="current-research-programs">Current Research Programs</h2>
+    <section class="group-research-projects" aria-labelledby="current-research-projects">
+      <h2 id="current-research-projects">Research Projects</h2>
 
       <article id="meshanyorder-for-life-sciences" class="group-project-detail">
         <h3>MeshAnyOrder — Order-Agnostic 3D Mesh Generation for Life Sciences</h3>
         <p>Kemal serves as Principal Investigator for a seven-member independent research collaboration that includes a Google-affiliated research lead. MeshAnyOrder is an order-agnostic autoregressive transformer for point-cloud-conditioned 3D mesh generation: it represents mesh faces as quantized tokens and predicts unvisited adjacent faces from arbitrary traversal seeds instead of committing the model to a single canonical face ordering.</p>
         <p>The core architecture is being extended with 3D rotary positional encoding for translation-invariant attention, heterogeneous triangle/quad tokenization, topology-aware validity constraints, frontier-parallel decoding, and local mesh completion or remeshing. The methodology comes first. Once the core baseline is stable, scientific extensions can test protein and molecular surfaces, enzyme and antibody topology, binding-pocket and interface geometry, and other biomolecular complexes as demanding applications of a general mesh model.</p>
-        <p>The experimental program includes random, axis-based, breadth-first, and depth-first traversal orders; causal, adjacency-aware, and bidirectional attention masks; and publication-grade comparisons against leading autoregressive and diffusion-based mesh generators. Evaluation covers reconstruction quality, manifoldness, watertightness, topology preservation, inference latency, memory consumption, mesh complexity, and high-resolution scaling.</p>
+        <p>The experimental plan includes random, axis-based, breadth-first, and depth-first traversal orders; causal, adjacency-aware, and bidirectional attention masks; and publication-grade comparisons against leading autoregressive and diffusion-based mesh generators. Evaluation covers reconstruction quality, manifoldness, watertightness, topology preservation, inference latency, memory consumption, mesh complexity, and high-resolution scaling.</p>
       </article>
 
       <article id="tbxt-brachyury-small-molecule-discovery" class="group-project-detail">
         <h3>TBXT / Brachyury Small-Molecule Discovery for Chordoma</h3>
-        <p>The TBXT program is an eleven-person chordoma-focused computational hit-identification effort led by Kemal, targeting PDB 6F59 chain A and the TBXT G177D site-F region. The team compressed 2,274 prior-art compounds and 737 raw analogs into 503 filtered analogs, generated 30,000 BRICS recombinations, retained 67 novel QSAR-pass proposals, and assembled a 570-compound novelty-filtered pool using site-F/A/G grids, Tanimoto novelty control, and sourceability-aware generation.</p>
+        <p>The TBXT project is an eleven-person chordoma-focused computational hit-identification effort led by Kemal, targeting PDB 6F59 chain A and the TBXT G177D site-F region. The team compressed 2,274 prior-art compounds and 737 raw analogs into 503 filtered analogs, generated 30,000 BRICS recombinations, retained 67 novel QSAR-pass proposals, and assembled a 570-compound novelty-filtered pool using site-F/A/G grids, Tanimoto novelty control, and sourceability-aware generation.</p>
         <p>The pipeline combines Vina ensemble docking, GNINA CNN pose and pKd scoring, Vina-trap detection, RF/XGBoost TBXT QSAR, Boltz-2 co-folding, MMGBSA/FEP scaffolding, T-box paralog selectivity, Rowan IC50/affinity analysis, RDKit descriptors and BRICS, onepot/muni catalog checks, and Bash/HPC automation. A QSAR model trained on 650 RDKit-valid SPR-derived compounds from 14 decrypted XLSX files, 15 campaigns, and 1,620 Kd fits reached Spearman ρ ≈ 0.49 and MAE ≈ 0.5 pKd; GNINA screened 569 of 570 candidates and identified 40 Tier-A, 51 Tier-B, and 73 Vina-trap candidates.</p>
         <p>The final computational funnel moved from 570 compounds to 137 strict-pass candidates, 24 submission-ready candidates, and four judge-facing site-F selections. Filters included exact catalog matching, non-covalent chemistry, PAINS and forbidden-motif exclusion, lead-likeness, ESOL/logS, Tanimoto novelty, cost, supplier risk, and selectivity across 16 paralogs. The final four produced Boltz Kd estimates of 3.2–8.8 µM, Jack/SCC agreement of 1.01–1.34×, GNINA Vina scores of −5.01 to −6.19, pKd values of 3.94–4.69, and Rowan IC50-style predictions of 1.82–6.11 µM. <a href="${escapeAttr(tbxtRepoUrl)}" target="_blank" rel="noopener noreferrer">The public research release is available on GitHub.</a></p>
+      </article>
+
+      <h2 class="group-expansion-title">Research Projects We Are Expanding</h2>
+      <p class="group-expansion-intro">Alongside MeshAnyOrder and TBXT, the group is expanding research directions that originated in Kemal's completed and ongoing collaborations. These projects provide reusable models, datasets, simulation tools, and scientific questions that can grow into deeper group-led research.</p>
+
+      <article id="antibody-rl-ai-at-mit" class="group-project-detail">
+        <h3><a href="https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning" target="_blank" rel="noopener noreferrer">AI@MIT — Deep Reinforcement Learning for Antibody–Antigen Interactions</a></h3>
+        <p>This six-person project developed a structure-informed cross-attention transformer and ESM-2 pipeline that maps protein or pathogen sequences to candidate antibodies using curated OAS, SAbDab, and IEDB data. The learning system combines sequence representations with structural evaluation from AlphaFold-Multimer- and IGFold-style metrics.</p>
+        <p>The work is being expanded toward more rigorous candidate ranking, uncertainty-aware reward design, stronger structural and developability objectives, and reproducible distributed training on MIT SuperCloud. The longer-term aim is a transparent antibody-discovery workflow in which sequence generation, structural validation, and reinforcement-learning feedback can be inspected rather than treated as a single opaque score.</p>
+      </article>
+
+      <article id="chemagent-qsm" class="group-project-detail">
+        <h3><a href="https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli" target="_blank" rel="noopener noreferrer">ChemAgent-QSM — Auditable Agentic Quantum and Statistical Mechanics</a></h3>
+        <p>ChemAgent-QSM converts natural-language chemistry questions into auditable PySCF workflows for electronic-structure calculations, geometry optimization, molecular descriptors, vibrational spectra, time-correlation functions, local-order metrics, relaxation timescales, mobility fields, and structure–dynamics coupling.</p>
+        <p>The group is expanding this foundation into a scientific-agent benchmark centered on tool selection, executable-code validation, physical-unit checks, uncertainty reporting, failure analysis, and comparison against expert-authored quantum-chemistry and statistical-mechanics pipelines. The public repository provides the initial reproducible scaffold.</p>
+      </article>
+
+      <article id="renormalization-group" class="group-project-detail">
+        <h3><a href="${escapeAttr(ctx.withBase('/cv/#ai-ml-for-statistical-mechanics-simulations-researcher-and-teaching-fellow'))}">Machine Learning–Augmented Renormalization Group</a></h3>
+        <p>This project builds a PyTorch and graph-neural-network extension of the Kadanoff renormalization group for identifying fixed points and mapping thermodynamic phase boundaries in spin-1/2 antiferromagnetic systems.</p>
+        <p>Ongoing expansion focuses on reproducible lattice benchmarks, interpretable coarse-graining, uncertainty around fixed-point and phase-boundary estimates, transfer across Hamiltonians and lattice geometries, and systematic comparison between learned transformations and classical statistical-mechanics baselines.</p>
+      </article>
+
+      <article id="kupcinet-getz-biochemical-diffusion" class="group-project-detail">
+        <h3><a href="${escapeAttr(ctx.withBase('/cv/#kupcinet-getz-scholar-in-computational-biochemical-diffusion'))}">Kupcinet-Getz — Computational Biochemical Diffusion</a></h3>
+        <p>Completed work at the Weizmann Institute developed PINN- and neural-ODE-enhanced stochastic simulation of nonequilibrium enzyme reaction–diffusion networks, together with custom Euler–Maruyama, Runge–Kutta, and Gillespie SSA solvers for biochemical kinetics and spatial heterogeneity.</p>
+        <p>The group is expanding this work toward hybrid mechanistic and learned solvers, trajectory representation learning, bifurcation and nonlinear-dynamics detection, solver-consistency tests, and benchmark systems that connect stochastic-process inference with chemically interpretable reaction mechanisms.</p>
+      </article>
+
+      <article id="dft-to-kmc" class="group-project-detail">
+        <h3><a href="${escapeAttr(ctx.withBase('/cv/#foundation-research-scholar-in-computational-organic-chemistry'))}">DFT → kMC — Multi-Scale Computational Organic Chemistry</a></h3>
+        <p>Automated multi-scale computational-organic-chemistry pipeline linking DFT transition-state analysis to stochastic kinetic Monte Carlo across solvent pathways.</p>
+        <p>The completed foundation screened transition states and reaction trajectories across multiple solvent pathways. Its expansion will focus on uncertainty propagation from electronic-structure calculations into kinetic predictions, automated reaction-network construction, solvent-sensitive pathway selection, and reproducible optimization of experimentally relevant yield and selectivity objectives.</p>
       </article>
     </section>
   </section>`;
@@ -498,7 +531,7 @@ async function renderGroup(site, ctx) {
     site,
     ctx,
     title: 'Özkırşehirli Group',
-    description: 'Research directions, values, MeshAnyOrder, and TBXT / brachyury small-molecule discovery in the Özkırşehirli Group.',
+    description: 'Research directions, values, and current projects in the Özkırşehirli Group, including MeshAnyOrder, TBXT, antibody discovery, ChemAgent-QSM, renormalization-group modeling, biochemical diffusion, and DFT-to-kMC simulation.',
     activePath: '/group/',
     path: '/group/',
     content,

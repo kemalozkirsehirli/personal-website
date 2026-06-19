@@ -729,13 +729,13 @@ button, input { font: inherit; }
 .group-page p { max-width: 78ch; }
 
 /* Group project details extend the existing prose without changing the page's core layout. */
-.group-research-programs {
+.group-research-projects {
   margin-top: 2rem;
   padding-top: 1.15rem;
   border-top: 1px solid var(--rule);
 }
 
-.group-research-programs > h2 {
+.group-research-projects > h2 {
   margin: 0 0 1rem;
 }
 
@@ -753,3 +753,10 @@ button, input { font: inherit; }
 .group-project-detail p {
   margin: 0.62rem 0;
 }
+
+.group-expansion-title {
+  margin: 2.25rem 0 0.45rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--rule);
+}
+.group-expansion-intro { margin-top: 0.45rem; }

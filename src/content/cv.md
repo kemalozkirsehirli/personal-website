@@ -5,17 +5,17 @@ description: "Education, recognition, research, engineering, teaching, computati
 
 # Kemal Özkırşehirli
 
-**MIT B.Sc. Candidate** — Computer Science and Engineering, Physics, and Mathematics. Minors in Philosophy and Writing.  
+**MIT B.Sc. Candidate** — Computer Science and Engineering: AI/ML; Physics: Chemical Physics; Mathematics: Mathematical Biology. Minors in Philosophy and Writing.  
 Cambridge, MA · [kemalozk@mit.edu](mailto:kemalozk@mit.edu) · [LinkedIn](https://linkedin.com/in/kozkirsehirli) · [GitHub](https://github.com/kemalozkirsehirli) · [Google Scholar](https://scholar.google.com/citations?user=SKE-LC8AAAAJ)
 
-I leverage AI/ML frameworks, generative and diffusion models, free-energy methods, atomistic molecular dynamics, Monte Carlo, density-functional-theory simulations, inference, and robust optimization to turn scientific complexity into parsable, compilable, and computable representations. I then extract the governing rules of these systems to synthesize high-level technical knowledge for critical scientific decision-making.
+I am an international student from İstanbul, Türkiye, pursuing a rare triple major in Computer Science and Engineering: AI/ML, Physics: Chemical Physics, and Mathematics: Mathematical Biology, with minors in Philosophy and Writing. I am on track to graduate one year early, completing all requirements for three majors and two minors in three total years of undergraduate education. I leverage AI/ML frameworks, generative and diffusion models, free-energy methods, atomistic molecular dynamics, Monte Carlo, density-functional-theory simulations, inference, and robust optimization to turn scientific complexity into parsable, compilable, and computable representations and extract their governing rules for critical scientific decision-making.
 
 ## Education
 
 **Massachusetts Institute of Technology** — Cambridge, MA  
-B.Sc. expected May 2027. GPA: 5.0/5.0.
+B.Sc. expected May 2027. GPA: 5.0/5.0. On track to graduate one year early after completing all requirements for a rare triple major and two minors in three total years of undergraduate education.
 
-- Majors: Computer Science and Engineering, Physics, Mathematics.
+- Majors: Computer Science and Engineering: AI/ML; Physics: Chemical Physics; Mathematics: Mathematical Biology.
 - Minors: Philosophy, Writing.
 - Research interests: biomolecular simulation; free-energy methods; CADD; statistical mechanics and renormalization-group theory; chemical diffusion; high-performance computing; generative models; scientific workflow and DNA–RNA engineering; agentic AI; inference.
 - Computational skillset: Python, C/C++, CUDA, PyTorch, Transformers, GNNs, HPC/GPU programming, Linux, Bash, Git, SLURM/PBS/qsub.
@@ -60,7 +60,7 @@ B.Sc. expected May 2027. GPA: 5.0/5.0.
 
 **MIT and onepot** — Apr 2026–Present
 
-- Leading an 11-person chordoma-focused TBXT/brachyury computational hit-identification program targeting PDB 6F59 chain A / TBXT G177D site F; compressed 2,274 prior-art compounds plus 737 raw analogs into 503 filtered analogs, 30,000 BRICS recombinations, 67 novel QSAR-pass proposals, and a 570-compound novelty-filtered pool using site-F/A/G grids, Tanimoto novelty control, and sourceability-aware generation.
+- Leading an 11-person chordoma-focused TBXT/brachyury computational hit-identification project targeting PDB 6F59 chain A / TBXT G177D site F; compressed 2,274 prior-art compounds plus 737 raw analogs into 503 filtered analogs, 30,000 BRICS recombinations, 67 novel QSAR-pass proposals, and a 570-compound novelty-filtered pool using site-F/A/G grids, Tanimoto novelty control, and sourceability-aware generation.
 - Integrated a multi-orthogonal AI/CADD stack: Vina ensemble docking, GNINA CNN pose/pKd scoring, Vina-trap detection, RF/XGBoost TBXT QSAR, Boltz-2 co-folding, MMGBSA/FEP scaffolding, T-box paralog selectivity, Rowan IC50/affinity analysis, RDKit descriptors/BRICS, onepot/muni catalog checks, and Bash/HPC automation. Trained QSAR on 650 RDKit-valid SPR-derived compounds from 14 decrypted XLSX files, 15 campaigns, and 1,620 Kd fits, achieving Spearman ρ ≈ 0.49 and MAE ≈ 0.5 pKd; GNINA screened 569 of 570 candidates and flagged 40 Tier-A, 51 Tier-B, and 73 Vina-trap candidates.
 - Prioritized a final funnel of 570 → 137 strict-pass → 24 submission-ready → 4 judge-facing site-F picks under exact-match, non-covalent chemistry, PAINS/forbidden-motif, lead-likeness, ESOL/logS, Tanimoto, cost, chemistry, supplier-risk, and 16-paralog selectivity gates. The final four showed Boltz Kd values of 3.2–8.8 µM, Jack/SCC agreement of 1.01–1.34×, GNINA Vina scores of −5.01 to −6.19, pKd values of 3.94–4.69, and Rowan IC50-style predictions of 1.82–6.11 µM.
 
@@ -92,12 +92,12 @@ B.Sc. expected May 2027. GPA: 5.0/5.0.
 
 **Pedal AI** — Jul–Dec 2025
 
-- Designed a high-performance backend architecture for LangGraph AI agents using Python; implemented FastAPIs connecting AI agents and molecular-prediction engines; optimized control flow across three core backend layers and 4,000+ lines of code; reduced average prediction latency to under 50 ms while supporting 15,000+ daily API requests and processing 50+ GB of chemical datasets.
-- Built chemist- and researcher-facing UI/UX for Pedal AI's Agentic Chemistry Platform, incorporating Coley Lab retrosynthesis models with ASKCOS-style route search, inspectable retrosynthesis trees, reaction-level provenance, and decision-ready synthesis workflows; mapped 8+ step pathways and evaluated 100,000+ molecular predictions with 99.9% uptime.
+- Designed Python/LangGraph backend architecture and FastAPI interfaces connecting stateful chemistry agents with molecular-prediction engines, including persistent execution state, custom tool orchestration, scalable control flow, and model/data evaluation workflows.
+- Built chemist- and researcher-facing UI/UX for Pedal AI's Agentic Chemistry Platform, incorporating Coley Lab retrosynthesis models with ASKCOS-style route search, inspectable retrosynthesis trees, reaction-level provenance, and decision-ready synthesis workflows.
 
 ### LLM and Statistical Mechanics/Theoretical Chemistry Researcher
 
-**Columbia University; Prof. David Reichman** — Dec 2025–Present
+**Columbia University** — Dec 2025–Present
 
 - Developed ChemAgent-QSM, an LLM-guided agentic framework converting natural-language chemistry prompts into validated PySCF quantum-chemical pipelines for drug-like molecules.
 - Generated auditable Python workflows for time-correlation functions, local-order metrics, relaxation timescales, mobility fields, structure–dynamics coupling, optimized geometries, electronic-structure descriptors, and vibrational spectra via ab initio DFT.
@@ -121,14 +121,14 @@ B.Sc. expected May 2027. GPA: 5.0/5.0.
 
 ### AI/ML for Statistical Mechanics Simulations Researcher and Teaching Fellow
 
-**MIT Physics; Prof. A. Nihat Berker** — Jan 2022–Present
+**MIT Physics** — Jan 2022–Present
 
-- Invited to conduct research after ranking in the top 1% of Prof. Berker's graduate-level 8.334: Phase Transitions and Renormalization-Group Theory while in high school. Building a PyTorch/GNN-augmented Kadanoff renormalization-group framework to identify fixed points and map thermodynamic phase boundaries in spin-1/2 antiferromagnetic systems.
+- Invited to conduct research after ranking in the top 1% of graduate-level 8.334: Phase Transitions and Renormalization-Group Theory while in high school. Building a PyTorch/GNN-augmented Kadanoff renormalization-group framework to identify fixed points and map thermodynamic phase boundaries in spin-1/2 antiferromagnetic systems.
 - Mentored 200+ students regarding college applications, decisions, and career paths while teaching condensed Augmented Chemistry and Classical/Quantum Mechanics courses and grading daily problem sets and exams.
 
 ### Kupcinet-Getz Scholar in Computational Biochemical Diffusion
 
-**Weizmann Institute of Science; Prof. Semenov** — Jun–Aug 2025
+**Weizmann Institute of Science** — Jun–Aug 2025
 
 - Selected as one of 22 scholars worldwide with an acceptance rate below 10%; developed PINN- and neural-ODE-enhanced stochastic simulation of nonequilibrium enzyme reaction-diffusion networks and custom Euler-Maruyama, Runge-Kutta, and Gillespie SSA solvers for biochemical kinetics and spatial heterogeneity.
 - Constructed GNN encoders, transformer sequence models, UMAP-driven clustering, and PyTorch classifiers to extract latent thermal structure, identify bifurcations, and classify nonlinear dynamics from high-dimensional trajectories.
