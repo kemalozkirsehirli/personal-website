@@ -493,11 +493,10 @@ async function renderGroup(site, ctx) {
         <p>The final computational funnel moved from 570 compounds to 137 strict-pass candidates, 24 submission-ready candidates, and four judge-facing site-F selections. Filters included exact catalog matching, non-covalent chemistry, PAINS and forbidden-motif exclusion, lead-likeness, ESOL/logS, Tanimoto novelty, cost, supplier risk, and selectivity across 16 paralogs. The final four produced Boltz Kd estimates of 3.2–8.8 µM, Jack/SCC agreement of 1.01–1.34×, GNINA Vina scores of −5.01 to −6.19, pKd values of 3.94–4.69, and Rowan IC50-style predictions of 1.82–6.11 µM. <a href="${escapeAttr(tbxtRepoUrl)}" target="_blank" rel="noopener noreferrer">The public research release is available on GitHub.</a></p>
       </article>
 
-      <h2 class="group-expansion-title">Research Projects We Are Expanding</h2>
-      <p class="group-expansion-intro">Alongside MeshAnyOrder and TBXT, the group is expanding research directions that originated in Kemal's completed and ongoing collaborations. These projects provide reusable models, datasets, simulation tools, and scientific questions that can grow into deeper group-led research.</p>
+      <h2 class="group-expansion-title">Current Ongoing Research Projects</h2>
 
-      <article id="antibody-rl-ai-at-mit" class="group-project-detail">
-        <h3><a href="https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning" target="_blank" rel="noopener noreferrer">AI@MIT — Deep Reinforcement Learning for Antibody–Antigen Interactions</a></h3>
+      <article id="antibody-reinforcement-learning" class="group-project-detail">
+        <h3><a href="https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning" target="_blank" rel="noopener noreferrer">Deep Reinforcement Learning for Antibody–Antigen Interactions</a></h3>
         <p>This six-person project developed a structure-informed cross-attention transformer and ESM-2 pipeline that maps protein or pathogen sequences to candidate antibodies using curated OAS, SAbDab, and IEDB data. The learning system combines sequence representations with structural evaluation from AlphaFold-Multimer- and IGFold-style metrics.</p>
         <p>The work is being expanded toward more rigorous candidate ranking, uncertainty-aware reward design, stronger structural and developability objectives, and reproducible distributed training on MIT SuperCloud. The longer-term aim is a transparent antibody-discovery workflow in which sequence generation, structural validation, and reinforcement-learning feedback can be inspected rather than treated as a single opaque score.</p>
       </article>

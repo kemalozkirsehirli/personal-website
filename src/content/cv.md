@@ -121,7 +121,7 @@ B.Sc. expected May 2027. GPA: 5.0/5.0. On track to graduate one year early after
 
 ### AI/ML for Statistical Mechanics Simulations Researcher and Teaching Fellow
 
-**MIT Physics** — Jan 2022–Present
+**MIT Physics · Prof. A. Nihat Berker** — Jan 2022–Present
 
 - Invited to conduct research after ranking in the top 1% of graduate-level 8.334: Phase Transitions and Renormalization-Group Theory while in high school. Building a PyTorch/GNN-augmented Kadanoff renormalization-group framework to identify fixed points and map thermodynamic phase boundaries in spin-1/2 antiferromagnetic systems.
 - Mentored 200+ students regarding college applications, decisions, and career paths while teaching condensed Augmented Chemistry and Classical/Quantum Mechanics courses and grading daily problem sets and exams.
