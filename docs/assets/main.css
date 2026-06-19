@@ -637,7 +637,7 @@ button, input { font: inherit; }
   font-weight: 700;
 }
 
-/* Keep all selected-work item titles visibly blue, including internal CV anchor links. */
+/* Keep all selected-work item titles visibly blue, including internal résumé anchor links. */
 .classic-selected .classic-item b a,
 .classic-selected .classic-item b a:visited { color: #333399; }
 

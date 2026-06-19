@@ -42,7 +42,7 @@
       "url": "/projects/"
     },
     {
-      "label": "CV",
+      "label": "Resume",
       "url": "/cv/"
     },
     {
@@ -74,6 +74,11 @@
         "label": "Collection of Prose and Poems",
         "url": null,
         "description": "held back for launch"
+      },
+      {
+        "label": "Resume",
+        "url": "/cv/",
+        "description": "web résumé"
       },
       {
         "label": "MeshAnyOrder for Life Sciences",
@@ -116,11 +121,6 @@
         "description": "open-source multi-objective protein design"
       },
       {
-        "label": "CV",
-        "url": "/cv/",
-        "description": "web curriculum vitae"
-      },
-      {
         "label": "LinkedIn",
         "url": "https://linkedin.com/in/kozkirsehirli",
         "description": "external profile"
@@ -161,7 +161,7 @@
             "url": "mailto:kemalozk@mit.edu"
           },
           {
-            "label": "CV",
+            "label": "Resume",
             "url": "/cv/"
           }
         ]
@@ -484,9 +484,9 @@
             "description": "public repositories and code profile"
           },
           {
-            "title": "CV",
+            "title": "Resume",
             "url": "/cv/",
-            "description": "web CV with education, recognition, research, engineering, teaching, skills, languages, interests, and hobbies"
+            "description": "web résumé with education, recognition, research, engineering, teaching, skills, languages, interests, and hobbies"
           },
           {
             "title": "LinkedIn",

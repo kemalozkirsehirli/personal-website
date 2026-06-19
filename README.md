@@ -7,8 +7,8 @@ Statik, dependency-light, Manolis Kellis / classic MIT academic-homepage hissine
 - Canlı domain: `https://kemal-ozkirsehirli.com`
 - GitHub Pages kaynağı: `main` branch → `/docs`
 - Tüm sayfalarda arka plan: `#FFF8E7`
-- Web CV: `/cv/` (güncel finalized résumé bilgileriyle)
-- İndirilebilir/public CV PDF yok
+- Web résumé: `/cv/` (güncel finalized résumé bilgileriyle)
+- İndirilebilir/public résumé PDF yok
 - About poem: `/about/`
 - Özkırşehirli Group: `/group/` (application form, LinkedIn launch post, ayrıntılı MeshAnyOrder ve TBXT programları dahil)
 - Essays ve AI-for-Science notes yayımlanmıyor
@@ -33,7 +33,7 @@ http://localhost:4173/
 
 - Ana sayfa, Spotlight, selected work, Group: `src/data/site.json`
 - Projeler: `src/data/projects.json`
-- Web CV: `src/content/cv.md`
+- Web résumé: `src/content/cv.md`
 - Fotoğraflar ve word cloud: `public/`
 - Görsel düzen: `src/styles/main.css`
 - Build sistemi: `scripts/build.mjs`

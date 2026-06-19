@@ -493,8 +493,6 @@ async function renderGroup(site, ctx) {
         <p>The final computational funnel moved from 570 compounds to 137 strict-pass candidates, 24 submission-ready candidates, and four judge-facing site-F selections. Filters included exact catalog matching, non-covalent chemistry, PAINS and forbidden-motif exclusion, lead-likeness, ESOL/logS, Tanimoto novelty, cost, supplier risk, and selectivity across 16 paralogs. The final four produced Boltz Kd estimates of 3.2–8.8 µM, Jack/SCC agreement of 1.01–1.34×, GNINA Vina scores of −5.01 to −6.19, pKd values of 3.94–4.69, and Rowan IC50-style predictions of 1.82–6.11 µM. <a href="${escapeAttr(tbxtRepoUrl)}" target="_blank" rel="noopener noreferrer">The public research release is available on GitHub.</a></p>
       </article>
 
-      <h2 class="group-expansion-title">Current Ongoing Research Projects</h2>
-
       <article id="antibody-reinforcement-learning" class="group-project-detail">
         <h3><a href="https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning" target="_blank" rel="noopener noreferrer">Deep Reinforcement Learning for Antibody–Antigen Interactions</a></h3>
         <p>This six-person project developed a structure-informed cross-attention transformer and ESM-2 pipeline that maps protein or pathogen sequences to candidate antibodies using curated OAS, SAbDab, and IEDB data. The learning system combines sequence representations with structural evaluation from AlphaFold-Multimer- and IGFold-style metrics.</p>
@@ -643,12 +641,12 @@ async function renderHome(site, ctx, essays, projects) {
   const author = site.author || {};
   const spotlight = site.home?.spotlight || [
     { label: 'Selected projects', url: '/projects/' },
-    { label: 'Curriculum vitae', url: '/cv/' },
+    { label: 'Resume', url: '/cv/' },
     { label: 'Photo archive', url: '/photos/' },
     { label: 'Essays held back for launch', url: null }
   ];
   const directory = site.home?.directory || [
-    { label: 'About me', links: [site.home?.secondaryCta || { label: 'CV', url: '/cv/' }, { label: 'Projects', url: '/projects/' }, { label: 'Photos', url: '/photos/' }] },
+    { label: 'About me', links: [site.home?.secondaryCta || { label: 'Resume', url: '/cv/' }, { label: 'Projects', url: '/projects/' }, { label: 'Photos', url: '/photos/' }] },
     { label: 'Writing', links: [{ label: 'Essays held back for launch', url: null }] },
     { label: 'Work', links: projects.slice(0, 4).map((project) => ({ label: project.title, url: '/projects/' })) }
   ];
@@ -669,7 +667,7 @@ async function renderHome(site, ctx, essays, projects) {
     {
       title: 'Professional',
       items: [
-        { title: 'Curriculum Vitae', url: '/cv/', description: 'education, research, skills, and selected work' },
+        { title: 'Resume', url: '/cv/', description: 'education, research, skills, and selected work' },
         { title: 'Projects', url: '/projects/', description: 'research and engineering archive' },
         { title: 'Photos', url: '/photos/', description: 'small visual archive' },
         { title: 'Essays', url: null, description: 'held back for launch' }
@@ -786,12 +784,12 @@ async function renderCv(site, ctx) {
   const markdown = await fs.readFile(path.join(SRC, 'content', 'cv.md'), 'utf8');
   const { data, body } = parseFrontMatter(markdown);
   const author = site.author || {};
-  const pdf = site.resumePdf ? `<p>${classicLink('CV (pdf)', site.resumePdf, ctx)}</p>` : '';
+  const pdf = site.resumePdf ? `<p>${classicLink('Resume (pdf)', site.resumePdf, ctx)}</p>` : '';
   const content = `<section class="classic-page cv-page">
-    <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / CV</p>
+    <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / Resume</p>
     <div class="cv-title-row">
       <div>
-        <h1>${escapeHtml(data.title || 'CV')}</h1>
+        <h1>${escapeHtml(data.title || 'Resume')}</h1>
         <p>${escapeHtml(data.description || 'Education, research, projects, publications, and skills.')}</p>
       </div>
       <aside class="cv-contact">
@@ -804,7 +802,7 @@ async function renderCv(site, ctx) {
     </div>
     <div class="prose cv-prose">${markdownToHtml(body, ctx)}</div>
   </section>`;
-  await writeFile('cv/index.html', renderLayout({ site, ctx, title: data.title || 'CV', description: data.description || 'Curriculum vitae.', activePath: '/cv/', path: '/cv/', content }));
+  await writeFile('cv/index.html', renderLayout({ site, ctx, title: data.title || 'Resume', description: data.description || 'Résumé.', activePath: '/cv/', path: '/cv/', content }));
 }
 
 async function renderPhotos(site, ctx, photos) {
@@ -826,7 +824,7 @@ async function renderNotFound(site, ctx) {
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / 404</p>
     <h1>Page not found</h1>
     <p>This page does not exist, or it moved.</p>
-    <p>${classicLink('Home', '/', ctx)} - ${classicLink('Projects', '/projects/', ctx)} - ${classicLink('CV', '/cv/', ctx)} - ${classicLink('Photos', '/photos/', ctx)}</p>
+    <p>${classicLink('Home', '/', ctx)} - ${classicLink('Projects', '/projects/', ctx)} - ${classicLink('Resume', '/cv/', ctx)} - ${classicLink('Photos', '/photos/', ctx)}</p>
   </section>`;
   await writeFile('404.html', renderLayout({ site, ctx, title: 'Page not found', description: '404 page.', activePath: '', path: '/404.html', content }));
 }

@@ -1,5 +1,5 @@
 ---
-title: "CV"
+title: "Resume"
 description: "Education, recognition, research, engineering, teaching, computational skills, languages, interests, and hobbies."
 ---
 
