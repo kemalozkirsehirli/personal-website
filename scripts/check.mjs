@@ -2,6 +2,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { build } from './build.mjs';
+import { runPrivacyAudit } from './privacy-check.mjs';
+import { syncDocs } from './sync-docs.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -105,4 +107,14 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`Check passed. Generated ${htmlFiles.length} HTML files in dist/.`);
+try {
+  const sourceAudit = await runPrivacyAudit({ roots: ['src', 'public', 'dist'] });
+  await syncDocs();
+  const docsAudit = await runPrivacyAudit({ roots: ['docs'] });
+  console.log(`Privacy check passed. Audited ${sourceAudit.filesChecked + docsAudit.filesChecked} website files.`);
+} catch (error) {
+  console.error(error.message || error);
+  process.exit(1);
+}
+
+console.log(`Check passed. Generated ${htmlFiles.length} HTML files in dist/ and synced docs/.`);

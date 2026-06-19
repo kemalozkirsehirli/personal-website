@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "A zero-dependency static personal site for essays, résumé, projects, and photos.",
+  "description": "A zero-dependency static personal site for essays, r\u00e9sum\u00e9, projects, and photos.",
   "scripts": {
     "build": "node scripts/build.mjs",
     "dev": "node scripts/dev.mjs",
     "preview": "node scripts/serve.mjs dist 4173",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "privacy-check": "node scripts/privacy-check.mjs",
+    "sync-docs": "node scripts/sync-docs.mjs"
   },
   "engines": {
     "node": ">=18.18"

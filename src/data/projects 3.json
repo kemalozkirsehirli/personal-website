@@ -132,52 +132,47 @@
     "url": "/cv/#head-of-chemistry-research-implementation-backend-software-engineer-for-langgraph-ai-agent-pipelines"
   },
   {
-    "title": "VeriQSM + QSMBench — Artifact-Grounded Scientific Verification",
-    "status": "Public v0.3 research release",
-    "description": "VeriQSM separates nominal workflow completion from verified scientific success and false success. The public v0.3.0-dev / QSMBench v0.3-draft release includes a typed workflow IR, allowlisted execution, artifact-grounded verification, bounded repair/retry/refuse logic, 240 public authoring seeds, and a 24-case evaluator-conformance mini. It is explicitly not QSMBench 1.0, a sealed benchmark, or a completed multi-model scientific result.",
+    "title": "ChemAgent-QSM — LLM and Statistical Mechanics/Theoretical Chemistry",
+    "status": "Dec 2025 – Present",
+    "description": "Developed an LLM-guided agentic framework that converts natural-language chemistry prompts into auditable PySCF workflows for electronic structure, optimized geometries, descriptors, vibrational spectra, time-correlation functions, local order, relaxation, mobility, and structure–dynamics coupling; also developed trajectory features and ML analysis for dynamical heterogeneity.",
     "tags": [
-      "Scientific Agents",
+      "LLM Agents",
       "Quantum Chemistry",
       "Statistical Mechanics",
-      "Verification",
-      "Benchmarking"
+      "PySCF"
     ],
     "links": [
       {
-        "label": "Current public repository alias",
+        "label": "GitHub",
         "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli"
       },
       {
-        "label": "Group details",
-        "url": "/group/#veriqsm-qsmbench"
-      },
-      {
         "label": "Resume",
-        "url": "/cv/#veriqsm-qsmbench-scientific-workflow-verification"
+        "url": "/cv/#llm-and-statistical-mechanics-theoretical-chemistry-researcher"
       }
     ],
-    "slug": "veriqsm-qsmbench",
-    "url": "/group/#veriqsm-qsmbench"
+    "slug": "chemagent-qsm",
+    "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli"
   },
   {
     "title": "Deep Reinforcement Learning for Antibody–Antigen Interactions",
-    "status": "Public research scaffold",
-    "description": "Execution-ready public scaffold for a structure-informed cross-attention transformer with ESM-2-compatible antigen embeddings, OAS/SAbDab/IEDB/CoV-AbDab-style curation, PPO reward optimization against IGFold- and AlphaFold-Multimer-style structural proxies, and PyTorch DDP / MIT SuperCloud artifacts. Default smoke workflows use deterministic mock backends; the repository does not claim wet-lab binding validation or equivalence to real production structure inference.",
+    "status": "Jan 2026 – Present",
+    "description": "Co-leading a six-person AI@MIT / AIM Labs project developing a structure-informed cross-attention transformer and ESM-2 pipeline that maps protein/pathogen sequences to candidate antibodies using OAS, SAbDab, and IEDB data. PPO against AlphaFold-Multimer/IGFold metrics and distributed PyTorch DDP on MIT SuperCloud reduced training time by approximately 40%.",
     "tags": [
       "Reinforcement Learning",
       "Antibodies",
       "Protein Models",
       "ESM-2",
-      "Scientific Software"
+      "PyTorch DDP"
     ],
     "links": [
       {
-        "label": "Public GitHub repository",
+        "label": "GitHub",
         "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning"
       },
       {
-        "label": "Group details",
-        "url": "/group/#antibody-reinforcement-learning"
+        "label": "AI@MIT",
+        "url": "https://aiatmit.com/"
       },
       {
         "label": "Resume",
@@ -211,52 +206,42 @@
     "url": "https://evedesign.bio/"
   },
   {
-    "title": "Kadanoff-GNN-RG — ML-Augmented Renormalization Group",
-    "status": "Public alpha research software",
-    "description": "Research-grade starting point for symmetry-adapted Kadanoff coarse-graining, periodic four-color Metropolis sampling, typed-edge graph neural networks, calibrated phase classification, empirical RG-flow reconstruction, and finite-grid fixed-point candidate discovery in the square-lattice antiferromagnetic J1–J2 Ising model. Outputs are finite-size, sampler-dependent, and representation-dependent estimates that require conventional statistical-mechanics validation.",
+    "title": "AI/ML for Statistical Mechanics Simulations",
+    "status": "Jan 2022 – Present",
+    "description": "Building a PyTorch/GNN-augmented Kadanoff renormalization-group framework for automatic fixed-point discovery and thermodynamic phase-boundary mapping in spin-1/2 antiferromagnetic systems after ranking in the top 1% of graduate-level 8.334 while in high school; also mentored 200+ students through condensed chemistry, mechanics, and career-path instruction.",
     "tags": [
       "Statistical Mechanics",
       "Renormalization Group",
       "GNNs",
-      "Monte Carlo",
-      "Scientific Software"
+      "Teaching"
     ],
     "links": [
-      {
-        "label": "Group details",
-        "url": "/group/#kadanoff-gnn-rg"
-      },
       {
         "label": "Resume",
         "url": "/cv/#ai-ml-for-statistical-mechanics-simulations-researcher-and-teaching-fellow"
       }
     ],
-    "slug": "kadanoff-gnn-rg",
-    "url": "/group/#kadanoff-gnn-rg"
+    "slug": "ml-augmented-renormalization-group",
+    "url": "/cv/#ai-ml-for-statistical-mechanics-simulations-researcher-and-teaching-fellow"
   },
   {
-    "title": "Kupcinet–Getz Reaction–Diffusion AI",
-    "status": "Public v0.3 benchmark and software release",
-    "description": "Solver-faithful scientific-AI benchmark for nonlinear chemical oscillators, traveling waves, and synthetic morphogenesis. The public release combines mechanistic reaction-network cores; RK4, BDF/Radau/LSODA/RK45, chemical-Langevin, Gillespie, and spatial-RDME solvers; physical convergence audits; scientific-AI baselines; calibration and abstention; matched-compute evaluation; immutable result manifests; and explicit non-claims. Smoke runs are execution evidence only, not validated chemical conclusions.",
+    "title": "Kupcinet-Getz Scholar — Computational Biochemical Diffusion",
+    "status": "Jun–Aug 2025",
+    "description": "Selected as one of 22 scholars worldwide to develop PINN- and neural-ODE-enhanced stochastic simulation of nonequilibrium enzyme reaction-diffusion networks, including custom Euler-Maruyama, Runge-Kutta, and Gillespie SSA solvers. Built GNN encoders, transformer sequence models, UMAP clustering, and classifiers for bifurcation and nonlinear-dynamics discovery in high-dimensional trajectories.",
     "tags": [
-      "Reaction–Diffusion",
-      "Scientific AI",
-      "Stochastic Simulation",
+      "Biochemical Diffusion",
       "PINNs",
-      "Verification"
+      "Neural ODEs",
+      "Stochastic Simulation"
     ],
     "links": [
-      {
-        "label": "Group details",
-        "url": "/group/#kupcinet-getz-reaction-diffusion-ai"
-      },
       {
         "label": "Resume",
         "url": "/cv/#kupcinet-getz-scholar-in-computational-biochemical-diffusion"
       }
     ],
-    "slug": "kupcinet-getz-reaction-diffusion-ai",
-    "url": "/group/#kupcinet-getz-reaction-diffusion-ai"
+    "slug": "computational-biochemical-diffusion",
+    "url": "/cv/#kupcinet-getz-scholar-in-computational-biochemical-diffusion"
   },
   {
     "title": "Sepal AI / Mercor — Chemistry LLM Evaluation",
@@ -278,28 +263,23 @@
     "url": "/cv/#chemistry-and-ai-consultant-and-scientific-data-and-evaluation-specialist"
   },
   {
-    "title": "DFT → kMC — Auditable Multiscale Reaction Kinetics",
-    "status": "Public v0.1 implementation scaffold",
-    "description": "Auditable computational-organic-chemistry workflow that parses Gaussian/ORCA thermochemistry, checks stationary points, converts activation free energies to Eyring rates, compiles exact stochastic propensities, runs reproducible Gillespie kinetic-Monte-Carlo ensembles, ranks solvent-dependent yield/conversion/selectivity, and preserves hashes and provenance. The bundled five-solvent example is synthetic; original structures, target identity, raw quantum outputs, unpublished mechanism, and private research data are not included.",
+    "title": "Computational Organic Chemistry — DFT to kMC",
+    "status": "Aug 2023 – Feb 2024",
+    "description": "Engineered an automated multi-scale pipeline linking density-functional-theory calculations to stochastic kinetic Monte Carlo models; screened 20+ transition states and 500+ trajectories across five solvent pathways, producing a 22% predicted yield optimization for a cytotoxic target and a mechanistic manuscript under PhD mentorship.",
     "tags": [
       "DFT",
-      "Kinetic Monte Carlo",
-      "Eyring Theory",
+      "kMC",
       "Computational Chemistry",
-      "Reproducibility"
+      "Reaction Dynamics"
     ],
     "links": [
-      {
-        "label": "Group details",
-        "url": "/group/#dft-to-kmc"
-      },
       {
         "label": "Resume",
         "url": "/cv/#foundation-research-scholar-in-computational-organic-chemistry"
       }
     ],
-    "slug": "dft-to-kmc",
-    "url": "/group/#dft-to-kmc"
+    "slug": "computational-organic-chemistry-pipeline",
+    "url": "/cv/#foundation-research-scholar-in-computational-organic-chemistry"
   },
   {
     "title": "Advanced Organic Synthesis — Buchwald Lab",

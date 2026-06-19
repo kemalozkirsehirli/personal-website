@@ -468,6 +468,8 @@ async function renderGroup(site, ctx) {
   const applicationUrl = 'https://forms.gle/BZFfBCPRFipNeaBr5';
   const announcementUrl = 'https://www.linkedin.com/posts/kozkirsehirli_kemal-%C3%B6zk%C4%B1r%C5%9Fehirli-activity-7473434647910334464-I9E7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC4WWM0Bp3e0E7wr9kwMebbuR65xNvaV8sU';
   const tbxtRepoUrl = 'https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced';
+  const chemAgentAliasUrl = 'https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli';
+  const antibodyRepoUrl = 'https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning';
   const content = `<section class="classic-page group-page">
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">Home</a> / Özkırşehirli Group</p>
     <h1>Özkırşehirli Group</h1>
@@ -475,6 +477,7 @@ async function renderGroup(site, ctx) {
     <p>Currently, the areas of interest that define our research are computational methods and artificial intelligence/machine learning theories and pipelines for making new scientific discoveries. Our interests include computer-aided drug design (CADD) focused on Chordoma and TBXT; discovery of novel small molecules; geometric deep learning and 3-D mesh methodology; modeling of biomolecules; designing proteins; and developing scientific workflows.</p>
     <p>We have a selection process for membership but do not restrict it based solely on your educational or professional background. We believe that an individual's passion for their work and willingness to be intellectually curious, driven to solve problems, honest about their limitations, and capable of fortitude are essential. These values will determine whether you are a good fit. If you have a strong interest in a field outside those mentioned above, then we encourage you to apply if you are willing to become an expert in the field of study, provide consistent contributions to the research effort, and ask scientifically relevant questions.</p>
     <p><b><a href="${escapeAttr(applicationUrl)}" target="_blank" rel="noopener noreferrer">Application form</a></b> - <a href="${escapeAttr(announcementUrl)}" target="_blank" rel="noopener noreferrer">LinkedIn launch post</a></p>
+    <p class="public-release-note"><b>Public-content boundary:</b> project descriptions on this page use public-release materials only. Non-public archives, hidden evaluation material, credentials, raw private data, and internal strategy documents are excluded from the website.</p>
 
     <section class="group-research-projects" aria-labelledby="current-research-projects">
       <h2 id="current-research-projects">Research Projects</h2>
@@ -494,33 +497,33 @@ async function renderGroup(site, ctx) {
       </article>
 
       <article id="antibody-reinforcement-learning" class="group-project-detail">
-        <h3><a href="https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning" target="_blank" rel="noopener noreferrer">Deep Reinforcement Learning for Antibody–Antigen Interactions</a></h3>
-        <p>This six-person project developed a structure-informed cross-attention transformer and ESM-2 pipeline that maps protein or pathogen sequences to candidate antibodies using curated OAS, SAbDab, and IEDB data. The learning system combines sequence representations with structural evaluation from AlphaFold-Multimer- and IGFold-style metrics.</p>
-        <p>The work is being expanded toward more rigorous candidate ranking, uncertainty-aware reward design, stronger structural and developability objectives, and reproducible distributed training on MIT SuperCloud. The longer-term aim is a transparent antibody-discovery workflow in which sequence generation, structural validation, and reinforcement-learning feedback can be inspected rather than treated as a single opaque score.</p>
+        <h3><a href="${escapeAttr(antibodyRepoUrl)}" target="_blank" rel="noopener noreferrer">Deep Reinforcement Learning for Antibody–Antigen Interactions</a></h3>
+        <p>The public project is an execution-ready research scaffold combining ESM-2-compatible antigen embeddings, a structure-informed cross-attention transformer for antibody CDR generation, OAS/SAbDab/IEDB/CoV-AbDab-style data curation, PPO-oriented candidate ranking, and PyTorch DDP / MIT SuperCloud execution artifacts.</p>
+        <p>The reward interface supports developability, validity, novelty, CDR-length, IGFold-style geometry, and AlphaFold-Multimer-style interface proxies. Reproducible smoke workflows use deterministic mock structure backends; production runs require real dependency-gated models or external structure services. The public release does not claim wet-lab binding validation, therapeutic performance, or equivalence to real production AlphaFold/IGFold inference.</p>
       </article>
 
-      <article id="chemagent-qsm" class="group-project-detail">
-        <h3><a href="https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli" target="_blank" rel="noopener noreferrer">ChemAgent-QSM — Auditable Agentic Quantum and Statistical Mechanics</a></h3>
-        <p>ChemAgent-QSM converts natural-language chemistry questions into auditable PySCF workflows for electronic-structure calculations, geometry optimization, molecular descriptors, vibrational spectra, time-correlation functions, local-order metrics, relaxation timescales, mobility fields, and structure–dynamics coupling.</p>
-        <p>The group is expanding this foundation into a scientific-agent benchmark centered on tool selection, executable-code validation, physical-unit checks, uncertainty reporting, failure analysis, and comparison against expert-authored quantum-chemistry and statistical-mechanics pipelines. The public repository provides the initial reproducible scaffold.</p>
+      <article id="veriqsm-qsmbench" class="group-project-detail">
+        <h3><a href="${escapeAttr(chemAgentAliasUrl)}" target="_blank" rel="noopener noreferrer">VeriQSM + QSMBench — Artifact-Grounded Scientific Verification</a></h3>
+        <p>VeriQSM asks whether a scientific agent merely completed a workflow or produced a scientifically credible result. It distinguishes nominal completion, verified scientific success, and false success, then uses typed workflow contracts, allowlisted execution, independently recomputed physical and numerical checks, provenance requirements, and bounded repair, retry, or refusal decisions.</p>
+        <p>The public VeriQSM v0.3.0-dev / QSMBench v0.3-draft release provides 240 authoring seeds, a 24-case evaluator-conformance mini, PySCF-compatible quantum-chemistry modules, PBC-aware statistical-mechanics analyses, baseline protocols, and release-audit tooling. It is intentionally not presented as QSMBench 1.0, a sealed benchmark, a completed multi-model comparison, or evidence of scientific superiority. The linked repository remains the current public ChemAgent-QSM alias while the release identity is migrated.</p>
       </article>
 
-      <article id="renormalization-group" class="group-project-detail">
-        <h3><a href="${escapeAttr(ctx.withBase('/cv/#ai-ml-for-statistical-mechanics-simulations-researcher-and-teaching-fellow'))}">Machine Learning–Augmented Renormalization Group</a></h3>
-        <p>This project builds a PyTorch and graph-neural-network extension of the Kadanoff renormalization group for identifying fixed points and mapping thermodynamic phase boundaries in spin-1/2 antiferromagnetic systems.</p>
-        <p>Ongoing expansion focuses on reproducible lattice benchmarks, interpretable coarse-graining, uncertainty around fixed-point and phase-boundary estimates, transfer across Hamiltonians and lattice geometries, and systematic comparison between learned transformations and classical statistical-mechanics baselines.</p>
+      <article id="kadanoff-gnn-rg" class="group-project-detail">
+        <h3>Kadanoff-GNN-RG — ML-Augmented Renormalization Group</h3>
+        <p>Kadanoff-GNN-RG is public alpha research software for combining symmetry-adapted real-space coarse-graining, periodic four-color Metropolis spin configurations, typed-edge graph neural networks, calibrated phase classification, empirical RG-flow reconstruction, and finite-grid fixed-point candidate discovery in the square-lattice antiferromagnetic J1–J2 Ising model.</p>
+        <p>The workflow preserves uniform, Néel, and stripe ordering channels before blocking and compares learned representations with majority-rule baselines and conventional observables. Phase boundaries and fixed-point outputs are finite-size, sampler-dependent, and representation-dependent estimates; scientific use requires autocorrelation analysis, finite-size scaling, held-out seeds, parameter-grid refinement, Binder-cumulant and susceptibility checks, and robustness across coarse-graining choices.</p>
       </article>
 
-      <article id="kupcinet-getz-biochemical-diffusion" class="group-project-detail">
-        <h3><a href="${escapeAttr(ctx.withBase('/cv/#kupcinet-getz-scholar-in-computational-biochemical-diffusion'))}">Kupcinet-Getz — Computational Biochemical Diffusion</a></h3>
-        <p>Completed work at the Weizmann Institute developed PINN- and neural-ODE-enhanced stochastic simulation of nonequilibrium enzyme reaction–diffusion networks, together with custom Euler–Maruyama, Runge–Kutta, and Gillespie SSA solvers for biochemical kinetics and spatial heterogeneity.</p>
-        <p>The group is expanding this work toward hybrid mechanistic and learned solvers, trajectory representation learning, bifurcation and nonlinear-dynamics detection, solver-consistency tests, and benchmark systems that connect stochastic-process inference with chemically interpretable reaction mechanisms.</p>
+      <article id="kupcinet-getz-reaction-diffusion-ai" class="group-project-detail">
+        <h3>Kupcinet–Getz Reaction–Diffusion AI</h3>
+        <p>This public v0.3 research release develops a solver-faithful scientific-AI benchmark for nonlinear chemical oscillators, traveling waves, and synthetic morphogenesis. It combines shared reaction-network and graph-compartment models with RK4, BDF/Radau/LSODA/RK45, explicit finite differences, chemical-Langevin dynamics, Gillespie SSA, spatial RDME, physical convergence audits, scientific-AI baselines, calibration, abstention, matched-compute evaluation, and immutable evidence manifests.</p>
+        <p>The central question is whether numerical representation and intrinsic reaction noise change inferred morphology, phase boundaries, or scientific-AI confidence. Current headline claims remain untested or partial: smoke runs establish execution contracts only, not paper-figure reproduction, chemical validation, or completed benchmark conclusions. Production evidence, release authority, and independent clean-room validation remain explicit gates.</p>
       </article>
 
       <article id="dft-to-kmc" class="group-project-detail">
-        <h3><a href="${escapeAttr(ctx.withBase('/cv/#foundation-research-scholar-in-computational-organic-chemistry'))}">DFT → kMC — Multi-Scale Computational Organic Chemistry</a></h3>
-        <p>Automated multi-scale computational-organic-chemistry pipeline linking DFT transition-state analysis to stochastic kinetic Monte Carlo across solvent pathways.</p>
-        <p>The completed foundation screened transition states and reaction trajectories across multiple solvent pathways. Its expansion will focus on uncertainty propagation from electronic-structure calculations into kinetic predictions, automated reaction-network construction, solvent-sensitive pathway selection, and reproducible optimization of experimentally relevant yield and selectivity objectives.</p>
+        <h3>DFT → kMC — Auditable Multiscale Reaction Kinetics</h3>
+        <p>The public implementation scaffold parses Gaussian and ORCA thermochemistry, checks stationary points and imaginary frequencies, converts activation Gibbs free energies into forward and reverse Eyring rates, compiles exact stochastic propensities, runs reproducible Gillespie kinetic-Monte-Carlo ensembles, compares solvent pathways, and records resolved configurations, package versions, hashes, uncertainty outputs, and human-readable reports.</p>
+        <p>The bundled five-solvent example is synthetic and demonstrates software contracts rather than reproduction of the original historical project. Original molecular structures, target identity, raw quantum-chemistry outputs, unpublished mechanism, and non-public research data are deliberately excluded from the public release.</p>
       </article>
     </section>
   </section>`;
@@ -528,7 +531,7 @@ async function renderGroup(site, ctx) {
     site,
     ctx,
     title: 'Özkırşehirli Group',
-    description: 'Research directions, values, and current projects in the Özkırşehirli Group, including MeshAnyOrder, TBXT, antibody discovery, ChemAgent-QSM, renormalization-group modeling, biochemical diffusion, and DFT-to-kMC simulation.',
+    description: 'Public research directions and project summaries in the Özkırşehirli Group, including MeshAnyOrder, TBXT, antibody discovery, VeriQSM and QSMBench, Kadanoff-GNN-RG, reaction-diffusion AI, and DFT-to-kMC simulation.',
     activePath: '/group/',
     path: '/group/',
     content,

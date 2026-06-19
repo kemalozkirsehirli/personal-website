@@ -2,7 +2,7 @@
   "url": "https://kemal-ozkirsehirli.com",
   "basePath": "",
   "title": "Kemal Özkırşehirli",
-  "description": "Academic homepage for Kemal Özkırşehirli: AI/ML for science, chemical physics, mathematical biology, order-agnostic 3D mesh generation, computer-aided drug discovery, protein and genome modeling, molecular simulation, statistical mechanics, and public, auditable scientific software.",
+  "description": "Academic homepage for Kemal Özkırşehirli: AI/ML for science, chemical physics, mathematical biology, order-agnostic 3D mesh generation, computer-aided drug discovery, protein and genome modeling, molecular simulation, statistical mechanics, and auditable scientific workflow engineering.",
   "language": "en",
   "resumePdf": null,
   "author": {
@@ -31,7 +31,7 @@
       }
     ],
     "highlights": [
-      "Current and extended work spans MeshAnyOrder order-agnostic 3D mesh generation, TBXT/brachyury small-molecule discovery, PRISM protein-model red-teaming, ChromoGen-Engine V2, A*STAR V2M autoimmune target discovery, VeriQSM + QSMBench, EVEdesign, antibody RL, Kadanoff-GNN-RG, Kupcinet–Getz Reaction–Diffusion AI, DFT → kMC, and Pedal AI chemistry-agent infrastructure.",
+      "Current work spans MeshAnyOrder order-agnostic 3D mesh generation, TBXT/brachyury small-molecule discovery, PRISM protein-model red-teaming, ChromoGen-Engine V2, A*STAR V2M autoimmune target discovery, ChemAgent-QSM, EVEdesign, antibody RL, Pedal AI chemistry-agent infrastructure, and ML-augmented renormalization group theory.",
       "Research and engineering across the Özkırşehirli Group, MIT Chemistry, MIT CSAIL, MIT Physics, A*STAR EDDC, PRISM/W2D2/Siemens, Harvard Medical School, Columbia, AI@MIT/AIM Labs, Weizmann Institute, Pedal AI, Sepal AI/Mercor, and the Buchwald Lab.",
       "Medalist at IChO and IMChO; TÜBİTAK National Chemistry Olympiad silver medalist; Columbia Science Research Fellow; World Science Scholar; AIME qualifier; AlgoTrade Hackathon 2026 selectee; and recipient of Waterloo CHEM13, Galois, and Sir Isaac Newton distinctions."
     ]
@@ -164,24 +164,8 @@
             "url": "https://evedesign.bio/"
           },
           {
-            "label": "VeriQSM / QSMBench",
-            "url": "/group/#veriqsm-qsmbench"
-          },
-          {
-            "label": "Antibody RL",
-            "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning"
-          },
-          {
-            "label": "Kadanoff-GNN-RG",
-            "url": "/group/#kadanoff-gnn-rg"
-          },
-          {
-            "label": "Reaction–Diffusion AI",
-            "url": "/group/#kupcinet-getz-reaction-diffusion-ai"
-          },
-          {
-            "label": "DFT → kMC",
-            "url": "/group/#dft-to-kmc"
+            "label": "Quantum / Stat Mech",
+            "url": "/cv/#llm-and-statistical-mechanics-theoretical-chemistry-researcher"
           }
         ]
       },
@@ -194,7 +178,7 @@
           },
           {
             "label": "Renormalization Group",
-            "url": "/group/#kadanoff-gnn-rg"
+            "url": "/cv/#ai-ml-for-statistical-mechanics-simulations-researcher-and-teaching-fellow"
           }
         ]
       },
@@ -290,14 +274,14 @@
             "description": "11-person chordoma/TBXT hit-identification project targeting PDB 6F59 site F; 2,274 prior-art compounds, 737 analogs, 30,000 BRICS recombinations, a 570-compound novelty-filtered pool, and a docking/QSAR/GNINA/Boltz-2/MMGBSA-FEP/selectivity funnel"
           },
           {
-            "title": "VeriQSM + QSMBench",
-            "url": "/group/#veriqsm-qsmbench",
-            "description": "Public v0.3 research release for artifact-grounded verification of scientific false success in quantum-chemistry and statistical-mechanics agents: typed workflow IR, allowlisted execution, an independent evaluator, 240 public authoring seeds, and a 24-case evaluator-conformance mini; not a sealed benchmark or completed multi-model scientific result"
+            "title": "ChemAgent-QSM",
+            "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli",
+            "description": "LLM-guided PySCF pipelines for electronic structure, optimized geometries, vibrational spectra, time-correlation functions, local order, relaxation, mobility, and dynamical-heterogeneity analysis"
           },
           {
-            "title": "Kadanoff-GNN-RG",
-            "url": "/group/#kadanoff-gnn-rg",
-            "description": "Public alpha research software combining symmetry-adapted Kadanoff coarse-graining, periodic Monte Carlo spin configurations, typed-edge GNNs, calibrated phase classification, empirical RG-flow reconstruction, and finite-grid fixed-point candidates; scientific conclusions require conventional finite-size and statistical-mechanics validation"
+            "title": "Renormalization Group",
+            "url": "/cv/#ai-ml-for-statistical-mechanics-simulations-researcher-and-teaching-fellow",
+            "description": "PyTorch/GNN-augmented Kadanoff renormalization-group framework for fixed-point discovery and phase-boundary mapping in spin-1/2 antiferromagnetic systems"
           },
           {
             "title": "Buchwald Lab",
@@ -310,9 +294,9 @@
             "description": "Python/LangGraph and FastAPI infrastructure for chemistry agents, molecular-prediction engines, inspectable retrosynthesis trees, provenance, and decision-ready synthesis workflows"
           },
           {
-            "title": "Kupcinet–Getz Reaction–Diffusion AI",
-            "url": "/group/#kupcinet-getz-reaction-diffusion-ai",
-            "description": "Solver-faithful scientific-AI benchmark for nonlinear chemical oscillators, traveling waves, and synthetic morphogenesis, spanning deterministic, chemical-Langevin, Gillespie, and spatial-SSA solvers with convergence audits, calibrated abstention, and reproducibility contracts"
+            "title": "Kupcinet-Getz",
+            "url": "/cv/#kupcinet-getz-scholar-in-computational-biochemical-diffusion",
+            "description": "PINN- and neural-ODE-enhanced stochastic biochemical reaction-diffusion, custom Euler-Maruyama, Runge-Kutta, and Gillespie SSA solvers, and trajectory-level GNN/transformer analysis"
           },
           {
             "title": "Sepal AI / Mercor",
@@ -321,8 +305,8 @@
           },
           {
             "title": "DFT → kMC",
-            "url": "/group/#dft-to-kmc",
-            "description": "Public implementation scaffold linking Gaussian/ORCA transition-state thermochemistry to Eyring rates and exact Gillespie kinetic Monte Carlo across solvent pathways, with uncertainty analysis and provenance; the bundled example is synthetic and excludes original molecular structures, target identity, unpublished mechanism, and private research data"
+            "url": "/cv/#foundation-research-scholar-in-computational-organic-chemistry",
+            "description": "Automated multi-scale computational-organic-chemistry pipeline linking DFT transition-state analysis to stochastic kinetic Monte Carlo across solvent pathways"
           }
         ]
       },
@@ -358,7 +342,7 @@
           {
             "title": "Antibody RL",
             "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning",
-            "description": "Public research scaffold for structure-informed cross-attention, ESM-2-compatible antigen embeddings, OAS/SAbDab/IEDB-style curation, PPO reward optimization with IGFold/AlphaFold-Multimer-style proxies, and PyTorch DDP/SuperCloud artifacts; no wet-lab binding or production-structure validation is claimed"
+            "description": "Six-person structure-informed cross-attention transformer and ESM-2 pipeline with OAS, SAbDab, and IEDB data, PPO against AF-Multimer/IGFold metrics, and distributed training on MIT SuperCloud"
           }
         ]
       },
@@ -508,7 +492,7 @@
       "AIME qualification and AMC Hall of Fame recognition",
       "AlgoTrade Hackathon 2026 selectee"
     ],
-    "researchStatement": "My work and the Özkırşehirli Group aim to make difficult scientific systems parsable, computable, verifiable, and decision-ready. (1) We develop MeshAnyOrder, an order-agnostic autoregressive transformer for topology-aware 3D mesh generation from point clouds. (2) We build multi-stage CADD pipelines for TBXT/brachyury, integrating docking, QSAR, CNN rescoring, co-folding, free-energy scaffolding, selectivity, and sourceability. (3) Public scientific-software directions include VeriQSM + QSMBench for artifact-grounded verification of scientific false success, Kadanoff-GNN-RG for learned coarse-graining and phase analysis, Kupcinet–Getz Reaction–Diffusion AI for solver-faithful benchmarking, DFT → kMC for auditable multiscale kinetics, and a structure-informed antibody-RL scaffold. (4) I develop and evaluate generative, foundation, and agentic systems for protein design, chromatin organization, autoimmune target discovery, molecular simulation, and robust scientific decision-making."
+    "researchStatement": "My work and the Özkırşehirli Group aim to make difficult scientific systems parsable, computable, and decision-ready. (1) We develop MeshAnyOrder, an order-agnostic autoregressive transformer for topology-aware 3D mesh generation from point clouds. (2) We build multi-stage CADD pipelines for TBXT/brachyury, integrating docking, QSAR, CNN rescoring, co-folding, free-energy scaffolding, selectivity, and sourceability. (3) I develop and evaluate generative, foundation, and agentic systems for protein design, chromatin organization, autoimmune target discovery, quantum/statistical mechanics, and antibody discovery. (4) I use molecular simulation, stochastic processes, and robust optimization to extract governing rules and create auditable scientific workflows."
   },
   "enableFeed": false,
   "group": {
@@ -518,6 +502,6 @@
         "url": "https://www.linkedin.com/posts/kozkirsehirli_kemal-%C3%B6zk%C4%B1r%C5%9Fehirli-activity-7473434647910334464-I9E7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC4WWM0Bp3e0E7wr9kwMebbuR65xNvaV8sU"
       }
     ],
-    "description": "A student-led research organization founded and led by Kemal Özkırşehirli, with public-release descriptions for current research directions and software."
+    "description": "A student-led organization of researchers founded and led by Kemal Özkırşehirli."
   }
 }

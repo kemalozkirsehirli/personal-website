@@ -1,21 +1,35 @@
 # Kemal Özkırşehirli — Personal Academic Website
 
-Statik, dependency-light, Manolis Kellis / classic MIT academic-homepage hissine yakın kişisel akademik site.
+Static, dependency-light personal academic website with a classic MIT / Manolis Kellis-style layout.
 
-## Final durum
+## Current setup
 
-- Canlı domain: `https://kemal-ozkirsehirli.com`
-- GitHub Pages kaynağı: `main` branch → `/docs`
-- Tüm sayfalarda arka plan: `#FFF8E7`
-- Web résumé: `/cv/` (güncel finalized résumé bilgileriyle)
-- İndirilebilir/public résumé PDF yok
+- Live domain: `https://kemal-ozkirsehirli.com`
+- GitHub Pages source: `main` branch → `/docs`
+- Background across every page: `#FFF8E7`
+- Web résumé: `/cv/`
+- No downloadable/public résumé PDF
 - About poem: `/about/`
-- Özkırşehirli Group: `/group/` (application form, LinkedIn launch post, ayrıntılı MeshAnyOrder ve TBXT programları dahil)
-- Essays ve AI-for-Science notes yayımlanmıyor
-- Spotlight sırası `About → Özkırşehirli Group → Application Form`
-- Word cloud kompakt, renkli ve çakışmasızdır; 129 terimin tamamı yataydır, `AI for Science` merkezde yer alır ve temel araştırma kavramları önemlerine göre daha büyük gösterilir
+- Özkırşehirli Group: `/group/`
+- Essays and AI-for-Science notes are not published
+- Word cloud is horizontal, compact, colored, and centered on `AI for Science`
 
-## Lokal çalıştırma
+## Public-content lock
+
+This repository follows [`PUBLIC_CONTENT_POLICY.md`](PUBLIC_CONTENT_POLICY.md).
+
+Only user-approved website content and material explicitly supplied in the user-designated `Public` release archive may appear on the website. The user-designated `Owner` archive is a do-not-publish source and is used only to define the privacy denylist.
+
+`npm run check` now:
+
+1. rebuilds `dist/`;
+2. verifies required pages and local links;
+3. rejects owner/private-master/anonymous-review markers, key material, local paths, the private phone number, résumé PDFs, PDFs/ZIPs/keys/databases inside published trees, and local-only links;
+4. requires `resumePdf` to remain `null`;
+5. replaces `docs/` with the audited `dist/` output; and
+6. audits `docs/` again.
+
+## Local preview
 
 ```bash
 npm install
@@ -23,41 +37,37 @@ npm run check
 npm run dev
 ```
 
-Tarayıcı:
+Open:
 
 ```txt
 http://localhost:4173/
 ```
 
-## İçerik düzenleme
+## Content editing
 
-- Ana sayfa, Spotlight, selected work, Group: `src/data/site.json`
-- Projeler: `src/data/projects.json`
+- Homepage, Spotlight, selected work: `src/data/site.json`
+- Özkırşehirli Group page: `scripts/build.mjs`
+- Projects: `src/data/projects.json`
 - Web résumé: `src/content/cv.md`
-- Fotoğraflar ve word cloud: `public/`
-- Görsel düzen: `src/styles/main.css`
-- Build sistemi: `scripts/build.mjs`
+- Photos and word cloud: `public/`
+- Visual design: `src/styles/main.css`
 
-## Her değişiklikten sonra
+## After each edit
 
 ```bash
 npm run check
-rm -rf docs
-cp -R dist docs
-printf "kemal-ozkirsehirli.com\n" > docs/CNAME
-touch docs/.nojekyll
 ```
 
-Ardından GitHub Desktop:
+`npm run check` automatically refreshes `/docs`, so no manual `dist → docs` copy is needed.
+
+Then use GitHub Desktop:
 
 ```txt
 Commit to main
 Push origin
 ```
 
-GitHub Pages birkaç dakika içinde `/docs` klasöründeki yeni çıktıyı yayımlar.
-
-## GitHub Pages ayarı
+## GitHub Pages
 
 ```txt
 Repository → Settings → Pages
@@ -68,26 +78,10 @@ Custom domain: kemal-ozkirsehirli.com
 Enforce HTTPS: on
 ```
 
-## DNS
-
-```txt
-A      @      185.199.108.153
-A      @      185.199.109.153
-A      @      185.199.110.153
-A      @      185.199.111.153
-CNAME  www    kemalozkirsehirli.github.io
-```
-
-GitHub verification TXT kaydını DNS'te tut.
-
-## Word cloud yeniden üretme
+## Word cloud regeneration
 
 ```bash
 python3 -m pip install -r requirements-wordcloud.txt
 python3 scripts/generate_wordcloud.py
 npm run check
-rm -rf docs
-cp -R dist docs
-printf "kemal-ozkirsehirli.com\n" > docs/CNAME
-touch docs/.nojekyll
 ```

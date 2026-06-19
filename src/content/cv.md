@@ -17,7 +17,7 @@ B.Sc. expected May 2027. GPA: 5.0/5.0. On track to graduate one year early after
 
 - Majors: Computer Science and Engineering: AI/ML; Physics: Chemical Physics; Mathematics: Mathematical Biology.
 - Minors: Philosophy, Writing.
-- Research interests: biomolecular simulation; free-energy methods; CADD; statistical mechanics and renormalization-group theory; chemical diffusion; high-performance computing; generative models; scientific workflow and DNA–RNA engineering; agentic AI; inference.
+- Research interests: biomolecular simulation; free-energy methods; CADD; statistical mechanics and renormalization-group theory; reaction–diffusion chemistry; high-performance computing; generative models; scientific workflow verification; scientific false-success evaluation; DNA–RNA engineering; agentic AI; inference.
 - Computational skillset: Python, C/C++, CUDA, PyTorch, Transformers, GNNs, HPC/GPU programming, Linux, Bash, Git, SLURM/PBS/qsub.
 - Coursework: 6.7960 Deep Learning; 6.5060 Algorithm Engineering; 6.4610 Natural Language Processing; 6.3930 AI and Decision Making in Medicine: From Disease to Therapy; 6.1220[J] Advanced Algorithm Design-Analysis; 18.404[J] Theory of Computation; 18.615 Stochastic Processes; 6.5240 Sublinear Time Algorithms; 6.1910 Computer Structures and Architectures; 6.100B, 6.1903, and related Python/C/C++/Assembly programming labs; 18.600 Probability Theory and Random Variables; 18.06 Linear Algebra; 5.43 Advanced Organic Chemistry; 6.1200[J] Discrete Mathematics.
 - Humanitas Core: 24.245 Theory of Models; 21W.747 Rhetoric; 21W.745 Advanced Essay Workshop; 21W.762 Poetry Workshop; 24.251 Philosophy of Language; 24.05 Philosophy of Religion; 17.01[J]/24.04[J] Justice; 24.121 Metaphysics; 21W.738[J] Memoir.
@@ -95,21 +95,20 @@ B.Sc. expected May 2027. GPA: 5.0/5.0. On track to graduate one year early after
 - Designed Python/LangGraph backend architecture and FastAPI interfaces connecting stateful chemistry agents with molecular-prediction engines, including persistent execution state, custom tool orchestration, scalable control flow, and model/data evaluation workflows.
 - Built chemist- and researcher-facing UI/UX for Pedal AI's Agentic Chemistry Platform, incorporating Coley Lab retrosynthesis models with ASKCOS-style route search, inspectable retrosynthesis trees, reaction-level provenance, and decision-ready synthesis workflows.
 
-### LLM and Statistical Mechanics/Theoretical Chemistry Researcher
+### VeriQSM + QSMBench — Scientific Workflow Verification
 
 **Columbia University** — Dec 2025–Present
 
-- Developed ChemAgent-QSM, an LLM-guided agentic framework converting natural-language chemistry prompts into validated PySCF quantum-chemical pipelines for drug-like molecules.
-- Generated auditable Python workflows for time-correlation functions, local-order metrics, relaxation timescales, mobility fields, structure–dynamics coupling, optimized geometries, electronic-structure descriptors, and vibrational spectra via ab initio DFT.
-- Developed LLM-trajectory features and machine-learning workflows for dynamical heterogeneity in glass-forming and related systems using mean-squared displacement, SISFs, and MSCOPE baselines.
-
+- Developing VeriQSM, an artifact-grounded verification framework that converts natural-language scientific intent into typed, auditable workflows for quantum chemistry and statistical mechanics while separating nominal completion from verified scientific success and false success.
+- Building a public verification stack with allowlisted execution, independently recomputed physical and numerical checks, provenance contracts, claim-to-artifact support, and bounded repair, retry, or refusal decisions across PySCF-compatible electronic-structure tasks and PBC-aware trajectory analysis.
+- The public VeriQSM v0.3.0-dev / QSMBench v0.3-draft release includes 240 authoring seeds and a 24-case evaluator-conformance mini. It is explicitly not a sealed benchmark, QSMBench 1.0, or a completed multi-model scientific result. [Current public repository alias](https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli).
 ### Project Co-Lead — Deep Reinforcement Learning for Antibody–Antigen Interactions
 
 **AI@MIT / AIM Labs** — Jan 2026–Present
 
-- Co-led a six-person team developing a structure-informed cross-attention transformer and ESM-2 pipeline that maps protein/pathogen sequences to candidate antibodies using OAS, SAbDab, and IEDB datasets.
-- Reduced training time by approximately 40% through PPO-based reinforcement learning against AlphaFold-Multimer/IGFold structural metrics using distributed PyTorch DDP on MIT SuperCloud.
-
+- Co-led a six-person research effort and developed a public implementation scaffold combining ESM-2-compatible antigen embeddings, structure-informed cross-attention decoding of antibody CDR sequences, and OAS/SAbDab/IEDB/CoV-AbDab-style data curation.
+- Implemented PPO-oriented candidate ranking with developability, validity, novelty, CDR-length, IGFold-style geometry, and AlphaFold-Multimer-style interface proxies, together with PyTorch DDP plans and MIT SuperCloud SLURM artifacts.
+- The public repository is a research scaffold: deterministic mock structure metrics support reproducible CI, while production backends are dependency-gated. It does not claim wet-lab binding validation or equivalence to real production AlphaFold/IGFold inference. [Public repository](https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning).
 ### Protein Design Algorithm Engineer — EVEdesign Collaborative Project
 
 **Harvard Medical School; Prof. Marks** — Apr 2026–Present
@@ -123,16 +122,16 @@ B.Sc. expected May 2027. GPA: 5.0/5.0. On track to graduate one year early after
 
 **MIT Physics · Prof. A. Nihat Berker** — Jan 2022–Present
 
-- Invited to conduct research after ranking in the top 1% of graduate-level 8.334: Phase Transitions and Renormalization-Group Theory while in high school. Building a PyTorch/GNN-augmented Kadanoff renormalization-group framework to identify fixed points and map thermodynamic phase boundaries in spin-1/2 antiferromagnetic systems.
+- Invited to conduct research after ranking in the top 1% of graduate-level 8.334: Phase Transitions and Renormalization-Group Theory while in high school. Developing Kadanoff-GNN-RG, a public alpha research codebase for symmetry-adapted coarse-graining, periodic four-color Metropolis sampling, typed-edge GNNs, calibrated phase classification, empirical RG-flow reconstruction, and finite-grid fixed-point candidate discovery in antiferromagnetic J1–J2 Ising systems.
+- Treating phase boundaries and fixed points as finite-size, sampler-dependent, and representation-dependent estimates; publication-grade use requires autocorrelation analysis, finite-size scaling, held-out seeds, grid refinement, and comparison against Binder-cumulant, susceptibility, and conventional coarse-graining baselines.
 - Mentored 200+ students regarding college applications, decisions, and career paths while teaching condensed Augmented Chemistry and Classical/Quantum Mechanics courses and grading daily problem sets and exams.
-
 ### Kupcinet-Getz Scholar in Computational Biochemical Diffusion
 
 **Weizmann Institute of Science** — Jun–Aug 2025
 
-- Selected as one of 22 scholars worldwide with an acceptance rate below 10%; developed PINN- and neural-ODE-enhanced stochastic simulation of nonequilibrium enzyme reaction-diffusion networks and custom Euler-Maruyama, Runge-Kutta, and Gillespie SSA solvers for biochemical kinetics and spatial heterogeneity.
-- Constructed GNN encoders, transformer sequence models, UMAP-driven clustering, and PyTorch classifiers to extract latent thermal structure, identify bifurcations, and classify nonlinear dynamics from high-dimensional trajectories.
-
+- Selected as one of 22 scholars worldwide with an acceptance rate below 10%; developed stochastic and learned models for nonlinear biochemical reaction–diffusion systems, including Euler–Maruyama, Runge–Kutta, Gillespie SSA, PINN, neural-ODE, GNN, transformer, and trajectory-clustering components.
+- Expanded the direction into Kupcinet–Getz Reaction–Diffusion AI, a public v0.3 solver-faithful benchmark spanning nonlinear chemical oscillators, traveling waves, and synthetic morphogenesis with deterministic, chemical-Langevin, Gillespie, and spatial-RDME solvers; convergence audits; calibration and abstention; matched-compute evaluation; and immutable result manifests.
+- The public release fails closed on unresolved production, rights, and external-validation gates. Smoke runs are execution evidence only and are not presented as chemical validation or completed benchmark conclusions.
 ### Chemistry and AI Consultant and Scientific Data and Evaluation Specialist
 
 **Sepal AI, Mercor** — Sept 2024–Feb 2025
@@ -144,9 +143,9 @@ B.Sc. expected May 2027. GPA: 5.0/5.0. On track to graduate one year early after
 
 **Lumiere Research Inclusion Foundation** — Aug 2023–Feb 2024
 
-- Engineered an automated multi-scale simulation pipeline linking DFT calculations to stochastic kinetic Monte Carlo models; screened 20+ transition states and 500+ reaction trajectories across five solvent pathways to achieve a 22% predicted yield optimization for a cytotoxic target.
-- Secured a selective full research scholarship and independently drove the computational project with one-to-one Brown University PhD mentorship, analyzing reaction dynamics and compiling a mechanistic manuscript.
-
+- Engineered a multiscale computational-organic-chemistry workflow linking density-functional-theory transition-state thermochemistry to stochastic kinetic Monte Carlo across solvent pathways; the historical public summary reports screening 20+ transition states and 500+ trajectories across five solvent pathways with a 22% predicted yield optimization.
+- Expanded the direction into a public DFT → kMC implementation scaffold that parses Gaussian/ORCA thermochemistry, checks stationary points, converts activation free energies to Eyring rates, compiles exact stochastic propensities, runs reproducible Gillespie ensembles, ranks solvent-dependent yield/conversion/selectivity, and records hashes and provenance.
+- The bundled public example is synthetic and does not reproduce the original result; original molecular structures, target identity, raw quantum-chemistry outputs, unpublished mechanism, and non-public research data are excluded.
 ### Advanced Organic Synthesis Researcher
 
 **MIT Chemistry; Prof. Stephen L. Buchwald** — Dec 2025–May 2026
