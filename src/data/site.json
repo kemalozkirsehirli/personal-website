@@ -81,44 +81,14 @@
         "description": "web résumé"
       },
       {
-        "label": "MeshAnyOrder for Life Sciences",
-        "url": "/group/#meshanyorder-for-life-sciences",
-        "description": "order-agnostic 3D mesh generation and topology-aware decoding"
+        "label": "GitHub",
+        "url": "https://github.com/kemalozkirsehirli",
+        "description": "public repositories and code profile"
       },
       {
-        "label": "Protein foundation model safety",
-        "url": "/cv/#prism-ai-safety-fellow-protein-foundation-model-red-teaming-and-evaluation",
-        "description": "PRISM red-teaming and evaluation"
-      },
-      {
-        "label": "ChromoGen-Engine V2",
-        "url": "/cv/#summer-urop-scholar-chromogen-engine-v2",
-        "description": "conditional diffusion for perturbed single-cell 3D chromatin"
-      },
-      {
-        "label": "Autoimmune V2M-Engine",
-        "url": "/cv/#summer-ai-ml-researcher-autoimmune-target-discovery",
-        "description": "genetics-to-mechanism target discovery"
-      },
-      {
-        "label": "TBXT small-molecule discovery",
-        "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced",
-        "description": "public chordoma/TBXT CADD research release"
-      },
-      {
-        "label": "ChemAgent-QSM",
-        "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli",
-        "description": "public LLM-guided quantum/statistical-mechanics workflows"
-      },
-      {
-        "label": "Antibody RL",
-        "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning",
-        "description": "public protein/antibody RL scaffold"
-      },
-      {
-        "label": "EVEdesign protein design",
-        "url": "https://evedesign.bio/",
-        "description": "open-source multi-objective protein design"
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=SKE-LC8AAAAJ&hl=tr&oi=ao",
+        "description": "public scholar profile"
       },
       {
         "label": "LinkedIn",
