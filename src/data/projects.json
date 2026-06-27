@@ -2,7 +2,7 @@
   {
     "title": "Principal Investigator — MeshAnyOrder for Life Sciences",
     "status": "Apr 2026 – Present",
-    "description": "Leading a 7-member independent research collaboration developing MeshAnyOrder, an order-agnostic autoregressive transformer for point-cloud-conditioned 3D mesh generation. The model represents faces as quantized tokens and predicts unvisited adjacent faces from arbitrary traversal seeds; current work extends it with 3D rotary positional encoding, triangle/quad tokenization, topology-aware validity constraints, frontier-parallel decoding, and local completion/remeshing. Publication-grade ablations span random, axis-based, BFS/DFS traversal; causal, adjacency-aware, and bidirectional masking; reconstruction, manifoldness, watertightness, latency, memory, and high-resolution scaling.",
+    "description": "Leading a 7-member independent research collaboration developing MeshAnyOrder, an order-agnostic autoregressive transformer for point-cloud-conditioned 3D mesh generation. The model represents faces as quantized tokens and predicts unvisited adjacent faces from arbitrary traversal seeds. Current work emphasizes 3D rotary positional encoding, triangle/quad tokenization, topology-aware validity constraints, frontier-parallel decoding, local mesh completion/remeshing, and ablations across traversal order, masking, manifoldness, watertightness, latency, memory, and high-resolution scaling.",
     "tags": [
       "Geometric Deep Learning",
       "3D Meshes",
@@ -37,7 +37,7 @@
     ],
     "links": [
       {
-        "label": "Public GitHub release",
+        "label": "GitHub repository",
         "url": "https://github.com/kemalozkirsehirli/ozkirsehirli-group/tree/main/Hackathon-TBXT-reproduced"
       },
       {
@@ -74,7 +74,7 @@
   {
     "title": "ChromoGen-Engine V2 — Conditional Diffusion for 3D Chromatin",
     "status": "May 2026 – Present",
-    "description": "Developing a conditional diffusion and evaluation pipeline that merges ChromoGen-style single-cell 3D chromatin generation with small-molecule perturbation data and same-cell multi-omic regulatory readouts. The data engine integrates Plate-C / Easy Dip-C structures with CHARM-style Hi-C, RNA-seq, ATAC-seq, and histone-modification data under leakage-aware splits and structure-grounded benchmarks.",
+    "description": "Developing a conditioned 3D genome generation and evaluation pipeline for single cells. The work frames chromatin structure as an intermediate physical layer between DNA sequence, regulatory state, cell identity, and chemical/regulatory perturbation; builds preprocessing and conditioning machinery for sequence windows, perturbation labels, and regulatory readouts; and evaluates coordinate ensembles with contact maps, P(s), polymer/geometric realism, condition separation, calibration, leakage checks, and attribution diagnostics.",
     "tags": [
       "Diffusion Models",
       "Genomics",
@@ -94,7 +94,7 @@
   {
     "title": "A*STAR V2M-Engine — Autoimmune Target Discovery",
     "status": "May 2026 – Present",
-    "description": "Architecting a calibrated genetics-to-mechanism target-discovery engine that maps autoimmune GWAS and fine-mapped variants to regulatory programs, causal immune cell states, and targetable mechanisms. The project combines single-cell foundation models, QTL/colocalization evidence, known therapeutic controls, retrodiction benchmarks, perturbation validation, counterfactual cell-state transport, and structure/affinity-aware prioritization.",
+    "description": "Building a provenance-first, leakage-controlled variant-to-mechanism evidence graph for autoimmune/IBD target discovery. The workflow links disease, locus, variant or QTL/colocalization evidence, effector genes, cell contexts, mechanisms, and target-control tiers; starts with transparent classical scoring and source-pinned evidence; and leaves Perturb-seq, sequence-effect, single-cell foundation-model, and targetability modules as downstream extensions after the evidence graph is inspectable.",
     "tags": [
       "Target Discovery",
       "Single-Cell",
@@ -133,8 +133,8 @@
   },
   {
     "title": "VeriQSM + QSMBench — Artifact-Grounded Scientific Verification",
-    "status": "Public v0.3 research release",
-    "description": "VeriQSM separates nominal workflow completion from verified scientific success and false success. The public v0.3.0-dev / QSMBench v0.3-draft release includes a typed workflow IR, allowlisted execution, artifact-grounded verification, bounded repair/retry/refuse logic, 240 public authoring seeds, and a 24-case evaluator-conformance mini. It is explicitly not QSMBench 1.0, a sealed benchmark, or a completed multi-model scientific result.",
+    "status": "v0.3 research release",
+    "description": "VeriQSM separates nominal workflow completion from scientifically verified success. The framework converts scientific intent into typed, auditable workflows for quantum chemistry and statistical mechanics, then applies static checks, physics verifiers, reference-style calculations, provenance contracts, bounded recovery/refusal policies, and cost/reproducibility accounting to detect false success in agentic scientific workflows.",
     "tags": [
       "Scientific Agents",
       "Quantum Chemistry",
@@ -144,7 +144,7 @@
     ],
     "links": [
       {
-        "label": "Current public repository alias",
+        "label": "GitHub repository",
         "url": "https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli"
       },
       {
@@ -161,8 +161,8 @@
   },
   {
     "title": "Deep Reinforcement Learning for Antibody–Antigen Interactions",
-    "status": "Public research scaffold",
-    "description": "Execution-ready public scaffold for a structure-informed cross-attention transformer with ESM-2-compatible antigen embeddings, OAS/SAbDab/IEDB/CoV-AbDab-style curation, PPO reward optimization against IGFold- and AlphaFold-Multimer-style structural proxies, and PyTorch DDP / MIT SuperCloud artifacts. Default smoke workflows use deterministic mock backends; the repository does not claim wet-lab binding validation or equivalence to real production structure inference.",
+    "status": "Research scaffold",
+    "description": "Research scaffold for risk-constrained, structure-guided antibody sequence optimization. The implementation combines ESM-2-compatible antigen embeddings, structure-informed cross-attention for antibody CDR generation, OAS/SAbDab/IEDB-style curation, supervised warm starts, selective PPO, uncertainty penalties, developability screens, contamination-aware splits, evidence-lineage controls, and audit-ready evaluation scaffolding.",
     "tags": [
       "Reinforcement Learning",
       "Antibodies",
@@ -172,7 +172,7 @@
     ],
     "links": [
       {
-        "label": "Public GitHub repository",
+        "label": "GitHub repository",
         "url": "https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning"
       },
       {
@@ -212,8 +212,8 @@
   },
   {
     "title": "Kadanoff-GNN-RG — ML-Augmented Renormalization Group",
-    "status": "Public alpha research software",
-    "description": "Research-grade starting point for symmetry-adapted Kadanoff coarse-graining, periodic four-color Metropolis sampling, typed-edge graph neural networks, calibrated phase classification, empirical RG-flow reconstruction, and finite-grid fixed-point candidate discovery in the square-lattice antiferromagnetic J1–J2 Ising model. Outputs are finite-size, sampler-dependent, and representation-dependent estimates that require conventional statistical-mechanics validation.",
+    "status": "Alpha research software",
+    "description": "Research framework for ML-augmented hierarchical-lattice renormalization-group analysis. The system combines direct continuum RG operators, finite-spin distribution comparisons, symmetry/gauge-aware features, typed-edge graph neural networks, Wasserstein/MMD-style distribution distances, calibrated phase classification, empirical RG-flow reconstruction, and uncertainty-aware phase-topology analysis.",
     "tags": [
       "Statistical Mechanics",
       "Renormalization Group",
@@ -236,8 +236,8 @@
   },
   {
     "title": "Kupcinet–Getz Reaction–Diffusion AI",
-    "status": "Public v0.3 benchmark and software release",
-    "description": "Solver-faithful scientific-AI benchmark for nonlinear chemical oscillators, traveling waves, and synthetic morphogenesis. The public release combines mechanistic reaction-network cores; RK4, BDF/Radau/LSODA/RK45, chemical-Langevin, Gillespie, and spatial-RDME solvers; physical convergence audits; scientific-AI baselines; calibration and abstention; matched-compute evaluation; immutable result manifests; and explicit non-claims. Smoke runs are execution evidence only, not validated chemical conclusions.",
+    "status": "v0.3 benchmark and software release",
+    "description": "Scientific-computing framework for nonlinear biochemical reaction–diffusion systems, oscillators, traveling waves, and synthetic morphogenesis. It combines deterministic ODE solvers, chemical-Langevin dynamics, Gillespie SSA, spatial RDME, convergence audits, solver-agreement checks, calibration, abstention, and evidence manifests to study when numerical representation changes inferred dynamics.",
     "tags": [
       "Reaction–Diffusion",
       "Scientific AI",
@@ -279,8 +279,8 @@
   },
   {
     "title": "DFT → kMC — Auditable Multiscale Reaction Kinetics",
-    "status": "Public v0.1 implementation scaffold",
-    "description": "Auditable computational-organic-chemistry workflow that parses Gaussian/ORCA thermochemistry, checks stationary points, converts activation free energies to Eyring rates, compiles exact stochastic propensities, runs reproducible Gillespie kinetic-Monte-Carlo ensembles, ranks solvent-dependent yield/conversion/selectivity, and preserves hashes and provenance. The bundled five-solvent example is synthetic; original structures, target identity, raw quantum outputs, unpublished mechanism, and private research data are not included.",
+    "status": "v0.1 implementation scaffold",
+    "description": "Mechanism-aware decision-stability workflow linking Gaussian/ORCA transition-state thermochemistry to Eyring rates, deterministic ODEs, exact finite-state CME solutions, and Gillespie/SSA stochastic kinetics. The framework evaluates whether solvent, pathway, or product rankings remain stable under declared energetic, mechanistic, and model-form uncertainty while preserving provenance and reportability.",
     "tags": [
       "DFT",
       "Kinetic Monte Carlo",

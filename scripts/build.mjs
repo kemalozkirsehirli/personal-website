@@ -477,7 +477,6 @@ async function renderGroup(site, ctx) {
     <p>Currently, the areas of interest that define our research are computational methods and artificial intelligence/machine learning theories and pipelines for making new scientific discoveries. Our interests include computer-aided drug design (CADD) focused on Chordoma and TBXT; discovery of novel small molecules; geometric deep learning and 3-D mesh methodology; modeling of biomolecules; designing proteins; and developing scientific workflows.</p>
     <p>We have a selection process for membership but do not restrict it based solely on your educational or professional background. We believe that an individual's passion for their work and willingness to be intellectually curious, driven to solve problems, honest about their limitations, and capable of fortitude are essential. These values will determine whether you are a good fit. If you have a strong interest in a field outside those mentioned above, then we encourage you to apply if you are willing to become an expert in the field of study, provide consistent contributions to the research effort, and ask scientifically relevant questions.</p>
     <p><b><a href="${escapeAttr(applicationUrl)}" target="_blank" rel="noopener noreferrer">Application form</a></b> - <a href="${escapeAttr(announcementUrl)}" target="_blank" rel="noopener noreferrer">LinkedIn launch post</a></p>
-    <p class="public-release-note"><b>Public-content boundary:</b> project descriptions on this page use public-release materials only. Non-public archives, hidden evaluation material, credentials, raw private data, and internal strategy documents are excluded from the website.</p>
 
     <section class="group-research-projects" aria-labelledby="current-research-projects">
       <h2 id="current-research-projects">Research Projects</h2>
@@ -485,7 +484,7 @@ async function renderGroup(site, ctx) {
       <article id="meshanyorder-for-life-sciences" class="group-project-detail">
         <h3>MeshAnyOrder — Order-Agnostic 3D Mesh Generation for Life Sciences</h3>
         <p>Kemal serves as Principal Investigator for a seven-member independent research collaboration that includes a Google-affiliated research lead. MeshAnyOrder is an order-agnostic autoregressive transformer for point-cloud-conditioned 3D mesh generation: it represents mesh faces as quantized tokens and predicts unvisited adjacent faces from arbitrary traversal seeds instead of committing the model to a single canonical face ordering.</p>
-        <p>The core architecture is being extended with 3D rotary positional encoding for translation-invariant attention, heterogeneous triangle/quad tokenization, topology-aware validity constraints, frontier-parallel decoding, and local mesh completion or remeshing. The methodology comes first. Once the core baseline is stable, scientific extensions can test protein and molecular surfaces, enzyme and antibody topology, binding-pocket and interface geometry, and other biomolecular complexes as demanding applications of a general mesh model.</p>
+        <p>The core architecture is being extended with 3D rotary positional encoding for translation-invariant attention, heterogeneous triangle/quad tokenization, topology-aware validity constraints, frontier-parallel decoding, and local mesh completion or remeshing. The methodology comes first; once the core baseline is stable, scientific extensions can test protein and molecular surfaces, enzyme and antibody topology, binding-pocket and interface geometry, and other biomolecular complexes as demanding applications of a general mesh model.</p>
         <p>The experimental plan includes random, axis-based, breadth-first, and depth-first traversal orders; causal, adjacency-aware, and bidirectional attention masks; and publication-grade comparisons against leading autoregressive and diffusion-based mesh generators. Evaluation covers reconstruction quality, manifoldness, watertightness, topology preservation, inference latency, memory consumption, mesh complexity, and high-resolution scaling.</p>
       </article>
 
@@ -493,37 +492,37 @@ async function renderGroup(site, ctx) {
         <h3>TBXT / Brachyury Small-Molecule Discovery for Chordoma</h3>
         <p>The TBXT project is an eleven-person chordoma-focused computational hit-identification effort led by Kemal, targeting PDB 6F59 chain A and the TBXT G177D site-F region. The team compressed 2,274 prior-art compounds and 737 raw analogs into 503 filtered analogs, generated 30,000 BRICS recombinations, retained 67 novel QSAR-pass proposals, and assembled a 570-compound novelty-filtered pool using site-F/A/G grids, Tanimoto novelty control, and sourceability-aware generation.</p>
         <p>The pipeline combines Vina ensemble docking, GNINA CNN pose and pKd scoring, Vina-trap detection, RF/XGBoost TBXT QSAR, Boltz-2 co-folding, MMGBSA/FEP scaffolding, T-box paralog selectivity, Rowan IC50/affinity analysis, RDKit descriptors and BRICS, onepot/muni catalog checks, and Bash/HPC automation. A QSAR model trained on 650 RDKit-valid SPR-derived compounds from 14 decrypted XLSX files, 15 campaigns, and 1,620 Kd fits reached Spearman ρ ≈ 0.49 and MAE ≈ 0.5 pKd; GNINA screened 569 of 570 candidates and identified 40 Tier-A, 51 Tier-B, and 73 Vina-trap candidates.</p>
-        <p>The final computational funnel moved from 570 compounds to 137 strict-pass candidates, 24 submission-ready candidates, and four judge-facing site-F selections. Filters included exact catalog matching, non-covalent chemistry, PAINS and forbidden-motif exclusion, lead-likeness, ESOL/logS, Tanimoto novelty, cost, supplier risk, and selectivity across 16 paralogs. The final four produced Boltz Kd estimates of 3.2–8.8 µM, Jack/SCC agreement of 1.01–1.34×, GNINA Vina scores of −5.01 to −6.19, pKd values of 3.94–4.69, and Rowan IC50-style predictions of 1.82–6.11 µM. <a href="${escapeAttr(tbxtRepoUrl)}" target="_blank" rel="noopener noreferrer">The public research release is available on GitHub.</a></p>
+        <p>The final computational funnel moved from 570 compounds to 137 strict-pass candidates, 24 submission-ready candidates, and four judge-facing site-F selections. Filters included exact catalog matching, non-covalent chemistry, PAINS and forbidden-motif exclusion, lead-likeness, ESOL/logS, Tanimoto novelty, cost, supplier risk, and selectivity across 16 paralogs. The final four produced Boltz Kd estimates of 3.2–8.8 µM, Jack/SCC agreement of 1.01–1.34×, GNINA Vina scores of −5.01 to −6.19, pKd values of 3.94–4.69, and Rowan IC50-style predictions of 1.82–6.11 µM. <a href="${escapeAttr(tbxtRepoUrl)}" target="_blank" rel="noopener noreferrer">The research repository is available on GitHub.</a></p>
       </article>
 
       <article id="antibody-reinforcement-learning" class="group-project-detail">
         <h3><a href="${escapeAttr(antibodyRepoUrl)}" target="_blank" rel="noopener noreferrer">Deep Reinforcement Learning for Antibody–Antigen Interactions</a></h3>
-        <p>The public project is an execution-ready research scaffold combining ESM-2-compatible antigen embeddings, a structure-informed cross-attention transformer for antibody CDR generation, OAS/SAbDab/IEDB/CoV-AbDab-style data curation, PPO-oriented candidate ranking, and PyTorch DDP / MIT SuperCloud execution artifacts.</p>
-        <p>The reward interface supports developability, validity, novelty, CDR-length, IGFold-style geometry, and AlphaFold-Multimer-style interface proxies. Reproducible smoke workflows use deterministic mock structure backends; production runs require real dependency-gated models or external structure services. The public release does not claim wet-lab binding validation, therapeutic performance, or equivalence to real production AlphaFold/IGFold inference.</p>
+        <p>The project is a risk-constrained, structure-guided antibody sequence research scaffold combining ESM-2-compatible antigen embeddings, a structure-informed cross-attention transformer for antibody CDR generation, OAS/SAbDab/IEDB-style data curation, supervised warm starts, selective PPO, uncertainty penalties, abstention, and PyTorch DDP / MIT SuperCloud execution artifacts.</p>
+        <p>The reward and evaluation interface supports developability, validity, novelty, CDR-length, structure/geometry proxies, contamination-aware splits, matched-budget baselines, reward-hacking checks, candidate-panel blinding, and audit-ready evidence-lineage controls. The project is presented as an engineering and research scaffold, not as wet-lab binding or therapeutic evidence.</p>
       </article>
 
       <article id="veriqsm-qsmbench" class="group-project-detail">
         <h3><a href="${escapeAttr(chemAgentAliasUrl)}" target="_blank" rel="noopener noreferrer">VeriQSM + QSMBench — Artifact-Grounded Scientific Verification</a></h3>
-        <p>VeriQSM asks whether a scientific agent merely completed a workflow or produced a scientifically credible result. It distinguishes nominal completion, verified scientific success, and false success, then uses typed workflow contracts, allowlisted execution, independently recomputed physical and numerical checks, provenance requirements, and bounded repair, retry, or refusal decisions.</p>
-        <p>The public VeriQSM v0.3.0-dev / QSMBench v0.3-draft release provides 240 authoring seeds, a 24-case evaluator-conformance mini, PySCF-compatible quantum-chemistry modules, PBC-aware statistical-mechanics analyses, baseline protocols, and release-audit tooling. It is intentionally not presented as QSMBench 1.0, a sealed benchmark, a completed multi-model comparison, or evidence of scientific superiority. The linked repository remains the current public ChemAgent-QSM alias while the release identity is migrated.</p>
+        <p>VeriQSM asks whether a scientific agent merely completed a workflow or produced a scientifically credible result. It distinguishes nominal completion, verified scientific success, and false success, then uses typed workflow contracts, static validation, physics verifiers, reference-style numerical checks, provenance requirements, and bounded repair, retry, or refusal decisions.</p>
+        <p>The framework spans PySCF-compatible quantum-chemistry tasks and trajectory/statistical-mechanics analyses. Its central contribution is not tool breadth alone, but a verification-first architecture that makes false success visible and ties claims to auditable artifacts, numerical tolerances, method settings, and evidence-limited interpretation.</p>
       </article>
 
       <article id="kadanoff-gnn-rg" class="group-project-detail">
         <h3>Kadanoff-GNN-RG — ML-Augmented Renormalization Group</h3>
-        <p>Kadanoff-GNN-RG is public alpha research software for combining symmetry-adapted real-space coarse-graining, periodic four-color Metropolis spin configurations, typed-edge graph neural networks, calibrated phase classification, empirical RG-flow reconstruction, and finite-grid fixed-point candidate discovery in the square-lattice antiferromagnetic J1–J2 Ising model.</p>
-        <p>The workflow preserves uniform, Néel, and stripe ordering channels before blocking and compares learned representations with majority-rule baselines and conventional observables. Phase boundaries and fixed-point outputs are finite-size, sampler-dependent, and representation-dependent estimates; scientific use requires autocorrelation analysis, finite-size scaling, held-out seeds, parameter-grid refinement, Binder-cumulant and susceptibility checks, and robustness across coarse-graining choices.</p>
+        <p>Kadanoff-GNN-RG combines machine learning with hierarchical-lattice renormalization-group analysis. The framework uses direct continuum RG operators, finite-spin distribution comparisons, symmetry/gauge-aware features, typed-edge graph neural networks, Wasserstein/MMD-style distribution distances, calibrated phase classification, empirical RG-flow reconstruction, and uncertainty-aware phase-topology analysis.</p>
+        <p>The workflow preserves ordering-channel information before blocking and compares learned representations with conventional observables and coarse-graining baselines. Phase boundaries and fixed points are treated as finite-size, sampler-dependent, and representation-dependent estimates that require autocorrelation analysis, finite-size scaling, held-out seeds, grid refinement, and robustness checks.</p>
       </article>
 
       <article id="kupcinet-getz-reaction-diffusion-ai" class="group-project-detail">
         <h3>Kupcinet–Getz Reaction–Diffusion AI</h3>
-        <p>This public v0.3 research release develops a solver-faithful scientific-AI benchmark for nonlinear chemical oscillators, traveling waves, and synthetic morphogenesis. It combines shared reaction-network and graph-compartment models with RK4, BDF/Radau/LSODA/RK45, explicit finite differences, chemical-Langevin dynamics, Gillespie SSA, spatial RDME, physical convergence audits, scientific-AI baselines, calibration, abstention, matched-compute evaluation, and immutable evidence manifests.</p>
-        <p>The central question is whether numerical representation and intrinsic reaction noise change inferred morphology, phase boundaries, or scientific-AI confidence. Current headline claims remain untested or partial: smoke runs establish execution contracts only, not paper-figure reproduction, chemical validation, or completed benchmark conclusions. Production evidence, release authority, and independent clean-room validation remain explicit gates.</p>
+        <p>This research direction develops a solver-faithful scientific-computing framework for nonlinear chemical oscillators, traveling waves, and synthetic morphogenesis. It combines shared reaction-network and graph-compartment models with deterministic ODE solvers, chemical-Langevin dynamics, Gillespie SSA, spatial RDME, convergence audits, calibration, abstention, matched-compute evaluation, and reproducibility manifests.</p>
+        <p>The central question is whether numerical representation and intrinsic reaction noise change inferred morphology, phase boundaries, or scientific-AI confidence. The framework emphasizes solver agreement, convergence behavior, uncertainty-aware reporting, and evidence-limited interpretation rather than overclaiming from smoke runs or synthetic examples.</p>
       </article>
 
       <article id="dft-to-kmc" class="group-project-detail">
         <h3>DFT → kMC — Auditable Multiscale Reaction Kinetics</h3>
-        <p>The public implementation scaffold parses Gaussian and ORCA thermochemistry, checks stationary points and imaginary frequencies, converts activation Gibbs free energies into forward and reverse Eyring rates, compiles exact stochastic propensities, runs reproducible Gillespie kinetic-Monte-Carlo ensembles, compares solvent pathways, and records resolved configurations, package versions, hashes, uncertainty outputs, and human-readable reports.</p>
-        <p>The bundled five-solvent example is synthetic and demonstrates software contracts rather than reproduction of the original historical project. Original molecular structures, target identity, raw quantum-chemistry outputs, unpublished mechanism, and non-public research data are deliberately excluded from the public release.</p>
+        <p>The implementation scaffold parses Gaussian and ORCA thermochemistry, checks stationary points and imaginary frequencies, converts activation Gibbs free energies into forward and reverse Eyring rates, compiles exact stochastic propensities, and runs deterministic ODE, exact CME, and Gillespie/SSA kinetic analyses.</p>
+        <p>The framework evaluates whether solvent, pathway, or product rankings remain stable over declared energetic, mechanistic, and model-form uncertainty. It preserves resolved configurations, package versions, hashes, uncertainty outputs, and human-readable reports so mechanistic conclusions remain traceable and evidence-bounded.</p>
       </article>
     </section>
   </section>`;
@@ -531,7 +530,7 @@ async function renderGroup(site, ctx) {
     site,
     ctx,
     title: 'Özkırşehirli Group',
-    description: 'Public research directions and project summaries in the Özkırşehirli Group, including MeshAnyOrder, TBXT, antibody discovery, VeriQSM and QSMBench, Kadanoff-GNN-RG, reaction-diffusion AI, and DFT-to-kMC simulation.',
+    description: 'Research directions and project summaries in the Özkırşehirli Group, including MeshAnyOrder, TBXT, antibody discovery, VeriQSM and QSMBench, Kadanoff-GNN-RG, reaction-diffusion AI, and DFT-to-kMC simulation.',
     activePath: '/group/',
     path: '/group/',
     content,
@@ -656,7 +655,7 @@ async function renderHome(site, ctx, essays, projects) {
   const highlights = author.highlights || [
     author.role || 'Researcher and writer',
     'AI for science, computational drug discovery, and scientific computing',
-    'Essays, notes, projects, and selected public work'
+    'Essays, notes, projects, and selected work'
   ];
   const profileLines = Array.isArray(site.home?.profileLines) ? site.home.profileLines : [author.role || 'Researcher and writer'];
   const homeAwards = Array.isArray(site.home?.awards) && site.home.awards.length ? site.home.awards : highlights;
@@ -735,7 +734,7 @@ async function renderEssaysIndex(site, ctx, essays) {
   </section>` : `<section class="classic-page">
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / Essays</p>
     <h1>Essays</h1>
-    <p>Research notes, project writeups, and public essays. Search or filter below.</p>
+    <p>Research notes, project writeups, and essays. Search or filter below.</p>
     <section class="filters" aria-label="Essay filters">
       <input class="search-input" type="search" placeholder="Search essays..." data-filter-input aria-label="Search essays">
       ${tagFilters(tags)}
@@ -772,7 +771,7 @@ async function renderProjects(site, ctx, projects) {
   const content = `<section class="classic-page">
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / Projects</p>
     <h1>Projects</h1>
-    <p>Research, engineering, writing, and experiments worth making public.</p>
+    <p>Research, engineering, writing, and selected experiments.</p>
     <section class="filters" aria-label="Project filters">
       <input class="search-input" type="search" placeholder="Search projects..." data-filter-input aria-label="Search projects">
       ${tagFilters(tags)}
@@ -816,7 +815,7 @@ async function renderPhotos(site, ctx, photos) {
   const content = `<section class="classic-page">
     <p class="crumbs"><a href="${escapeAttr(ctx.withBase('/'))}">${escapeHtml(site.title)}</a> / Photos</p>
     <h1>Photos</h1>
-    <p>A small visual archive. Replace starter SVGs with your own images in <code>public/photos/</code>.</p>
+    <p>A small visual archive of research, writing, places, and daily work.</p>
     <section class="gallery-grid">${cards}</section>
   </section>`;
   await writeFile('photos/index.html', renderLayout({ site, ctx, title: 'Photos', description: 'Photo gallery.', activePath: '/photos/', path: '/photos/', content }));

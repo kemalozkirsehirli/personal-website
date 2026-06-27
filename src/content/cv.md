@@ -76,17 +76,17 @@ B.Sc. expected May 2027. GPA: 5.0/5.0. On track to graduate one year early after
 
 **MIT Chemistry, Computational Systems Biology; Prof. Zhang** — May 2026–Present
 
-- Developing ChromoGen-Engine V2, a conditional diffusion and evaluation pipeline merging ChromoGen-style single-cell 3D chromatin generation with small-molecule perturbation data and same-cell multi-omic regulatory readouts.
-- Building a data engine that integrates Plate-C / Easy Dip-C small-molecule treatment structures with CHARM-style same-cell Hi-C, RNA-seq, ATAC-seq, and histone-modification data under leakage-aware splits across treatment, dose/time, cell state, genomic window, batch, and source.
-- Designing a structure-grounded benchmark comparing perturbation and regulatory-state conditioning with sequence-only, population-ATAC, pseudobulk/metacell, shuffled-label, and ablated baselines using distance/contact agreement, P(s) decay, condition separation, ensemble coverage, calibration, failure-mode analysis, and interpretable attribution.
+- Developing ChromoGen-Engine V2 as a conditioned 3D genome generation and evaluation pipeline for single-cell chromatin coordinate ensembles under sequence, regulatory-state, and chemical/regulatory perturbation conditions.
+- Building preprocessing and conditioning machinery for 3D structural data, sequence windows, perturbation labels, regulatory readouts, metadata, leakage-aware splits, and ablation controls.
+- Designing a benchmark that compares conditional generation with sequence-only, shuffled-label, and ablated baselines using contact-map agreement, P(s) decay, radius of gyration, ensemble diversity, condition separation, calibration, leakage checks, failure-mode analysis, and interpretable attribution.
 
 ### Summer AI/ML Researcher — Autoimmune Target Discovery
 
 **Experimental Drug Development Centre, A*STAR** — May 2026–Present
 
-- Architecting V2M-Engine with Dr. Sun and Dr. Cai, a calibrated genetics-to-mechanism target-discovery framework that maps autoimmune GWAS and fine-mapped variants onto regulatory programs, causal immune cell types/states, and targetable disease mechanisms using single-cell foundation models, QTL/colocalization evidence, and known therapeutic targets as embedded controls.
-- Building a Target-Mechanism Retrodiction Benchmark that tests whether scGPT/Geneformer-derived cell-state embeddings recover known immune-disease mechanisms beyond enrichment, marker-gene, pathway, and eQTL/colocalization baselines, with ablations, uncertainty quantification, calibration-error analysis, and leakage-controlled target-family holdouts.
-- Developing a modular sequence-to-cell-state-to-targetability engine coupling Evo 2/EVEE-style variant-effect scoring, Perturb-seq validation, counterfactual immune-state transport, and structure/affinity-aware target prioritization.
+- Building V2M-Engine as a provenance-first, leakage-controlled variant-to-mechanism evidence graph for autoimmune/IBD target discovery, linking disease, locus, QTL/colocalization evidence, effector genes, immune cell contexts, mechanisms, and target-control tiers.
+- Developing source-pinned manifests, normalized schemas, curation logs, graph exports, target-control evaluation tiers, and transparent classical baselines before adding single-cell foundation-model or sequence-effect layers.
+- Defining downstream extensions for Perturb-seq validation, Evo 2/EVEE-style sequence-effect scoring, single-cell foundation-model ablations, and targetability modules after the inspectable evidence graph is stable.
 
 ### Head of Chemistry Research-Implementation; Backend Software Engineer for LangGraph AI Agent Pipelines
 
@@ -99,16 +99,16 @@ B.Sc. expected May 2027. GPA: 5.0/5.0. On track to graduate one year early after
 
 **Columbia University** — Dec 2025–Present
 
-- Developing VeriQSM, an artifact-grounded verification framework that converts natural-language scientific intent into typed, auditable workflows for quantum chemistry and statistical mechanics while separating nominal completion from verified scientific success and false success.
-- Building a public verification stack with allowlisted execution, independently recomputed physical and numerical checks, provenance contracts, claim-to-artifact support, and bounded repair, retry, or refusal decisions across PySCF-compatible electronic-structure tasks and PBC-aware trajectory analysis.
-- The public VeriQSM v0.3.0-dev / QSMBench v0.3-draft release includes 240 authoring seeds and a 24-case evaluator-conformance mini. It is explicitly not a sealed benchmark, QSMBench 1.0, or a completed multi-model scientific result. [Current public repository alias](https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli).
+- Developing VeriQSM, a verification-first scientific-agent framework that converts scientific intent into typed, auditable workflows for quantum chemistry and statistical mechanics while separating nominal completion from scientifically verified success and false success.
+- Building typed workflow IR, static validators, physics verifiers, reference-style numerical checks, provenance ledgers, and bounded repair/refusal policies across PySCF-compatible electronic-structure tasks and trajectory/statistical-mechanics analyses.
+- Focusing the project on whether explicit physical verification and recovery policies make scientific agents more reliable than constrained planning alone. [GitHub repository](https://github.com/kemalozkirsehirli/ChemAgent-QSM-Kemal-Ozkirsehirli).
 ### Project Co-Lead — Deep Reinforcement Learning for Antibody–Antigen Interactions
 
 **AI@MIT / AIM Labs** — Jan 2026–Present
 
-- Co-led a six-person research effort and developed a public implementation scaffold combining ESM-2-compatible antigen embeddings, structure-informed cross-attention decoding of antibody CDR sequences, and OAS/SAbDab/IEDB/CoV-AbDab-style data curation.
-- Implemented PPO-oriented candidate ranking with developability, validity, novelty, CDR-length, IGFold-style geometry, and AlphaFold-Multimer-style interface proxies, together with PyTorch DDP plans and MIT SuperCloud SLURM artifacts.
-- The public repository is a research scaffold: deterministic mock structure metrics support reproducible CI, while production backends are dependency-gated. It does not claim wet-lab binding validation or equivalence to real production AlphaFold/IGFold inference. [Public repository](https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning).
+- Co-led a six-person research effort and developed a risk-constrained, structure-guided antibody sequence optimization scaffold combining ESM-2-compatible antigen embeddings, structure-informed cross-attention decoding of antibody CDR sequences, and OAS/SAbDab/IEDB-style data curation.
+- Implemented supervised warm starts and selective PPO with clipped policy loss, value learning, reference-policy KL, uncertainty penalties, abstention, conservative developability screens, and audit-ready evidence-lineage controls.
+- Structured evaluation around contamination-aware splits, matched-budget baselines, reward-hacking checks, candidate-panel blinding, and reproducible run manifests. [GitHub repository](https://github.com/kemalozkirsehirli/ai-mit-antibody-deep-rl-learning).
 ### Protein Design Algorithm Engineer — EVEdesign Collaborative Project
 
 **Harvard Medical School; Prof. Marks** — Apr 2026–Present
@@ -122,16 +122,16 @@ B.Sc. expected May 2027. GPA: 5.0/5.0. On track to graduate one year early after
 
 **MIT Physics · Prof. A. Nihat Berker** — Jan 2022–Present
 
-- Invited to conduct research after ranking in the top 1% of graduate-level 8.334: Phase Transitions and Renormalization-Group Theory while in high school. Developing Kadanoff-GNN-RG, a public alpha research codebase for symmetry-adapted coarse-graining, periodic four-color Metropolis sampling, typed-edge GNNs, calibrated phase classification, empirical RG-flow reconstruction, and finite-grid fixed-point candidate discovery in antiferromagnetic J1–J2 Ising systems.
-- Treating phase boundaries and fixed points as finite-size, sampler-dependent, and representation-dependent estimates; publication-grade use requires autocorrelation analysis, finite-size scaling, held-out seeds, grid refinement, and comparison against Binder-cumulant, susceptibility, and conventional coarse-graining baselines.
+- Developing Kadanoff-GNN-RG, a machine-learning-augmented renormalization-group framework using symmetry-adapted coarse-graining, direct continuum RG operators, finite-spin distribution comparisons, typed-edge graph neural networks, and calibrated phase classification for spin systems.
+- Using empirical RG-flow reconstruction, Wasserstein/MMD-style distribution distances, uncertainty-aware phase topology, and conventional observables to study finite-size, sampler-dependent, and representation-dependent phase-boundary estimates.
 - Mentored 200+ students regarding college applications, decisions, and career paths while teaching condensed Augmented Chemistry and Classical/Quantum Mechanics courses and grading daily problem sets and exams.
 ### Kupcinet-Getz Scholar in Computational Biochemical Diffusion
 
 **Weizmann Institute of Science** — Jun–Aug 2025
 
 - Selected as one of 22 scholars worldwide with an acceptance rate below 10%; developed stochastic and learned models for nonlinear biochemical reaction–diffusion systems, including Euler–Maruyama, Runge–Kutta, Gillespie SSA, PINN, neural-ODE, GNN, transformer, and trajectory-clustering components.
-- Expanded the direction into Kupcinet–Getz Reaction–Diffusion AI, a public v0.3 solver-faithful benchmark spanning nonlinear chemical oscillators, traveling waves, and synthetic morphogenesis with deterministic, chemical-Langevin, Gillespie, and spatial-RDME solvers; convergence audits; calibration and abstention; matched-compute evaluation; and immutable result manifests.
-- The public release fails closed on unresolved production, rights, and external-validation gates. Smoke runs are execution evidence only and are not presented as chemical validation or completed benchmark conclusions.
+- Expanded the direction into Kupcinet–Getz Reaction–Diffusion AI, a solver-faithful scientific-computing framework spanning nonlinear chemical oscillators, traveling waves, and synthetic morphogenesis with deterministic, chemical-Langevin, Gillespie, and spatial-RDME solvers.
+- Added convergence audits, solver-agreement checks, calibration, abstention, matched-compute evaluation, and reproducibility manifests to study when numerical representation and intrinsic reaction noise change inferred morphology or phase behavior.
 ### Chemistry and AI Consultant and Scientific Data and Evaluation Specialist
 
 **Sepal AI, Mercor** — Sept 2024–Feb 2025
@@ -143,9 +143,9 @@ B.Sc. expected May 2027. GPA: 5.0/5.0. On track to graduate one year early after
 
 **Lumiere Research Inclusion Foundation** — Aug 2023–Feb 2024
 
-- Engineered a multiscale computational-organic-chemistry workflow linking density-functional-theory transition-state thermochemistry to stochastic kinetic Monte Carlo across solvent pathways; the historical public summary reports screening 20+ transition states and 500+ trajectories across five solvent pathways with a 22% predicted yield optimization.
-- Expanded the direction into a public DFT → kMC implementation scaffold that parses Gaussian/ORCA thermochemistry, checks stationary points, converts activation free energies to Eyring rates, compiles exact stochastic propensities, runs reproducible Gillespie ensembles, ranks solvent-dependent yield/conversion/selectivity, and records hashes and provenance.
-- The bundled public example is synthetic and does not reproduce the original result; original molecular structures, target identity, raw quantum-chemistry outputs, unpublished mechanism, and non-public research data are excluded.
+- Engineered a multiscale computational-organic-chemistry workflow linking density-functional-theory transition-state thermochemistry to stochastic kinetic Monte Carlo across solvent pathways; the historical project summary reports screening 20+ transition states and 500+ trajectories across five solvent pathways with a 22% predicted yield optimization.
+- Expanded the direction into a mechanism-aware DFT → kMC implementation scaffold that parses Gaussian/ORCA thermochemistry, checks stationary points and frequencies, converts activation free energies to Eyring rates, compiles exact stochastic propensities, and runs deterministic ODE, exact CME, and Gillespie/SSA kinetic analyses.
+- Uses uncertainty-aware pathway and solvent ranking, provenance, and report generation to ask whether mechanistic conclusions remain stable under declared energetic, mechanistic, and model-form uncertainty.
 ### Advanced Organic Synthesis Researcher
 
 **MIT Chemistry; Prof. Stephen L. Buchwald** — Dec 2025–May 2026
